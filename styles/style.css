@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --primary-color: #ff4d6d;
-    --secondary-color: #2b2d42;
-    --accent-color: #8d99ae;
-    --background-color: #edf2f4;
-    --text-color: #2b2d42;
+    --background-color: #ffffff;
+    --text-negro: #2b2d42;
+    --magenta: #C4227D;
+    --amarillo: #FFE700;
+    --gris: #e0dcdc;
+    --texto-blanco: #ffffff;
 }
 
 * {
@@ -17,271 +18,185 @@
 body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
     background-color: var(--background-color);
 }
 
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 .header {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--gris);
+    box-shadow: 0 5px 5px rgba(32, 30, 30, 0.1);
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0; 
     z-index: 1000;
+    background-color: rgba(224, 220, 220, 0.9);
 }
 
 .nav {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: end;
 }
 
 .logo img {
-    height: 50px;
+    height: 90px;
 }
 
-.nav-links {
+.nav_links {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
-.nav-links a {
+.nav_links a {
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
+    color: var(--magenta);
+    font-size: 1.3rem;
+    font-weight: 300;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: var(--primary-color);
+.nav_links a:hover {
+    color: var(--text-negro);
+    transition: all 0.5s;
+    transform: scale(1.15);
+    display: inline-block;
 }
 
-.hero {
-    height: 100vh;
+main {
+    margin: 5rem 0 0 0;
+}
+
+.usuarios {
+    flex-direction: column;
+}
+
+.usuarios-grid {
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.img__seccion {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.usuarios-card {
+    background: var(--background-color);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.flecha__usuarios {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.poderL {
+    color: var(--text-negro);
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(43, 45, 66, 0.7), rgba(43, 45, 66, 0.7)), url('Assets/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 2rem;
-    margin-top: 70px;
+    margin-top: -7rem;
+    
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.cta-button:hover {
-    background-color: #ff2b4f;
-    transform: translateY(-2px);
-}
-
-.programa {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.programa h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--secondary-color);
-}
-
-.programa-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.programa-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.programa-card:hover {
-    transform: translateY(-5px);
-}
-
-.programa-card i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.beneficios {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 5rem 2rem;
-}
-
-.beneficios h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.beneficios-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.beneficio-card {
-    background: rgba(255,255,255,0.1);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.beneficio-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.15);
-}
-
-.beneficio-card i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.contacto {
-    padding: 5rem 2rem;
-    background-color: var(--background-color);
-}
-
-.contacto h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--secondary-color);
-}
-
-.contacto-form {
-    max-width: 600px;
-    margin: 0 auto;
+.lista_espera {
+    color: var(--text-negro);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
 }
 
-.contacto-form input,
-.contacto-form textarea {
-    padding: 1rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    font-family: 'Nunito', sans-serif;
-    background-color: white;
-}
-
-.contacto-form textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.submit-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.submit-button:hover {
-    background-color: #ff2b4f;
-    transform: translateY(-2px);
+.unirme_button {
+    padding: 2% 5%;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 8px 8px 0px 0px #000000;
 }
 
 .footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 3rem 2rem 1rem;
+    background-color: var(--background-color);
+    padding: 3rem 2rem 1rem 1rem;
 }
 
-.footer-content {
+.footer_seccion {
+    border: 2px solid #000000;
+    border-top: 50px solid #000000; 
+}
+
+.footer_content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.footer-info h3 {
+.footer_links h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
-.footer-links h4 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.footer-links ul {
+.footer_links ul {
     list-style: none;
 }
 
-.footer-links a {
-    color: white;
+.footer_links a {
+    color: var(--magenta);
     text-decoration: none;
     transition: color 0.3s ease;
     display: block;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
 }
 
-.footer-links a:hover {
-    color: var(--primary-color);
+.footer_links a:hover {
+    color: var(--text-color);
 }
 
-.footer-bottom {
+.footer_bottom {
     text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem 1rem;
+    border: 1px solid #000000;);
+    margin: 0% 25%;
+    box-shadow: 10px 10px 0px 0px #000000;
 }
 
 @media (max-width: 768px) {
@@ -290,25 +205,8 @@ body {
         gap: 1rem;
         padding: 1rem;
     }
-
-    .hero {
-        margin-top: 100px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .programa-grid,
-    .beneficios-grid {
+    .usuarios-grid,
+    .usuarios-grid {
         grid-template-columns: 1fr;
-    }
-
-    .contacto-form {
-        padding: 0 1rem;
     }
 }
