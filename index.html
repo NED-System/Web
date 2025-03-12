@@ -3,98 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NED - Disfruta el poder la Lealtad">
+    <meta name="theme-color" content="#C4227D">
     <title>NED - Disfruta el poder de la Lealtad</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="/assets/logo/Logo NED ico.png">
+    <!-- Include component scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <img src="/assets/logo/Logo NED Copy.png" alt="NED logo">
-            </div>
-            <ul class="nav_links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#programa">Consumidores</a></li>
-                <li><a href="#beneficios">Negocios</a></li>
-                <li><a href="#contacto">Planes</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
 
     <main>
-        <section class="usuarios" id="usuarios">
+        <section class="usuarios" id="usuarios" aria-labelledby="usuarios-title">
             <div class="usuarios-grid">
                 <div class="usuarios-card">
-                    <h2>SOY CONSUMIDOR</h2>
-                     <div><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" style="width: 50px; height: 50px;">
+                    <h2 class="h2__usuarios" id="consumidores-title">SOY CONSUMIDOR</h2>
+                    <div class="icon-container">
+                        <img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy">
                     </div>
-                    <img class="img__seccion" src="/assets/inicio/Consumidores.png" alt="consumidores">
+                    <img class="img__seccion" src="assets/inicio/Consumidores.png" alt="Ilustración de consumidores" width="300" height="300" loading="lazy">
                 </div>
                 <div class="usuarios-card">
-                    <h2>SOY NEGOCIO</h2>
-                    <div><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" style="width: 50px; height: 50px;">
+                    <h2 class="h2__usuarios" id="negocios-title">SOY NEGOCIO</h2>
+                    <div class="icon-container">
+                        <img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy">
                     </div>
-                    <img class="img__seccion" src="/assets/inicio/Negocios.png" alt="consumidores">
+                    <img class="img__seccion" src="assets/inicio/Negocios.png" alt="Ilustración de negocios" width="300" height="300" loading="lazy">
                 </div>
             </div>
         </section>
-        <section class="poderL">
-            <div>
-                    <h2>DISFRUTA EL PODER DE LA LEALTAD</h2>
-            </div>
-            
+        
+        <section class="poderL" aria-labelledby="poder-title">
+            <h2 id="poder-title">DISFRUTA EL PODER DE LA LEALTAD</h2>
         </section>
-        <section class="lista_espera">
-            <div>
-                    <h3>Únete a nuestra lista de espera</h3>
-                    <p>Pronto llegará una app con la que negocios y clientes crecerán con el poder de la Lealtad. </p>
-                    <button class="unirme_button">Unirme</button>
+        
+        <section class="lista_espera" aria-labelledby="lista-espera-title">
+            <div class="lista__espera__div">
+                <h3 id="lista-espera-title">Únete a nuestra lista de espera</h3>
+                <p>Pronto llegará una app con la que negocios y clientes crecerán con el poder de la Lealtad.</p>
+                <button class="unirme_button" aria-label="Unirme a la lista de espera">UNIRME</button>
             </div>
         </section>
-
     </main>
 
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
 
-    <!--footer -->
-    <footer class="footer">
-        <section class="footer_seccion">
-        <div class="footer_content">
-            <div class="footer_links">
-                <h3>INFORMACIÓN</h3>
-                <ul>
-                    <li><a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933">Únete a la lista de espera</a></li>
-                    <li><a href="#programa">Ir al formulario de contacto</a></li>
-                    <li><a href="#beneficios">Registra aquí tu cupón</a></li>
-                    <li><a href="#contacto">Redes sociales</a></li>
-                </ul>
-            </div>
-            <div class="footer_links">
-                <h3>PÁGINAS</h3>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#programa">Consumidores</a></li>
-                    <li><a href="#beneficios">Negocios</a></li>
-                    <li><a href="#contacto">Planes</a></li>
-                </ul>
-            </div>
-            <div class="footer_links">
-                <h3>CONSULTAS</h3>
-                <ul>
-                    <li><a href="#inicio">Términos & Condiciones de uso</a></li>
-                    <li><a href="#programa">Política de privacidad</a></li>
-                    <li><a href="#beneficios">Ir al formulario de contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <p>Nos gustaría compartir contigo historias, ejemplos de otros comercios, información útil y mas…</p>
-                <button class="unirme_button">SUSCRIBIRME</button>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <p>&copy; 2025 NED System S.A.S. Todos los derechos reservados.</p>
-        </div>
-     </section>
-    </footer>
+    <!-- The hamburger menu functionality is now handled in header.js -->
+
 </body>
 </html>
