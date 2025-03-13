@@ -39,6 +39,32 @@ p {
     font-weight: 300;
 }
 
+a {
+    color: var(--text-negro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#poder_title {
+    font-size: clamp(3rem, 2.5vw, 2.5rem);
+    font-weight: 800;
+    background-image: linear-gradient(var(--angle), hotpink, indigo);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 3s linear alternate infinite;
+}
+
+@keyframes move {
+    0% { --angle: 0.25turn }
+    100% { --angle: 0.75turn }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0turn;
+}
+
 /* Header and Navigation */
 .header {
     background-color: rgba(224, 220, 220, 0.9);
@@ -71,14 +97,14 @@ p {
 
 .nav_links a {
     text-decoration: none;
-    color: var(--magenta);
+    color: var(--text-negro);
     font-size: 1.3rem;
     font-weight: 300;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav_links a:hover {
-    color: var(--text-negro);
+    font-weight: 700;
     transform: scale(1.15);
 }
 
@@ -88,25 +114,25 @@ main {
 }
 
 /* Users Grid */
+
 .usuarios-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 1rem;
 }
 
 .usuarios-card {
     background: var(--background-color);
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 .img__seccion {
     width: 50%;
-    height: auto;
+    height: 50vh;
     object-fit: contain;
 }
 
@@ -124,13 +150,13 @@ main {
 .poderL {
     color: var(--text-negro);
     text-align: center;
-    margin: -1rem 0;
+    margin: 7rem 0 0 0;
 }
 
 .lista_espera {
     color: var(--text-negro);
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 800px;
     padding: 0 1rem;
 }
@@ -138,7 +164,7 @@ main {
 .lista__espera__div {
     border: 1px solid;
     padding: 2rem;
-    margin: 1rem;
+    margin: 0rem;
 }
 
 /* Buttons */
@@ -306,24 +332,38 @@ main {
     }
 
     main {
-        margin-top: 6rem;
+        margin-top: 7rem;
     }
 
     .usuarios-grid {
-        grid-template-columns: 1fr;
+        display: flex;  
+        gap: 1rem;
+        width: 100%;
     }
 
     .usuarios-card {
-        padding: 0rem;
+        padding: 1rem;
         transition: transform 0.3s ease;
+        margin: 0 -50px 0 0;
     }
 
     .img__seccion {
-        width: 30%;
+        width: 50%;
+        height: auto;
     }
 
-    .poderL {
-        margin: 1rem 0;
+    #ima__negocio {
+        width: 40%;
+        height: auto;
+    }
+
+    #poder_title {
+        font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+        font-weight: 900;
+        background-image: linear-gradient(var(--angle), hotpink, indigo);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: move 3s linear alternate infinite;
     }
 
     .footer_content {
