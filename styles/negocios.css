@@ -1,0 +1,111 @@
+/* Negocios page specific styles */
+
+.clientesTeRecomiendan {
+    max-width: 1200px;
+    margin: 7rem 5rem 1rem 5rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.clientesTeRecomiendan-content {
+    flex: 1;
+}
+
+.clientesTeRecomiendan_video {
+    flex: 1;
+    display: flex;
+}
+
+.clientesTeRecomiendan h1 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.clientesTeRecomiendan h2 {
+    font-weight: 900;
+    font-size: clamp(3.5rem, 3vw, 4rem);
+    line-height: 1.1;
+}
+
+.clientesTeRecomiendan__mensaje {
+    text-align: left;
+}
+
+.clientesTeRecomiendan .highlight {
+    color: #378ec8;
+    font-weight: 900;
+}
+
+.clientesTeRecomiendan p {
+    margin: 1rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    color: var(--text-negro);
+}
+
+.resaltar {
+    background-color: var(--amarillo);
+}
+
+.clientesTeRecomiendan ul {
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+}
+
+.clientesTeRecomiendan li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 1rem;
+}
+
+.clientesTeRecomiendan li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--magenta);
+    font-weight: bold;
+}
+
+.clientesTeRecomiendan .vuelvan {
+    color: #4169E1; /* Royal blue color for highlighted text */
+    font-weight: 700;
+}
+
+/* Video container styles */
+.video-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container iframe {
+    border-radius: 30px;
+    width: 80%;
+    height: 30vh;
+    box-shadow: 10px 15px 101px -42px rgba(0,0,0,0.58);
+}
+
+.mensajeGratis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--amarillo);
+    margin: 1rem 5rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .clientesTeRecomiendan {
+        flex-direction: row;
+        align-items: center;
+    }
+}

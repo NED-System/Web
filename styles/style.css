@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --background-color: #ffffff;
@@ -23,20 +24,35 @@ body {
 }
 
 /* Typography */
-h2 {
+h1 {
+    font-family: asap;
     text-align: center;
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-    font-weight: 300;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: asap;
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 900;
+    line-height: 1.1;
 }
 
 h3 {
+    font-family: 'Nunito', sans-serif;
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     font-weight: 300;
+    line-height: 1.1;
 }
 
 p {
-    font-size: clamp(0.9rem, 1vw, 1rem);
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.5rem, 1vw, 1rem);
     font-weight: 300;
+    line-height: 1.3;
+    text-align: justify;
 }
 
 a {
@@ -45,9 +61,16 @@ a {
     transition: color 0.3s ease;
 }
 
+li {
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    color: var(--text-negro);
+    font-weight: 300;
+    line-height: 1.3;
+}
+
 #poder_title {
     font-size: clamp(3rem, 2.5vw, 2.5rem);
-    font-weight: 800;
+    font-weight: 900;
     background-image: linear-gradient(var(--angle), hotpink, indigo);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,7 +137,10 @@ main {
 }
 
 /* Users Grid */
-
+.h3__usuarios {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 300;
+}
 .usuarios-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -165,6 +191,17 @@ main {
     border: 1px solid;
     padding: 2rem;
     margin: 0rem;
+}
+
+.lista_espera h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 300;
+}
+
+.lista_espera p {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: 200;
+    text-align: center;
 }
 
 /* Buttons */
@@ -224,7 +261,7 @@ main {
 }
 
 .footer_links h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: underline;
     margin-bottom: 1rem;
     display: flex;
@@ -237,6 +274,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .footer_links a {
@@ -245,6 +283,7 @@ main {
     transition: color 0.3s ease;
     display: block;
     padding: 0.2rem 0;
+    font-size: 1rem;
 }
 
 .footer_links a:hover {
@@ -258,6 +297,11 @@ main {
     text-align: center;
 }
 
+.footer__suscribirse p {
+    font-size: 1rem;
+    text-align: center;
+}
+
 .footer_bottom {
     text-align: center;
     padding: 1rem;
@@ -265,6 +309,11 @@ main {
     margin: 0rem auto;
     max-width: 600px;
     box-shadow: 10px 10px 0 0 #000000;
+    
+}
+
+.footer_bottom p {
+    font-size: 1rem;
     
 }
 

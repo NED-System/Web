@@ -31,7 +31,7 @@ footerTemplate.innerHTML = `
                     </ul>
                 </div>
                 <div class="footer__suscribirse">
-                    <p>Nos gustaría compartir contigo historias, ejemplos de otros comercios, información útil y mas…</p>
+                    <p>Te compartimos historias, ejemplos de otros negocios, experiencias de clientes, información útil y mas…</p>
                     <button class="unirme_button" aria-label="Suscribirse al boletín">SUSCRIBIRME</button>
                 </div>
             </div>
