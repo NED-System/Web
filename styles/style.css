@@ -274,7 +274,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .footer_links a {
@@ -309,12 +308,10 @@ main {
     margin: 0rem auto;
     max-width: 600px;
     box-shadow: 10px 10px 0 0 #000000;
-    
 }
 
 .footer_bottom p {
     font-size: 1rem;
-    
 }
 
 /* Mobile Menu */

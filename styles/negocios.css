@@ -1,13 +1,10 @@
 /* Negocios page specific styles */
-
 .clientesTeRecomiendan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 1200px;
     margin: 7rem 5rem 1rem 5rem;
     padding: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -103,9 +100,42 @@
     padding: 1rem;
 }
 
-@media (min-width: 768px) {
+.animated-text {
+    position: relative;
+}
+
+.animated-text:before {
+    position: absolute;
+    animation: textChange 5s infinite;
+}
+
+@keyframes textChange {
+    0%, 45% {
+        content: "GRATIS!";
+        opacity: 1;
+    }
+    50%, 55% {
+        opacity: 0;
+    }
+    60%, 95% {
+        content: "SIEMPRE!";
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
     .clientesTeRecomiendan {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        margin: 2rem 2rem;
+    }
+    .clientesTeRecomiendan h2 {
+        font-weight: 900;
+        font-size: clamp(2.5rem, 2.5vw, 2.7rem);
+        line-height: 1.1;
     }
 }
