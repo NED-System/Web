@@ -387,10 +387,13 @@ main {
         width: 100%;
     }
 
+    #negocios_title {
+        padding: 0 3rem;
+    }
+
     .usuarios-card {
         padding: 1rem;
         transition: transform 0.3s ease;
-        margin: 0 -50px 0 0;
     }
 
     .img__seccion {

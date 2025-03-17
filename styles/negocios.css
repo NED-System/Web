@@ -89,40 +89,64 @@
     box-shadow: 10px 15px 101px -42px rgba(0,0,0,0.58);
 }
 
+#poder_title {
+    padding: 0 0 1rem 0;
+}
+
 .mensajeGratis {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
     text-align: center;
     background-color: var(--amarillo);
-    margin: 1rem 5rem;
-    padding: 1rem;
+    margin: 0 5rem;
+    padding: 1.5rem 0rem 1.5rem 5rem;
 }
 
-.animated-text {
-    position: relative;
+.mensajeGratis h2 {
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.animated-text:before {
-    position: absolute;
-    animation: textChange 5s infinite;
+/* Estilos para la animación de cubo 3D */
+.cube-container {
+    display: inline-block;
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+    margin: 0 0.3rem;
 }
 
-@keyframes textChange {
-    0%, 45% {
-        content: "GRATIS!";
-        opacity: 1;
+.cube {
+    display: flex;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite ease-in-out;
+}
+
+.cube-face {
+    backface-visibility: hidden;
+    color: var(--magenta);
+    font-weight: 800;
+}
+
+.cube-face.front {
+    transform: translateZ(20px);
+}
+
+.cube-face.back {
+    transform: rotateY(180deg) translateZ(20px);
+}
+
+@keyframes rotate {
+    0%, 40% {
+        transform: rotateY(0deg);
     }
-    50%, 55% {
-        opacity: 0;
-    }
-    60%, 95% {
-        content: "SIEMPRE!";
-        opacity: 1;
+    50%, 90% {
+        transform: rotateY(180deg);
     }
     100% {
-        opacity: 0;
+        transform: rotateY(360deg);
     }
 }
 
@@ -137,5 +161,21 @@
         font-weight: 900;
         font-size: clamp(2.5rem, 2.5vw, 2.7rem);
         line-height: 1.1;
+    }
+    .video-container iframe {
+        border-radius: 30px;
+        width: 80%;
+        height: 25vh;
+    }
+    .mensajeGratis {
+        margin: 0 2rem;
+        padding: 1rem 1rem;
+    }
+    .mensajeGratis h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cube-container {
+        perspective: 600px;
     }
 }
