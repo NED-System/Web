@@ -195,7 +195,7 @@ main {
 
 .lista_espera h3 {
     font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .lista_espera p {

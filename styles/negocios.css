@@ -150,6 +150,27 @@
     }
 }
 
+.utilCualquierNegocio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 7rem 5rem 1rem 5rem;
+    padding: 0rem;
+    gap: 2rem;
+}
+
+.utilCualquierNegocio h2 {
+    font-weight: 500;
+    font-size: clamp(3.5rem, 3vw, 4rem);
+    line-height: 1.1;
+}
+
+.utilCualquierNegocio p {
+    margin: 1rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    color: var(--text-negro);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .clientesTeRecomiendan {
