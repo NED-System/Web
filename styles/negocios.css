@@ -1,8 +1,10 @@
 /* Negocios page specific styles */
 .clientesTeRecomiendan {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1200px;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
     margin: 7rem 5rem 1rem 5rem;
     padding: 0rem;
     gap: 2rem;
@@ -13,8 +15,7 @@
 }
 
 .clientesTeRecomiendan_video {
-    flex: 1;
-    display: flex;
+    flex: 0.7;
 }
 
 .clientesTeRecomiendan h1 {
@@ -75,16 +76,12 @@
 
 /* Video container styles */
 .video-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: fit-content;
 }
 
 .video-container iframe {
     border-radius: 30px;
-    width: 80%;
+    width: 100%;
     height: 30vh;
     box-shadow: 10px 15px 101px -42px rgba(0,0,0,0.58);
 }
@@ -151,25 +148,86 @@
 }
 
 .utilCualquierNegocio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1200px;
-    margin: 7rem 5rem 1rem 5rem;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    margin: 1rem 5rem 1rem 5rem;
     padding: 0rem;
     gap: 2rem;
 }
 
 .utilCualquierNegocio h2 {
-    font-weight: 500;
-    font-size: clamp(3.5rem, 3vw, 4rem);
+    font-weight: 800;
+    font-size: clamp(2rem, 1vw, 2rem);
     line-height: 1.1;
+    text-align: right;
 }
 
 .utilCualquierNegocio p {
     margin: 1rem;
     font-size: clamp(1.2rem, 1.2vw, 1.4rem);
     color: var(--text-negro);
+    text-align: right;
 }
+
+.tipos_de_negocio_img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vamosAMejorar {
+    max-width: 1200px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    margin: 1rem 5rem 1rem 5rem;
+    padding: 0rem;
+    gap: 2rem;
+}
+
+.vamosAMejorar h2 {
+    font-weight: 800;
+    font-size: clamp(2rem, 1vw, 2rem);
+    line-height: 1.1;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.vamosAMejorar_h2_asi {
+    font-weight: 800;
+    font-size: clamp(2rem, 1vw, 2rem);
+    line-height: 1.1;
+    padding: 0 0 1rem 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.img_mejorar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vamosAMejorar_content_asi_ahora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0rem;
+    padding: 1.5rem 0rem 1.5rem 5rem;
+}
+.img_asi_ahora {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -183,9 +241,10 @@
         font-size: clamp(2.5rem, 2.5vw, 2.7rem);
         line-height: 1.1;
     }
+
     .video-container iframe {
         border-radius: 30px;
-        width: 80%;
+        width: 100%;
         height: 25vh;
     }
     .mensajeGratis {
