@@ -176,18 +176,33 @@
     width: 80%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom animation for the image */
+.zoom-animation {
+    animation: zoom-effect 2s ease-in-out forwards;
+}
+
+@keyframes zoom-effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .vamosAMejorar {
-    max-width: 1200px; 
+    max-width: 1200px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-grow: 2;
-    margin: 1rem 5rem 1rem 5rem;
-    padding: 0rem;
-    gap: 2rem;
+    margin: 1rem 1rem 1rem 5rem;
 }
 
 .vamosAMejorar h2 {
@@ -202,12 +217,11 @@
     font-weight: 800;
     font-size: clamp(2rem, 1vw, 2rem);
     line-height: 1.1;
-    padding: 0 0 1rem 0;
+    padding: 0 2rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
     height: 100%;
-    margin: 0 1rem;
 }
 
 .img_mejorar {
@@ -217,14 +231,14 @@
 }
 .vamosAMejorar_content_asi_ahora {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: end;
     align-items: center;
-    margin: 0 0rem;
-    padding: 1.5rem 0rem 1.5rem 5rem;
+    width: 100%;
+    height: 100%;
 }
 .img_asi_ahora {
-    width: 40%;
-    height: 100%;
+    width: 60%;
     object-fit: cover;
 }
 
@@ -257,5 +271,63 @@
     }
     .cube-container {
         perspective: 600px;
+    }
+    /* Mobile optimization for utilCualquierNegocio section */
+    .utilCualquierNegocio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 2rem;
+        gap: 0rem;
+    }
+
+    .utilCualquierNegocio h2 {
+        font-size: clamp(1.8rem, 4vw, 2rem);
+        text-align: center;
+    }
+
+    .utilCualquierNegocio p {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .tipos_de_negocio_img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Mobile optimization for vamosAMejorar section */
+    .vamosAMejorar {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .img_mejorar {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vamosAMejorar_h2_asi {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        transform: none;
+        padding: 1rem 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .vamosAMejorar_content_asi_ahora {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 1rem;
+    }
+    
+    .img_asi_ahora {
+        width: 70%;
     }
 }
