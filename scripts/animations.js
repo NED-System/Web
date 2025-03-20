@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Create an Intersection Observer instance
-    const observer = new IntersectionObserver((entries) => {
+    // Create an Intersection Observer instance for zoom animation
+    const zoomObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             // When the image comes into view
             if (entry.isIntersecting) {
@@ -27,6 +27,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // If the image exists, observe it
     if (targetImage) {
-        observer.observe(targetImage);
+        zoomObserver.observe(targetImage);
+    }
+    
+    // Create an Intersection Observer instance for slide-up animation
+    const slideUpObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // When the image comes into view
+            if (entry.isIntersecting) {
+                // Add the animation class to trigger the slide-up effect
+                entry.target.classList.add('slide-up-animation');
+            } else {
+                // Remove the class when the image is out of view
+                // This allows the animation to play again when scrolling back
+                entry.target.classList.remove('slide-up-animation');
+            }
+        });
+    }, {
+        threshold: 0.2, // Trigger when 20% of the element is visible
+        rootMargin: '10px'
+    });
+
+    // Target the image with the queVeranTusClientes_img class
+    const clientesImage = document.querySelector('.queVeranTusClientes_img_1','.queVeranTusClientes_img_2');
+
+    // If the image exists, observe it
+    if (clientesImage) {
+        slideUpObserver.observe(clientesImage);
     }
 });
