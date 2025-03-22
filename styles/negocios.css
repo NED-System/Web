@@ -272,12 +272,14 @@
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slide-up-animation {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -363,9 +365,11 @@
     }
     .queVeranTusClientes_img_2 {
         display: block;
-        width: 120%;
-        margin-top: 0rem;
-        opacity: 1;
+        width: 100%;
+        margin-top: 1rem;
+        opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        margin-left: auto;
+        margin-right: auto;
     }

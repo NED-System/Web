@@ -48,11 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '10px'
     });
 
-    // Target the image with the queVeranTusClientes_img class
-    const clientesImage = document.querySelector('.queVeranTusClientes_img_1','.queVeranTusClientes_img_2');
+    // Target the images with the queVeranTusClientes_img classes
+    const clientesImages = document.querySelectorAll('.queVeranTusClientes_img_1, .queVeranTusClientes_img_2');
 
-    // If the image exists, observe it
-    if (clientesImage) {
-        slideUpObserver.observe(clientesImage);
+    // If images exist, observe them
+    if (clientesImages.length > 0) {
+        clientesImages.forEach(image => {
+            slideUpObserver.observe(image);
+        });
     }
 });
