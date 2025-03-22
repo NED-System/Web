@@ -133,7 +133,8 @@ li {
 
 /* Main Content */
 main {
-    margin: 5rem 2rem;
+    margin: 0rem 2rem 0rem 2rem;
+    padding-top: 2rem;
 }
 
 /* Users Grid */
@@ -160,7 +161,6 @@ main {
 .img__seccion {
     width: 50%;
     height: 50vh;
-    
     object-fit: contain;
 }
 
@@ -380,7 +380,7 @@ main {
     }
 
     main {
-        margin-top: 7rem;
+        padding-top: 2rem;
     }
 
     .usuarios-grid {
