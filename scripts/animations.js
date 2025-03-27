@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '10px'
     });
 
-    // Target the images with the queVeranTusClientes_img classes
-    const clientesImages = document.querySelectorAll('.queVeranTusClientes_img_1, .queVeranTusClientes_img_2');
+    // Target the images with the queVeranTusClientes_img classes and nuevoCliente-phone
+    const clientesImages = document.querySelectorAll('.queVeranTusClientes_img_1, .queVeranTusClientes_img_2, .dinamicas-phone');
 
     // If images exist, observe them
     if (clientesImages.length > 0) {
