@@ -446,6 +446,47 @@ main {
     overflow: hidden;
 }
 
+.cumpleanos-person {
+    width: 25%;
+    margin-right: auto;
+    margin-left: 0;
+    float: left;
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.descuento-person {
+    width: 50%;
+    margin-right: auto;
+    margin-right: 0;
+    float: right;
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.puntos-person {
+    width: 70%;
+    margin-right: auto;
+    margin-left: 0;
+    float: left;
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.alianzas-person {
+    width: 100%;
+    margin-right: auto;
+    margin-right: 0;
+    padding-right: 1rem;
+    float: right;
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow: hidden;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     main {
@@ -609,7 +650,17 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
-}
+    }
+
+    .dinamicas-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .dinamicas-icon {
+        margin-right: 0.5rem;
+    }
 
     .dinamicas-images {
         flex-direction: column;
@@ -629,14 +680,16 @@ main {
         width: 80%;
     }
 
-    .dinamicas-header {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+    .cumpleanos-person {
+        width: 40%;
     }
 
-    .dinamicas-icon {
-        margin-right: 0.5rem;
+    .descuento-person {
+        width: 80%;
+    }
+
+    .puntos-person {
+        width: 100%;
     }
 
 }
