@@ -339,31 +339,33 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0rem;
+    margin: 2rem 10rem;
     padding: 2rem 0;
     position: relative;
+    box-sizing: border-box;
 }
 
 .dinamicas::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 50%;
-    height: 2px;
-    background-color: #333;
+    height: 10px;
+    background-image: url('/assets/negocios/linea.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     margin-top: 0rem;
+    transform: translateX(-50%);
 }
 
+
 .dinamicas-content {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     padding: 1rem 0rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    box-sizing: border-box;
 }
 
 .dinamicas-header {
@@ -396,6 +398,7 @@ main {
     text-align: left;
 }
 
+
 .dinamicas > div:not(.dinamicas-content) {
     width: 45%;
     display: flex;
@@ -411,8 +414,17 @@ main {
 }
 
 .dinamicas-phone {
-    width: 50%;
-    /* max-width: 100%; */
+    width: 60%;
+    display: block;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dinamicas-phone-alianzas {
+    width: 60%;
     display: block;
     opacity: 0;
     transform: translateY(30px);
@@ -646,6 +658,11 @@ main {
         margin: 1rem auto;
     }
 
+    /* Para la sección de alianzas en móvil, cambiamos el orden de los elementos */
+    #alianzas {
+        flex-direction: column;
+    }
+
     .dinamicas-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -671,6 +688,11 @@ main {
         width: 120%;
     }
 
+    .dinamicas-phone-alianzas {
+        width: 70%;
+    }
+
+
     .dinamicas-person {
         width: 45%;
         margin: 0;
@@ -689,6 +711,31 @@ main {
     }
 
     .puntos-person {
+        width: 100%;
+    }
+
+    .alianzas-person {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 0;
+        float: none;
+        display: block;
+        order: 2;
+    }
+    
+    /* Aseguramos que la imagen de alianzas aparezca debajo del contenido en móviles */
+    #alianzas {
+        flex-direction: column;
+    }
+    
+    #alianzas > div:first-child {
+        order: 2; /* La imagen va después del contenido */
+        width: 100%;
+        margin-top: -4rem;
+    }
+    
+    #alianzas .dinamicas-content {
+        order: 1; /* El contenido va primero */
         width: 100%;
     }
 

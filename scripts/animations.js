@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Target the images with the queVeranTusClientes_img classes and nuevoCliente-phone
-    const clientesImages = document.querySelectorAll('.queVeranTusClientes_img_1, .queVeranTusClientes_img_2, .dinamicas-phone');
+    const clientesImages = document.querySelectorAll('.queVeranTusClientes_img_1, .queVeranTusClientes_img_2, .dinamicas-phone, .dinamicas-phone-alianzas');
 
     // If images exist, observe them
     if (clientesImages.length > 0) {
