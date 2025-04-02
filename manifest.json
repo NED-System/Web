@@ -1,0 +1,16 @@
+{
+  "name": "NED - Disfruta el poder de la Lealtad",
+  "short_name": "NED",
+  "description": "NED - Plataforma de lealtad para negocios y consumidores",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C4227D",
+  "icons": [
+    {
+      "src": "assets/logo/Logo NED ico.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
