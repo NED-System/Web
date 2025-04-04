@@ -71,6 +71,7 @@ main {
     position: relative;
     padding-left: 1.5rem;
     margin: 1rem;
+    text-align: left;
 }
 
 .beneficiosConsumidores li::before {
@@ -265,17 +266,195 @@ main {
     font-size: clamp(1.2rem, 1.2vw, 1.4rem);
     text-align: left;
 }
+
+.unamejor_experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 2rem;
+    background-color: var(--amarillo);
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.unamejor_experiencia_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.unamejor_experiencia_texto_h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 2.7rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+#texto_mejor_experiencia {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 2.7rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Planes de precios section */
+.planes_precios {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.plan_card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+}
+
+.plan_header {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.plan_start .plan_header {
+    background-color: var(--magenta);
+}
+
+.plan_pro .plan_header {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+}
+
+.plan_premium .plan_header {
+    background-color: var(--magenta);
+}
+
+.plan_content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+}
+
+.plan_price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.plan_price .currency {
+    font-size: 1.5rem;
+}
+
+.plan_price .period {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.plan_features {
+    width: 100%;
+    text-align: left;
+}
+
+.plan_features h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.plan_features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan_features li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+.plan_features li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+
+.plan_button {
+    background-color: var(--magenta);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.plan_button:hover {
+    background-color: #a01b68;
+}
+
+.plan_pro .plan_button {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+}
+
+.plan_pro .plan_button:hover {
+    background-color: #e6c000;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .beneficiosConsumidores {
         flex-direction: column;
         margin: 2rem auto;
+        align-items: center;
     }
     
     .beneficiosConsumidores-content, 
     .beneficiosConsumidores_video {
         width: 80%;
         margin-bottom: 0rem;
+        text-align: center;
     }
     
     .video-container {
@@ -300,7 +479,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: right;
+        text-align: center;
     }
     
     .gana_con_cada_dinamica_texto_h2 {
@@ -309,16 +488,14 @@ main {
         font-weight: 900;
         font-size: clamp(1.8rem, 4vw, 2rem);
         line-height: 1.2;
-        text-align: right;
+        text-align: center;
     }
     
     .gana_con_cada_dinamica_texto_p {
         margin-bottom: 1rem;
         font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: right;
+        text-align: center;
     }
-
-    
 
     .negocios_preferidos_negocios_img {
         width: 120%;
@@ -330,22 +507,63 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
     }
     
     .negocios_preferidos_texto_h2 {
+        margin-bottom: 0rem;
+        width: 100%;
+        font-weight: 900;
+        font-size: clamp(1.8rem, 4vw, 2rem);
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .negocios_preferidos_texto_p {
+        margin-bottom: 0rem;
+        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+        text-align: center;
+    }
+
+    .unamejor_experiencia {
+        flex-direction: column;
+        margin: 1rem auto;
+        align-items: center;
+    }
+    
+   #video_mejor_experiencia {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .unamejor_experiencia_texto_h2 {
         margin-bottom: 1rem;
         width: 100%;
         font-weight: 900;
         font-size: clamp(1.8rem, 4vw, 2rem);
         line-height: 1.2;
-        text-align: left;
-    }
-    
-    ..negocios_preferidos_texto_p {
-        margin-bottom: 1rem;
-        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: left;
+        text-align: center;
     }
 
+    #texto_mejor_experiencia {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-weight: 400;
+        font-size: clamp(1.5rem, 3vw, 1rem);
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .planes_precios {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .plan_card {
+        width: 100%;
+        max-width: 100%;
+    }
 }

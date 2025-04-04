@@ -17,7 +17,7 @@ headerTemplate.innerHTML = `
                 <li role="none"><a href="index.html#inicio" role="menuitem">Inicio</a></li>
                 <li role="none"><a href="/consumidores.html" role="menuitem">Consumidores</a></li>
                 <li role="none"><a href="/negocios.html" role="menuitem">Negocios</a></li>
-                <li role="none"><a href="index.html#contacto" role="menuitem">Planes</a></li>
+                <li role="none"><a href="/planes.html" role="menuitem">Planes</a></li>
             </ul>
         </nav>
     </header>
