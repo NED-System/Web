@@ -160,6 +160,111 @@ main {
     height: auto;
 }
 
+/* gana con cada dinamica section */
+.gana_con_cada_dinamica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 2rem;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gana_con_cada_dinamica.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.gana_con_cada_dinamica_dinamicas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gana_con_cada_dinamica_dinamicas_img {
+    width: 70%;
+    /* max-width: 300px; */
+}
+
+.gana_con_cada_dinamica_texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+}
+
+.gana_con_cada_dinamica_texto_h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 2.7rem);
+    line-height: 1.2;
+    text-align: right;
+}
+
+.gana_con_cada_dinamica_texto_p {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    text-align: right;
+}
+
+/* negocios preferidos section */
+.negocios_preferidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 2rem;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.negocios_preferidos.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.negocios_preferidos_negocios {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.negocios_preferidos_negocios_img {
+    width: 70%;
+    /* max-width: 300px; */
+}
+
+.negocios_preferidos_texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.negocios_preferidos_texto_h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 2.7rem);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.negocios_preferidos_texto_p {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    text-align: left;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     .beneficiosConsumidores {
@@ -178,15 +283,69 @@ main {
         height: auto;
         max-width: 100%;
     }
-    
-    /* .fisico_digital {
-        flex-direction: column;
-        margin: 2rem 1rem;
-    }*/
-    
+
     .fisico_digital_celular_img,
     .fisico_digital_img {
         width: 80%;
         max-width: 250px;
     }
+
+    .gana_con_cada_dinamica_dinamicas_img {
+        width: 120%;
+        /* max-width: 300px; */
+    }
+    
+    .gana_con_cada_dinamica_texto {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+    }
+    
+    .gana_con_cada_dinamica_texto_h2 {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-weight: 900;
+        font-size: clamp(1.8rem, 4vw, 2rem);
+        line-height: 1.2;
+        text-align: right;
+    }
+    
+    .gana_con_cada_dinamica_texto_p {
+        margin-bottom: 1rem;
+        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+        text-align: right;
+    }
+
+    
+
+    .negocios_preferidos_negocios_img {
+        width: 120%;
+        /* max-width: 300px; */
+    }
+    
+    .negocios_preferidos_texto {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .negocios_preferidos_texto_h2 {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-weight: 900;
+        font-size: clamp(1.8rem, 4vw, 2rem);
+        line-height: 1.2;
+        text-align: left;
+    }
+    
+    ..negocios_preferidos_texto_p {
+        margin-bottom: 1rem;
+        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+        text-align: left;
+    }
+
 }

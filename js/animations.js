@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Seleccionar todos los elementos que queremos animar
-    const animatedElements = document.querySelectorAll('.fisico_digital');
+    const animatedElements = document.querySelectorAll('.fisico_digital, .gana_con_cada_dinamica, .negocios_preferidos');
     
     // Observar cada elemento
     animatedElements.forEach(element => {
