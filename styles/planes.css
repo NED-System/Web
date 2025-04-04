@@ -1,0 +1,165 @@
+/* Estilos para la sección de planes de precios */
+.planes_precios {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0; /* Eliminamos el espacio entre tarjetas para que se vean juntas como en la imagen */
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.plan_card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    margin: 0; /* Ajuste para que las tarjetas se vean juntas */
+    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+}
+
+.plan_header {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+}
+
+.plan_start .plan_header {
+    background-color: var(--magenta);
+}
+
+.plan_pro .plan_header {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+}
+
+.plan_premium .plan_header {
+    background-color: var(--magenta);
+}
+
+.plan_content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+    border: 1px solid #e0e0e0; /* Borde sutil para separar el contenido */
+    border-top: none; /* Sin borde en la parte superior */
+    background-color: white;
+}
+
+.plan_price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.plan_price .currency {
+    font-size: 1.5rem;
+    vertical-align: super;
+    position: relative;
+    top: -0.5rem;
+}
+
+.plan_price .period {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.plan_features {
+    width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.plan_features p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.plan_features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.plan_features li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.plan_features li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+
+.plan_button {
+    background-color: var(--magenta);
+    color: white;
+    border: none;
+    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    width: auto;
+    min-width: 150px;
+    text-align: center;
+}
+
+.plan_button:hover {
+    background-color: #a01b68;
+}
+
+.plan_pro .plan_button {
+    background-color: var(--magenta); /* Todos los botones son magenta según la imagen */
+    color: white;
+}
+
+.plan_pro .plan_button:hover {
+    background-color: #a01b68;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .planes_precios {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .plan_card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

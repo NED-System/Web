@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Función para crear efecto de máquina de escribir
+    function typewriterEffect(element, text, speed = 120) {
+        // Guardar el texto original
+        const originalText = text;
+        // Vaciar el elemento
+        element.textContent = '';
+        
+        let i = 0;
+        // Función para añadir caracteres uno por uno
+        function addCharacter() {
+            if (i < originalText.length) {
+                element.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(addCharacter, speed);
+            }
+        }
+        
+        // Iniciar la animación
+        addCharacter();
+    }
+    
     // Create an Intersection Observer instance for zoom animation
     const zoomObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -56,5 +77,35 @@ document.addEventListener('DOMContentLoaded', function() {
         clientesImages.forEach(image => {
             slideUpObserver.observe(image);
         });
+    }
+    
+    // Create an Intersection Observer instance for typewriter effect
+    const typewriterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // When the text element comes into view
+            if (entry.isIntersecting) {
+                // Get the original text and apply typewriter effect
+                const originalText = entry.target.getAttribute('data-text') || entry.target.textContent;
+                // Store the original text if not already stored
+                if (!entry.target.getAttribute('data-text')) {
+                    entry.target.setAttribute('data-text', originalText);
+                }
+                // Apply typewriter effect
+                typewriterEffect(entry.target, originalText);
+                // Stop observing after triggering the animation once
+                typewriterObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.7, // Trigger when 70% of the element is visible
+        rootMargin: '0px'
+    });
+    
+    // Target the text element with ID 'texto_mejor_experiencia'
+    const typewriterText = document.getElementById('texto_mejor_experiencia');
+    
+    // If the text element exists, observe it
+    if (typewriterText) {
+        typewriterObserver.observe(typewriterText);
     }
 });
