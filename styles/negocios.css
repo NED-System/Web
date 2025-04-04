@@ -6,14 +6,14 @@ main {
 /* Negocios page specific styles */
 .clientesTeRecomiendan {
     width: 100%;
+     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 2;
-    margin: 5rem auto 1rem auto;
+    margin: 4rem auto 1rem auto;
     padding: 0rem;
-    gap: 2rem;
-    /* max-width: 1200px; */
+    gap: 1rem;
 }
 
 .clientesTeRecomiendan-content {

@@ -1,0 +1,192 @@
+/* Consumidores page specific styles */
+main {
+    padding-top: 2rem;
+    margin: 2rem;
+    box-sizing: border-box;
+}
+
+/* Beneficios Consumidores section */
+.beneficiosConsumidores {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 1rem auto;
+    flex-grow: 2;
+    gap: 1rem;
+}
+
+.beneficiosConsumidores-content {
+    flex: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficiosConsumidores_video {
+    flex: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    border-radius: 30px;
+    box-shadow: 10px 15px 101px -42px rgba(0,0,0,0.58);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+    aspect-ratio: 16/9;
+}
+
+.beneficiosConsumidores h2 {
+    font-weight: 900;
+    font-size: clamp(3.5rem, 3vw, 4rem);
+    line-height: 1.1;
+}
+
+.beneficiosConsumidores__mensaje {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.beneficiosConsumidores .highlight {
+    color: #378ec8;
+    font-weight: 900;
+}
+
+.beneficiosConsumidores ul {
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+}
+
+.beneficiosConsumidores li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 1rem;
+}
+
+.beneficiosConsumidores li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--magenta);
+    font-weight: bold;
+}
+
+/* Mensaje Gratis section */
+.mensajeGratis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--amarillo);
+    margin: 0 2rem;
+    padding: 1.5rem 0;
+}
+
+.mensajeGratis h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--text-negro);
+    font-weight: 800;
+}
+
+.highlight_magenta {
+    color: var(--magenta);
+    font-weight: 800;
+}
+
+/* Fisico Digital section */
+.fisico_digital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 2rem;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fisico_digital.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fisico_digital_celular {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fisico_digital_celular_img {
+    width: 50%;
+    max-width: 300px;
+}
+
+.fisico_digital_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fisico_digital_content_p {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+}
+
+.fisico_digital_img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .beneficiosConsumidores {
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    
+    .beneficiosConsumidores-content, 
+    .beneficiosConsumidores_video {
+        width: 80%;
+        margin-bottom: 0rem;
+    }
+    
+    .video-container {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    /* .fisico_digital {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }*/
+    
+    .fisico_digital_celular_img,
+    .fisico_digital_img {
+        width: 80%;
+        max-width: 250px;
+    }
+}

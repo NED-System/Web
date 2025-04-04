@@ -15,7 +15,7 @@ headerTemplate.innerHTML = `
             </button>
             <ul class="nav_links" id="nav-menu" role="menu">
                 <li role="none"><a href="index.html#inicio" role="menuitem">Inicio</a></li>
-                <li role="none"><a href="index.html#programa" role="menuitem">Consumidores</a></li>
+                <li role="none"><a href="/consumidores.html" role="menuitem">Consumidores</a></li>
                 <li role="none"><a href="/negocios.html" role="menuitem">Negocios</a></li>
                 <li role="none"><a href="index.html#contacto" role="menuitem">Planes</a></li>
             </ul>
