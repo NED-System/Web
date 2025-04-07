@@ -1,3 +1,25 @@
+main {
+    padding-top: 5rem;
+    margin: 2rem;
+    box-sizing: border-box;
+}
+
+.inicio_planes_h2 {
+    font-size: clamp(2rem, 1vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-negro);
+}
+
+.inicio_planes_p {
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-negro);
+}
+
 /* Estilos para la sección de planes de precios */
 .planes_precios {
     display: flex;
@@ -7,6 +29,89 @@
     margin: 4rem auto;
     max-width: 1200px;
     padding: 0 2rem;
+}
+
+/* Estilos para la sección de características */
+.carasteristicas {
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.caracteristicas_titulo {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-negro);
+    text-align: center;
+}
+
+.caracteristicas_subtitulo {
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--text-negro);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caracteristicas_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.caracteristica_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.caracteristica_icono {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristica_icono img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.caracteristica_nombre {
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-negro);
+}
+
+.caracteristica_descripcion {
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    line-height: 1.4;
+    color: var(--text-negro);
+    text-align: center;
+}
+
+/* Responsive para la sección de características */
+@media (max-width: 992px) {
+    .caracteristicas_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .caracteristicas_grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .plan_card {
@@ -20,15 +125,17 @@
     max-width: 350px;
     width: 100%;
     margin: 0; /* Ajuste para que las tarjetas se vean juntas */
-    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+    border-radius: 40px; /* Sin bordes redondeados para coincidir con la imagen */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .plan_header {
     width: 100%;
     padding: 1.5rem;
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: clamp(2rem, 1vw, 2rem);
+    font-weight: 800;
     color: white;
     border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
 }
@@ -114,7 +221,7 @@
 }
 
 .plan_features li::before {
-    content: "–";
+    content: ">";
     position: absolute;
     left: 0;
 }
@@ -123,13 +230,12 @@
     background-color: var(--magenta);
     color: white;
     border: none;
-    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+    border-radius: 30px; /* Sin bordes redondeados para coincidir con la imagen */
     padding: 0.8rem 2rem;
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-transform: uppercase;
     margin-top: auto; /* Empuja el botón hacia abajo */
     width: auto;
     min-width: 150px;
@@ -137,7 +243,7 @@
 }
 
 .plan_button:hover {
-    background-color: #a01b68;
+    background-color: var(--text-negro);
 }
 
 .plan_pro .plan_button {
@@ -146,7 +252,16 @@
 }
 
 .plan_pro .plan_button:hover {
-    background-color: #a01b68;
+    background-color: var(--text-negro);
+}
+
+/* Estilos para destacar la tarjeta Pro */
+.plan_card.plan_pro {
+    margin-top: -20px; /* Hace que la tarjeta sobresalga hacia arriba */
+    transform: translateY(-10px); /* Eleva ligeramente la tarjeta */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    z-index: 2; /* Asegura que se muestre por encima de las otras tarjetas */
+    border: 2px solid var(--amarillo); /* Borde del color del encabezado */
 }
 
 /* Responsive styles */
@@ -161,5 +276,12 @@
     .plan_card {
         width: 100%;
         max-width: 100%;
+    }
+    
+    /* Mantener el destacado en móvil */
+    .plan_card.plan_pro {
+        margin-top: 0; /* Elimina el margen negativo en móvil */
+        transform: scale(1.05); /* Ligeramente más grande en móvil */
+        margin-bottom: 2rem; /* Espacio adicional debajo en móvil */
     }
 }
