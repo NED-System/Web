@@ -4,8 +4,8 @@ headerTemplate.innerHTML = `
     <header class="header">
         <nav class="nav" aria-label="Navegación principal">
             <div class="logo">
-                <a href="index.html#inicio" aria-label="Inicio">
-                    <img src="assets/logo/Logo NED Copy.png" alt="NED logo" width="90" height="90">
+                <a href="/index.html#inicio" aria-label="Inicio">
+                    <img src="/assets/logo/Logo NED Copy.png" alt="NED logo" width="90" height="90">
                 </a>
             </div>
             <button class="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu">
@@ -14,10 +14,10 @@ headerTemplate.innerHTML = `
                 <span></span>
             </button>
             <ul class="nav_links" id="nav-menu" role="menu">
-                <li role="none"><a href="index.html#inicio" role="menuitem">Inicio</a></li>
-                <li role="none"><a href="/consumidores.html" role="menuitem">Consumidores</a></li>
-                <li role="none"><a href="/negocios.html" role="menuitem">Negocios</a></li>
-                <li role="none"><a href="/planes.html" role="menuitem">Planes</a></li>
+                <li role="none"><a href="/index.html#inicio" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="/pages/consumidores.html" role="menuitem">Consumidores</a></li>
+                <li role="none"><a href="/pages/negocios.html" role="menuitem">Negocios</a></li>
+                <li role="none"><a href="/pages/planes.html" role="menuitem">Planes</a></li>
             </ul>
         </nav>
     </header>

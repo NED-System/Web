@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NED - Disfruta el poder la Lealtad">
+    <meta name="description" content="NED - Disfruta el poder de la Lealtad">
     <meta name="theme-color" content="#C4227D">
     <link rel="manifest" href="/manifest.json">
     <title>NED - Disfruta el poder de la Lealtad</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="/assets/logo/Logo NED ico.png">
     <!-- Include component scripts -->
-    <script src="components/header.js" defer></script>
-    <script src="components/footer.js" defer></script>
-    <script src="scripts/register-sw.js" defer></script>
+    <script src="/components/header.js" defer></script>
+    <script src="/components/footer.js" defer></script>
+    <script src="/scripts/animations.js" defer></script>
+    <script src="/scripts/register-sw.js" defer></script>
 </head>
 <body>
     <!-- Header placeholder -->
@@ -25,18 +26,18 @@
         <section class="usuarios" id="usuarios" aria-labelledby="usuarios-title">
             <div class="usuarios-grid">
                 <div class="usuarios-card">
-                    <h3 class="h3__usuarios" id="consumidores-title"><a href="/negocios.html">SOY CONSUMIDOR</a></h3>
+                    <h3 class="h3__usuarios" id="consumidores-title"><a href="/pages/consumidores.html">SOY CONSUMIDOR</a></h3>
                     <div class="icon-container">
-                        <a href="/negocios.html"><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy"></a>
+                        <a href="/pages/consumidores.html"><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy"></a>
                     </div>
-                    <a href="/negocios.html"><img class="img__seccion" id="ima__consumidor" src="assets/inicio/Consumidores.png" alt="Ilustración de consumidores" width="300" height="300" loading="lazy"></a>
+                    <a href="/pages/consumidores.html"><img class="img__seccion" id="ima__consumidor" src="/assets/inicio/Consumidores.png" alt="Ilustración de consumidores" width="300" height="300" loading="lazy"></a>
                 </div>
                 <div class="usuarios-card">
-                    <h3 class="h3__usuarios" id="negocios_title"><a href="/negocios.html">SOY NEGOCIO</a></h3>
+                    <h3 class="h3__usuarios" id="negocios_title"><a href="/pages/negocios.html">SOY NEGOCIO</a></h3>
                     <div class="icon-container">
-                        <a href="/negocios.html"><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy"></a>
+                        <a href="/pages/negocios.html"><img class="flecha__usuarios" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="flecha hacia abajo" width="50" height="50" loading="lazy"></a>
                     </div>
-                    <a href="/negocios.html"><img class="img__seccion" id="ima__negocio" src="assets/inicio/Negocios.png" alt="Ilustración de negocios" width="300" height="300" loading="lazy"></a>
+                    <a href="/pages/negocios.html"><img class="img__seccion" id="ima__negocio" src="/assets/inicio/Negocios.png" alt="Ilustración de negocios" width="300" height="300" loading="lazy"></a>
                 </div>
             </div>
         </section>
@@ -45,7 +46,7 @@
             <div class="lista__espera__div">
                 <h3 id="lista-espera-title">Únete a nuestra lista de espera</h3>
                 <p>Pronto llegará una app en la que negocios y clientes van a crecer con el poder de la Lealtad.</p>
-                <button class="unirme_button" aria-label="Unirme a la lista de espera">UNIRME</button>
+                <a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933?pvs=105" target="_blank"><button class="unirme_button" aria-label="Descargar la aplicación gratis">Unirme</button></a>
             </div>
         </section>
     </main>

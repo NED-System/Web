@@ -3,8 +3,10 @@ const CACHE_NAME = 'ned-cache-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
-  '/negocios.html',
-  '/offline.html',
+  '/pages/negocios.html',
+  '/pages/consumidores.html',
+  '/pages/planes.html',
+  '/pages/offline.html',
   '/styles/style.css',
   '/styles/negocios.css',
   '/scripts/animations.js',
@@ -94,7 +96,7 @@ self.addEventListener('fetch', (event) => {
         
         // Si es una página HTML, mostrar la página offline
         if (event.request.headers.get('accept').includes('text/html')) {
-          return caches.match('/offline.html');
+          return caches.match('/pages/offline.html');
         }
       })
   );
