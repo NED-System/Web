@@ -6,9 +6,9 @@
     <meta name="description" content="NED - Página sin conexión">
     <meta name="theme-color" content="#C4227D">
     <title>NED - Sin conexión</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="icon" href="/assets/logo/Logo_NED_ico.png">
-    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../assets/logo/Logo_NED_ico.png">
+    <link rel="apple-touch-icon" href="../assets/logo/Logo_NED_ico.png">
     <style>
         .offline-container {
             display: flex;
@@ -54,7 +54,7 @@
 </head>
 <body>
     <main class="offline-container">
-        <img src="/assets/logo/logoned.png" alt="NED Logo" class="offline-logo" loading="eager">
+        <img src="../assets/logo/LogoNED.png" alt="NED Logo" class="offline-logo" loading="eager">
         <h1 class="offline-title">Sin conexión a Internet</h1>
         <p class="offline-message">Parece que no tienes conexión a Internet en este momento. Algunas funciones pueden no estar disponibles hasta que te vuelvas a conectar.</p>
         <p class="offline-message">No te preocupes, gracias a nuestro sistema de caché, puedes seguir navegando por algunas partes del sitio que ya has visitado anteriormente.</p>
@@ -66,7 +66,7 @@
         function checkConnection() {
             if (navigator.onLine) {
                 // Si hay conexión, redirigir a la página principal
-                window.location.href = '/';
+                window.location.href = '../index.html';
             }
         }
         
