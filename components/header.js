@@ -5,7 +5,7 @@ headerTemplate.innerHTML = `
         <nav class="nav" aria-label="Navegación principal">
             <div class="logo">
                 <a href="/index.html#inicio" aria-label="Inicio">
-                    <img src="/assets/logo/Logo NED Copy.png" alt="NED logo" width="90" height="90">
+                    <img src="/assets/logo/LogoNED.png" alt="NED logo" width="90" height="90">
                 </a>
             </div>
             <button class="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu">
