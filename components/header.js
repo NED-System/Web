@@ -5,17 +5,20 @@ const headerTemplate = document.createElement('template');
 function getBasePath() {
     // Obtener la ruta actual
     const currentPath = window.location.pathname;
-    
+
+    // Normalizar la ruta para evitar problemas con servidores
+    const normalizedPath = currentPath.endsWith('/') ? currentPath : currentPath + '/';
+
     // Si estamos en la raíz o en index.html
-    if (currentPath === '/' || currentPath.endsWith('index.html')) {
+    if (normalizedPath === '/' || normalizedPath.endsWith('/index.html')) {
         return './';
     }
-    
+
     // Si estamos en una subcarpeta (como /pages/)
-    if (currentPath.includes('/pages/')) {
-        return '../';
+    if (normalizedPath.includes('/pages/')) {
+        return normalizedPath.replace(/\/pages\/.*$/, '/');
     }
-    
+
     // Por defecto, usar ruta relativa
     return './';
 }
