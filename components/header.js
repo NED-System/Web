@@ -27,7 +27,7 @@ function loadHeader() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
         headerPlaceholder.appendChild(headerTemplate.content.cloneNode(true));
-        
+
         // Initialize hamburger menu functionality
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav_links');
