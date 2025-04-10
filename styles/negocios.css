@@ -578,8 +578,8 @@ main {
 /* Media Queries */
 @media (max-width: 768px) {
     main {
-    padding-top: 1rem;
-    margin: 5rem 3rem 0 3rem;
+    padding-top: 4rem;
+    margin: 0rem 2rem;
     }
     
     /* Estilos responsivos para mensaje_final_pag */
@@ -800,20 +800,20 @@ main {
 
 
     .dinamicas-person {
-        width: 45%;
+        width: 80%;
         margin: 0;
     }
 
     .referido-person {
-        width: 80%;
+        width: 100%;
     }
 
     .cumpleanos-person {
-        width: 40%;
+        width: 70%;
     }
 
     .descuento-person {
-        width: 80%;
+        width: 100%;
     }
 
     .puntos-person {

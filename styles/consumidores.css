@@ -25,6 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .beneficiosConsumidores_video {
@@ -51,6 +52,7 @@ main {
     font-weight: 900;
     font-size: clamp(3.5rem, 3vw, 4rem);
     line-height: 1.1;
+    text-wrap: normal;
 }
 
 .beneficiosConsumidores__mensaje {
@@ -93,7 +95,7 @@ main {
     font-size: 1.2rem;
     text-align: center;
     background-color: var(--amarillo);
-    margin: 0 2rem;
+    margin: 0 0;
     padding: 1.5rem 0;
 }
 
@@ -120,9 +122,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem 2rem;
-    max-width: 1200px;
+    padding-top: 2rem;
+    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -131,6 +134,7 @@ main {
 .fisico_digital.visible {
     opacity: 1;
     transform: translateX(0);
+    margin: 0;
 }
 
 .fisico_digital_celular {
@@ -142,7 +146,7 @@ main {
 
 .fisico_digital_celular_img {
     width: 50%;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 .fisico_digital_content {
@@ -170,7 +174,7 @@ main {
     align-items: center;
     gap: 2rem;
     margin: 2rem 2rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -223,7 +227,7 @@ main {
     align-items: center;
     gap: 2rem;
     margin: 2rem 2rem;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -275,12 +279,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 1rem 2rem;
+    margin: 1rem 0rem;
     background-color: var(--amarillo);
     text-align: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 2rem auto;
+    /* max-width: 1200px; */
 }
 
 .unamejor_experiencia_texto {
@@ -314,141 +317,11 @@ main {
     text-align: center;
 }
 
-/* Planes de precios section */
-.planes_precios {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 2rem;
-    margin: 4rem auto;
-    max-width: 1200px;
-    padding: 0 2rem;
-}
-
-.plan_card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    width: 100%;
-}
-
-.plan_header {
-    width: 100%;
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-}
-
-.plan_start .plan_header {
-    background-color: var(--magenta);
-}
-
-.plan_pro .plan_header {
-    background-color: var(--amarillo);
-    color: var(--text-negro);
-}
-
-.plan_premium .plan_header {
-    background-color: var(--magenta);
-}
-
-.plan_content {
-    padding: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    flex-grow: 1;
-}
-
-.plan_price {
-    font-size: 3.5rem;
-    font-weight: 700;
-    display: flex;
-    align-items: baseline;
-    gap: 0.2rem;
-}
-
-.plan_price .currency {
-    font-size: 1.5rem;
-}
-
-.plan_price .period {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 0.5rem;
-}
-
-.plan_features {
-    width: 100%;
-    text-align: left;
-}
-
-.plan_features h3 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.plan_features ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.plan_features li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    position: relative;
-    font-size: 1rem;
-}
-
-.plan_features li::before {
-    content: "–";
-    position: absolute;
-    left: 0;
-}
-
-.plan_button {
-    background-color: var(--magenta);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-}
-
-.plan_button:hover {
-    background-color: #a01b68;
-}
-
-.plan_pro .plan_button {
-    background-color: var(--amarillo);
-    color: var(--text-negro);
-}
-
-.plan_pro .plan_button:hover {
-    background-color: #e6c000;
-}
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .beneficiosConsumidores {
         flex-direction: column;
-        padding: 1rem 0rem;
+        padding: 3rem 0rem;
         margin: 0 0rem;
         align-items: center;
     }
@@ -456,10 +329,15 @@ main {
     .beneficiosConsumidores-content {
         flex: 1;
         width: 100%;
-        margin-bottom: 0rem;
-        text-align: center;
+        margin: auto;
+        text-align: left;
     }
     
+    .beneficiosConsumidores h2 {
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
     
     .beneficiosConsumidores_video {
         flex: 1;
@@ -467,85 +345,105 @@ main {
         margin-bottom: 0rem;
         text-align: center;
     }
-    
+
+    li {
+        font-size: 1rem;
+    }
+
     .video-container {
         width: 100%;
         height: auto;
         max-width: 100%;
     }
 
-    .fisico_digital_celular_img,
-    .fisico_digital_img {
-        width: 100%;
+    .mensajeGratis {
+        display: flex;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .fisico_digital {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .fisico_digital_celular_img {
+        width: 30%;
         max-width: 100%;
     }
 
+
+    .fisico_digital_img {
+        width: 90%;
+    }
+
     .gana_con_cada_dinamica_dinamicas_img {
-        width: 120%;
-        /* max-width: 300px; */
+        width: 190%;
     }
     
     .gana_con_cada_dinamica_texto {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start; /* Justificar a la izquierda */
+        text-align: left; /* Justificar texto a la izquierda */
     }
     
     .gana_con_cada_dinamica_texto_h2 {
         margin-bottom: 1rem;
         width: 100%;
         font-weight: 900;
-        font-size: clamp(1.8rem, 4vw, 2rem);
+        font-size: 1.5rem; /* Ajustar tamaño de fuente */
         line-height: 1.2;
-        text-align: center;
+        text-align: left; /* Justificar texto a la izquierda */
     }
     
     .gana_con_cada_dinamica_texto_p {
         margin-bottom: 1rem;
-        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: center;
+        font-size: 1rem; /* Ajustar tamaño de fuente */
+        text-align: left; /* Justificar texto a la izquierda */
     }
 
     .negocios_preferidos_negocios_img {
-        width: 120%;
-        /* max-width: 300px; */
+        width: 150%; /* Ajustar ancho para dispositivos móviles */
     }
     
     .negocios_preferidos_texto {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start; /* Justificar a la izquierda */
+        text-align: left; /* Justificar texto a la izquierda */
     }
     
     .negocios_preferidos_texto_h2 {
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
         width: 100%;
         font-weight: 900;
-        font-size: clamp(1.8rem, 4vw, 2rem);
+        font-size: 1.5rem; /* Ajustar tamaño de fuente */
         line-height: 1.2;
-        text-align: center;
+        text-align: left; /* Justificar texto a la izquierda */
     }
     
     .negocios_preferidos_texto_p {
-        margin-bottom: 0rem;
-        font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1rem; /* Ajustar tamaño de fuente */
+        text-align: left; /* Justificar texto a la izquierda */
     }
 
     .unamejor_experiencia {
         flex-direction: column;
         margin: 1rem auto;
         align-items: center;
+        padding: 0.5rem;
     }
     
    #video_mejor_experiencia {
-        width: 80%;
+        width: 90%;
         height: auto;
-        max-width: 100%;
     }
 
     .unamejor_experiencia_texto_h2 {
@@ -561,20 +459,8 @@ main {
         margin-bottom: 1rem;
         width: 100%;
         font-weight: 400;
-        font-size: clamp(1.5rem, 3vw, 1rem);
+        font-size: clamp(1.3rem, 3vw, 1rem);
         line-height: 1.2;
         text-align: center;
-    }
-
-    .planes_precios {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin: 2rem 1rem;
-    }
-
-    .plan_card {
-        width: 100%;
-        max-width: 100%;
     }
 }
