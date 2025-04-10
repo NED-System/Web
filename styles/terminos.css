@@ -1,6 +1,6 @@
 main {
-    padding-top: 5rem;
-    margin: 5rem;
+    padding-top: 7rem;
+    margin: 0 3rem;
     box-sizing: border-box;
 }
 
@@ -13,8 +13,8 @@ h2 {
 }
 
 p {
-    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
-    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    font-weight: 300;
     margin-bottom: 2rem;
     text-align: left;
     color: var(--text-negro);
