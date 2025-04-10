@@ -173,7 +173,6 @@ main {
     align-items: center;
     gap: 2rem;
     margin: 2rem 2rem;
-    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -193,7 +192,7 @@ main {
 
 .gana_con_cada_dinamica_dinamicas_img {
     width: 70%;
-    /* max-width: 300px; */
+    max-width: 300px;
 }
 
 .gana_con_cada_dinamica_texto {
@@ -226,7 +225,6 @@ main {
     align-items: center;
     gap: 2rem;
     margin: 2rem 2rem;
-    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -246,7 +244,7 @@ main {
 
 .negocios_preferidos_negocios_img {
     width: 70%;
-    /* max-width: 300px; */
+    max-width: 300px;
 }
 
 .negocios_preferidos_texto {
@@ -395,58 +393,72 @@ main {
         height: auto;
     }
 
-    .gana_con_cada_dinamica_dinamicas_img {
-        width: 130%;
-    }
-    
-    .gana_con_cada_dinamica_texto {
-        flex: 1;
-        display: flex;
+    .gana_con_cada_dinamica {
         flex-direction: column;
-        align-items: flex-start; /* Justificar a la izquierda */
-        text-align: left; /* Justificar texto a la izquierda */
+        margin-top: 3rem;
+        gap: 2rem;
     }
-    
-    .gana_con_cada_dinamica_texto_h2 {
-        margin-bottom: 1rem;
+
+    .gana_con_cada_dinamica_dinamicas {
         width: 100%;
-        font-weight: 900;
-        font-size: 1.5rem; /* Ajustar tamaño de fuente */
-        line-height: 1.2;
-        text-align: left; /* Justificar texto a la izquierda */
+        order: 2;
     }
-    
+
+    .gana_con_cada_dinamica_dinamicas_img {
+        width: 80%;
+        max-width: 250px;
+        margin: 0;
+    }
+
+    .gana_con_cada_dinamica_texto {
+        width: 100%;
+        order: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    .gana_con_cada_dinamica_texto_h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .gana_con_cada_dinamica_texto_p {
-        margin-bottom: 1rem;
-        clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: left; /* Justificar texto a la izquierda */
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .negocios_preferidos {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .negocios_preferidos_negocios {
+        width: 100%;
+        order: 2;
     }
 
     .negocios_preferidos_negocios_img {
-        width: 120%; /* Ajustar ancho para dispositivos móviles */
+        width: 80%;
+        max-width: 250px;
     }
-    
+
     .negocios_preferidos_texto {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Justificar a la izquierda */
-        text-align: left; /* Justificar texto a la izquierda */
-    }
-    
-    .negocios_preferidos_texto_h2 {
-        margin-bottom: 1rem;
         width: 100%;
-        font-weight: 900;
-        font-size: 1.5rem; /* Ajustar tamaño de fuente */
-        line-height: 1.2;
-        text-align: left; /* Justificar texto a la izquierda */
+        order: 1;
+        text-align: center;
     }
-    
+
+    .negocios_preferidos_texto_h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .negocios_preferidos_texto_p {
-        margin-bottom: 1rem;
-        clamp(1.2rem, 1.2vw, 1.4rem);
-        text-align: left; /* Justificar texto a la izquierda */
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
 
     .unamejor_experiencia {
