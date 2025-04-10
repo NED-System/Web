@@ -1,7 +1,7 @@
 /* Consumidores page specific styles */
 main {
-    padding-top: 2rem;
-    margin: 2rem;
+    /* padding-top: 7rem; */
+    margin: 0rem 0rem;
     box-sizing: border-box;
 }
 
@@ -9,10 +9,12 @@ main {
 .beneficiosConsumidores {
     width: 100%;
     max-width: 1200px;
+    padding-top: 4rem;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto 1rem auto;
+    margin: 0rem 2rem;
     flex-grow: 2;
     gap: 1rem;
 }
@@ -446,27 +448,36 @@ main {
 @media (max-width: 768px) {
     .beneficiosConsumidores {
         flex-direction: column;
-        margin: 2rem auto;
+        padding: 1rem 0rem;
+        margin: 0 0rem;
         align-items: center;
     }
     
-    .beneficiosConsumidores-content, 
+    .beneficiosConsumidores-content {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 0rem;
+        text-align: center;
+    }
+    
+    
     .beneficiosConsumidores_video {
-        width: 80%;
+        flex: 1;
+        width: 100%;
         margin-bottom: 0rem;
         text-align: center;
     }
     
     .video-container {
-        width: 80%;
+        width: 100%;
         height: auto;
         max-width: 100%;
     }
 
     .fisico_digital_celular_img,
     .fisico_digital_img {
-        width: 80%;
-        max-width: 250px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .gana_con_cada_dinamica_dinamicas_img {

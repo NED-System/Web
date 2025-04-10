@@ -386,16 +386,18 @@ main {
     }
 
     .usuarios-grid {
+        flex: 1;
         display: flex;
-        gap: 1rem;
+        gap: 0rem;
         width: 100%;
     }
 
     #negocios_title {
-        padding: 0 1rem;
+        padding: 0 0rem;
     }
 
     .usuarios-card {
+        flex: 1;
         padding: 1rem;
         transition: transform 0.3s ease;
     }
@@ -424,7 +426,7 @@ main {
     }
 
     .footer_bottom {
-        margin: 1rem;
+        margin: 0rem;
     }
 
     .unirme_button {
