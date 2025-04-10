@@ -382,17 +382,17 @@ main {
     }
 
     main {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     .usuarios-grid {
-        display: flex;  
+        display: flex;
         gap: 1rem;
         width: 100%;
     }
 
     #negocios_title {
-        padding: 0 3rem;
+        padding: 0 1rem;
     }
 
     .usuarios-card {
@@ -406,7 +406,7 @@ main {
     }
 
     #ima__negocio {
-        width: 40%;
+        width: 70%;
         height: auto;
     }
 
