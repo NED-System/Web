@@ -125,7 +125,6 @@ main {
     gap: 1rem;
     margin: 2rem 2rem;
     padding-top: 2rem;
-    /* max-width: 1200px; */
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -146,10 +145,10 @@ main {
 
 .fisico_digital_celular_img {
     width: 50%;
-    /* max-width: 300px; */
+    max-width: 300px;
 }
 
-.fisico_digital_content {
+.fisico_digital_contzent {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -363,25 +362,41 @@ main {
     }
 
     .fisico_digital {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+        margin: 1rem;
+        padding-top: 1rem;
+        gap: 2rem;
+    }
+
+    .fisico_digital_celular {
+        width: 100%;
+        order: 1;
     }
 
     .fisico_digital_celular_img {
-        width: 30%;
-        max-width: 100%;
+        width: 70%;
+        max-width: 250px;
     }
 
+    .fisico_digital_contzent {
+        width: 100%;
+        order: 2;
+    }
+
+    .fisico_digital_content_p {
+        clamp(1.2rem, 1.2vw, 1.4rem);
+        margin-bottom: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
 
     .fisico_digital_img {
-        width: 90%;
+        max-width: 80%;
+        height: auto;
     }
 
     .gana_con_cada_dinamica_dinamicas_img {
-        width: 190%;
+        width: 130%;
     }
     
     .gana_con_cada_dinamica_texto {
@@ -403,12 +418,12 @@ main {
     
     .gana_con_cada_dinamica_texto_p {
         margin-bottom: 1rem;
-        font-size: 1rem; /* Ajustar tamaño de fuente */
+        clamp(1.2rem, 1.2vw, 1.4rem);
         text-align: left; /* Justificar texto a la izquierda */
     }
 
     .negocios_preferidos_negocios_img {
-        width: 150%; /* Ajustar ancho para dispositivos móviles */
+        width: 120%; /* Ajustar ancho para dispositivos móviles */
     }
     
     .negocios_preferidos_texto {
@@ -430,7 +445,7 @@ main {
     
     .negocios_preferidos_texto_p {
         margin-bottom: 1rem;
-        font-size: 1rem; /* Ajustar tamaño de fuente */
+        clamp(1.2rem, 1.2vw, 1.4rem);
         text-align: left; /* Justificar texto a la izquierda */
     }
 
