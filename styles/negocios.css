@@ -1,12 +1,12 @@
 main {
-    padding-top: 2rem;
-    margin: 2rem;
+    padding-top: 3rem;
+    margin: 0rem 2rem;
 }
 
 /* Negocios page specific styles */
 .clientesTeRecomiendan {
     width: 100%;
-     max-width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;

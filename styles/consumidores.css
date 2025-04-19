@@ -1,7 +1,7 @@
 /* Consumidores page specific styles */
 main {
-    /* padding-top: 7rem; */
-    margin: 0rem 0rem;
+    padding-top: 3rem;
+    margin: 0rem 0 0rem 0;
     box-sizing: border-box;
 }
 
@@ -9,12 +9,12 @@ main {
 .beneficiosConsumidores {
     width: 100%;
     max-width: 1200px;
-    padding-top: 4rem;
+    padding-top: 0rem;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 2rem;
+    margin: 4rem auto 1rem auto;
     flex-grow: 2;
     gap: 1rem;
 }
