@@ -7,7 +7,7 @@ main {
 p {
     font-family: 'Nunito', sans-serif;
     font-size: clamp(1.2rem, 1vw, 1rem);
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.1;
     text-align: justify;
     -webkit-text-size-adjust: none;
