@@ -27,6 +27,7 @@ footerTemplate.innerHTML = `
                     <ul>
                         <li><a href="/pages/terminosycondiciones.html">Términos & Condiciones de uso</a></li>
                         <li><a href="/pages/privacidad.html">Política de privacidad</a></li>
+                        <li><a href="/pages/eliminadatos.html">Política eliminación de datos</a></li>
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
                     </ul>
                 </div>
