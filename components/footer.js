@@ -37,7 +37,7 @@ footerTemplate.innerHTML = `
                 </div>
             </div>
             <div class="footer_bottom">
-                <p>&copy; 2025 NED System S.A.S. Todos los derechos reservados.</p>
+                <p>&copy; 2025 - NED System S.A.S. Todos los derechos reservados.</p>
             </div>
         </section>
     </footer>
