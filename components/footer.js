@@ -10,7 +10,7 @@ footerTemplate.innerHTML = `
                         <li><a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933?pvs=105" target="_blank" rel="noopener noreferrer">Únete a la lista de espera</a></li>
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
-                        <li><a href="https://linktr.ee/nedmobi" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
+                        <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
                     </ul>
                 </div>
                 <div class="footer_links">
