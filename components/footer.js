@@ -11,6 +11,7 @@ footerTemplate.innerHTML = `
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
                         <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app android</a></li>
                     </ul>
                 </div>
                 <div class="footer_links">
