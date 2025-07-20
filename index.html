@@ -1,81 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C4227D">
-    <meta name="description" content="NED - Disfruta el poder de la Lealtad">
-    <meta name="keywords" content="lealtad, fidelización, negocios, descuentos, sorteos, referidos, marketplace, plan-de-puntos">
-    <meta property="og:description" content="disfruta el poder de la lealtad">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C4227D" />
+    <meta name="description" content="NED - Disfruta el poder de la Lealtad" />
+    <meta
+      name="keywords"
+      content="lealtad, fidelización, negocios, descuentos, sorteos, referidos, marketplace, plan-de-puntos"
+    />
+    <meta property="og:description" content="disfruta el poder de la lealtad" />
     <!-- Meta etiquetas para evitar el caché -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <link rel="manifest" href="/manifest.json">
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="manifest" href="/manifest.json" />
     <title>NED - Disfruta el poder de la Lealtad</title>
-    <link rel="stylesheet" href="/styles/style.css?v=1.1">
-    <link rel="icon" href="/assets/logo/Logo_NED_ico.png">
-    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png">
+    <link rel="stylesheet" href="/styles/style.css?v=1.1" />
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
     <!-- Brevo Conversations {literal} -->
-<script>
-    (function(d, w, c) {
-        w.BrevoConversationsID = '6400fe62de13f029ac4c064c';
-        w[c] = w[c] || function() {
+    <script>
+      (function (d, w, c) {
+        w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+        w[c] =
+          w[c] ||
+          function () {
             (w[c].q = w[c].q || []).push(arguments);
-        };
-        var s = d.createElement('script');
+          };
+        var s = d.createElement("script");
         s.async = true;
-        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
         if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
-</script>
-<!-- /Brevo Conversations {/literal} -->
+      })(document, window, "BrevoConversations");
+    </script>
+    <!-- /Brevo Conversations {/literal} -->
     <!-- Include component scripts -->
     <script src="/components/header.js" defer></script>
     <script src="/components/footer.js" defer></script>
     <script src="/scripts/animations.js" defer></script>
     <script src="/scripts/register-sw.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="poderL" aria-labelledby="poder_title">
-            <h2 id="poder_title">DISFRUTA EL PODER DE LA LEALTAD</h2>
-        </section>
-        <section class="usuarios" id="usuarios" aria-labelledby="usuarios-title">
-            <div class="usuarios-grid">
-                <div class="usuarios-card">
-                    <h3 class="h3__usuarios" id="consumidores-title"><a href="/pages/consumidores.html">SOY CONSUMIDOR</a></h3>
-                    <div class="icon-container">
-                        <a href="/pages/consumidores.html"><img class="flecha__usuarios" src="/assets/Inicio/icons8-expand-arrow-50.png" alt="flecha hacia abajo" width="50" height="50" loading="eager"></a>
-                    </div>
-                    <a href="/pages/consumidores.html"><img class="img__seccion" id="ima__consumidor" src="/assets/Inicio/consumidores-3.png" alt="Ilustración de consumidores" width="300" height="300" loading="eager"></a>
-                </div>
-                <div class="usuarios-card">
-                    <h3 class="h3__usuarios" id="negocios_title"><a href="/pages/negocios.html">SOY NEGOCIO</a></h3>
-                    <div class="icon-container">
-                        <a href="/pages/negocios.html"><img class="flecha__usuarios" src="/assets/Inicio/icons8-expand-arrow-50.png" alt="flecha hacia abajo" width="50" height="50" loading="eager"></a>
-                    </div>
-                    <a href="/pages/negocios.html"><img class="img__seccion" id="ima__negocio" src="/assets/Inicio/negocios-3.png" alt="Ilustración de negocios" ></a>
-                </div>
+      <section class="poderL" aria-labelledby="poder_title">
+        <h2 id="poder_title">DISFRUTA EL PODER DE LA LEALTAD</h2>
+      </section>
+      <section class="usuarios" id="usuarios" aria-labelledby="usuarios-title">
+        <div class="usuarios-grid">
+          <div class="usuarios-card">
+            <h3 class="h3__usuarios" id="consumidores-title">
+              <a href="/pages/consumidores.html">SOY CONSUMIDOR</a>
+            </h3>
+            <div class="icon-container">
+              <a href="/pages/consumidores.html"
+                ><img
+                  class="flecha__usuarios"
+                  src="/assets/Inicio/icons8-expand-arrow-50.png"
+                  alt="flecha hacia abajo"
+                  width="50"
+                  height="50"
+                  loading="eager"
+              /></a>
             </div>
-        </section>
+            <a href="/pages/consumidores.html"
+              ><img
+                class="img__seccion"
+                id="ima__consumidor"
+                src="/assets/Inicio/consumidores-3.png"
+                alt="Ilustración de consumidores"
+                width="300"
+                height="300"
+                loading="eager"
+            /></a>
+          </div>
+          <div class="usuarios-card">
+            <h3 class="h3__usuarios" id="negocios_title">
+              <a href="/pages/negocios.html">SOY NEGOCIO</a>
+            </h3>
+            <div class="icon-container">
+              <a href="/pages/negocios.html"
+                ><img
+                  class="flecha__usuarios"
+                  src="/assets/Inicio/icons8-expand-arrow-50.png"
+                  alt="flecha hacia abajo"
+                  width="50"
+                  height="50"
+                  loading="eager"
+              /></a>
+            </div>
+            <a href="/pages/negocios.html"
+              ><img
+                class="img__seccion"
+                id="ima__negocio"
+                src="/assets/Inicio/negocios-3.png"
+                alt="Ilustración de negocios"
+            /></a>
+          </div>
+        </div>
+      </section>
 
-        <section class="lista_espera" aria-labelledby="lista-espera-title">
-            <div class="lista__espera__div">
-                <h3 id="lista-espera-title">GANA Y CRECE CON EL PODER DE LA LEALTAD</h3>
-                <p>Disponible para Android, proximamente en iOS.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener"><button class="unirme_button" aria-label="Descargar la aplicación gratis" >Descarga Android</button></a>
-            </div>
-        </section>
+      <section class="lista_espera" aria-labelledby="lista-espera-title">
+        <div class="lista__espera__div">
+          <h3 id="lista-espera-title">
+            GANA Y CRECE CON EL PODER DE LA LEALTAD
+          </h3>
+          <p>Disponible para Android, proximamente en iOS.</p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.nedsystem.movil"
+            target="_blank"
+            rel="noopener"
+            style="display: flex; justify-content: center"
+            ><button
+              class="unirme_button"
+              aria-label="Descargar la aplicación gratis"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              Descarga
+              <img
+                src="/assets/social/play-store-48.png"
+                alt="Google Play Store"
+                style="margin-left: 10px; width: 38px; height: 38px;"
+              /></button
+          ></a>
+        </div>
+      </section>
     </main>
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
 
     <!-- The hamburger menu functionality is now handled in header.js -->
-
-</body>
+  </body>
 </html>

@@ -1,182 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NED - Planes y Precios">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NED - Planes y Precios" />
     <!-- Meta etiquetas para evitar el caché -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="theme-color" content="#C4227D">
-    <link rel="manifest" href="/manifest.json">
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#C4227D" />
+    <link rel="manifest" href="/manifest.json" />
     <title>NED - Planes y Precios</title>
-    <link rel="stylesheet" href="/styles/style.css?v=1.1">
-    <link rel="stylesheet" href="/styles/planes.css?v=1.0">
-    <link rel="icon" href="/assets/logo/Logo_NED_ico.png">
-    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png">
+    <link rel="stylesheet" href="/styles/style.css?v=1.1" />
+    <link rel="stylesheet" href="/styles/planes.css?v=1.0" />
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
     <!-- Brevo Conversations {literal} -->
-<script>
-    (function(d, w, c) {
-        w.BrevoConversationsID = '6400fe62de13f029ac4c064c';
-        w[c] = w[c] || function() {
+    <script>
+      (function (d, w, c) {
+        w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+        w[c] =
+          w[c] ||
+          function () {
             (w[c].q = w[c].q || []).push(arguments);
-        };
-        var s = d.createElement('script');
+          };
+        var s = d.createElement("script");
         s.async = true;
-        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
         if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
-</script>
-<!-- /Brevo Conversations {/literal} -->
+      })(document, window, "BrevoConversations");
+    </script>
+    <!-- /Brevo Conversations {/literal} -->
     <!-- Include component scripts -->
     <script src="/components/header.js" defer></script>
     <script src="/components/footer.js" defer></script>
     <script src="/scripts/animations.js" defer></script>
     <script src="/scripts/register-sw.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <section>
-            <h2 class="inicio_planes_h2">Con NED llevarás tu negocio a otro nivel</h2>
-            <p class="inicio_planes_p">Conecta con tus clientes, dinamiza tu negocio, fideliza a tus clientes, aumenta tus ventas</p>
-            <h2 class="inicio_planes_h2">PLANES</h2>
-            <p class="inicio_planes_p">Considera lo que ahorras al tener una sola aplicación desde la que podrás enviar notificaciones como si tuvieras tu propia app, mostrar toda tu información, atender a tus clientes y crear dinámicas comerciales de una forma realmente simple. </p>
-        </section>
-     
-        <!-- Sección de planes de precios según la imagen de referencia -->
-        <section class="planes_precios">
-            <div class="plan_card plan_start">
-                <div class="plan_header">
-                    Start
-                </div>
-                <div class="plan_content">
-                    <div class="plan_price">
-                        <span class="currency">$</span>0<span class="period">/Gratis siempre</span>
-                    </div>
-                    <div class="plan_features">
-                        <p>+ Muestra la información de tu negocio y los productos que vendes.</p>
-                        <p>+ Chat</p>
-                        <p>+ Creación de las dinámicas:</p>
-                        <ul>
-                            <li>Anuncios</li>
-                            <li>Descuento</li>
-                            <li>Dos X Uno</li>
-                            <li>Nuevo consumidor</li>
-                        </ul>
-                    </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener"><button class="plan_button" aria-label="Descargar la aplicación gratis" >Descarga Android</button></a>
-                </div>
+      <section>
+        <h2 class="inicio_planes_h2">
+          Con NED llevarás tu negocio a otro nivel
+        </h2>
+        <p class="inicio_planes_p">
+          Conecta con tus clientes, dinamiza tu negocio, fideliza a tus
+          clientes, aumenta tus ventas
+        </p>
+        <h2 class="inicio_planes_h2">PLANES</h2>
+        <p class="inicio_planes_p">
+          Considera lo que ahorras al tener una sola aplicación desde la que
+          podrás enviar notificaciones como si tuvieras tu propia app, mostrar
+          toda tu información, atender a tus clientes y crear dinámicas
+          comerciales de una forma realmente simple.
+        </p>
+      </section>
+
+      <!-- Sección de planes de precios según la imagen de referencia -->
+      <section class="planes_precios">
+        <div class="plan_card plan_start">
+          <div class="plan_header">Start</div>
+          <div class="plan_content">
+            <div class="plan_price">
+              <span class="currency">$</span>0<span class="period"
+                >/Gratis siempre</span
+              >
             </div>
-
-            <div class="plan_card plan_pro">
-                <div class="plan_header">
-                    Pro
-                </div>
-                <div class="plan_content">
-                    <div class="plan_price">
-                        <span class="currency">$</span>75.000<span class="period">/mes + Iva</span>
-                    </div>
-                    <div class="plan_features">
-                        <p>TODO LO DEL PLAN START Y</p>
-                        <p>+ Creación de las dinámicas:</p>
-                        <ul>
-                            <li>Sorteo</li>
-                            <li>Cumpleaños</li>
-                            <li>Plan de puntos</li>
-                            <li>Referidos</li>
-                        </ul>
-                    </div>
-                    <button class="plan_button">Muy pronto</button>
-                </div>
+            <div class="plan_features">
+              <p>
+                + Muestra la información de tu negocio y los productos que
+                vendes.
+              </p>
+              <p>+ Chat</p>
+              <p>+ Creación de las dinámicas:</p>
+              <ul>
+                <li>Anuncios</li>
+                <li>Descuento</li>
+                <li>Dos X Uno</li>
+                <li>Nuevo consumidor</li>
+              </ul>
             </div>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.nedsystem.movil"
+              target="_blank"
+              rel="noopener"
+              ><button
+                class="plan_button"
+                aria-label="Descargar la aplicación gratis"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                Descarga<img
+                  src="/assets/social/play-store-48.png"
+                  alt="Google Play Store"
+                  style="
+                    margin-left: 10px;
+                    width: 28px;
+                    height: 23px;
+                    vertical-align: middle;
+                  "
+                /></button
+            ></a>
+          </div>
+        </div>
 
-            <div class="plan_card plan_premium">
-                <div class="plan_header">
-                    Premium
-                </div>
-                <div class="plan_content">
-                    <div class="plan_price">
-                        Pronto
-                    </div>
-                    <div class="plan_features">
-                        <p>TODO LO DEL PLAN PRO Y</p>
-                        <p>+ Alianzas comerciales y herramientas que potenciarán tus dinámicas:</p>
-                        <ul>
-                            <li>Alianzas comerciales</li>
-                            <li>Segmentación</li>
-                            <li>Administración centralizada</li>
-                        </ul>
-                    </div>
-                    <button class="plan_button">Muy pronto</button>
-                </div>
+        <div class="plan_card plan_pro">
+          <div class="plan_header">Pro</div>
+          <div class="plan_content">
+            <div class="plan_price">
+              <span class="currency">$</span>75.000<span class="period"
+                >/mes + Iva</span
+              >
             </div>
-        </section>
-        <section class="carasteristicas">
-            <h2 class="caracteristicas_titulo">Características de NED</h2>
-            <p class="caracteristicas_subtitulo">Estas son algunas de las dinámicas que podrás crear tú mismo, y vienen muchas más...</p>
-            
-            <div class="caracteristicas_grid">
-                <!-- Primera fila de características -->
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Nuevoconsumidorst.png" alt="Nuevo Cliente">
-                    </div>
-                    <h3 class="caracteristica_nombre">NUEVO CLIENTE</h3>
-                    <p class="caracteristica_descripcion">NED enviará un mensaje (el que tú desees) a cada nuevo cliente que recibas.</p>
-                </div>
-
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Descuentost_ico.png" alt="Descuentos">
-                    </div>
-                    <h3 class="caracteristica_nombre">DESCUENTOS</h3>
-                    <p class="caracteristica_descripcion">El 85% de las personas compran cuando ven su artículo en oferta.</p>
-                </div>
-
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Cumpleanosst_ico.png" alt="Cumpleaños">
-                    </div>
-                    <h3 class="caracteristica_nombre">CUMPLEAÑOS</h3>
-                    <p class="caracteristica_descripcion">NED felicitará a cada uno de tus clientes en sus cumpleaños.</p>
-                </div>
-
-                <!-- Segunda fila de características -->
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Plandepuntosst_ico.png" alt="Plan de Puntos">
-                    </div>
-                    <h3 class="caracteristica_nombre">PLAN DE PUNTOS</h3>
-                    <p class="caracteristica_descripcion">Podrás crear tu propio plan de puntos. Tu cliente escaneará el código QR en la app de tu celular y listo. Súper fácil.</p>
-                </div>
-
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Referidosst.png" alt="Referidos">
-                    </div>
-                    <h3 class="caracteristica_nombre">REFERIDOS</h3>
-                    <p class="caracteristica_descripcion">Motiva a esos clientes que te recomiendan con sus amigos. A través de NED podrás darles puntos u otra sorpresa.</p>
-                </div>
-
-                <div class="caracteristica_item">
-                    <div class="caracteristica_icono">
-                        <img src="/assets/negocios/Alianzasst_ico.png" alt="Alianza Comercial">
-                    </div>
-                    <h3 class="caracteristica_nombre">ALIANZA COMERCIAL</h3>
-                    <p class="caracteristica_descripcion">Con esta dinámica, podrás crear alianzas con otros negocios afines al tuyo, los clientes que te compren pueden obtener un incentivo comprando en el negocio de tu aliado y viceversa.</p>
-                </div>
+            <div class="plan_features">
+              <p>TODO LO DEL PLAN START Y</p>
+              <p>+ Creación de las dinámicas:</p>
+              <ul>
+                <li>Sorteo</li>
+                <li>Cumpleaños</li>
+                <li>Plan de puntos</li>
+                <li>Referidos</li>
+              </ul>
             </div>
-        </section>
+            <button class="plan_button">Muy pronto</button>
+          </div>
+        </div>
 
+        <div class="plan_card plan_premium">
+          <div class="plan_header">Premium</div>
+          <div class="plan_content">
+            <div class="plan_price">Pronto</div>
+            <div class="plan_features">
+              <p>TODO LO DEL PLAN PRO Y</p>
+              <p>
+                + Alianzas comerciales y herramientas que potenciarán tus
+                dinámicas:
+              </p>
+              <ul>
+                <li>Alianzas comerciales</li>
+                <li>Segmentación</li>
+                <li>Administración centralizada</li>
+              </ul>
+            </div>
+            <button class="plan_button">Muy pronto</button>
+          </div>
+        </div>
+      </section>
+      <section class="carasteristicas">
+        <h2 class="caracteristicas_titulo">Características de NED</h2>
+        <p class="caracteristicas_subtitulo">
+          Estas son algunas de las dinámicas que podrás crear tú mismo, y vienen
+          muchas más...
+        </p>
+
+        <div class="caracteristicas_grid">
+          <!-- Primera fila de características -->
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img
+                src="/assets/negocios/Nuevoconsumidorst.png"
+                alt="Nuevo Cliente"
+              />
+            </div>
+            <h3 class="caracteristica_nombre">NUEVO CLIENTE</h3>
+            <p class="caracteristica_descripcion">
+              NED enviará un mensaje (el que tú desees) a cada nuevo cliente que
+              recibas.
+            </p>
+          </div>
+
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img
+                src="/assets/negocios/Descuentost_ico.png"
+                alt="Descuentos"
+              />
+            </div>
+            <h3 class="caracteristica_nombre">DESCUENTOS</h3>
+            <p class="caracteristica_descripcion">
+              El 85% de las personas compran cuando ven su artículo en oferta.
+            </p>
+          </div>
+
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img
+                src="/assets/negocios/Cumpleanosst_ico.png"
+                alt="Cumpleaños"
+              />
+            </div>
+            <h3 class="caracteristica_nombre">CUMPLEAÑOS</h3>
+            <p class="caracteristica_descripcion">
+              NED felicitará a cada uno de tus clientes en sus cumpleaños.
+            </p>
+          </div>
+
+          <!-- Segunda fila de características -->
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img
+                src="/assets/negocios/Plandepuntosst_ico.png"
+                alt="Plan de Puntos"
+              />
+            </div>
+            <h3 class="caracteristica_nombre">PLAN DE PUNTOS</h3>
+            <p class="caracteristica_descripcion">
+              Podrás crear tu propio plan de puntos. Tu cliente escaneará el
+              código QR en la app de tu celular y listo. Súper fácil.
+            </p>
+          </div>
+
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img src="/assets/negocios/Referidosst.png" alt="Referidos" />
+            </div>
+            <h3 class="caracteristica_nombre">REFERIDOS</h3>
+            <p class="caracteristica_descripcion">
+              Motiva a esos clientes que te recomiendan con sus amigos. A través
+              de NED podrás darles puntos u otra sorpresa.
+            </p>
+          </div>
+
+          <div class="caracteristica_item">
+            <div class="caracteristica_icono">
+              <img
+                src="/assets/negocios/Alianzasst_ico.png"
+                alt="Alianza Comercial"
+              />
+            </div>
+            <h3 class="caracteristica_nombre">ALIANZA COMERCIAL</h3>
+            <p class="caracteristica_descripcion">
+              Con esta dinámica, podrás crear alianzas con otros negocios afines
+              al tuyo, los clientes que te compren pueden obtener un incentivo
+              comprando en el negocio de tu aliado y viceversa.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
     <script src="/js/main.js"></script>
     <script src="/js/animations.js"></script>
-</body>
+  </body>
 </html>

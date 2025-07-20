@@ -1,213 +1,454 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NED - Negocios">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NED - Negocios" />
     <!-- Meta etiquetas para evitar el caché -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="theme-color" content="#C4227D">
-    <link rel="manifest" href="/manifest.json">
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#C4227D" />
+    <link rel="manifest" href="/manifest.json" />
     <title>NED - Negocios</title>
-    <link rel="stylesheet" href="/styles/style.css?v=1.1">
-    <link rel="stylesheet" href="/styles/negocios.css?v=1.0">
-    <link rel="icon" href="/assets/logo/Logo_NED_ico.png">
-    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png">
+    <link rel="stylesheet" href="/styles/style.css?v=1.1" />
+    <link rel="stylesheet" href="/styles/negocios.css?v=1.0" />
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
     <!-- Brevo Conversations {literal} -->
-<script>
-    (function(d, w, c) {
-        w.BrevoConversationsID = '6400fe62de13f029ac4c064c';
-        w[c] = w[c] || function() {
+    <script>
+      (function (d, w, c) {
+        w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+        w[c] =
+          w[c] ||
+          function () {
             (w[c].q = w[c].q || []).push(arguments);
-        };
-        var s = d.createElement('script');
+          };
+        var s = d.createElement("script");
         s.async = true;
-        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
         if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
-</script>
-<!-- /Brevo Conversations {/literal} -->
+      })(document, window, "BrevoConversations");
+    </script>
+    <!-- /Brevo Conversations {/literal} -->
     <!-- Include component scripts -->
     <script src="/components/header.js" defer></script>
     <script src="/components/footer.js" defer></script>
     <script src="/scripts/animations.js" defer></script>
     <script src="/scripts/register-sw.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="clientesTeRecomiendan">
-            <div class="clientesTeRecomiendan-content">
-                <h2 class="clientesTeRecomiendan__mensaje">POR CLIENTES QUE <span class="highlight">TE RECOMIENDEN</span> Y <span class="highlight">TE VUELVAN A COMPRAR</span></h2>
-                <p>Un cliente que te recomienda, es un cliente enganchado, leal, que te trae mas clientes, te vuelve a comprar y hace crecer tu negocio. Con NED vas a lograrlo de una forma simple.</p>
-                <ul>
-                    <li><span class="resaltar">Vas a crear</span> concursos, planes de puntos, de referidos, cumpleaños, nuevos clientes y muchas otras dinámicas, desde tu celular, súper fácil.</li>
-                    <li>Podrás configurar <span class="resaltar">tu propio espacio.</span></li>
-                    <li>Te apoyamos para que <span class="resaltar">te vean, te compren y te vuelvan a comprar.</span></li>
-                </ul>
-            </div>
-            <div class="clientesTeRecomiendan_video">
-                    <iframe class="video-container" src="https://www.youtube.com/embed/HMZ9fla1n28" title="Video de NED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="560" height="315"></iframe><p class="video-container-p">Don Fidel te explica qué hace NED en solo 1 minuto</p>
-            </div>
-        </section>
-        <section class="mensajeGratis">
-            <h2>PUEDES COMENZAR <span class="highlight_magenta">GRATIS! > SIEMPRE!</span></h2>
-        </section>
-        <section class="utilCualquierNegocio">
-            <div class="utilCualquierNegocio-content">
-                <h2 class="utilCualquierNegocio_h2">NED es útil para cualquier tipo de negocio</h2>
-                <p>Negocios chicos o grandes, para los que venden productos o servicios, incluso para los que no venden por internet.</p>
-            </div>
-            <div class="utilCualquierNegocio_image">
-                <img src="/assets/negocios/tipos_de_negocio.png" alt="Diferentes tipos de negocios que pueden usar NED" class="tipos_de_negocio_img">
-            </div>
-        </section>
-        <section class="queVeranTusClientes">
-            <div class="queVeranTusClientes_content">
-                <h2 class="queVeranTusClientes_h2">Lo que verán tus clientes</h2>
-                <img src="/assets/negocios/queverantusclientes_1.png" alt="Lo que verán tus clientes" class="queVeranTusClientes_img_1">
-                <img src="/assets/negocios/queverantusclientes_2.png" alt="Lo que verán tus clientes" class="queVeranTusClientes_img_2">
-            </div>
-        </section>
-        <section class="porqueNED">
-            <div class="porqueNED_video">
-                    <h2 class="porqueNED_h2">Por qué NED?</h2>
-                    <iframe class="video-container-porqueNED" width="560" height="315" src="https://www.youtube.com/embed/TyccmLHs3Gk?si=hI9PCKUYxnV2IC5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="porqueNED-content">
-                <ul>
-                    <li>Vas a tener tus <span class="resaltar_porqueNED">clientes enganchados</span> con cada dinámica que crees.</li>
-                    <li>No vendes online? tranquil@, puedes usar toda la potencia de las <span class="resaltar_porqueNED">dinámicas comerciales.</span></li>
-                    <li>Será como tener <span class="resaltar_porqueNED">tu propia app.</span></li>
-                    <li>Compartirás tu información con los productos y servicios que ofreces.</li>
-                    <li><span class="resaltar_porqueNED">Chat incluído,</span> para que hables con tus clientes.</li>
-                    <li>Muy pronto llegará el <span class="resaltar_porqueNED">carrito de compra,</span> para que vendas desde la app.</li>
-                    <li><span class="resaltar_porqueNED">Superfácil</span> de manejar.</li>
-                </ul>
-            </div>
-        </section>
-        <section class="loquePodrasHacer">
-            <div class="loquePodrasHacer_content">
-                <h2 class="loquePodrasHacer_h2">DINÁMICAS QUE PODRÁS CREAR</h2>
-                <p>Estas son algunas de las dinámicas que podrás crear tú mismo y vienen muchas mas…</p>
-            </div>
-        </section>
-        <section class="dinamicas" id="nuevo-cliente">
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Nuevoconsumidorst.png" alt="Icono de nuevo cliente" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">NUEVO CLIENTE</h2>
-                    </div>
-                    <p class="dinamicas-description">NED enviará un mensaje (el que tú desees), a cada nuevo cliente que recibas.</p>
-                    <img src="/assets/negocios/Mensaje_nuevo_cliente.png" alt="Mensaje de bienvenida en teléfono" class="dinamicas-phone">
-            </div>
-            <div>
-                <img src="/assets/negocios/Nuevo_cliente.png" alt="Persona celebrando" class="dinamicas-person">
-            </div>
-        </section>
-        <section class="dinamicas" id="referidos">
-            <div>
-                <img src="/assets/negocios/Referidos_personas.png" alt="Persona recomendando" class="referido-person">
-            </div>
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Referidosst.png" alt="Icono referidos" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">REFERIDOS</h2>
-                    </div>
-                    <p class="dinamicas-description">Motiva a esos clientes que te recomiendan con sus amigos. A través de NED podrás darles puntos u otra sorpresa.</p>
-                    <img src="/assets/negocios/Mensaje_referidos.png" alt="Mensaje referidos" class="dinamicas-phone">
-            </div>
-        </section>
-        <section class="dinamicas" id="cumpleanos" >
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Cumpleanosst_ico.png" alt="Icono de nuevo cliente" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">CUMPLEAÑOS</h2>
-                    </div>
-                    <p class="dinamicas-description">NED felicitará a cada uno de tus clientes en sus cumpleaños.</p>
-                    <img src="/assets/negocios/mensaje_cumpleanos.png" alt="Mensaje de bienvenida en teléfono" class="dinamicas-phone">
-            </div>
-            <div>
-                <img src="/assets/negocios/cumpleanos_persona.png" alt="Persona feliz" class="cumpleanos-person">
-            </div>
-        </section>
-        <section class="dinamicas" id="descuentos">
-            <div>
-                <img src="/assets/negocios/decuentos_persona.png" alt="Persona viendo dscto" class="descuento-person">
-            </div>
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Descuentost_ico.png" alt="Icono descuento" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">DESCUENTOS</h2>
-                    </div>
-                    <p class="dinamicas-description">El 85% de las personas compran, cuando ven su artículo en oferta.</p>
-                    <img src="/assets/negocios/Mensaje_descuentos.png" alt="Mensaje descuentos" class="dinamicas-phone">
-            </div>
-        </section>
-        <section class="dinamicas" id="plan de puntos" >
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Plandepuntosst_ico.png" alt="Icono plan de puntos" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">PLAN DE PUNTOS</h2>
-                    </div>
-                    <p class="dinamicas-description">Podrás crear tu propio plan de puntos. Tú cliente escaneará el código QR en la app de tu celular y listo. Súper fácil</p>
-                    <img src="/assets/negocios/mensaje_puntos.png" alt="Mensaje plan de puntos" class="dinamicas-phone">
-            </div>
-            <div>
-                <img src="/assets/negocios/puntos_persona.png" alt="dos personas en negocio" class="puntos-person">
-            </div>
-        </section>
-        <section class="dinamicas" id="alianzas">
-            <div>
-                <img src="/assets/negocios/alianzas_negocios.png" alt="Persona en dos negocios" class="alianzas-person">
-            </div>
-            <div class="dinamicas-content">
-                    <div class="dinamicas-header">
-                        <img src="/assets/negocios/Alianzasst_ico.png" alt="Icono alianzas" class="dinamicas-icon">
-                        <h2 class="dinamicas-title">ALIANZA COMERCIAL</h2>
-                    </div>
-                    <p class="dinamicas-description">Podrás crear alianzas con otros negocios afines al tuyo, los clientes que te compren pueden obtener un incentivo comprando en el negocio de tu aliado y viceversa.</p>
-                    <img src="/assets/negocios/mensaje_alianzas.png" alt="Mensaje alianzas" class="dinamicas-phone-alianzas">
-            </div>
-        </section>
-        <section class="porqueNED">
-            <div>
-                <h2 class="porqueNED_h2">Y tus redes sociales?</h2>
-            </div>
-            <div class="porqueNED-content">
-                <img src="/assets/negocios/redes.png" alt="Redes sociales" class="redes_img">
-                <p class="redes">No te preocupes, las dinámicas que creas en NED, las podrás compartir en tus redes sociales, nosotros facilitamos la forma en que vas a interactuar con tus clientes.</p>
-            </div>
-        </section>
-        <section class="mensaje_final_pag">
-            <div>
-                <h2 class="mensaje_final_pag-title">NED</h2>
-                <img src="/assets/negocios/android.png" alt="android" class="mensaje_final_pag-android">
-                <a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer"><button class="unirme_button" aria-label="Descargar la aplicación gratis">Descarga Android</button></a>
-            </div>
-            <div class="mensaje_final_pag-content">
-                <p class="mensaje_final_pag_redes">Tenemos un plan gratuito, para que nada impida la conexión con tus clientes.</p>
-                <a href="/pages/planes.html" id="ver-planes-link"><button class="unirme_button" aria-label="Ver planes disponibles">Ver planes</button></a>
-                <p class="mensaje_final_pag-redes">Puedes apoyarnos pasando la voz a tus amigos</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/NEDmobiapp" target="_blank" rel="noopener noreferrer" class="social-icon" title="Compartir en Facebook">
-                        <img src="/assets/social/facebook-icon.svg" alt="Facebook" class="social-icon-img">
-                    </a>
-                    <a href="https://www.instagram.com/nedmobi/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Compartir en Instagram">
-                        <img src="/assets/social/instagram-icon.svg" alt="Instagram" class="social-icon-img">
-                    </a>
-                </div>
-                <img src="/assets/negocios/apoyados_por.png" alt="apoyados por" class="mensaje_final_pag-apoyadosPor">
-            </div>
-        </section>
-
+      <section class="clientesTeRecomiendan">
+        <div class="clientesTeRecomiendan-content">
+          <h2 class="clientesTeRecomiendan__mensaje">
+            POR CLIENTES QUE <span class="highlight">TE RECOMIENDEN</span> Y
+            <span class="highlight">TE VUELVAN A COMPRAR</span>
+          </h2>
+          <p>
+            Un cliente que te recomienda, es un cliente enganchado, leal, que te
+            trae mas clientes, te vuelve a comprar y hace crecer tu negocio. Con
+            NED vas a lograrlo de una forma simple.
+          </p>
+          <ul>
+            <li>
+              <span class="resaltar">Vas a crear</span> concursos, planes de
+              puntos, de referidos, cumpleaños, nuevos clientes y muchas otras
+              dinámicas, desde tu celular, súper fácil.
+            </li>
+            <li>
+              Podrás configurar <span class="resaltar">tu propio espacio.</span>
+            </li>
+            <li>
+              Te apoyamos para que
+              <span class="resaltar"
+                >te vean, te compren y te vuelvan a comprar.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="clientesTeRecomiendan_video">
+          <iframe
+            class="video-container"
+            src="https://www.youtube.com/embed/HMZ9fla1n28"
+            title="Video de NED"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            width="560"
+            height="315"
+          ></iframe>
+          <p class="video-container-p">
+            Don Fidel te explica qué hace NED en solo 1 minuto
+          </p>
+        </div>
+      </section>
+      <section class="mensajeGratis">
+        <h2>
+          PUEDES COMENZAR
+          <span class="highlight_magenta">GRATIS! > SIEMPRE!</span>
+        </h2>
+      </section>
+      <section class="utilCualquierNegocio">
+        <div class="utilCualquierNegocio-content">
+          <h2 class="utilCualquierNegocio_h2">
+            NED es útil para cualquier tipo de negocio
+          </h2>
+          <p>
+            Negocios chicos o grandes, para los que venden productos o
+            servicios, incluso para los que no venden por internet.
+          </p>
+        </div>
+        <div class="utilCualquierNegocio_image">
+          <img
+            src="/assets/negocios/tipos_de_negocio.png"
+            alt="Diferentes tipos de negocios que pueden usar NED"
+            class="tipos_de_negocio_img"
+          />
+        </div>
+      </section>
+      <section class="queVeranTusClientes">
+        <div class="queVeranTusClientes_content">
+          <h2 class="queVeranTusClientes_h2">Lo que verán tus clientes</h2>
+          <img
+            src="/assets/negocios/queverantusclientes_1.png"
+            alt="Lo que verán tus clientes"
+            class="queVeranTusClientes_img_1"
+          />
+          <img
+            src="/assets/negocios/queverantusclientes_2.png"
+            alt="Lo que verán tus clientes"
+            class="queVeranTusClientes_img_2"
+          />
+        </div>
+      </section>
+      <section class="porqueNED">
+        <div class="porqueNED_video">
+          <h2 class="porqueNED_h2">Por qué NED?</h2>
+          <iframe
+            class="video-container-porqueNED"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TyccmLHs3Gk?si=hI9PCKUYxnV2IC5i"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="porqueNED-content">
+          <ul>
+            <li>
+              Vas a tener tus
+              <span class="resaltar_porqueNED">clientes enganchados</span> con
+              cada dinámica que crees.
+            </li>
+            <li>
+              No vendes online? tranquil@, puedes usar toda la potencia de las
+              <span class="resaltar_porqueNED">dinámicas comerciales.</span>
+            </li>
+            <li>
+              Será como tener
+              <span class="resaltar_porqueNED">tu propia app.</span>
+            </li>
+            <li>
+              Compartirás tu información con los productos y servicios que
+              ofreces.
+            </li>
+            <li>
+              <span class="resaltar_porqueNED">Chat incluído,</span> para que
+              hables con tus clientes.
+            </li>
+            <li>
+              Muy pronto llegará el
+              <span class="resaltar_porqueNED">carrito de compra,</span> para
+              que vendas desde la app.
+            </li>
+            <li>
+              <span class="resaltar_porqueNED">Superfácil</span> de manejar.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="loquePodrasHacer">
+        <div class="loquePodrasHacer_content">
+          <h2 class="loquePodrasHacer_h2">DINÁMICAS QUE PODRÁS CREAR</h2>
+          <p>
+            Estas son algunas de las dinámicas que podrás crear tú mismo y
+            vienen muchas mas…
+          </p>
+        </div>
+      </section>
+      <section class="dinamicas" id="nuevo-cliente">
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Nuevoconsumidorst.png"
+              alt="Icono de nuevo cliente"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">NUEVO CLIENTE</h2>
+          </div>
+          <p class="dinamicas-description">
+            NED enviará un mensaje (el que tú desees), a cada nuevo cliente que
+            recibas.
+          </p>
+          <img
+            src="/assets/negocios/Mensaje_nuevo_cliente.png"
+            alt="Mensaje de bienvenida en teléfono"
+            class="dinamicas-phone"
+          />
+        </div>
+        <div>
+          <img
+            src="/assets/negocios/Nuevo_cliente.png"
+            alt="Persona celebrando"
+            class="dinamicas-person"
+          />
+        </div>
+      </section>
+      <section class="dinamicas" id="referidos">
+        <div>
+          <img
+            src="/assets/negocios/Referidos_personas.png"
+            alt="Persona recomendando"
+            class="referido-person"
+          />
+        </div>
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Referidosst.png"
+              alt="Icono referidos"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">REFERIDOS</h2>
+          </div>
+          <p class="dinamicas-description">
+            Motiva a esos clientes que te recomiendan con sus amigos. A través
+            de NED podrás darles puntos u otra sorpresa.
+          </p>
+          <img
+            src="/assets/negocios/Mensaje_referidos.png"
+            alt="Mensaje referidos"
+            class="dinamicas-phone"
+          />
+        </div>
+      </section>
+      <section class="dinamicas" id="cumpleanos">
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Cumpleanosst_ico.png"
+              alt="Icono de nuevo cliente"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">CUMPLEAÑOS</h2>
+          </div>
+          <p class="dinamicas-description">
+            NED felicitará a cada uno de tus clientes en sus cumpleaños.
+          </p>
+          <img
+            src="/assets/negocios/mensaje_cumpleanos.png"
+            alt="Mensaje de bienvenida en teléfono"
+            class="dinamicas-phone"
+          />
+        </div>
+        <div>
+          <img
+            src="/assets/negocios/cumpleanos_persona.png"
+            alt="Persona feliz"
+            class="cumpleanos-person"
+          />
+        </div>
+      </section>
+      <section class="dinamicas" id="descuentos">
+        <div>
+          <img
+            src="/assets/negocios/decuentos_persona.png"
+            alt="Persona viendo dscto"
+            class="descuento-person"
+          />
+        </div>
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Descuentost_ico.png"
+              alt="Icono descuento"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">DESCUENTOS</h2>
+          </div>
+          <p class="dinamicas-description">
+            El 85% de las personas compran, cuando ven su artículo en oferta.
+          </p>
+          <img
+            src="/assets/negocios/Mensaje_descuentos.png"
+            alt="Mensaje descuentos"
+            class="dinamicas-phone"
+          />
+        </div>
+      </section>
+      <section class="dinamicas" id="plan de puntos">
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Plandepuntosst_ico.png"
+              alt="Icono plan de puntos"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">PLAN DE PUNTOS</h2>
+          </div>
+          <p class="dinamicas-description">
+            Podrás crear tu propio plan de puntos. Tú cliente escaneará el
+            código QR en la app de tu celular y listo. Súper fácil
+          </p>
+          <img
+            src="/assets/negocios/mensaje_puntos.png"
+            alt="Mensaje plan de puntos"
+            class="dinamicas-phone"
+          />
+        </div>
+        <div>
+          <img
+            src="/assets/negocios/puntos_persona.png"
+            alt="dos personas en negocio"
+            class="puntos-person"
+          />
+        </div>
+      </section>
+      <section class="dinamicas" id="alianzas">
+        <div>
+          <img
+            src="/assets/negocios/alianzas_negocios.png"
+            alt="Persona en dos negocios"
+            class="alianzas-person"
+          />
+        </div>
+        <div class="dinamicas-content">
+          <div class="dinamicas-header">
+            <img
+              src="/assets/negocios/Alianzasst_ico.png"
+              alt="Icono alianzas"
+              class="dinamicas-icon"
+            />
+            <h2 class="dinamicas-title">ALIANZA COMERCIAL</h2>
+          </div>
+          <p class="dinamicas-description">
+            Podrás crear alianzas con otros negocios afines al tuyo, los
+            clientes que te compren pueden obtener un incentivo comprando en el
+            negocio de tu aliado y viceversa.
+          </p>
+          <img
+            src="/assets/negocios/mensaje_alianzas.png"
+            alt="Mensaje alianzas"
+            class="dinamicas-phone-alianzas"
+          />
+        </div>
+      </section>
+      <section class="porqueNED">
+        <div>
+          <h2 class="porqueNED_h2">Y tus redes sociales?</h2>
+        </div>
+        <div class="porqueNED-content">
+          <img
+            src="/assets/negocios/redes.png"
+            alt="Redes sociales"
+            class="redes_img"
+          />
+          <p class="redes">
+            No te preocupes, las dinámicas que creas en NED, las podrás
+            compartir en tus redes sociales, nosotros facilitamos la forma en
+            que vas a interactuar con tus clientes.
+          </p>
+        </div>
+      </section>
+      <section class="mensaje_final_pag">
+        <div>
+          <h2 class="mensaje_final_pag-title">NED</h2>
+          <img
+            src="/assets/negocios/android.png"
+            alt="android"
+            class="mensaje_final_pag-android"
+          />
+          <a
+            href="https://play.google.com/store/apps/details?id=com.nedsystem.movil"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><button
+              class="unirme_button"
+              aria-label="Descargar la aplicación gratis"
+            >
+              Descarga<img
+                src="/assets/social/play-store-48.png"
+                alt="Google Play Store"
+                style="
+                  margin-left: 10px;
+                  width: 38px;
+                  height: 38px;
+                  vertical-align: middle;
+                "
+              /></button
+          ></a>
+        </div>
+        <div class="mensaje_final_pag-content">
+          <p class="mensaje_final_pag_redes">
+            Tenemos un plan gratuito, para que nada impida la conexión con tus
+            clientes.
+          </p>
+          <a href="/pages/planes.html" id="ver-planes-link"
+            ><button class="unirme_button" aria-label="Ver planes disponibles">
+              Ver planes
+            </button></a
+          >
+          <p class="mensaje_final_pag-redes">
+            Puedes apoyarnos pasando la voz a tus amigos
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/NEDmobiapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              title="Compartir en Facebook"
+            >
+              <img
+                src="/assets/social/facebook-icon.svg"
+                alt="Facebook"
+                class="social-icon-img"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/nedmobi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              title="Compartir en Instagram"
+            >
+              <img
+                src="/assets/social/instagram-icon.svg"
+                alt="Instagram"
+                class="social-icon-img"
+              />
+            </a>
+          </div>
+          <img
+            src="/assets/negocios/apoyados_por.png"
+            alt="apoyados por"
+            class="mensaje_final_pag-apoyadosPor"
+          />
+        </div>
+      </section>
     </main>
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
-</body>
+  </body>
 </html>
