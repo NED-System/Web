@@ -252,7 +252,7 @@ main {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (width < 1000px) {
     .planes_precios {
         flex-direction: column;
         align-items: center;
@@ -277,3 +277,8 @@ main {
         /* grid-template-columns: repeat(2, 1fr); */
     }
 }
+
+/* Rango adicional disponible para futuras reglas:
+   @media (width >= 300px) {}
+   @media (640px <= width < 768px) {}
+*/

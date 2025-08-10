@@ -576,7 +576,7 @@ main {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (width < 1000px) {
     main {
     padding-top: 4rem;
     margin: 0rem 2rem;
@@ -857,3 +857,8 @@ main {
     }
 
 }
+
+/* Rango adicional disponible para futuras reglas:
+   @media (width >= 300px) {}
+   @media (640px <= width < 768px) {}
+*/

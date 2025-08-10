@@ -14,7 +14,7 @@ p {
     text-size-adjust: none;
 }
 
-@media (max-width: 768px) {
+@media (width < 1000px) {
     p {
         font-family: 'Nunito', sans-serif;
         font-size: clamp(1rem, 1vw, 1rem);
@@ -24,3 +24,9 @@ p {
         -webkit-text-size-adjust: none;
         text-size-adjust: none;
     }
+}
+
+/* Rango adicional disponible para futuras reglas:
+   @media (width >= 300px) {}
+   @media (640px <= width < 768px) {}
+*/

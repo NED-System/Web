@@ -359,7 +359,7 @@ main {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (width < 1000px) {
   .hamburger {
     display: block;
   }
@@ -400,9 +400,7 @@ main {
     width: 100%;
   }
 
-  #negocios_title {
-    /* padding: 0 0rem; */
-  }
+  /* Nota: regla para #negocios_title eliminada por estar vacía */
 
   .usuarios-card {
     flex: 1;
@@ -442,3 +440,8 @@ main {
     font-size: 0.8rem;
   }
 }
+
+/* Rango adicional disponible para futuras reglas:
+   @media (width >= 300px) {}
+   @media (640px <= width < 768px) {}
+*/

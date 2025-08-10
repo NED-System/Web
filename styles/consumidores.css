@@ -315,7 +315,7 @@ main {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (width < 1000px) {
     .beneficiosConsumidores {
         flex-direction: column;
         padding: 3rem 0rem;
@@ -491,3 +491,8 @@ main {
         text-align: center;
     }
 }
+
+/* Rango adicional disponible para futuras reglas:
+   @media (width >= 300px) {}
+   @media (640px <= width < 768px) {}
+*/
