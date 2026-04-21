@@ -11,7 +11,8 @@ footerTemplate.innerHTML = `
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
                         <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
                         <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app android</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app Android</a></li>
+                        <li><a href="https://apps.apple.com/app/nedleal/id6760373778" target="_blank" rel="noopener noreferrer">Descarga la app iOS</a></li>
                     </ul>
                 </div>
                 <div class="footer_links">
@@ -38,7 +39,7 @@ footerTemplate.innerHTML = `
                 </div>
             </div>
             <div class="footer_bottom">
-                <p>&copy; 2025 - NED System S.A.S. Todos los derechos reservados.</p>
+                <p>&copy; 2026 - NED System S.A.S. Todos los derechos reservados.</p>
             </div>
         </section>
     </footer>
