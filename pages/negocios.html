@@ -39,6 +39,7 @@
     <script src="/components/footer.js" defer></script>
     <script src="/scripts/animations.js" defer></script>
     <script src="/scripts/register-sw.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
     <!-- Header placeholder -->
@@ -378,45 +379,19 @@
             alt="android"
             class="mensaje_final_pag-android"
           />
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.nedsystem.movil"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button
-                class="unirme_button"
-                aria-label="Descargar en Google Play Store"
-              >
-                Descarga<img
-                  src="/assets/social/play-store-48.png"
-                  alt="Google Play Store"
-                  style="
-                    margin-left: 10px;
-                    width: 38px;
-                    height: 38px;
-                    vertical-align: middle;
-                  "
-                /></button
-            ></a>
-            <a
-              href="https://apps.apple.com/app/nedleal/id6760373778"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button
-                class="unirme_button"
-                aria-label="Descargar en App Store"
-              >
-                Descarga<img
-                  src="/assets/social/app-store-icon.svg"
-                  alt="App Store"
-                  style="
-                    margin-left: 10px;
-                    width: 38px;
-                    height: 38px;
-                    vertical-align: middle;
-                  "
-                /></button
-            ></a>
+          <div style="display: flex; justify-content: center;">
+            <button
+              class="unirme_button"
+              onclick="downloadApp()"
+              aria-label="Descargar la aplicación"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Descarga la app
+            </button>
           </div>
         </div>
         <div class="mensaje_final_pag-content">
