@@ -6,8 +6,11 @@ function downloadApp() {
     const playStoreUrl = "https://play.google.com/store/apps/details?id=com.nedsystem.movil";
     const appStoreUrl = "https://apps.apple.com/app/nedleal/id6760373778";
 
-    // iOS detection
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    // iOS or Mac detection
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    const isMac = /Macintosh|MacIntel|MacPPC|Mac68K/.test(userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+    if (isIOS || isMac) {
         window.open(appStoreUrl, "_blank");
         return;
     }
@@ -18,7 +21,7 @@ function downloadApp() {
         return;
     }
 
-    // Default for desktop or other systems: Open Play Store
-    // (Optional: Could show a modal or redirect to a landing page)
+    // Default for other desktop systems (Windows/Linux): Open Play Store
     window.open(playStoreUrl, "_blank");
 }
+
