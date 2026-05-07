@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["W5WTHF7JKP.mobi.ned.nedleal"],
+        "components": [
+          { "/": "/b/*", "comment": "Negocios" },
+          { "/": "/d/*", "comment": "Dinamicas" },
+          { "/": "/p/*", "comment": "Productos" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["W5WTHF7JKP.mobi.ned.nedleal"]
+  }
+}

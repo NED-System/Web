@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nedsystem.movil",
+      "sha256_cert_fingerprints": [
+        "AF:46:A6:33:08:76:F2:C2:C2:8C:68:20:B1:E3:75:0B:BD:C4:32:D8:3A:F5:25:86:92:D4:A4:F7:0E:FA:D8:4F"
+      ]
+    }
+  }
+]

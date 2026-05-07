@@ -1,0 +1,33 @@
+# =============================================================================
+# NED — Reglas para Universal Links (iOS) / App Links (Android) y share landing
+# =============================================================================
+
+# --- Content-Type correcto para Apple App Site Association --------------------
+# Apple exige application/json y el archivo NO tiene extensión.
+<Files "apple-app-site-association">
+    Header set Content-Type "application/json"
+</Files>
+
+# --- assetlinks.json: forzar Content-Type por si el server no lo deduce -------
+<Files "assetlinks.json">
+    Header set Content-Type "application/json"
+</Files>
+
+# --- Cache corto en .well-known para iterar verificación sin esperar 24h ------
+<FilesMatch "^(apple-app-site-association|assetlinks\.json)$">
+    Header set Cache-Control "public, max-age=300"
+</FilesMatch>
+
+# --- Rewrite engine -----------------------------------------------------------
+RewriteEngine On
+
+# Permitir acceso directo a archivos reales (index.html, css, js, .well-known/*)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rutas de compartido: /b/<slug>, /d/<slug>, /p/<slug> → share.html
+# share.html lee la URL desde JS para decidir el deep link y fallback a stores.
+RewriteRule ^b/[^/]+/?$  /share.html [L]
+RewriteRule ^d/[^/]+/?$  /share.html [L]
+RewriteRule ^p/[^/]+/?$  /share.html [L]
