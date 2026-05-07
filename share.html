@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C4227D" />
+    <meta name="robots" content="noindex" />
+    <title>Abrir en NED Leal</title>
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
+
+    <!-- Open Graph: vista previa cuando se comparte el link -->
+    <meta property="og:title" content="NED Leal" />
+    <meta
+      property="og:description"
+      content="Abre este contenido en la app NED Leal."
+    />
+    <meta property="og:image" content="/assets/logo/Logo_NED_ico.png" />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --brand: #c4227d;
+        --brand-dark: #9a1a62;
+        --bg: #ffffff;
+        --text: #1a1a1a;
+        --muted: #666;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 20px;
+        text-align: center;
+      }
+      .logo {
+        width: 96px;
+        height: 96px;
+        border-radius: 22px;
+        margin-bottom: 24px;
+        box-shadow: 0 6px 20px rgba(196, 34, 125, 0.18);
+      }
+      h1 {
+        font-size: 22px;
+        margin: 0 0 8px;
+        color: var(--brand);
+        letter-spacing: 0.2px;
+      }
+      p.lead {
+        margin: 0 0 28px;
+        color: var(--muted);
+        max-width: 420px;
+        line-height: 1.45;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 240px;
+        padding: 14px 22px;
+        margin: 8px 0;
+        border: 0;
+        border-radius: 999px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.08s ease, background 0.15s ease;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .btn-primary {
+        background: var(--brand);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: var(--brand-dark);
+      }
+      .btn-store {
+        background: #111;
+        color: #fff;
+      }
+      .stores {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 16px;
+      }
+      .footer-note {
+        margin-top: 28px;
+        font-size: 13px;
+        color: var(--muted);
+        max-width: 380px;
+        line-height: 1.4;
+      }
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <img
+        class="logo"
+        src="/assets/logo/Logo_NED_ico.png"
+        alt="NED Leal"
+        width="96"
+        height="96"
+      />
+      <h1>Abre este contenido en NED Leal</h1>
+      <p class="lead" id="lead">
+        Si tienes la app instalada, debería abrirse automáticamente. Si no, descárgala desde tu tienda.
+      </p>
+
+      <button id="open-app" class="btn btn-primary" type="button">
+        Abrir en la app
+      </button>
+
+      <div class="stores">
+        <a
+          id="ios-link"
+          class="btn btn-store hidden"
+          href="https://apps.apple.com/app/nedleal/id6760373778"
+          rel="noopener"
+        >
+          Descargar en App Store
+        </a>
+        <a
+          id="android-link"
+          class="btn btn-store hidden"
+          href="https://play.google.com/store/apps/details?id=com.nedsystem.movil"
+          rel="noopener"
+        >
+          Descargar en Google Play
+        </a>
+      </div>
+
+      <p class="footer-note" id="desktop-note">
+        Este enlace está pensado para abrirse en un dispositivo móvil con la app
+        NED Leal instalada.
+      </p>
+    </main>
+
+    <script>
+      (function () {
+        var APPSTORE_URL =
+          "https://apps.apple.com/app/nedleal/id6760373778";
+        var PLAYSTORE_URL =
+          "https://play.google.com/store/apps/details?id=com.nedsystem.movil";
+
+        var ua = navigator.userAgent || "";
+        var isAndroid = /Android/i.test(ua);
+        var isIOS =
+          /iPad|iPhone|iPod/.test(ua) ||
+          (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+        var iosLink = document.getElementById("ios-link");
+        var androidLink = document.getElementById("android-link");
+        var desktopNote = document.getElementById("desktop-note");
+        var openAppBtn = document.getElementById("open-app");
+
+        if (isIOS) {
+          iosLink.classList.remove("hidden");
+          desktopNote.classList.add("hidden");
+        } else if (isAndroid) {
+          androidLink.classList.remove("hidden");
+          desktopNote.classList.add("hidden");
+        } else {
+          // Escritorio: muestra ambos para que escaneen QR / busquen en su móvil.
+          iosLink.classList.remove("hidden");
+          androidLink.classList.remove("hidden");
+          openAppBtn.classList.add("hidden");
+        }
+
+        // Parse de la ruta /b/<slug>, /d/<slug>, /p/<slug>
+        var path = window.location.pathname.replace(/\/+$/, "");
+        var match = path.match(/^\/(b|d|p)\/([^\/]+)$/);
+        var kind = match ? match[1] : null;
+        var slug = match ? match[2] : null;
+
+        function tryOpenApp() {
+          if (!isIOS && !isAndroid) return;
+
+          // En iOS / Android, si la AASA / assetlinks están bien configurados,
+          // el sistema operativo intercepta la URL ANTES de cargar esta página.
+          // Si llegamos aquí, lo más probable es que la app no esté instalada.
+          // Aún así, intentamos un deep link por custom scheme como respaldo.
+          if (!kind || !slug) return;
+
+          var scheme = "nedleal://" + kind + "/" + slug;
+          var fallback = isIOS ? APPSTORE_URL : PLAYSTORE_URL;
+          var start = Date.now();
+
+          // Si tras 1.2s el usuario sigue aquí, asumimos que la app no abrió.
+          var timer = setTimeout(function () {
+            if (Date.now() - start < 1500 && !document.hidden) {
+              window.location.href = fallback;
+            }
+          }, 1200);
+
+          // Intentar abrir el esquema. En iOS moderno se prefiere location.href.
+          window.location.href = scheme;
+
+          // Si el navegador pasa a background (la app abrió), cancela fallback.
+          window.addEventListener(
+            "pagehide",
+            function () {
+              clearTimeout(timer);
+            },
+            { once: true }
+          );
+          document.addEventListener(
+            "visibilitychange",
+            function () {
+              if (document.hidden) clearTimeout(timer);
+            },
+            { once: true }
+          );
+        }
+
+        openAppBtn.addEventListener("click", tryOpenApp);
+
+        // Intento automático en móvil (un solo intento, sin loop)
+        if ((isIOS || isAndroid) && kind && slug) {
+          // Pequeño delay para que la página termine de pintar antes de saltar.
+          setTimeout(tryOpenApp, 250);
+        }
+      })();
+    </script>
+  </body>
+</html>
