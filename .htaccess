@@ -26,8 +26,7 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Rutas de compartido: /b/<slug>, /d/<slug>, /p/<slug> → share.html
-# share.html lee la URL desde JS para decidir el deep link y fallback a stores.
-RewriteRule ^b/[^/]+/?$  /share.html [L]
-RewriteRule ^d/[^/]+/?$  /share.html [L]
-RewriteRule ^p/[^/]+/?$  /share.html [L]
+# Rutas de compartido: Redirigir (302) al backend Laravel para renderizar Open Graph dinámico y landing real
+RewriteRule ^b/([^/]+)/?$ https://nedback.ned.mobi/b/$1 [R=302,QSA,L]
+RewriteRule ^d/([^/]+)/?$ https://nedback.ned.mobi/d/$1 [R=302,QSA,L]
+RewriteRule ^p/([^/]+)/?$ https://nedback.ned.mobi/p/$1 [R=302,QSA,L]
