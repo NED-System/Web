@@ -335,9 +335,12 @@ main {
 }
 
 @keyframes bounce-gentle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
@@ -555,7 +558,8 @@ main {
   align-items: flex-start;
 }
 
-.footer_links h3, .footer__suscribirse h3 {
+.footer_links h3,
+.footer__suscribirse h3 {
   font-family: "Outfit", sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
@@ -741,15 +745,28 @@ main {
     max-height: 90%;
   }
 
+  .poderL {
+    margin: 7.5rem 0 2.5rem 0;
+    padding: 0 1.2rem;
+    word-break: break-word;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.8rem;
+    border-width: 2px;
+    margin-bottom: 0.8rem;
+  }
+
   #poder_title {
-    font-size: clamp(2.1rem, 7vw, 3.2rem);
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
     font-weight: 900;
     color: var(--magenta);
-    -webkit-text-stroke: 4px var(--text-negro);
+    -webkit-text-stroke: 2px var(--text-negro);
     paint-order: stroke fill;
-    text-shadow: 3px 3px 0px var(--amarillo), 6px 6px 0px var(--text-negro);
-    letter-spacing: 0.5px;
-    line-height: 1.1;
+    text-shadow: 2px 2px 0px var(--amarillo), 4px 4px 0px var(--text-negro);
+    letter-spacing: 0;
+    line-height: 1.2;
     background: none;
     -webkit-text-fill-color: initial;
     animation: none;
@@ -761,7 +778,8 @@ main {
     padding-bottom: 2rem;
   }
 
-  .footer_links, .footer__suscribirse {
+  .footer_links,
+  .footer__suscribirse {
     align-items: center;
     text-align: center;
   }

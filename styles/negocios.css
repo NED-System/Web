@@ -1,6 +1,7 @@
 /* Negocios page specific styles */
 main {
-    padding-top: 7.5rem; /* Incremented to perfectly clear the fixed header */
+    padding-top: 7.5rem;
+    /* Incremented to perfectly clear the fixed header */
     margin: 0;
     box-sizing: border-box;
 }
@@ -424,7 +425,8 @@ main {
 }
 
 .dinamicas::before {
-    display: none; /* Removed the line image divider */
+    display: none;
+    /* Removed the line image divider */
 }
 
 .dinamicas-content {
@@ -470,7 +472,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.dinamicas > div:not(.dinamicas-content) {
+.dinamicas>div:not(.dinamicas-content) {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -586,7 +588,7 @@ main {
     gap: 3.5rem;
 }
 
-.mensaje_final_pag > div {
+.mensaje_final_pag>div {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -599,13 +601,37 @@ main {
     font-size: clamp(4rem, 11vw, 8.5rem);
     line-height: 0.95;
     color: var(--magenta);
-    -webkit-text-stroke: 3.5px var(--text-negro);
+    -webkit-text-stroke: 2px var(--text-negro);
     paint-order: stroke fill;
-    text-shadow: 5px 5px 0px var(--amarillo), 10px 10px 0px var(--text-negro);
+    text-shadow: 
+        1px 1px 0px var(--amarillo),
+        2px 2px 0px var(--amarillo),
+        3px 3px 0px var(--amarillo),
+        4px 4px 0px var(--amarillo),
+        5px 5px 0px var(--text-negro),
+        6px 6px 0px var(--text-negro),
+        7px 7px 0px var(--text-negro),
+        8px 8px 0px var(--text-negro),
+        15px 15px 30px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
     letter-spacing: -2px;
     text-align: center;
     margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.mensaje_final_pag-title:hover {
+    transform: translateY(-5px);
+    text-shadow: 
+        2px 2px 0px var(--amarillo),
+        4px 4px 0px var(--amarillo),
+        6px 6px 0px var(--amarillo),
+        8px 8px 0px var(--amarillo),
+        10px 10px 0px var(--text-negro),
+        12px 12px 0px var(--text-negro),
+        14px 14px 0px var(--text-negro),
+        16px 16px 0px var(--text-negro),
+        25px 25px 40px rgba(196, 34, 125, 0.4);
 }
 
 .mensaje_final_pag-android {
@@ -650,7 +676,8 @@ main {
     padding-left: 0;
 }
 
-.mensaje_final_pag_redes, .mensaje_final_pag-redes {
+.mensaje_final_pag_redes,
+.mensaje_final_pag-redes {
     font-family: "Nunito", sans-serif;
     font-size: clamp(1.1rem, 1.25vw, 1.3rem);
     font-weight: 700;
@@ -663,7 +690,7 @@ main {
     width: 80%;
     max-width: 400px;
     margin-top: 1.5rem;
-    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.05));
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.05));
 }
 
 /* Estilos para los iconos de redes sociales */
@@ -703,7 +730,7 @@ main {
     main {
         padding-top: 6.5rem;
     }
-    
+
     .clientesTeRecomiendan {
         flex-direction: column;
         justify-content: center;
@@ -790,7 +817,7 @@ main {
     .tipos_de_negocio_img {
         width: 75%;
         max-width: 250px;
-        display: block; 
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
@@ -887,12 +914,14 @@ main {
         order: 1;
     }
 
-    .dinamicas > div:not(.dinamicas-content) {
+    .dinamicas>div:not(.dinamicas-content) {
         width: 100%;
         order: 2;
     }
 
-    #referidos, #descuentos, #alianzas {
+    #referidos,
+    #descuentos,
+    #alianzas {
         flex-direction: column;
     }
 
@@ -902,9 +931,9 @@ main {
         order: 1;
     }
 
-    #referidos > div:not(.dinamicas-content),
-    #descuentos > div:not(.dinamicas-content),
-    #alianzas > div:not(.dinamicas-content) {
+    #referidos>div:not(.dinamicas-content),
+    #descuentos>div:not(.dinamicas-content),
+    #alianzas>div:not(.dinamicas-content) {
         order: 2;
     }
 
@@ -927,7 +956,8 @@ main {
         text-align: left;
     }
 
-    .dinamicas-phone, .dinamicas-phone-alianzas {
+    .dinamicas-phone,
+    .dinamicas-phone-alianzas {
         width: 75%;
         max-width: 250px;
     }
@@ -961,7 +991,20 @@ main {
         width: 70%;
         max-width: 220px;
     }
-    
+
+    /* Disparador de animaciones en móviles cuando la sección está en pantalla */
+    .dinamicas.mobile-in-view .dinamicas-phone,
+    .dinamicas.mobile-in-view .dinamicas-phone-alianzas,
+    .dinamicas.mobile-in-view .dinamicas-person,
+    .dinamicas.mobile-in-view .referido-person,
+    .dinamicas.mobile-in-view .cumpleanos-person,
+    .dinamicas.mobile-in-view .descuento-person,
+    .dinamicas.mobile-in-view .puntos-person,
+    .dinamicas.mobile-in-view .alianzas-person {
+        transform: scale(1.06) rotate(1.5deg);
+        filter: drop-shadow(8px 8px 0px var(--magenta));
+    }
+
     /* Estilos responsivos para mensaje_final_pag */
     .mensaje_final_pag {
         flex-direction: column;
@@ -969,18 +1012,25 @@ main {
         gap: 2.5rem;
         margin: 3rem auto;
     }
-    
-    .mensaje_final_pag > div {
+
+    .mensaje_final_pag>div {
         width: 100%;
         margin-bottom: 0;
     }
-    
+
     .mensaje_final_pag-title {
         font-size: clamp(3.5rem, 10vw, 5.5rem);
-        -webkit-text-stroke: 2.5px var(--text-negro);
-        text-shadow: 4px 4px 0px var(--amarillo), 8px 8px 0px var(--text-negro);
+        -webkit-text-stroke: 1.5px var(--text-negro);
+        text-shadow: 
+            1px 1px 0px var(--amarillo),
+            2px 2px 0px var(--amarillo),
+            3px 3px 0px var(--amarillo),
+            4px 4px 0px var(--text-negro),
+            5px 5px 0px var(--text-negro),
+            6px 6px 0px var(--text-negro),
+            12px 12px 20px rgba(0, 0, 0, 0.35);
     }
-    
+
     .mensaje_final_pag-android {
         width: 15%;
         margin-top: 0rem;

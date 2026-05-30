@@ -108,4 +108,25 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typewriterText) {
         typewriterObserver.observe(typewriterText);
     }
+
+    // Observer para las secciones .dinamicas (especialmente util para moviles)
+    const dinamicasObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('mobile-in-view');
+            } else {
+                entry.target.classList.remove('mobile-in-view');
+            }
+        });
+    }, {
+        threshold: 0.4,
+        rootMargin: '0px'
+    });
+
+    const dinamicasSections = document.querySelectorAll('.dinamicas, .fisico_digital, .gana_con_cada_dinamica, .negocios_preferidos');
+    if (dinamicasSections.length > 0) {
+        dinamicasSections.forEach(section => {
+            dinamicasObserver.observe(section);
+        });
+    }
 });
