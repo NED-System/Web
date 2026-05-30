@@ -256,11 +256,11 @@ main {
 }
 
 .consumers-card .img-wrapper {
-  background: linear-gradient(135deg, var(--amarillo) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: transparent;
 }
 
 .businesses-card .img-wrapper {
-  background: linear-gradient(135deg, var(--magenta) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: transparent;
 }
 
 .img__seccion {
