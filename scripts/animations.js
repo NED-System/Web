@@ -109,25 +109,29 @@ document.addEventListener('DOMContentLoaded', function() {
         typewriterObserver.observe(typewriterText);
     }
 
-    // Observer para las secciones .dinamicas (especialmente util para moviles)
-    // Se usa threshold: 0 y rootMargin para máxima compatibilidad con Safari iOS
-    const dinamicasObserver = new IntersectionObserver((entries) => {
+    // Observer para las imagenes (mucho más confiable en iOS Safari que observar contenedores grandes)
+    const mobileAnimObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('mobile-in-view');
+                entry.target.classList.add('mobile-in-view-img');
             } else {
-                entry.target.classList.remove('mobile-in-view');
+                entry.target.classList.remove('mobile-in-view-img');
             }
         });
     }, {
-        threshold: 0,
-        rootMargin: '-15% 0px -15% 0px'
+        threshold: 0.1,
+        rootMargin: '0px'
     });
 
-    const dinamicasSections = document.querySelectorAll('.dinamicas, .fisico_digital, .gana_con_cada_dinamica, .negocios_preferidos');
-    if (dinamicasSections.length > 0) {
-        dinamicasSections.forEach(section => {
-            dinamicasObserver.observe(section);
+    const mobileAnimImages = document.querySelectorAll(
+        '.dinamicas-phone, .dinamicas-phone-alianzas, .dinamicas-person, ' +
+        '.referido-person, .cumpleanos-person, .descuento-person, ' +
+        '.puntos-person, .alianzas-person, ' +
+        '.fisico_digital_celular_img, .gana_con_cada_dinamica_dinamicas_img, .negocios_preferidos_negocios_img'
+    );
+    if (mobileAnimImages.length > 0) {
+        mobileAnimImages.forEach(img => {
+            mobileAnimObserver.observe(img);
         });
     }
 });

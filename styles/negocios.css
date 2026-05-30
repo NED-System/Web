@@ -992,17 +992,17 @@ main {
         max-width: 220px;
     }
 
-    /* Disparador de animaciones en móviles cuando la sección está en pantalla */
-    .dinamicas.mobile-in-view .dinamicas-phone,
-    .dinamicas.mobile-in-view .dinamicas-phone-alianzas,
-    .dinamicas.mobile-in-view .dinamicas-person,
-    .dinamicas.mobile-in-view .referido-person,
-    .dinamicas.mobile-in-view .cumpleanos-person,
-    .dinamicas.mobile-in-view .descuento-person,
-    .dinamicas.mobile-in-view .puntos-person,
-    .dinamicas.mobile-in-view .alianzas-person {
-        transform: scale(1.06) rotate(1.5deg);
-        filter: drop-shadow(8px 8px 0px var(--magenta));
+    /* Disparador de animaciones en móviles cuando la imagen está en pantalla */
+    .dinamicas-phone.mobile-in-view-img,
+    .dinamicas-phone-alianzas.mobile-in-view-img,
+    .dinamicas-person.mobile-in-view-img,
+    .referido-person.mobile-in-view-img,
+    .cumpleanos-person.mobile-in-view-img,
+    .descuento-person.mobile-in-view-img,
+    .puntos-person.mobile-in-view-img,
+    .alianzas-person.mobile-in-view-img {
+        transform: translateY(0) scale(1.06) rotate(1.5deg) !important;
+        filter: drop-shadow(8px 8px 0px var(--magenta)) !important;
     }
 
     /* Estilos responsivos para mensaje_final_pag */

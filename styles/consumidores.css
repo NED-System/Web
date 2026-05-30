@@ -565,19 +565,19 @@ main {
         font-size: clamp(1.1rem, 4vw, 1.4rem);
     }
 
-    /* Disparador de animaciones en móviles cuando la sección está en pantalla */
-    .fisico_digital.mobile-in-view .fisico_digital_celular_img {
-        transform: scale(1.05) rotate(-1.5deg);
-        filter: drop-shadow(8px 8px 0px var(--magenta));
+    /* Disparador de animaciones en móviles cuando la imagen está en pantalla */
+    .fisico_digital_celular_img.mobile-in-view-img {
+        transform: translateY(0) scale(1.05) rotate(-1.5deg) !important;
+        filter: drop-shadow(8px 8px 0px var(--magenta)) !important;
     }
 
-    .gana_con_cada_dinamica.mobile-in-view .gana_con_cada_dinamica_dinamicas_img {
-        transform: scale(1.05) rotate(1.5deg);
-        filter: drop-shadow(8px 8px 0px var(--magenta));
+    .gana_con_cada_dinamica_dinamicas_img.mobile-in-view-img {
+        transform: translateY(0) scale(1.05) rotate(1.5deg) !important;
+        filter: drop-shadow(8px 8px 0px var(--magenta)) !important;
     }
 
-    .negocios_preferidos.mobile-in-view .negocios_preferidos_negocios_img {
-        transform: scale(1.05) rotate(-1.5deg);
-        filter: drop-shadow(8px 8px 0px var(--magenta));
+    .negocios_preferidos_negocios_img.mobile-in-view-img {
+        transform: translateY(0) scale(1.05) rotate(-1.5deg) !important;
+        filter: drop-shadow(8px 8px 0px var(--magenta)) !important;
     }
 }
