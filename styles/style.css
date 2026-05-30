@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
 :root {
   --background-color: #ffffff;
@@ -25,7 +25,7 @@ body {
 
 /* Typography */
 h1 {
-  font-family: asap;
+  font-family: "Outfit", sans-serif;
   text-align: center;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-weight: 900;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-family: asap;
+  font-family: "Outfit", sans-serif;
   text-align: center;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-weight: 900;
@@ -71,27 +71,43 @@ li {
 }
 
 #poder_title {
-  font-size: clamp(3rem, 2.5vw, 2.5rem);
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
   font-weight: 900;
-  background-image: linear-gradient(var(--angle), hotpink, indigo);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: move 3s linear alternate infinite;
+  color: var(--magenta);
+  -webkit-text-stroke: 5.5px var(--text-negro);
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 0px var(--amarillo), 8px 8px 0px var(--text-negro);
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin: 0.5rem auto 1.5rem auto;
+  max-width: 900px;
+  display: block;
 }
 
-@keyframes move {
-  0% {
-    --angle: 0.25turn;
-  }
-  100% {
-    --angle: 0.75turn;
-  }
+.hero-badge {
+  display: inline-block;
+  background-color: var(--amarillo);
+  color: var(--text-negro);
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 850;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 2.5px solid var(--text-negro);
+  box-shadow: 3px 3px 0px var(--text-negro);
+  margin-bottom: 1.5rem;
+  transform: rotate(-1.5deg);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
 }
 
-@property --angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0turn;
+.hero-badge:hover {
+  transform: rotate(1.5deg) scale(1.05);
+  background-color: var(--magenta);
+  color: white;
 }
 
 /* Header and Navigation (Glassmorphism modern styling) */
@@ -177,12 +193,13 @@ main {
 
 /* Users Grid and Interactive Portals */
 .h3__usuarios {
-  font-family: asap;
+  font-family: "Outfit", sans-serif;
   font-size: clamp(1.8rem, 2vw, 2.2rem);
   font-weight: 900;
   color: var(--text-negro);
   margin-bottom: 0.25rem;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .usuarios-grid {
@@ -190,8 +207,8 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  padding: 0 1rem;
+  gap: 3.5rem;
+  padding: 0 1.5rem;
 }
 
 .usuarios-card-link {
@@ -202,21 +219,27 @@ main {
 
 .usuarios-card {
   background: white;
-  padding: 2.5rem 2rem 2rem;
+  padding: 2.5rem 2rem 2.2rem;
   text-align: center;
-  border-radius: 24px;
-  border: 1px solid rgba(43, 45, 66, 0.08);
-  box-shadow: 0 10px 30px rgba(43, 45, 66, 0.04);
+  border-radius: 20px;
+  border: 3.5px solid var(--text-negro);
+  box-shadow: 8px 8px 0px var(--text-negro);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.3s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .usuarios-card-link:hover .usuarios-card {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(196, 34, 125, 0.08);
-  border-color: rgba(196, 34, 125, 0.2);
+  transform: translate(-6px, -6px);
+}
+
+.usuarios-card-link:hover .consumers-card {
+  box-shadow: 14px 14px 0px var(--magenta);
+}
+
+.usuarios-card-link:hover .businesses-card {
+  box-shadow: 14px 14px 0px var(--amarillo);
 }
 
 .img-wrapper {
@@ -228,35 +251,45 @@ main {
   overflow: hidden;
   border-radius: 16px;
   margin: 1.5rem 0;
-  background-color: rgba(43, 45, 66, 0.02);
+  border: 2.5px solid var(--text-negro);
+  transition: transform 0.2s ease;
+}
+
+.consumers-card .img-wrapper {
+  background: linear-gradient(135deg, var(--amarillo) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.businesses-card .img-wrapper {
+  background: linear-gradient(135deg, var(--magenta) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 
 .img__seccion {
-  max-width: 80%;
-  max-height: 85%;
+  max-width: 75%;
+  max-height: 80%;
   object-fit: contain;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .usuarios-card-link:hover .img__seccion {
-  transform: scale(1.06) translateY(-5px);
+  transform: scale(1.08) translateY(-5px);
 }
 
 .card-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--text-negro);
-  color: white;
-  padding: 0.8rem 1.8rem;
+  background-color: white;
+  color: var(--text-negro);
+  padding: 0.8rem 2rem;
   border-radius: 12px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1rem;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  border: 2.5px solid var(--text-negro);
+  box-shadow: 4px 4px 0px var(--text-negro);
   margin-top: 1rem;
   width: fit-content;
   align-self: center;
-  box-shadow: 0 4px 6px rgba(43, 45, 66, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 
 .card-btn .arrow {
@@ -265,8 +298,18 @@ main {
 }
 
 .usuarios-card-link:hover .card-btn {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px var(--text-negro);
+}
+
+.usuarios-card-link:hover .consumers-card .card-btn {
+  background-color: var(--amarillo);
+  color: var(--text-negro);
+}
+
+.usuarios-card-link:hover .businesses-card .card-btn {
   background-color: var(--magenta);
-  box-shadow: 0 6px 15px rgba(196, 34, 125, 0.3);
+  color: white;
 }
 
 .usuarios-card-link:hover .card-btn .arrow {
@@ -316,10 +359,10 @@ main {
 .lista__espera__div {
   background-color: var(--text-negro);
   color: white;
-  border: none;
+  border: 3.5px solid var(--text-negro);
   padding: 4rem 3rem;
   border-radius: 24px;
-  box-shadow: 0 15px 35px rgba(43, 45, 66, 0.15);
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -346,7 +389,7 @@ main {
   font-weight: 900;
   margin-bottom: 1rem;
   z-index: 2;
-  font-family: asap;
+  font-family: "Outfit", sans-serif;
   max-width: 700px;
   line-height: 1.2;
   text-align: center;
@@ -372,37 +415,40 @@ main {
 
 /* Global Buttons and Specific Premium Button */
 .unirme_button {
-  padding: 0.8rem 2rem;
+  padding: 0.85rem 2.2rem;
   font-size: 1rem;
   background-color: var(--magenta);
   color: white;
-  border: none;
+  border: 2.5px solid var(--text-negro);
   border-radius: 12px;
   cursor: pointer;
   margin: 1rem 0;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
-  font-weight: 700;
-  box-shadow: 0 4px 10px rgba(196, 34, 125, 0.25);
+  font-weight: 800;
+  box-shadow: 4px 4px 0px var(--text-negro);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .unirme_button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(196, 34, 125, 0.35);
-  background-color: var(--text-negro);
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px var(--text-negro);
+  background-color: var(--amarillo);
+  color: var(--text-negro);
 }
 
 .unirme_button:active {
-  transform: translateY(0);
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 0px var(--text-negro);
 }
 
 .main_download_btn {
   background-color: var(--magenta);
   color: white;
-  box-shadow: 0 6px 20px rgba(196, 34, 125, 0.35);
+  box-shadow: 4px 4px 0px var(--text-negro);
+  border: 2.5px solid var(--text-negro);
   border-radius: 12px;
   padding: 1rem 2.5rem;
   font-weight: 800;
@@ -412,39 +458,72 @@ main {
 .main_download_btn:hover {
   background-color: white;
   color: var(--text-negro);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+  box-shadow: 6px 6px 0px var(--text-negro);
 }
 
 /* Diseño alternativo con fondo amarillo y texto negro */
 .lista__espera__div.yellow_theme {
-  background: linear-gradient(135deg, #ffe700 0%, #fff176 100%);
+  background: var(--amarillo);
   color: var(--text-negro);
-  box-shadow: 0 15px 35px rgba(255, 231, 0, 0.12);
-  border: 1px solid rgba(43, 45, 66, 0.08);
+  box-shadow: 10px 10px 0px var(--text-negro);
+  border: 3.5px solid var(--text-negro);
 }
 
 .lista__espera__div.yellow_theme::before {
-  background: radial-gradient(circle, rgba(196, 34, 125, 0.04) 0%, transparent 60%);
+  display: none;
 }
 
 .lista__espera__div.yellow_theme h2 {
-  color: var(--text-negro);
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  -webkit-text-stroke: 4.5px var(--text-negro);
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 0px var(--text-negro);
+  margin-bottom: 1.2rem;
+  z-index: 2;
+  max-width: 750px;
 }
 
 .lista__espera__div.yellow_theme p {
-  color: #4b5563;
+  color: var(--text-negro);
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  line-height: 1.45;
+  margin-bottom: 2.2rem;
+  z-index: 2;
+  max-width: 650px;
+  text-align: center;
 }
 
 .lista__espera__div.yellow_theme .main_download_btn {
   background-color: var(--text-negro);
   color: white;
-  box-shadow: 0 6px 20px rgba(43, 45, 66, 0.25);
+  border: 3px solid var(--text-negro);
+  box-shadow: 5px 5px 0px var(--magenta);
+  border-radius: 14px;
+  padding: 1.1rem 3rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
 }
 
 .lista__espera__div.yellow_theme .main_download_btn:hover {
   background-color: var(--magenta);
   color: white;
-  box-shadow: 0 8px 25px rgba(196, 34, 125, 0.35);
+  transform: translate(-5px, -5px);
+  box-shadow: 9px 9px 0px var(--text-negro);
+}
+
+.lista__espera__div.yellow_theme .main_download_btn:active {
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0px var(--text-negro);
 }
 
 /* Footer (Dark Mode Premium style) */
@@ -477,7 +556,7 @@ main {
 }
 
 .footer_links h3, .footer__suscribirse h3 {
-  font-family: asap;
+  font-family: "Outfit", sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
   color: white;
@@ -663,12 +742,17 @@ main {
   }
 
   #poder_title {
-    font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+    font-size: clamp(2.1rem, 7vw, 3.2rem);
     font-weight: 900;
-    background-image: linear-gradient(var(--angle), hotpink, indigo);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: move 3s linear alternate infinite;
+    color: var(--magenta);
+    -webkit-text-stroke: 4px var(--text-negro);
+    paint-order: stroke fill;
+    text-shadow: 3px 3px 0px var(--amarillo), 6px 6px 0px var(--text-negro);
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    background: none;
+    -webkit-text-fill-color: initial;
+    animation: none;
   }
 
   .footer_content {
