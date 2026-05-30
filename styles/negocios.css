@@ -498,6 +498,7 @@ main {
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s;
     filter: drop-shadow(4px 4px 0px var(--text-negro));
     display: block;
+    will-change: transform, filter;
 }
 
 .dinamicas:hover .dinamicas-phone,

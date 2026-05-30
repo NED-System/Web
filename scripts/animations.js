@@ -109,29 +109,70 @@ document.addEventListener('DOMContentLoaded', function() {
         typewriterObserver.observe(typewriterText);
     }
 
-    // Observer para las imagenes (mucho más confiable en iOS Safari que observar contenedores grandes)
-    const mobileAnimObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('mobile-in-view-img');
-            } else {
-                entry.target.classList.remove('mobile-in-view-img');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px'
-    });
-
+    // Observer and Scroll Fallback for Mobile Scroll Animations
     const mobileAnimImages = document.querySelectorAll(
         '.dinamicas-phone, .dinamicas-phone-alianzas, .dinamicas-person, ' +
         '.referido-person, .cumpleanos-person, .descuento-person, ' +
         '.puntos-person, .alianzas-person, ' +
         '.fisico_digital_celular_img, .gana_con_cada_dinamica_dinamicas_img, .negocios_preferidos_negocios_img'
     );
+
     if (mobileAnimImages.length > 0) {
+        // High-performance viewport check function
+        function updateMobileAnimations() {
+            const viewportHeight = window.innerHeight;
+            
+            mobileAnimImages.forEach(img => {
+                const rect = img.getBoundingClientRect();
+                
+                // Animate when the image is centered in the viewport on mobile.
+                // Specifically: top has entered bottom 88% of screen, and bottom is above top 12% of screen.
+                const isVisible = (rect.top < viewportHeight * 0.88) && (rect.bottom > viewportHeight * 0.12);
+                
+                if (isVisible) {
+                    img.classList.add('mobile-in-view-img');
+                } else {
+                    img.classList.remove('mobile-in-view-img');
+                }
+            });
+        }
+
+        // 1. Primary Modern Driver: IntersectionObserver with slight viewport offsets
+        const mobileAnimObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('mobile-in-view-img');
+                } else {
+                    entry.target.classList.remove('mobile-in-view-img');
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '-5% 0px -8% 0px'
+        });
+
         mobileAnimImages.forEach(img => {
             mobileAnimObserver.observe(img);
         });
+
+        // 2. Secondary Bulletproof Fallback: Passive scroll and resize listeners for iOS compositor delay bugs
+        let tick = false;
+        window.addEventListener('scroll', () => {
+            if (!tick) {
+                window.requestAnimationFrame(() => {
+                    updateMobileAnimations();
+                    tick = false;
+                });
+                tick = true;
+            }
+        }, { passive: true });
+
+        window.addEventListener('resize', updateMobileAnimations, { passive: true });
+        
+        // Initial triggers once loaded, and with small layout settle timeouts
+        updateMobileAnimations();
+        setTimeout(updateMobileAnimations, 150);
+        setTimeout(updateMobileAnimations, 450);
+        setTimeout(updateMobileAnimations, 1000);
     }
 });

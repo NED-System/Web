@@ -175,6 +175,7 @@ main {
     max-width: 300px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s;
     filter: drop-shadow(4px 4px 0px var(--text-negro));
+    will-change: transform, filter;
 }
 
 .fisico_digital:hover .fisico_digital_celular_img {
@@ -240,6 +241,7 @@ main {
     max-width: 320px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s;
     filter: drop-shadow(4px 4px 0px var(--text-negro));
+    will-change: transform, filter;
 }
 
 .gana_con_cada_dinamica:hover .gana_con_cada_dinamica_dinamicas_img {
@@ -308,6 +310,7 @@ main {
     max-width: 320px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s;
     filter: drop-shadow(4px 4px 0px var(--text-negro));
+    will-change: transform, filter;
 }
 
 .negocios_preferidos:hover .negocios_preferidos_negocios_img {
