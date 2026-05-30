@@ -12,8 +12,8 @@
   <meta name="theme-color" content="#C4227D" />
   <link rel="manifest" href="/manifest.json" />
   <title>NED - Planes y Precios</title>
-  <link rel="stylesheet" href="/styles/style.css?v=1.1" />
-  <link rel="stylesheet" href="/styles/planes.css?v=1.0" />
+  <link rel="stylesheet" href="/styles/style.css?v=3.0" />
+  <link rel="stylesheet" href="/styles/planes.css?v=3.0" />
   <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
   <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
   <!-- Brevo Conversations {literal} -->
@@ -50,7 +50,7 @@
       </h2>
       <p class="inicio_planes_p">
         Conecta con tus clientes, dinamiza tu negocio, fideliza a tus
-        clientes, aumenta tus ventas
+        clientes, aumenta tus ventas.
       </p>
       <h2 class="inicio_planes_h2">PLANES</h2>
       <p class="inicio_planes_p">
@@ -58,72 +58,181 @@
         podrás enviar notificaciones como si tuvieras tu propia app, mostrar
         toda tu información, atender a tus clientes y crear dinámicas
         comerciales de una forma realmente simple.
+        Los planes aplican para una sola unidad de negocio.
       </p>
     </section>
 
-    <!-- Sección de planes de precios según la imagen de referencia -->
+    <!-- Sección de planes de precios rediseñada -->
     <section class="planes_precios">
+      <!-- PLAN START -->
       <div class="plan_card plan_start">
         <div class="plan_header">Start</div>
         <div class="plan_content">
           <div class="plan_price">
-            <span class="currency">$</span>0<span class="period">/Gratis siempre</span>
+            <div class="price_value">
+              <span class="amount">Gratis</span>
+            </div>
+            <span class="period">siempre</span>
           </div>
-          <div class="plan_features">
-            <p>
-              + Muestra la información de tu negocio y los productos que
-              vendes.
-            </p>
-            <p>+ Chat</p>
-            <p>+ Creación de las dinámicas:</p>
-            <ul>
-              <li>Anuncios</li>
-              <li>Descuento</li>
-              <li>Dos X Uno</li>
-              <li>Nuevo consumidor</li>
-            </ul>
-          </div>
-
+          <p class="plan_description">Muestra la información de tu negocio y los productos o servicios que ofreces.</p>
+          <ul class="plan_features">
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>50</strong> seguidores</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>50</strong> productos</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Chat con 7 días</strong> de retención de imágenes</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Comparte tu catálogo y productos</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Notificaciones push de chats y dinámicas</span>
+            </li>
+          </ul>
+          
+          <div class="plan_divider"></div>
+          
+          <div class="plan_dynamics_header">+ Creación de las dinámicas:</div>
+          <ul class="plan_dynamics_list">
+            <li>Anuncios</li>
+            <li>Descuento</li>
+            <li>Dos X Uno</li>
+            <li>Nuevo consumidor</li>
+          </ul>
         </div>
       </div>
 
-      <div class="plan_card plan_pro">
+      <!-- PLAN LITE -->
+      <div class="plan_card plan_lite">
+        <div class="plan_header">Lite</div>
+        <div class="plan_content">
+          <div class="plan_price">
+            <div class="price_value">
+              <span class="currency">$</span><span class="amount">49.000</span>
+            </div>
+            <span class="period">/ mes + IVA</span>
+          </div>
+          <p class="plan_description"><strong>Todo lo del plan Start, y además:</strong></p>
+          <ul class="plan_features">
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>120</strong> seguidores</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>150</strong> productos</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Chat con 7 días</strong> de retención de imágenes</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Notificaciones push de chats y dinámicas</span>
+            </li>
+          </ul>
+          
+          <div class="plan_divider"></div>
+          
+          <div class="plan_dynamics_header">+ Creación de las dinámicas:</div>
+          <ul class="plan_dynamics_list">
+            <li>Sorteo</li>
+            <li>Cumpleaños</li>
+            <li>Plan de puntos</li>
+            <li>Referidos</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PLAN PRO -->
+      <div class="plan_card plan_pro highlighted">
+        <div class="popular_badge">MÁS POPULAR</div>
         <div class="plan_header">Pro</div>
         <div class="plan_content">
           <div class="plan_price">
-            <span class="currency">$</span>95.000<span class="period">/mes + Iva</span>
+            <div class="price_value">
+              <span class="currency">$</span><span class="amount">119.000</span>
+            </div>
+            <span class="period">/ mes + IVA</span>
           </div>
-          <div class="plan_features">
-            <p>TODO LO DEL PLAN START Y</p>
-            <p>+ Creación de las dinámicas:</p>
-            <ul>
-              <li>Sorteo</li>
-              <li>Cumpleaños</li>
-              <li>Plan de puntos</li>
-              <li>Referidos</li>
-            </ul>
-          </div>
-
+          <p class="plan_description"><strong>Todo lo del plan Lite, y además:</strong></p>
+          <ul class="plan_features">
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>350</strong> seguidores</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Hasta <strong>500</strong> productos</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Chat con 15 días</strong> de retención de imágenes</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Notificaciones push de chats y dinámicas</span>
+            </li>
+          </ul>
+          
+          <div class="plan_divider"></div>
+          
+          <div class="plan_dynamics_header">+ Creación de las dinámicas:</div>
+          <ul class="plan_dynamics_list">
+            <li>Sorteo</li>
+            <li>Cumpleaños</li>
+            <li>Plan de puntos</li>
+            <li>Referidos</li>
+          </ul>
         </div>
       </div>
 
+      <!-- PLAN PREMIUM -->
       <div class="plan_card plan_premium">
         <div class="plan_header">Premium</div>
         <div class="plan_content">
-          <div class="plan_price">Pronto</div>
-          <div class="plan_features">
-            <p>TODO LO DEL PLAN PRO Y</p>
-            <p>
-              + Alianzas comerciales y herramientas que potenciarán tus
-              dinámicas:
-            </p>
-            <ul>
-              <li>Alianzas comerciales</li>
-              <li>Segmentación</li>
-              <li>Administración centralizada</li>
-            </ul>
+          <div class="plan_price">
+            <div class="price_value">
+              <span class="currency">$</span><span class="amount">249.000</span>
+            </div>
+            <span class="period">/ mes + IVA</span>
           </div>
-
+          <p class="plan_description"><strong>Todo lo del plan Pro, y además:</strong></p>
+          <ul class="plan_features">
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Seguidores <strong>ilimitados</strong></span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Productos <strong>ilimitados</strong></span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Chat con 30 días</strong> de retención de imágenes</span>
+            </li>
+            <li>
+              <svg class="check_icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Notificaciones push de chats y dinámicas</span>
+            </li>
+          </ul>
+          
+          <div class="plan_divider"></div>
+          
+          <div class="plan_dynamics_header">+ Potenciadores y Herramientas:</div>
+          <ul class="plan_dynamics_list">
+            <li>Alianzas comerciales</li>
+            <li>Segmentación</li>
+            <li>Administración centralizada</li>
+          </ul>
         </div>
       </div>
     </section>

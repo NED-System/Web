@@ -20,15 +20,15 @@ main {
     color: var(--text-negro);
 }
 
-/* Estilos para la sección de planes de precios */
+/* Estilos para la sección de planes de precios (Grid responsivo de 4 columnas) */
 .planes_precios {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 0; /* Eliminamos el espacio entre tarjetas para que se vean juntas como en la imagen */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     margin: 4rem auto;
     max-width: 1200px;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    align-items: stretch;
 }
 
 /* Estilos para la sección de características */
@@ -102,183 +102,278 @@ main {
 }
 
 .plan_card {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: white;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* max-width: 350px; */
+    box-shadow: 0 10px 30px rgba(43, 45, 66, 0.05);
     width: 100%;
-    margin: 0; /* Ajuste para que las tarjetas se vean juntas */
-    border-radius: 40px; /* Sin bordes redondeados para coincidir con la imagen */
+    margin: 0;
+    border-radius: 20px;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(43, 45, 66, 0.08);
+}
+
+.plan_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(196, 34, 125, 0.12);
 }
 
 .plan_header {
     width: 100%;
     padding: 1.5rem;
     text-align: center;
-    font-size: clamp(2rem, 1vw, 2rem);
+    font-size: clamp(1.6rem, 1vw, 1.6rem);
     font-weight: 800;
     color: white;
-    border-radius: 0; /* Sin bordes redondeados para coincidir con la imagen */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .plan_start .plan_header {
-    background-color: var(--magenta);
+    background-color: #64748b;
+}
+
+.plan_lite .plan_header {
+    background-color: #3b82f6;
 }
 
 .plan_pro .plan_header {
-    background-color: var(--amarillo);
-    color: var(--text-negro);
-}
-
-.plan_premium .plan_header {
     background-color: var(--magenta);
 }
 
+.plan_premium .plan_header {
+    background-color: var(--text-negro);
+}
+
 .plan_content {
-    padding: 2rem;
+    padding: 2.5rem 1.5rem 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
     flex-grow: 1;
-    border: 1px solid #e0e0e0; /* Borde sutil para separar el contenido */
-    border-top: none; /* Sin borde en la parte superior */
     background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .plan_price {
-    font-size: 2.5rem;
-    font-weight: 700;
     display: flex;
-    align-items: baseline;
-    gap: 0.2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
-    width: 100%;
-    padding-bottom: 1.5rem;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    color: var(--text-negro);
 }
 
-.plan_price .currency {
+.price_value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.price_value .currency {
     font-size: 1.5rem;
-    vertical-align: super;
-    position: relative;
-    top: -0.5rem;
+    font-weight: 700;
+    margin-right: 0.1rem;
+}
+
+.price_value .amount {
+    line-height: 1;
 }
 
 .plan_price .period {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.1rem;
+}
+
+.plan_description {
+    font-size: 0.95rem;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    width: 100%;
 }
 
 .plan_features {
-    width: 100%;
-    text-align: left;
-    padding: 0 1rem;
-}
-
-.plan_features p {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-.plan_features ul {
     list-style: none;
     padding: 0;
     margin: 0 0 1.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
 }
 
 .plan_features li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    position: relative;
-    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.95rem;
     line-height: 1.4;
+    color: var(--text-negro);
+    font-weight: 400;
 }
 
-.plan_features li::before {
-    content: ">";
-    position: absolute;
-    left: 0;
+.plan_features li strong {
+    font-weight: 700;
+    color: var(--magenta);
+}
+
+.check_icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--magenta);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.plan_divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(43, 45, 66, 0.08);
+    margin: 1.2rem 0;
+}
+
+.plan_dynamics_header {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6b7280;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan_dynamics_list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.plan_dynamics_list li {
+    background-color: rgba(196, 34, 125, 0.06);
+    color: var(--magenta);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 0.65rem;
+    border-radius: 12px;
+    line-height: 1.2;
+    border: 1px solid rgba(196, 34, 125, 0.1);
 }
 
 .plan_button {
-    background-color: var(--magenta);
+    width: 100%;
+    background-color: var(--text-negro);
     color: white;
     border: none;
-    border-radius: 30px; /* Sin bordes redondeados para coincidir con la imagen */
-    padding: 0.8rem 2rem;
-    font-size: 0.9rem;
-    font-weight: 600;
+    border-radius: 12px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: auto; /* Empuja el botón hacia abajo */
-    width: auto;
-    min-width: 150px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: auto;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(43, 45, 66, 0.1);
 }
 
 .plan_button:hover {
-    background-color: var(--text-negro);
+    background-color: var(--magenta);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(196, 34, 125, 0.2);
 }
 
-.plan_pro .plan_button {
-    background-color: var(--magenta); /* Todos los botones son magenta según la imagen */
+.plan_button:active {
+    transform: translateY(0);
+}
+
+/* Estilos destacados para el Plan Pro */
+.plan_card.plan_pro.highlighted {
+    border: 2px solid var(--magenta);
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(196, 34, 125, 0.15);
+    z-index: 10;
+}
+
+.plan_card.plan_pro.highlighted:hover {
+    transform: scale(1.02) translateY(-8px);
+    box-shadow: 0 25px 45px rgba(196, 34, 125, 0.22);
+}
+
+.plan_card.plan_pro.highlighted .plan_button {
+    background-color: var(--magenta);
+    box-shadow: 0 4px 10px rgba(196, 34, 125, 0.25);
+}
+
+.plan_card.plan_pro.highlighted .plan_button:hover {
+    background-color: var(--text-negro);
+    box-shadow: 0 6px 15px rgba(43, 45, 66, 0.25);
+}
+
+/* Insignia de popularidad */
+.popular_badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--magenta);
     color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 0.35rem 1.2rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(196, 34, 125, 0.3);
+    white-space: nowrap;
+    z-index: 12;
 }
 
-.plan_pro .plan_button:hover {
-    background-color: var(--text-negro);
-}
-
-/* Estilos para destacar la tarjeta Pro */
-.plan_card.plan_pro {
-    margin-top: -20px; /* Hace que la tarjeta sobresalga hacia arriba */
-    transform: translateY(-10px); /* Eleva ligeramente la tarjeta */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    z-index: 2; /* Asegura que se muestre por encima de las otras tarjetas */
-    border: 2px solid var(--amarillo); /* Borde del color del encabezado */
-}
-
-/* Responsive styles */
-@media (width < 1000px) {
+/* Responsive */
+@media (max-width: 1200px) {
     .planes_precios {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin: 2rem 0rem;  
-    }
-
-    .plan_card {
-        width: 100%;
-        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1.5rem;
     }
     
-    /* Mantener el destacado en móvil */
-    .plan_card.plan_pro {
-        margin-top: 0; /* Elimina el margen negativo en móvil */
-        transform: scale(1.05); /* Ligeramente más grande en móvil */
-        margin-bottom: 1rem; /* Espacio adicional debajo en móvil */
+    .plan_card.plan_pro.highlighted {
+        transform: none;
     }
-
-    .caracteristicas_grid {
-        grid-template-columns: 1fr;
-        /* grid-template-columns: repeat(2, 1fr); */
+    
+    .plan_card.plan_pro.highlighted:hover {
+        transform: translateY(-8px);
     }
 }
 
-/* Rango adicional disponible para futuras reglas:
-   @media (width >= 300px) {}
-   @media (640px <= width < 768px) {}
-*/
+@media (max-width: 768px) {
+    .caracteristicas_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .planes_precios {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 2.5rem;
+    }
+}

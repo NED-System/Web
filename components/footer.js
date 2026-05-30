@@ -1,49 +1,74 @@
 // Footer component
 const footerTemplate = document.createElement('template');
-footerTemplate.innerHTML = `
-    <footer class="footer">
-        <section class="footer_seccion">
-            <div class="footer_content">
-                <div class="footer_links">
-                    <h3>INFORMACIÓN</h3>
-                    <ul>
-                        <li><a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933?pvs=105" target="_blank" rel="noopener noreferrer">Únete a la lista de espera</a></li>
-                        <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
-                        <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
-                        <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app Android</a></li>
-                        <li><a href="https://apps.apple.com/app/nedleal/id6760373778" target="_blank" rel="noopener noreferrer">Descarga la app iOS</a></li>
-                    </ul>
+
+// Función para determinar la ruta base correcta
+function getBasePath() {
+    const currentPath = window.location.pathname;
+    const normalizedPath = currentPath.endsWith('/') ? currentPath : currentPath + '/';
+
+    if (normalizedPath === '/' || normalizedPath.endsWith('/index.html')) {
+        return './';
+    }
+
+    if (normalizedPath.includes('/pages/')) {
+        return normalizedPath.replace(/\/pages\/.*$/, '/');
+    }
+
+    return './';
+}
+
+// Crear el footer con la ruta base correcta
+function createFooter() {
+    const basePath = getBasePath();
+    
+    footerTemplate.innerHTML = `
+        <footer class="footer">
+            <section class="footer_seccion">
+                <div class="footer_content">
+                    <div class="footer_links">
+                        <h3>INFORMACIÓN</h3>
+                        <ul>
+                            <li><a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933?pvs=105" target="_blank" rel="noopener noreferrer">Únete a la lista de espera</a></li>
+                            <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
+                            <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
+                            <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app Android</a></li>
+                            <li><a href="https://apps.apple.com/app/nedleal/id6760373778" target="_blank" rel="noopener noreferrer">Descarga la app iOS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_links">
+                        <h3>PÁGINAS</h3>
+                        <ul>
+                            <li><a href="${basePath}index.html">Inicio</a></li>
+                            <li><a href="${basePath}pages/consumidores.html">Consumidores</a></li>
+                            <li><a href="${basePath}pages/negocios.html">Negocios</a></li>
+                            <li><a href="${basePath}pages/planes.html">Planes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_links">
+                        <h3>CONSULTAS</h3>
+                        <ul>
+                            <li><a href="${basePath}pages/terminosycondiciones.html">Términos & Condiciones de uso</a></li>
+                            <li><a href="${basePath}pages/privacidad.html">Política de privacidad</a></li>
+                            <li><a href="${basePath}pages/eliminadatos.html">Política eliminación de datos</a></li>
+                            <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__suscribirse">
+                        <h3>BOLETÍN</h3>
+                        <p>Te compartimos historias, ejemplos de otros negocios, experiencias de clientes, información útil y más…</p>
+                        <a href="https://nedmobi.notion.site/1990e0b664ca80deae99f06d63544e81?pvs=105" class="unirme_button footer_sub_btn" target="_blank" rel="noopener noreferrer" aria-label="Suscribirse al boletín">Suscribirme</a>
+                    </div>
                 </div>
-                <div class="footer_links">
-                    <h3>PÁGINAS</h3>
-                    <ul>
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/pages/consumidores.html">Consumidores</a></li>
-                        <li><a href="/pages/negocios.html">Negocios</a></li>
-                        <li><a href="/pages/planes.html">Planes</a></li>
-                    </ul>
+                <div class="footer_bottom">
+                    <p>&copy; 2026 - NED System S.A.S. Todos los derechos reservados.</p>
                 </div>
-                <div class="footer_links">
-                    <h3>CONSULTAS</h3>
-                    <ul>
-                        <li><a href="/pages/terminosycondiciones.html">Términos & Condiciones de uso</a></li>
-                        <li><a href="/pages/privacidad.html">Política de privacidad</a></li>
-                        <li><a href="/pages/eliminadatos.html">Política eliminación de datos</a></li>
-                        <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer__suscribirse">
-                    <p>Te compartimos historias, ejemplos de otros negocios, experiencias de clientes, información útil y mas…</p>
-                    <a href="https://nedmobi.notion.site/1990e0b664ca80deae99f06d63544e81?pvs=105" class="unirme_button" target="_blank" rel="noopener noreferrer" aria-label="Suscribirse al boletín">Suscribirme</a>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <p>&copy; 2026 - NED System S.A.S. Todos los derechos reservados.</p>
-            </div>
-        </section>
-    </footer>
-`;
+            </section>
+        </footer>
+    `;
+}
+
+createFooter();
 
 function loadFooter() {
     const footerPlaceholder = document.getElementById('footer-placeholder');
@@ -52,5 +77,5 @@ function loadFooter() {
     }
 }
 
-// Load the footer when the DOM is fully loaded
+// Cargar el footer cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', loadFooter);
