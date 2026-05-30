@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Observer para las secciones .dinamicas (especialmente util para moviles)
+    // Se usa threshold: 0 y rootMargin para máxima compatibilidad con Safari iOS
     const dinamicasObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -119,8 +120,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.15,
-        rootMargin: '0px'
+        threshold: 0,
+        rootMargin: '-15% 0px -15% 0px'
     });
 
     const dinamicasSections = document.querySelectorAll('.dinamicas, .fisico_digital, .gana_con_cada_dinamica, .negocios_preferidos');
