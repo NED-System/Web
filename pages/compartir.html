@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NED - Generador de Flyers y Carteles P.O.P. para tu Negocio" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#C4227D" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>NED - Creador de Flyers para tu Negocio</title>
+    <link rel="stylesheet" href="/styles/style.css?v=5.0" />
+    <link rel="stylesheet" href="/styles/compartir.css?v=5.0" />
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
+    
+    <!-- Brevo Conversations {literal} -->
+    <script>
+        (function (d, w, c) {
+            w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+            w[c] =
+                w[c] ||
+                function () {
+                    (w[c].q = w[c].q || []).push(arguments);
+                };
+            var s = d.createElement("script");
+            s.async = true;
+            s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
+            if (d.head) d.head.appendChild(s);
+        })(document, window, "BrevoConversations");
+    </script>
+    <!-- /Brevo Conversations {/literal} -->
+    
+    <!-- Component Scripts -->
+    <script src="/components/header.js" defer></script>
+    <script src="/components/footer.js" defer></script>
+    <script src="/scripts/animations.js?v=5.0" defer></script>
+    <script src="/scripts/register-sw.js" defer></script>
+</head>
+
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="compartir_container">
+            <div class="compartir_header">
+                <span class="hero-badge">MATERIAL P.O.P. PARA TU LOCAL</span>
+                <h1>Crea el Flyer de tu Negocio</h1>
+                <p>Diseña un cartel publicitario personalizado con la foto de tu negocio y tu código QR. Descárgalo para imprimirlo o compartirlo y atrae a más clientes leales a tu programa de fidelización.</p>
+            </div>
+
+            <div class="creator_grid">
+                <!-- PANEL DEL EDITOR (CONTROLES) -->
+                <section class="editor_panel" aria-labelledby="editor-title">
+                    <h2 id="editor-title" style="display:none;">Controles de Edición</h2>
+                    
+                    <!-- PASO 1: NOMBRE Y MENSAJE -->
+                    <div class="editor_section">
+                        <h3><span class="badge">1</span> Información del Negocio</h3>
+                        <div class="form_group" style="margin-bottom: 1.2rem;">
+                            <label for="biz_name">Nombre del negocio:</label>
+                            <input type="text" id="biz_name" placeholder="Ej. Cafetería Don Fidel" maxlength="40" value="Mi Negocio" />
+                        </div>
+                        <div class="form_group">
+                            <label for="biz_cta">Mensaje o llamado a la acción (CTA):</label>
+                            <select id="biz_cta">
+                                <option value="puntos">¡Escanea para ganar premios!</option>
+                                <option value="fidelizar" selected>¡Hazte cliente leal y gana puntos!</option>
+                                <option value="catalogo">¡Escanea para ver nuestro menú!</option>
+                                <option value="visitanos">¡Encuéntranos en la App de NED!</option>
+                                <option value="custom">Mensaje personalizado...</option>
+                            </select>
+                        </div>
+                        <div class="form_group" id="custom_cta_container" style="display: none; margin-top: 1rem;">
+                            <label for="biz_cta_custom">Escribe tu mensaje personalizado:</label>
+                            <input type="text" id="biz_cta_custom" placeholder="Ej. ¡2x1 en tu primera compra!" maxlength="35" />
+                        </div>
+                    </div>
+
+                    <!-- PASO 2: FOTO DEL LOCAL -->
+                    <div class="editor_section">
+                        <h3><span class="badge">2</span> Foto de tu Negocio</h3>
+                        <div class="form_group">
+                            <label>Sube o arrastra una foto de tu local o productos:</label>
+                            <div class="upload_zone" id="drop_zone_photo" tabindex="0">
+                                <svg class="upload_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                                <p>Haz clic para buscar, arrastra la foto aquí o pégala</p>
+                                <span class="small_note">Formatos: JPG, PNG • Recomendado: Horizontal o Cuadrado</span>
+                                <input type="file" id="biz_photo_file" accept="image/*" style="display: none;" />
+                            </div>
+                            
+                            <!-- Barra de archivo seleccionado -->
+                            <div class="file_preview_bar" id="photo_preview_bar" style="display: none;">
+                                <div class="file_preview_info">
+                                    <img id="photo_preview_thumb" src="" alt="Miniatura de foto" />
+                                    <span id="photo_preview_name">nombre-archivo.jpg</span>
+                                </div>
+                                <button type="button" class="btn_remove_file" id="btn_remove_photo" title="Quitar foto" aria-label="Quitar foto">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PASO 3: CÓDIGO QR -->
+                    <div class="editor_section">
+                        <h3><span class="badge">3</span> Código QR del Negocio</h3>
+                        
+                        <!-- Toggle de opción de QR -->
+                        <div class="qr_option_toggle">
+                            <button type="button" class="qr_option_btn active" id="toggle_qr_generate">Generar desde Enlace</button>
+                            <button type="button" class="qr_option_btn" id="toggle_qr_upload">Subir mi Código QR</button>
+                        </div>
+
+                        <!-- Opción A: Generar QR -->
+                        <div class="qr_input_container active" id="qr_generate_container">
+                            <div class="form_group" style="width: 100%;">
+                                <label for="biz_qr_link">Ingresa el enlace de tu negocio (ej: menú o perfil de NED):</label>
+                                <input type="text" id="biz_qr_link" placeholder="https://ned.com.co/tu-negocio" value="https://ned.com.co" />
+                            </div>
+                        </div>
+
+                        <!-- Opción B: Subir QR -->
+                        <div class="qr_input_container" id="qr_upload_container">
+                            <div class="form_group" style="width: 100%;">
+                                <label>Arrastra o sube la imagen de tu código QR:</label>
+                                <div class="upload_zone" id="drop_zone_qr" tabindex="0">
+                                    <svg class="upload_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"></path>
+                                        <rect x="7" y="11" width="10" height="2"></rect>
+                                    </svg>
+                                    <p>Haz clic para buscar, arrastra el QR aquí o pégalo</p>
+                                    <span class="small_note">Formatos recomendados: PNG o JPG con fondo blanco</span>
+                                    <input type="file" id="biz_qr_file" accept="image/*" style="display: none;" />
+                                </div>
+                                
+                                <!-- Barra de archivo seleccionado de QR -->
+                                <div class="file_preview_bar" id="qr_preview_bar" style="display: none;">
+                                    <div class="file_preview_info">
+                                        <img id="qr_preview_thumb" src="" alt="Miniatura de QR" />
+                                        <span id="qr_preview_name">qr-archivo.png</span>
+                                    </div>
+                                    <button type="button" class="btn_remove_file" id="btn_remove_qr" title="Quitar QR" aria-label="Quitar QR">&times;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PASO 4: TEMA DE DISEÑO -->
+                    <div class="editor_section">
+                        <h3><span class="badge">4</span> Tema de Diseño</h3>
+                        <div class="form_group">
+                            <label>Elige un esquema de colores para tu cartel:</label>
+                            <div class="theme_selector">
+                                <button type="button" class="theme_btn active" data-theme="ned">NED Clásico</button>
+                                <button type="button" class="theme_btn" data-theme="yellow">Amarillo Sol</button>
+                                <button type="button" class="theme_btn" data-theme="dark">Premium Dark</button>
+                                <button type="button" class="theme_btn" data-theme="minimalist">Minimalista</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PANEL DE VISTA PREVIA (DERECHA) -->
+                <section class="preview_panel" aria-label="Vista Previa del Flyer">
+                    <!-- FLYER CARD -->
+                    <div class="flyer_card theme-ned" id="flyer_card">
+                        <!-- Banner Superior -->
+                        <div class="flyer_banner">
+                            SÍGUENOS EN NED • GANA Y CRECE CON LA LEALTAD
+                        </div>
+
+                        <!-- Cuerpo del Flyer -->
+                        <div class="flyer_body">
+                            <!-- Nombre del negocio -->
+                            <h2 class="flyer_title" id="flyer_title">Nombre de tu Negocio</h2>
+
+                            <!-- Foto del local o banner -->
+                            <div class="flyer_photo_container">
+                                <img src="" alt="Foto de tu local" class="flyer_photo_img" id="flyer_photo_img" style="display: none;" />
+                                <div class="flyer_photo_placeholder" id="flyer_photo_placeholder">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                    <span>[ Sube una foto de tu negocio ]</span>
+                                </div>
+                            </div>
+
+                            <!-- Mensaje / CTA central -->
+                            <div class="flyer_cta" id="flyer_cta">
+                                ¡HAZTE CLIENTE LEAL Y GANA PUNTOS!
+                            </div>
+
+                            <!-- Sección inferior del QR y descarga -->
+                            <div class="flyer_qr_section" id="flyer_qr_section">
+                                <div class="flyer_qr_container">
+                                    <img src="" alt="Código QR para escanear" class="flyer_qr_img" id="flyer_qr_img" style="display: none;" />
+                                    <div class="flyer_qr_placeholder" id="flyer_qr_placeholder">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"></path>
+                                            <rect x="7" y="11" width="10" height="2"></rect>
+                                        </svg>
+                                        <span>Cargando QR...</span>
+                                    </div>
+                                </div>
+                                <div class="flyer_qr_info">
+                                    <img src="/assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
+                                    <div class="flyer_qr_subtext" id="flyer_qr_subtext">
+                                        1. Descarga la App gratis.<br>
+                                        2. Busca nuestro negocio.<br>
+                                        3. ¡Gana y acumula premios!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <div class="action_buttons">
+                        <button type="button" class="unirme_button btn_action" id="btn_download_png">
+                            Descargar Imagen (PNG)
+                        </button>
+                        <button type="button" class="unirme_button btn_action btn_secondary" id="btn_print_pdf">
+                            Imprimir / Guardar PDF
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/compartir.js"></script>
+</body>
+
+</html>

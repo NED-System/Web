@@ -39,6 +39,7 @@ function createHeader() {
                     <li role="none"><a href="${basePath}pages/consumidores.html" role="menuitem">Consumidores</a></li>
                     <li role="none"><a href="${basePath}pages/negocios.html" role="menuitem">Negocios</a></li>
                     <li role="none"><a href="${basePath}pages/planes.html" role="menuitem">Planes</a></li>
+                    <li role="none"><a href="${basePath}pages/compartir.html" role="menuitem">Crear Flyer</a></li>
                 </ul>
             </nav>
         </header>
