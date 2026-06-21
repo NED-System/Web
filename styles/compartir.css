@@ -405,7 +405,7 @@
     flex-direction: column;
     padding: 3.5cqw 5.5cqw;
     gap: 1.8cqw;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .flyer_title {
@@ -451,6 +451,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0.8cqw 0.8cqw 0px rgba(0, 0, 0, 0.1);
+    margin-top: 5.6cqw;
 }
 
 .flyer_photo_img {
@@ -495,6 +496,7 @@
     text-overflow: ellipsis;
     word-break: break-word;
     overflow-wrap: break-word;
+    margin-top: 2.4cqw;
 }
 
 /* Sección inferior con el QR */
@@ -508,6 +510,7 @@
     padding: 2.2cqw;
     background: #ffffff;
     box-shadow: 0.8cqw 0.8cqw 0px rgba(0, 0, 0, 0.06);
+    margin-top: 1.5cqw;
 }
 
 .flyer_qr_container {
@@ -883,8 +886,7 @@
         display: flex !important;
         flex-direction: column !important;
         width: 7.7in !important;
-        height: 9.96in !important;
-        /* Relación de aspecto 8.5 / 11 */
+        height: auto !important;
         border: 4px solid #2b2d42 !important;
         box-shadow: none !important;
         /* Quitar sombra para impresión */

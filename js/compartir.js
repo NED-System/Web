@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // 1. Subtexto
         ctx.fillStyle = theme.qrSubText;
-        ctx.font = '700 15px "Nunito", Arial, sans-serif';
+        ctx.font = '700 18px "Nunito", Arial, sans-serif';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
         ctx.letterSpacing = '0px';
@@ -709,14 +709,14 @@ document.addEventListener('DOMContentLoaded', () => {
             '5. ¡Gana de muchas maneras!'
         ];
         
-        let subtextY = qrSecY + 16;
+        let subtextY = qrSecY + 15;
         subtextLines.forEach(line => {
             ctx.fillText(line, infoX, subtextY);
-            subtextY += 21;
+            subtextY += 24;
         });
 
         // 2. Footer de la Info (Logo y Tiendas lado a lado, agrupados juntos)
-        const footerY = qrSecY + 162;
+        const footerY = qrSecY + 165;
         let logoW = 85;
         
         // Dibujar Logo NED en el footer
