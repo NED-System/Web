@@ -49,7 +49,7 @@
             <div class="compartir_header">
                 <span class="hero-badge">MATERIAL P.O.P. PARA TU LOCAL</span>
                 <h1>Crea el Flyer de tu Negocio</h1>
-                <p>Diseña un cartel publicitario personalizado con la foto de tu negocio y tu código QR. Descárgalo para imprimirlo o compartirlo y atrae a más clientes leales a tu programa de fidelización.</p>
+                <p>Diseña un cartel publicitario personalizado con la foto de tu negocio y tu código QR. Descárgalo para imprimirlo o compartirlo y atrae a más clientes leales.</p>
             </div>
 
             <div class="creator_grid">
@@ -64,12 +64,19 @@
                             <label for="biz_name">Nombre del negocio:</label>
                             <input type="text" id="biz_name" placeholder="Ej. Cafetería Don Fidel" maxlength="40" value="Mi Negocio" />
                         </div>
+                        <div class="form_group" style="margin-bottom: 1.2rem;">
+                            <label for="biz_user">Usuario de tu negocio (en la App):</label>
+                            <div class="input_user_wrapper">
+                                <span class="user_prefix">@</span>
+                                <input type="text" id="biz_user" placeholder="ejemplo" maxlength="30" value="minegocio" />
+                            </div>
+                        </div>
                         <div class="form_group">
                             <label for="biz_cta">Mensaje o llamado a la acción (CTA):</label>
                             <select id="biz_cta">
-                                <option value="puntos">¡Escanea para ganar premios!</option>
-                                <option value="fidelizar" selected>¡Hazte cliente leal y gana puntos!</option>
-                                <option value="catalogo">¡Escanea para ver nuestro menú!</option>
+                                <option value="puntos">¡Sígueme en NED y gana premios!</option>
+                                <option value="fidelizar" selected>¡Puntos, sorteos, referidos y mucho mas, de una forma realmente simple!</option>
+                                <option value="catalogo">¡Conectémonos en NED!</option>
                                 <option value="visitanos">¡Encuéntranos en la App de NED!</option>
                                 <option value="custom">Mensaje personalizado...</option>
                             </select>
@@ -103,6 +110,19 @@
                                     <span id="photo_preview_name">nombre-archivo.jpg</span>
                                 </div>
                                 <button type="button" class="btn_remove_file" id="btn_remove_photo" title="Quitar foto" aria-label="Quitar foto">&times;</button>
+                            </div>
+                            
+                            <!-- Ajustar foto -->
+                            <div class="photo_adjust_container" id="photo_adjust_container" style="display: none;">
+                                <label class="adjust_label">Ajustar encuadre de la foto:</label>
+                                <div class="adjust_control">
+                                    <span>Horizontal:</span>
+                                    <input type="range" id="photo_offset_x" min="0" max="100" value="50" class="adjust_slider" />
+                                </div>
+                                <div class="adjust_control">
+                                    <span>Vertical:</span>
+                                    <input type="range" id="photo_offset_y" min="0" max="100" value="50" class="adjust_slider" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,13 +193,16 @@
                     <div class="flyer_card theme-ned" id="flyer_card">
                         <!-- Banner Superior -->
                         <div class="flyer_banner">
-                            SÍGUENOS EN NED • GANA Y CRECE CON LA LEALTAD
+                            <img src="/assets/logo/Logo_NED_ico.png" alt="Logo NED" class="flyer_banner_icon" />
+                            <span>SÍGUENOS EN NED</span>
                         </div>
 
                         <!-- Cuerpo del Flyer -->
                         <div class="flyer_body">
                             <!-- Nombre del negocio -->
                             <h2 class="flyer_title" id="flyer_title">Nombre de tu Negocio</h2>
+                            <!-- Usuario del negocio -->
+                            <div class="flyer_user" id="flyer_user">@minegocio</div>
 
                             <!-- Foto del local o banner -->
                             <div class="flyer_photo_container">
@@ -212,14 +235,22 @@
                                         <span>Cargando QR...</span>
                                     </div>
                                 </div>
-                                <div class="flyer_qr_info">
-                                    <img src="/assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
-                                    <div class="flyer_qr_subtext" id="flyer_qr_subtext">
-                                        1. Descarga la App gratis.<br>
-                                        2. Busca nuestro negocio.<br>
-                                        3. ¡Gana y acumula premios!
-                                    </div>
-                                </div>
+                                 <div class="flyer_qr_info">
+                                     <div class="flyer_qr_subtext" id="flyer_qr_subtext">
+                                         1. Ve a la Play Store o App Store.<br>
+                                         2. Escribe NEDLEAL.<br>
+                                         3. Descarga y registrate.<br>
+                                         4. Busca el nombre o usuario de mi negocio.<br>
+                                         5. ¡Gana de muchas maneras!
+                                     </div>
+                                     <div class="flyer_qr_footer">
+                                         <img src="/assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
+                                         <div class="flyer_store_badges">
+                                             <img src="/assets/social/android-app.png" alt="Google Play" class="store_badge_icon" />
+                                             <img src="/assets/social/store-apple.png" alt="App Store" class="store_badge_icon" />
+                                         </div>
+                                     </div>
+                                 </div>
                             </div>
                         </div>
                     </div>

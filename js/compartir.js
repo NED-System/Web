@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ---- Referencias DOM del Editor ----
     const inputBusinessName = document.getElementById('biz_name');
+    const inputBusinessUser = document.getElementById('biz_user');
     const selectCta = document.getElementById('biz_cta');
     const containerCustomCta = document.getElementById('custom_cta_container');
     const inputCtaCustom = document.getElementById('biz_cta_custom');
@@ -24,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const imgPhotoThumb = document.getElementById('photo_preview_thumb');
     const btnRemovePhoto = document.getElementById('btn_remove_photo');
     
+    // Controles de Ajuste de Foto
+    const containerPhotoAdjust = document.getElementById('photo_adjust_container');
+    const inputPhotoOffsetX = document.getElementById('photo_offset_x');
+    const inputPhotoOffsetY = document.getElementById('photo_offset_y');
+    
     const barQrPreview = document.getElementById('qr_preview_bar');
     const textQrName = document.getElementById('qr_preview_name');
     const imgQrThumb = document.getElementById('qr_preview_thumb');
@@ -37,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Referencias DOM de la Vista Previa (Flyer) ----
     const flyerCard = document.getElementById('flyer_card');
     const flyerTitle = document.getElementById('flyer_title');
+    const flyerUser = document.getElementById('flyer_user');
     const flyerPhotoImg = document.getElementById('flyer_photo_img');
     const flyerPhotoPlaceholder = document.getElementById('flyer_photo_placeholder');
     const flyerCta = document.getElementById('flyer_cta');
@@ -54,11 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---- Iniciar Valores por Defecto ----
     updateFlyerTitle();
+    updateFlyerUser();
     updateFlyerCta();
     generateQrCode();
 
     // ---- Actualizaciones de Texto en Tiempo Real ----
     inputBusinessName.addEventListener('input', updateFlyerTitle);
+    inputBusinessUser.addEventListener('input', updateFlyerUser);
     
     selectCta.addEventListener('change', () => {
         if (selectCta.value === 'custom') {
@@ -75,6 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateFlyerTitle() {
         const text = inputBusinessName.value.trim();
         flyerTitle.textContent = text || 'Nombre de tu Negocio';
+    }
+
+    function updateFlyerUser() {
+        let text = inputBusinessUser.value.trim();
+        // Remove spaces and '@' if the user typed it manually to normalize
+        text = text.replace(/[\s@]+/g, '');
+        if (inputBusinessUser.value !== text) {
+            inputBusinessUser.value = text;
+        }
+        flyerUser.textContent = text ? `@${text.toLowerCase()}` : '';
     }
 
     function updateFlyerCta() {
@@ -216,11 +235,13 @@ document.addEventListener('DOMContentLoaded', () => {
         textPhotoName.textContent = file.name;
         imgPhotoThumb.src = url;
         barPhotoPreview.style.display = 'flex';
+        containerPhotoAdjust.style.display = 'block';
         
         // Actualizar Flyer Preview
         flyerPhotoImg.src = url;
         flyerPhotoImg.style.display = 'block';
         flyerPhotoPlaceholder.style.display = 'none';
+        updatePhotoOffset();
     }
 
     btnRemovePhoto.addEventListener('click', (e) => {
@@ -228,11 +249,26 @@ document.addEventListener('DOMContentLoaded', () => {
         businessPhotoFile = null;
         inputPhotoFile.value = '';
         barPhotoPreview.style.display = 'none';
+        containerPhotoAdjust.style.display = 'none';
+        
+        // Reset offsets
+        inputPhotoOffsetX.value = 50;
+        inputPhotoOffsetY.value = 50;
+        flyerPhotoImg.style.objectPosition = '50% 50%';
         
         flyerPhotoImg.src = '';
         flyerPhotoImg.style.display = 'none';
         flyerPhotoPlaceholder.style.display = 'flex';
     });
+
+    function updatePhotoOffset() {
+        const x = inputPhotoOffsetX.value;
+        const y = inputPhotoOffsetY.value;
+        flyerPhotoImg.style.objectPosition = `${x}% ${y}%`;
+    }
+
+    inputPhotoOffsetX.addEventListener('input', updatePhotoOffset);
+    inputPhotoOffsetY.addEventListener('input', updatePhotoOffset);
 
     // ---- Gestión de Subida de Archivos (Código QR) ----
     dropZoneQr.addEventListener('click', () => inputQrFile.click());
@@ -338,9 +374,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btnDownload.disabled = true;
         btnDownload.textContent = 'Generando imagen...';
 
-        // Dimensiones del canvas para una exportación nítida (1.5x tamaño del previsualizador)
-        const canvasWidth = 720;
-        const canvasHeight = 972; // Proporcional al aspect-ratio del flyer (4 / 5.4)
+        // Dimensiones del canvas para una exportación nítida en tamaño carta (8.5x11)
+        const canvasWidth = 850;
+        const canvasHeight = 1100;
         
         const canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
@@ -400,9 +436,39 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }));
 
+        // 4. Icono NED
+        const iconImageObj = new Image();
+        iconImageObj.src = '/assets/logo/Logo_NED_ico.png';
+        imagesToLoad.push(new Promise((resolve) => {
+            iconImageObj.onload = resolve;
+            iconImageObj.onerror = () => {
+                resolve();
+            };
+        }));
+
+        // 5. Play Store Icon
+        const playStoreImageObj = new Image();
+        playStoreImageObj.src = '/assets/social/android-app.png';
+        imagesToLoad.push(new Promise((resolve) => {
+            playStoreImageObj.onload = resolve;
+            playStoreImageObj.onerror = () => {
+                resolve();
+            };
+        }));
+
+        // 6. App Store Icon
+        const appStoreImageObj = new Image();
+        appStoreImageObj.src = '/assets/social/store-apple.png';
+        imagesToLoad.push(new Promise((resolve) => {
+            appStoreImageObj.onload = resolve;
+            appStoreImageObj.onerror = () => {
+                resolve();
+            };
+        }));
+
         Promise.all(imagesToLoad).then(() => {
             try {
-                renderCanvas(canvas, ctx, theme, bizImageObj, qrImageObj, logoImageObj);
+                renderCanvas(canvas, ctx, theme, bizImageObj, qrImageObj, logoImageObj, iconImageObj, playStoreImageObj, appStoreImageObj);
                 
                 // Descargar
                 const link = document.createElement('a');
@@ -420,17 +486,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ---- Renderizado en el Canvas ----
-    function renderCanvas(canvas, ctx, theme, bizImage, qrImage, logoImage) {
+    function renderCanvas(canvas, ctx, theme, bizImage, qrImage, logoImage, iconImage, playStoreImage, appStoreImage) {
         const width = canvas.width;
         const height = canvas.height;
-        const borderThickness = 6;
+        const borderThickness = 8;
 
         // 1. Limpiar Fondo
         ctx.fillStyle = theme.bg;
         ctx.fillRect(0, 0, width, height);
 
         // 2. Banner Superior
-        const bannerHeight = 50;
+        const bannerHeight = 125;
         ctx.fillStyle = theme.banner;
         ctx.fillRect(0, 0, width, bannerHeight);
         
@@ -442,40 +508,66 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.lineTo(width, bannerHeight);
         ctx.stroke();
 
-        // Texto del banner
+        // Texto e Icono del banner (centrados)
         ctx.fillStyle = theme.bannerText;
-        ctx.font = '900 16px "Outfit", Arial, sans-serif';
-        ctx.textAlign = 'center';
+        ctx.font = '900 38px "Outfit", Arial, sans-serif';
+        ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
-        ctx.letterSpacing = '1.5px';
-        ctx.fillText('SÍGUENOS EN NED • GANA Y CRECE CON LA LEALTAD', width / 2, bannerHeight / 2);
+        ctx.letterSpacing = '3.5px';
+        
+        const bannerText = 'SÍGUENOS EN NED';
+        const textWidth = ctx.measureText(bannerText).width;
+        const iconSize = 52;
+        const gap = 28;
+        const totalWidth = iconSize + gap + textWidth;
+        const startX = (width - totalWidth) / 2;
+        
+        if (iconImage && iconImage.complete && iconImage.naturalWidth > 0) {
+            ctx.drawImage(iconImage, startX, (bannerHeight - iconSize) / 2, iconSize, iconSize);
+        }
+        
+        ctx.fillText(bannerText, startX + iconSize + gap, bannerHeight / 2);
 
         // 3. Título del Negocio
         ctx.fillStyle = theme.text;
-        ctx.font = '900 38px "Outfit", Arial, sans-serif';
+        ctx.font = '900 42px "Outfit", Arial, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
         ctx.letterSpacing = '0px';
 
         const bizNameText = inputBusinessName.value.trim().toUpperCase() || 'NOMBRE DE TU NEGOCIO';
-        const titleY = bannerHeight + 35;
+        const titleY = bannerHeight + 40;
         
         // Envolver texto si es muy largo
-        const titleLines = wrapText(ctx, bizNameText, width - 80);
+        const titleLines = wrapText(ctx, bizNameText, width - 100);
         let currentY = titleY;
         
         // Pintar líneas del título (máximo 2 líneas)
         titleLines.slice(0, 2).forEach((line) => {
             ctx.fillText(line, width / 2, currentY);
-            currentY += 44;
+            currentY += 48;
         });
+
+        // 3.5. Usuario del Negocio
+        const bizUserText = inputBusinessUser.value.trim() ? `@${inputBusinessUser.value.trim().toLowerCase()}` : '';
+        if (bizUserText) {
+            ctx.fillStyle = activeTheme === 'dark' ? theme.cta : theme.text;
+            ctx.font = '800 24px "Outfit", Arial, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            ctx.letterSpacing = '0.5px';
+            
+            currentY -= 5;
+            ctx.fillText(bizUserText, width / 2, currentY);
+            currentY += 38;
+        }
 
         // 4. Zona de la Foto (Centrada y con Object Fit: Cover)
         const photoBorderRadius = 24;
-        const photoX = 40;
-        const photoY = 170;
-        const photoWidth = width - 80;
-        const photoHeight = 440;
+        const photoX = 50;
+        const photoY = Math.max(195, currentY + 15);
+        const photoWidth = width - 100;
+        const photoHeight = photoWidth / 2.0; // Bloquea las medidas con la proporción 2.0/1
 
         // Dibujar contenedor con borde
         ctx.fillStyle = activeTheme === 'dark' ? '#374151' : '#f3f4f6';
@@ -493,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
             drawRoundedRectPath(ctx, photoX + 2, photoY + 2, photoWidth - 4, photoHeight - 4, photoBorderRadius - 2);
             ctx.clip();
 
-            // Dibujar imagen simulando object-fit cover
+            // Dibujar imagen simulando object-fit cover con offsets del usuario
             const imgWidth = bizImage.width;
             const imgHeight = bizImage.height;
             const targetRatio = photoWidth / photoHeight;
@@ -501,18 +593,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let drawW, drawH, drawX, drawY;
 
+            const offsetX = parseInt(inputPhotoOffsetX.value, 10);
+            const offsetY = parseInt(inputPhotoOffsetY.value, 10);
+
             if (imgRatio > targetRatio) {
                 // La imagen es más ancha que el contenedor
                 drawH = photoHeight;
                 drawW = photoHeight * imgRatio;
-                drawX = photoX + (photoWidth - drawW) / 2;
+                drawX = photoX + (photoWidth - drawW) * (offsetX / 100);
                 drawY = photoY;
             } else {
                 // La imagen es más alta que el contenedor
                 drawW = photoWidth;
                 drawH = photoWidth / imgRatio;
                 drawX = photoX;
-                drawY = photoY + (photoHeight - drawH) / 2;
+                drawY = photoY + (photoHeight - drawH) * (offsetY / 100);
             }
 
             ctx.drawImage(bizImage, drawX, drawY, drawW, drawH);
@@ -520,15 +615,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Placeholder si no hay imagen
             ctx.fillStyle = '#9ca3af';
-            ctx.font = 'bold 20px "Nunito", Arial, sans-serif';
+            ctx.font = 'bold 22px "Nunito", Arial, sans-serif';
             ctx.textAlign = 'center';
             ctx.fillText('[ FOTO DE TU NEGOCIO ]', width / 2, photoY + photoHeight / 2);
         }
 
         // 5. Llamado a la Acción (CTA)
-        const ctaY = 645;
+        const ctaY = 720;
         ctx.fillStyle = theme.cta;
-        ctx.font = '900 24px "Outfit", Arial, sans-serif';
+        ctx.font = '900 32px "Outfit", Arial, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
         ctx.letterSpacing = '0.5px';
@@ -539,14 +634,31 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             ctaText = selectCta.options[selectCta.selectedIndex].text;
         }
+        ctaText = ctaText.toUpperCase();
+
+        const ctaMaxWidth = width - 100;
+        const ctaLines = wrapText(ctx, ctaText, ctaMaxWidth);
         
-        ctx.fillText(ctaText.toUpperCase(), width / 2, ctaY);
+        let linesToDraw = ctaLines.slice(0, 2);
+        if (ctaLines.length > 2) {
+            let secondLine = linesToDraw[1];
+            while (secondLine.length > 0 && ctx.measureText(secondLine + "...").width > ctaMaxWidth) {
+                secondLine = secondLine.slice(0, -1);
+            }
+            linesToDraw[1] = secondLine + "...";
+        }
+
+        let currentCtaY = ctaY;
+        linesToDraw.forEach((line) => {
+            ctx.fillText(line, width / 2, currentCtaY);
+            currentCtaY += 38;
+        });
 
         // 6. Sección de Código QR en la parte inferior
-        const qrSecX = 40;
-        const qrSecY = 705;
-        const qrSecWidth = width - 80;
-        const qrSecHeight = 175;
+        const qrSecX = 50;
+        const qrSecY = 800;
+        const qrSecWidth = width - 100;
+        const qrSecHeight = 230;
         const qrSecRadius = 24;
 
         // Fondo de sección de QR
@@ -559,8 +671,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.stroke();
 
         // Dibujar el Código QR
-        const qrSize = 135;
-        const qrX = qrSecX + 20;
+        const qrSize = 170;
+        const qrX = qrSecX + 25;
         const qrY = qrSecY + (qrSecHeight - qrSize) / 2;
         
         ctx.fillStyle = '#ffffff';
@@ -574,48 +686,106 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.drawImage(qrImage, qrX + 8, qrY + 8, qrSize - 16, qrSize - 16);
         } else {
             ctx.fillStyle = '#9ca3af';
-            ctx.font = 'bold 12px "Nunito", Arial, sans-serif';
+            ctx.font = 'bold 14px "Nunito", Arial, sans-serif';
             ctx.textAlign = 'center';
             ctx.fillText('CÓDIGO QR', qrX + qrSize / 2, qrY + qrSize / 2);
         }
 
         // Info de la App (Logo y Subtexto)
-        const infoX = qrX + qrSize + 25;
-        const infoY = qrSecY + 30;
-
-        // Dibujar Logo NED
-        if (logoImage && logoImage.complete && logoImage.naturalWidth > 0) {
-            // El logo original es transparente y tiene dimensiones variables.
-            // Escalamos a una altura razonable (ej. 50px) manteniendo el aspect ratio
-            const logoH = 50;
-            const logoW = (logoImage.width / logoImage.height) * logoH;
-            ctx.drawImage(logoImage, infoX, infoY, logoW, logoH);
-        } else {
-            // Fallback de texto de marca si no carga la imagen
-            ctx.fillStyle = activeTheme === 'dark' ? '#ffffff' : 'var(--magenta)';
-            ctx.font = '900 32px "Outfit", Arial, sans-serif';
-            ctx.textAlign = 'left';
-            ctx.textBaseline = 'top';
-            ctx.fillText('NED', infoX, infoY);
-        }
-
-        // Subtexto
+        const infoX = qrX + qrSize + 30;
+        
+        // 1. Subtexto
         ctx.fillStyle = theme.qrSubText;
-        ctx.font = 'bold 16px "Nunito", Arial, sans-serif';
+        ctx.font = '700 15px "Nunito", Arial, sans-serif';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
-        
+        ctx.letterSpacing = '0px';
+
         const subtextLines = [
-            '1. Descarga la App gratis.',
-            '2. Busca nuestro negocio.',
-            '3. ¡Gana y acumula premios!'
+            '1. Ve a la tienda de apps de android o iOS.',
+            '2. Escribe NEDLEAL.',
+            '3. Regístrate.',
+            '4. Busca por el nombre o usuario.',
+            '5. ¡Gana de muchas maneras!'
         ];
         
-        let subtextY = infoY + 60;
+        let subtextY = qrSecY + 16;
         subtextLines.forEach(line => {
             ctx.fillText(line, infoX, subtextY);
-            subtextY += 24;
+            subtextY += 21;
         });
+
+        // 2. Footer de la Info (Logo y Tiendas lado a lado, agrupados juntos)
+        const footerY = qrSecY + 162;
+        let logoW = 85;
+        
+        // Dibujar Logo NED en el footer
+        if (logoImage && logoImage.complete && logoImage.naturalWidth > 0) {
+            const logoH = 32;
+            logoW = (logoImage.width / logoImage.height) * logoH;
+            ctx.drawImage(logoImage, infoX, footerY + 2, logoW, logoH);
+        } else {
+            ctx.fillStyle = activeTheme === 'dark' ? '#ffffff' : 'var(--magenta)';
+            ctx.font = '900 24px "Outfit", Arial, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillText('NED', infoX, footerY);
+            logoW = ctx.measureText('NED').width;
+        }
+
+        // Dibujar iconos de tiendas de apps (agrupados junto a la derecha del logo)
+        const storeXStart = infoX + logoW + 20;
+        const storeIconH = 25;
+        const totalBadgesWidth = (storeIconH * 2) + 10;
+
+        // Crear un canvas temporal (offscreen) para procesar las imágenes con fondo transparente
+        const offscreenCanvas = document.createElement('canvas');
+        offscreenCanvas.width = totalBadgesWidth;
+        offscreenCanvas.height = storeIconH;
+        const offCtx = offscreenCanvas.getContext('2d');
+
+        // Dibujar en el canvas temporal (las imágenes se dibujan sobre fondo transparente, a=0)
+        if (playStoreImage && playStoreImage.complete && playStoreImage.naturalWidth > 0) {
+            offCtx.drawImage(playStoreImage, 0, 0, storeIconH, storeIconH);
+        }
+        if (appStoreImage && appStoreImage.complete && appStoreImage.naturalWidth > 0) {
+            offCtx.drawImage(appStoreImage, storeIconH + 10, 0, storeIconH, storeIconH);
+        }
+
+        // Aplicar el filtro de escala de grises sobre los píxeles transparentes de los iconos
+        try {
+            const imgData = offCtx.getImageData(0, 0, totalBadgesWidth, storeIconH);
+            const data = imgData.data;
+            for (let i = 0; i < data.length; i += 4) {
+                const r = data[i];
+                const g = data[i + 1];
+                const b = data[i + 2];
+                const a = data[i + 3];
+                // Solo procesar píxeles que pertenezcan a los logotipos (opacidad > 0)
+                if (a > 0) {
+                    let gray = 0.299 * r + 0.587 * g + 0.114 * b;
+                    
+                    if (activeTheme === 'dark') {
+                        // Invertir grises para que resalten en tema oscuro
+                        gray = 255 - gray;
+                        // Ajustar contraste
+                        gray = gray > 120 ? 255 : gray * 1.6;
+                    } else {
+                        // Incrementar contraste en temas claros para oscurecerlos
+                        gray = gray < 180 ? gray * 0.5 : gray;
+                    }
+                    
+                    data[i] = gray;     // R
+                    data[i + 1] = gray; // G
+                    data[i + 2] = gray; // B
+                }
+            }
+            offCtx.putImageData(imgData, 0, 0);
+        } catch (e) {
+            console.warn("No se pudo aplicar el filtro de escala de grises en el canvas temporal:", e);
+        }
+
+        // Pintar el canvas temporal sobre el canvas principal
+        ctx.drawImage(offscreenCanvas, storeXStart, footerY + 4);
 
         // 7. Borde General Exterior del Cartel
         ctx.strokeStyle = activeTheme === 'dark' ? '#ffffff' : '#2b2d42';
@@ -659,7 +829,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
         ctx.lineTo(x + width, y + height - radius);
         ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-        ctx.lineTo(x + radius, y + height - radius);
+        ctx.lineTo(x + radius, y + height);
         ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
         ctx.lineTo(x, y + radius);
         ctx.quadraticCurveTo(x, y, x + radius, y);
