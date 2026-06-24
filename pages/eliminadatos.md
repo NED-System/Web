@@ -1,119 +1,54 @@
-Política de Eliminación de datos
+**POLÍTICA DE ELIMINACIÓN DE DATOS Y REVOCATORIA DE AUTORIZACIONES**
 
-ASPECTOS
-GENERALES
+**NED SYSTEM S.A.S.**
 
-En
-desarrollo de la legislación vigente en materia de Protección de Datos
-Personales del Reglamento General de Protección de Datos Personales Europeo y
-la Alianza Europea de Publicidad Digital Interactiva, NED SYSTEM S.A.S. (en
-adelante “NED”) domiciliada en el municipio de Sabaneta, Antioquia, Colombia,
-reglamenta el tratamiento de los datos personales de sus Usuarios, Proveedores,
-Terceros y contactos web a los cuales se le da tratamiento.
+**ASPECTOS GENERALES**
 
-Al entregar
-cualquier tipo de información personal, el titular ha aceptado que dicha
-información sea utilizada de acuerdo con la presente Política, información que
-no será utilizada en ningún momento para propósitos diferentes a los aquí
-establecidos. En el evento que dicha información personal vaya a ser utilizada
-para otros propósitos, ésta deberá estar amparada dentro de las excepciones que
-prevé la normatividad, o deberá contar con una autorización expresa de su
-titular, según sea el caso.
+En desarrollo de la legislación colombiana vigente en materia de Protección de Datos Personales (Ley 1581 de 2012 y Decreto 1074 de 2015), **NED SYSTEM S.A.S.** (en adelante “NED”), sociedad comercial domiciliada en el municipio de Sabaneta, Antioquia, Colombia, reglamenta el procedimiento para la supresión de datos y revocatoria de autorizaciones de sus Usuarios (Consumidores, Seguidos, Clientes), Negocios, Terceros y contactos web a los cuales se les da tratamiento en sus bases de datos.
 
-La presente
-Política se efectúa con el propósito de dar cumplimiento a lo exigido en el
-Reglamento General de Protección de Datos Personales Europeo así como en la Ley
-1582 de 2012, el cual ampara el derecho que tienen todas las personas naturales
-a conocer, actualizar y rectificar la información personal que se le da
-tratamiento en NED, los demás derechos, libertades y garantías constitucionales
-que surgen, en cabeza del titular del dato que se desprenden del tratamiento de
-sus datos personales.
+Al entregar cualquier tipo de información personal, el Titular acepta que dicha información sea utilizada de acuerdo con las finalidades autorizadas. NED garantiza que la información no será utilizada en ningún momento para propósitos diferentes a los establecidos, salvo las excepciones que prevé la normatividad nacional, o cuando se cuente con una autorización expresa y adicional de su Titular.
 
-El
-tratamiento al cual son sometidos los datos personales obedece principalmente
-al desarrollo del objeto social de NED y a las actividades conexas que se
-desprenden de esta.
+Esta Política se efectúa con el propósito de garantizar el ejercicio del derecho constitucional de *Habeas Data*, amparando la facultad que tienen todas las personas naturales a conocer, actualizar, rectificar y **solicitar la eliminación** de la información personal objeto de tratamiento por parte de NED.
 
-1. REVOCATORIA DE LA AUTORIZACIÓN Y/O
-SUPRESIÓN DEL DATO
+**REVOCATORIA DE LA AUTORIZACIÓN Y/O SUPRESIÓN DEL DATO**
 
-Todo
-titular de la cuenta o causahabiente de Datos Personales tiene derecho a
-solicitar a NED la eliminación total o parcial de sus Datos Personales. Para
-ello se seguirá el procedimiento establecido en el punto anterior de este
-documento.
+Todo Titular de una cuenta (sea Consumidor o Negocio) o sus causahabientes legítimos tienen derecho a solicitar a NED la eliminación total o parcial de sus Datos Personales, así como a revocar el consentimiento que faculta su tratamiento.
 
-La
-supresión de Datos operará y será definitiva siempre y cuando los mismos: (a)
-no estén siendo tratados conforme a lo establecido por la legislación vigente,
-(b) hayan dejado de ser necesarios para la finalidad con la cual se recaudaron
-o, (c) se haya superado el periodo de tiempo requerido para cumplir con el fin
-por el cual se recaudaron.
+Para efectos de solicitar la eliminación, el Titular deberá enviar una solicitud formal al correo electrónico **info@ned.mobi**, indicando su nombre completo, documento de identidad y el nombre de usuario o ID dentro de la Plataforma.
 
-NED podrá
-negar la eliminación cuando: (a) El titular de la cuenta tenga el deber legal
-y/o contractual de permanecer en la base de datos; (b) La supresión de los
-datos obstaculice actuaciones judiciales o administrativas en curso.
+**Reglas de Procedencia para la Supresión de Datos:** La supresión de datos y la revocatoria de la autorización operarán y serán definitivas siempre y cuando los mismos:
 
-2. VIGENCIA
+1. No estén siendo tratados conforme a los principios, deberes y garantías establecidas en la Ley 1581 de 2012.
+1. Hayan dejado de ser necesarios o pertinentes para la finalidad con la cual fueron recolectados inicialmente en el marco de la prestación del servicio de la app.
+1. Se haya superado el periodo de tiempo legal o contractualmente requerido para cumplir con el fin para el cual se recaudaron.
 
-Las
-presentes Políticas de Tratamiento de la Información entran en vigencia a
-partir de su aceptación expresa, inequívoca y con conocimiento del propósito
-para el cual se efectúa el tratamiento de sus datos personales por parte de
-NED.
+**Excepciones Legales (Cuándo NED podrá negar la eliminación):** NED estará legalmente facultada para negar la supresión de los datos o la revocatoria de la autorización cuando:
 
-Las Bases
-de Datos que contienen la información de los Usuarios y Proveedores tendrán una
-vigencia de 10 años prorrogables por períodos iguales.
+1. El Titular de la cuenta tenga un deber legal o contractual de permanecer en la base de datos de la Plataforma (v.g., suscripciones de Negocios vigentes o cuentas con obligaciones contractuales pendientes).
+1. La eliminación de los datos obstaculice actuaciones judiciales o administrativas en curso, o sea necesaria para el cumplimiento de una orden dictada por autoridad competente colombiana.
+1. El dato sea necesario para proteger los intereses jurídicamente tutelados del Titular o para garantizar el cumplimiento de una obligación legalmente impuesta a NED.
 
-3. GENERAL
+**VIGENCIA DE LAS BASES DE DATOS**
 
-En caso de
-cualquier controversia entre el titular de la cuenta y NED con relación a las
-Políticas de Privacidad, las partes se comprometen a llevar las diferencias
-ante la Jurisdicción Ordinaria colombiana y aceptan que sea esta Jurisdicción
-la competente de resolver los litigios generados entre ambos.
+Las presentes políticas entran en vigencia a partir de su aceptación expresa por parte de los Usuarios. Los datos personales recolectados y contenidos en las Bases de Datos de Consumidores y Negocios de NED se conservarán mientras persista la finalidad que dio origen a su tratamiento o durante el tiempo que permanezca vigente el vínculo comercial y legal, más el término de prescripción de las acciones legales aplicables en Colombia.
 
-4. CONSENTIMIENTO,
-PREVIO, EXPRESO E INFORMADO.
+**GESTIÓN DE CONTROVERSIAS Y JURISDICCIÓN**
 
-Con la
-lectura y aceptación de las presentes Políticas de Tratamiento de Datos
-Personales, el Usuario y el Proveedor aceptan de manera previa, expresa e
-informada, el tratamiento de sus datos personales por parte de NED, así como de
-los terceros relacionados en este documento, reconociendo que se trata en todo
-momento de una finalidad legítima, sin que ello implique bajo ninguna
-circunstancia la posibilidad de que sean divulgados sus datos personales a
-terceras personas ajenas a las relacionadas en las presentes Políticas, sin su
-previa autorización por escrito, en virtud del principio de acceso y
-circulación restringida de los Datos Personales.
+En caso de presentarse cualquier controversia entre el Titular de la cuenta y NED con relación a la aplicación, interpretación o ejecución de esta Política de Eliminación de Datos, las partes se comprometen a intentar resolver la diferencia de forma directa y amigable. De no ser posible, las partes acuerdan someter el diferendo ante los jueces ordinarios de la República de Colombia, aceptando que sea la Jurisdicción colombiana la única competente para resolver dichos litigios.
 
-NED
-garantiza que la información sujeta a Tratamiento debe corresponderse a los
-postulados de veracidad, completitud y exactitud, e igualmente, deben ser
-comprobables y comprensibles. Igualmente, garantiza que cuenta con todos los
-medios técnicos disponibles y necesarios para que la información compilada sea
-técnicamente controlable para brindar un conocimiento restringido sólo a los
-Titulares, a NED y a los Terceros.
+**CONSENTIMIENTO PREVIO, EXPRESO E INFORMADO**
 
-La
-información objeto de Tratamiento por parte de las personas previamente
-relacionadas están sujetas a confidencialidad, y por
-consiguiente, NED y los Terceros se encuentran obligadas a garantizar la
-reserva de la información.
+Con la aceptación de esta Política, el Usuario (Consumidor o Negocio) declara haber sido informado de manera clara y completa sobre sus derechos de *Habeas Data*.
 
-5. NOTIFICACIONES
+NED garantiza que la información sujeta a tratamiento responde a los postulados de veracidad, completitud, exactitud y actualización, siendo además comprobable y comprensible. NED dispone de los medios técnicos necesarios para que la información recopilada sea técnicamente controlable, asegurando un acceso restringido únicamente a los Titulares autorizados, a NED y a los terceros encargados del procesamiento técnico. Toda la información objeto de tratamiento está sujeta a estrictos compromisos de confidencialidad y reserva de la información.
 
-NED se
-encuentra ubicado en la siguiente dirección y los datos de contacto son los
-siguientes, lo anterior para efectos de ser notificado de cualquier acto
-judicial o de cualquier tipo.
+**DATOS DE CONTACTO Y NOTIFICACIONES**
 
-Dirección:                                Sabaneta,
-Antioquia.
+Para efectos de notificaciones judiciales, solicitudes de supresión de datos o radicación de PQRs, los datos oficiales de NED son:
 
-Correo Electrónico:                 [info@ned.mobi](mailto:info@ned.mobi)
+- **Razón Social:** NED SYSTEM S.A.S.
+- **Domicilio:** Sabaneta, Antioquia - Colombia.
+- **Correo Electrónico Oficial:** info@ned.mobi
 
-Última
-Actualización:             08/03/2025
+**Última Actualización:** 23 de junio de 2026.
+

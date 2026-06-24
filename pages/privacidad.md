@@ -1,391 +1,126 @@
-Política de Privacidad
+**POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES (POLÍTICA DE PRIVACIDAD)**
 
-ASPECTOS GENERALES
+**NED SYSTEM S.A.S.**
 
-En desarrollo de la legislación vigente en materia de Protección de Datos Personales del Reglamento General de Protección de Datos Personales Europeo y la Alianza Europea de Publicidad Digital Interactiva, NED SYSTEM S.A.S. (en adelante "NED") domiciliada en el municipio de Sabaneta, Antioquia, Colombia, reglamenta el tratamiento de los datos personales de sus Usuarios, Proveedores, Terceros y contactos web a los cuales se le da tratamiento.
+**ASPECTOS GENERALES Y MARCO LEGAL**
 
-Al entregar cualquier tipo de información personal, el titular ha aceptado que dicha información sea utilizada de acuerdo con la presente Política, información que no será utilizada en ningún momento para propósitos diferentes a los aquí establecidos. En el evento que dicha información personal vaya a ser utilizada para otros propósitos, ésta deberá estar amparada dentro de las excepciones que prevé la normatividad, o deberá contar con una autorización expresa de su titular, según sea el caso.
+La presente Política de Tratamiento de Datos Personales (en adelante, la "Política") regula la recolección, almacenamiento, uso, circulación, supresión, transmisión y transferencia de los datos de carácter personal que **NED SYSTEM S.A.S.** (en adelante, "**NED**"), sociedad comercial legalmente constituida en Colombia, domiciliada en el municipio de Sabaneta, Antioquia, recolecta de sus Usuarios (Consumidores y Proveedores), trabajadores, contratistas, aliados y terceros, en estricto cumplimiento de la **Ley 1581 de 2012**, el Decreto Único Reglamentario 1074 de 2015, y demás normas concordantes con el derecho fundamental de *Habeas Data* en la República de Colombia.
 
-La presente Política se efectúa con el propósito de dar cumplimiento a lo exigido en el Reglamento General de Protección de Datos Personales Europeo así como en la Ley 1582 de 2012, el cual ampara el derecho que tienen todas las personas naturales a conocer, actualizar y rectificar la información personal que se le da tratamiento en NED, los demás derechos, libertades y garantías constitucionales que surgen, en cabeza del titular del dato que se desprenden del tratamiento de sus datos personales.
+Al diligenciar los formularios de registro, iniciar sesión, o interactuar con la plataforma web y aplicativos móviles (en adelante, la “Plataforma”), el Titular de los datos otorga su **consentimiento previo, expreso e informado** para que sus datos sean tratados de acuerdo con las finalidades y condiciones establecidas en este documento.
 
-El tratamiento al cual son sometidos los datos personales obedece principalmente al desarrollo del objeto social de NED y a las actividades conexas que se desprenden de esta.
+**1. OBJETIVOS**
 
-1\. OBJETIVOS
+- **Objetivo General:** Establecer los criterios y directrices institucionales bajo los cuales **NED** realiza el tratamiento legítimo de datos personales en su calidad de **Responsable del Tratamiento**.
+- **Objetivos Específicos:**
+  - Adoptar buenas prácticas de seguridad de la información para salvaguardar la privacidad de las personas naturales.
+  - Garantizar los derechos de los Titulares consagrados en el artículo 8 de la Ley 1581 de 2012.
+  - Definir los canales de comunicación para que los Titulares puedan conocer, actualizar, rectificar o suprimir sus datos de las bases de datos de **NED**.
 
-Objetivo General:
+**2. ALCANCE**
 
-Establecer los criterios de aplicación en cuanto al tratamiento de datos personales por parte de NED. El tratamiento de los datos personales comprende cualquier operación o conjunto de operaciones sobre datos personales, tales como recolección, almacenamiento, uso, circulación, supresión, transferencia de datos.
+Esta Política aplica a todos los datos personales de personas naturales que se encuentren registrados en las bases de datos automatizadas, físicas o digitales administradas por **NED**. El cumplimiento de estas directrices es obligatorio para todos los empleados, contratistas, directivos y aliados estratégicos que ejecuten operaciones de tratamiento por cuenta de **NED**.
 
-NED asume el rol de Responsable del tratamiento o Encargado del tratamiento o usuarios de los datos personales, de acuerdo al caso.
+**NED** es una Plataforma de intermediación y red social comercial que conecta a Negocios con sus Seguidores o Clientes (Consumidores) con el fin de incentivar la lealtad y la fidelización a través de dinámicas comerciales (planes de puntos, sorteos, aniversarios, etc.). Para usar las funcionalidades de la Plataforma, es un requisito obligatorio e indispensable la lectura, comprensión y aceptación de esta Política.
 
-Objetivos Específicos:
+**3. DEFINICIONES LEGALES**
 
-Establecer las políticas con las cuales se dará el tratamiento de los datos personales y la responsabilidad de NED en relación con el manejo de los datos personales de personas naturales.
+- **Autorización:** Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de sus datos personales. 
+- **Base de Datos:** Conjunto organizado de datos personales que sea objeto de Tratamiento. 
+- **Dato Personal:** Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables. 
+- **Dato Público:** Es el dato calificado como tal por la ley o la Constitución Política, tales como los contenidos en registros públicos, estado civil de las personas y sentencias judiciales ejecutoriadas.
+- **Dato Privado:** Es el dato que por su naturaleza íntima o reservada solo es relevante para el Titular.
+- **Dato Sensible:** Aquel que afecta la intimidad del Titular o cuyo uso indebido puede generar discriminación (e.g., orientación política, convicciones religiosas, datos biométricos, datos relativos a la salud o vida sexual).
+- **Consumidor:** Persona natural mayor de dieciocho (18) años que accede de forma gratuita a la Plataforma para interactuar con perfiles comerciales, seguir comercios y participar en dinámicas promocionales.
+- **Productor o Proveedor:** Persona natural o jurídica que contrata los servicios de administración comercial de **NED** mediante suscripción paga para publicitar su portafolio y fidelizar clientes.
+- **Titular:** Persona natural cuyos datos personales sean objeto de Tratamiento (Usuarios, empleados, proveedores, etc.).
+- **Responsable del Tratamiento:** Persona natural o jurídica que por sí misma o en asocio con otros decida sobre la base de datos y/o el Tratamiento de los datos. Para efectos de este documento, el Responsable es **NED SYSTEM S.A.S.**
+- **Encargado del Tratamiento:** Persona natural o jurídica que realice el Tratamiento de datos personales por cuenta del Responsable.
+- **Transferencia:** Operación que ocurre cuando el Responsable y/o Encargado del Tratamiento de datos personales, ubicado en Colombia, envía la información o los datos personales a un receptor, que a su vez es Responsable del Tratamiento y se encuentra dentro o fuera del país. 
+- **Transmisión:** Tratamiento de datos personales que implica la comunicación de los mismos dentro o fuera del territorio de la República de Colombia cuando tenga por objeto la realización de un Tratamiento por el Encargado por cuenta del Responsable. 
 
-Adoptar buenas prácticas, referentes a los cumplimientos de los requisitos legales, en lo concerniente a la protección de los datos y privacidad de la información personal.
+**4. PROHIBICIÓN RADICAL DE DATOS DE MENORES DE EDAD**
 
-Dar cumplimiento de los derechos contenidos en el Reglamento General de Protección de Datos Personales Europeo, los cuales corresponde a NED, a los Usuarios, Proveedores, Terceros y contactos web en relación con el tratamiento de los datos personales.
+La Plataforma está diseñada de forma exclusiva para personas **mayores de dieciocho (18) años**. **NED** no recolecta, ni procesa, de forma deliberada información de niños, niñas y adolescentes. Si se llega a comprobar que una cuenta fue creada por un menor de edad aportando datos falsos, **NED** procederá a la cancelación inmediata de la cuenta y a la supresión segura de toda la información asociada en sus servidores.
 
-2\. ALCANCE.
+**5. INFORMACIÓN OBJETO DE RECOLECCIÓN**
 
-La normatividad jurídica antes mencionada le será aplicable a los datos de personas naturales que se encuentran almacenados y registrados en las bases de datos administradas por NED en calidad de Responsable y/o Encargado. En este sentido, todas las áreas de NED que involucren el tratamiento de datos de carácter personal, deberán someterse a lo dispuesto en esta política.
+**NED** recopila datos bajo el principio de **minimización de datos**, solicitando exclusivamente lo estrictamente necesario para el cumplimiento de sus servicios:
 
-NED, es una app que facilita la conexión con clientes o seguidores para fidelizarlos por medio del ofrecimiento de diversos productos y/o servicios de proveedores o terceros que, de igual forma, implementarán programas o dinámicas de acceso a dichos productos y/o servicios. De esta manera, negocios físicos o digitales conectarán con sus clientes fácilmente, al crear su plan de puntos, referidos, cumplimiento de fechas especiales, entre otras.
+- **Información Personal Registrada Directamente:** Nombre(s), apellido(s), razón social (para comercios), número de documento de identidad o NIT, fecha de nacimiento, género, correo electrónico, número de teléfono móvil, dirección de domicilio físico y contraseñas cifradas de acceso.
+- **Información Capturada por Autenticación de Terceros:** Al vincular cuentas de Google (Gmail) o Facebook, **NED** extraerá el nombre, correo electrónico y fecha de cumpleaños registrada en dicha red social.
+- **Información Técnica y de Comportamiento:** Dirección IP, modelo de hardware de dispositivo móvil, tipo de sistema operativo (iOS o Android), identificadores únicos de publicidad (IDFA/AAID), datos de bloqueos, analíticas de clicks y navegación, uso de preferencias en la interfaz y cookies técnicas indispensables para mantener la sesión activa.
+- **Datos de Geolocalización:** Si el Usuario otorga permisos explícitos en su dispositivo, se capturará la ubicación exacta o aproximada por GPS/IP para mapear los comercios físicos disponibles a su alrededor.
 
-Para acceder a la plataforma de NED, el Usuario y/o el PROVEEDOR deberán aceptar esta política de privacidad. Lo anterior lo hacemos con el fin de desarrollar nuestro objeto social.
+**6. FINALIDAD DEL TRATAMIENTO DE LOS DATOS PERSONALES**
 
-Para la información personal que el Usuario y/o el PROVEEDOR otorguen a NED para la contratación de los servicios anteriores, NED actuará como Responsable y Encargado de su tratamiento, cumpliendo con las obligaciones emanadas en la presente política de privacidad.
+Los datos personales recolectados por **NED** serán tratados para el cumplimiento de las siguientes finalidades legítimas:
 
-3\. DESTINATARIOS
+**A. Respecto de los Consumidores y Proveedores:**
 
-La presente política se aplicará para todas las personas que de manera directa o indirecta tengan relación de cualquier tipo con NED, ellos incluyen, entre otros:
+1. Gestionar la creación, autenticación, soporte técnico y mantenimiento de la cuenta de usuario dentro de la Plataforma.
+1. Permitir el funcionamiento de la red social interna, facilitando el seguimiento que los Consumidores hacen de sus Proveedores preferidos.
+1. Operar el sistema de **Mensajería Instantánea (Chat)** interno para la resolución de dudas comerciales directas entre Consumidores y Proveedores.
+1. Enviar **Notificaciones Push** y alertas automáticas al dispositivo móvil sobre chats nuevos, actualizaciones de perfiles seguidos, sorteos y dinámicas comerciales activadas por los comercios.
+1. Gestionar la infraestructura técnica del **Plan de Puntos**, asignando las boletas de los sorteos y procesando la redención de Recompensas de forma segura.
+1. Habilitar la visualización del módulo numérico y contable manual de **"Ventas Fiadas"** para el autocontrol de estados de cuenta entre las partes.
+1. Validar la identidad de los ganadores de los sorteos frente al Proveedor utilizando el identificador digital interno de la app (ID).
+1. Realizar análisis estadísticos y de tendencias agregadas para el mejoramiento de las herramientas de la app.
+1. Cobrar los cánones de suscripción mensual a los Proveedores a través de los sistemas internos habilitados.
+1. Dar cumplimiento a requerimientos formulados por autoridades judiciales o administrativas del orden nacional.
 
-Usuarios
+**B. Respecto de los Trabajadores, Contratistas y Proveedores de Servicios de NED:**
 
-Proveedores
+1. Gestionar los procesos de selección, contratación, nómina, afiliaciones al Sistema de Seguridad Social Integral y archivo histórico laboral.
 
-Terceros
+**7. REGLA ESPECIAL DE PRIVACIDAD EN LA INTERACCIÓN COMERCIAL**
 
-Directivos
+En cumplimiento estricto del principio de **circulación restringida**, **NED** implementa una política de minimización de visualización de datos: **Los Proveedores solo podrán ver el Nombre y el ID único de los Consumidores que decidan seguirlos.**
 
-Trabajadores (Actuales y Potenciales).
+**NED** bajo ninguna circunstancia transferirá, compartirá o visibilizará el número de teléfono celular, el correo electrónico, ni la dirección de residencia física de los Consumidores a los Proveedores o comercios de la Plataforma. Las interacciones se centralizan técnicamente dentro del ecosistema cerrado de la app.
 
-Aliados
+**8. TRANSFERENCIA Y TRANSMISIÓN INTERNACIONAL DE DATOS**
 
-4\. DEFINICIONES
+Para garantizar el soporte en la nube y la estabilidad de la Plataforma, **NED** podrá transmitir los datos personales a servidores de terceros proveedores de infraestructura tecnológica (tales como AWS, Google Cloud u otros operadores de data centers de primer nivel) ubicados en el exterior. Al aceptar esta Política, el Titular autoriza expresamente la transmisión internacional de sus datos, garantizando **NED** que dichos proveedores internacionales cuentan con estándares adecuados de seguridad alineados con las exigencias de la SIC.
 
-AUTORIZACIÓN: se entiende como el consentimiento que de forma previa, expresa e informada otorga el titular de los datos personales al Responsable del tratamiento de la información para llevar a cabo el Tratamiento de datos personales.
+**9. DERECHOS DEL TITULAR DE LA INFORMACIÓN**
 
-BASES DE DATOS: listado que se encuentra de forma organizada, en el cual se encuentran los datos personales que son objeto de tratamiento.
+De conformidad con el artículo 8 de la Ley 1581 de 2012, el Titular de los datos personales tiene derecho a:
 
-DATO PERSONAL: Cualquier información vinculada o que pueda asociarse a una o varias personas naturales o jurídicas determinadas o determinables.
+1. Conocer, actualizar y rectificar sus datos personales frente a **NED**. Este derecho se podrá ejercer, entre otros, frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado.
+1. Solicitar prueba de la Autorización otorgada a **NED**, salvo las excepciones legales (artículo 10 de la Ley 1581 de 2012).
+1. Ser informado por **NED**, previa solicitud, respecto del uso que le ha dado a sus datos personales.
+1. Presentar ante la Superintendencia de Industria y Comercio (SIC) quejas por infracciones a lo dispuesto en la ley de protección de datos, una vez agotado el trámite de consulta o reclamo directo ante **NED**.
+1. Revocar la Autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. 
+1. Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento. 
 
-DATO PÚBLICO: Es el dato calificado como tal según los mandatos de la ley o de la Constitución Política y todos aquellos que no sean semiprivado, privados o sensibles. Por su naturaleza, los datos públicos pueden estar contenidos, entre otros, en registros públicos, documentos públicos, gacetas, boletines oficiales y sentencias judiciales debidamente ejecutoriadas que no estén sometidas a reserva y los relativos al estado civil de las personas.
+**10. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS (HAEBEAS DATA)**
 
-DATO PRIVADO: es la información que por su característica íntima, reservada y personal solo le importa al titular.
+Para el ejercicio de cualquiera de sus derechos, el Titular o sus causahabientes legítimos deberán dirigir una solicitud formal al área responsable de atención:
 
-DATO SENSIBLE: se entiende por dato sensible aquel que afecta la intimidad del titular o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido político o que garantice los derechos y las garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual y datos biométricos.
+- **Canal Exclusivo de Peticiones y Reclamos:** Correo electrónico **info@ned.mobi**
+- **Requisitos de la Solicitud:** Nombre completo del Titular, documento de identidad escaneado, descripción detallada de los hechos que dan lugar a la consulta/reclamo, derecho que desea ejercer (conocer, actualizar, rectificar, suprimir o revocar), y datos de contacto para la respuesta.
 
-USUARIO: Es la persona natural o jurídica mayor de dieciocho (18) años que realiza los siguientes actos a través de la Plataforma:
+**Términos de Respuesta:**
 
-Acceder a la Plataforma para fines meramente informativos.
+- **Consultas:** Las consultas que versen sobre el conocimiento de datos almacenados serán atendidas en un término máximo de **diez (10) días hábiles** contados a partir de la fecha de su recibo. Si no fuere posible resolverla en dicho lapso, se informará al solicitante el motivo de la prórroga, y se le dará respuesta en un término no mayor a **fco (5) días hábiles** adicionales.
+- **Reclamos (Corrección, Supresión, Revocatoria):** Los reclamos serán atendidos en un término máximo de **quince (15) días hábiles** contados a partir del día siguiente a la fecha de su recibo. Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes para que subsane. Transcurridos dos (2) meses desde el requerimiento sin respuesta del Titular, se entenderá que ha desistido. Si no fuere posible atenderlo en el término inicial, se prorrogará por un máximo de **ocho (8) días hábiles** adicionales.
 
-Interactuar en el Sitio de la Plataforma con el fin de verificar la existencia de ofertas de productos y/o servicios suministrados por terceros ajenos al Operador de la Plataforma, y participando activamente de las dinámicas lanzadas por terceros proveedores o productores.
+**11. MEDIDAS DE SEGURIDAD DE LA INFORMACIÓN**
 
-PRODUCTOR O PROVEEDOR: Es aquella persona natural o jurídica que tiene un convenio previo celebrado con el Operador de la Plataforma, con el fin de realizar sus dinámicas comerciales en la Plataforma para beneficio del Consumidor.
+**NED** adopta medidas de seguridad de índole técnica, humana y administrativa (control de accesos restringido, encriptación en tránsito y reposo, auditorías periódicas de código) necesarias para evitar la adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento de los datos.
 
-RESPONSABLE DEL TRATAMIENTO: NED, respecto de los datos personales que posea de sus Usuarios, proveedores, Terceros, vinculados laborales, aliados, etc. Es él quien decide sobre la base de datos y/o tratamiento de los datos personales de las personas previamente referenciadas a título enunciativo.
+**Notificación de Brechas:** En caso de presentarse un incidente o brecha de seguridad que ponga en riesgo la confidencialidad de los datos de los Usuarios, **NED** notificará a la Superintendencia de Industria y Comercio y a los Usuarios afectados dentro de las setenta y dos (72) horas siguientes al conocimiento del hecho, conforme a los lineamientos locales de seguridad de la información.
 
-ENCARGADO DEL TRATAMIENTO: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta de la Compañía como Responsable de los datos.
+**12. TEMPORALIDAD Y RETENCIÓN DE LOS DATOS**
 
-HABEAS DATA: Derecho fundamental de toda persona para conocer, actualizar, rectificar y/o cancelar la información personal que se le de tratamiento y que se encuentren en bases de datos públicas o privadas.
+Los datos personales permanecerán en los sistemas de **NED** únicamente durante el tiempo que subsista la finalidad para la cual fueron recolectados, o mientras dure la relación contractual/comercial entre el Usuario y **NED**. Una vez finalizado este vínculo, los datos se conservarán bloqueados durante el término legal necesario para atender posibles responsabilidades contractuales, contables, tributarias o judiciales bajo la ley colombiana, posterior a lo cual se procederá a su destrucción o anonimización definitiva de forma segura.
 
-TITULAR DEL DATO PERSONAL: Es la persona natural cuyos datos personales sean objeto de tratamiento. Sea usuario, empleado, o cualquier tercero que, en razón de una relación comercial o jurídica, suministre datos personales a NED.
+**13. VIGENCIA Y MODIFICACIONES**
 
-TRANSFERENCIA: Se refiere al envío por parte de NED como Responsable del Tratamiento o un Encargado de los datos, a un tercer agente o persona natural/jurídica (receptor), dentro o fuera del territorio nacional para el tratamiento efectivo de datos personales.
+La presente versión de la Política entra en vigencia a partir de su publicación y aceptación por los Usuarios. **NED** se reserva el derecho de modificar esta Política en cualquier momento. Cualquier cambio sustancial relativo a las finalidades del tratamiento o la identidad del Responsable será notificado a través de la Plataforma o vía correo electrónico antes de su entrada en vigor, requiriéndose una nueva aceptación expresa del Usuario para continuar usando los servicios.
 
-TRANSMISIÓN: la cesión de datos que ocurre cuando el Responsable y/o Encargado del tratamiento de datos personales y que en virtud de un contrato de transmisión de datos personales, envía la información o los datos personales a un receptor, que a su vez es Responsable del Tratamiento y se encuentra dentro o fuera del país.
+- **Dirección Física de Notificaciones:** Sabaneta, Antioquia - Colombia.
+- **Contacto Electrónico:** info@ned.mobi
 
-CESIÓN DE DATOS: Tratamiento de datos en la que se realiza una divulgación a una persona diferente al titular del dato o distinta al que se encuentre autorizado para recibir información personal
+**Última Actualización:** 23 de junio de 2026.
 
-TRATAMIENTO DE DATOS PERSONALES: Cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión.
-
-ALIANZA EUROPEA DE PUBLICIDAD DIGITAL INTERACTIVA/EUROPEAN INTERACTIVE ADVERTISING ALLIANCE (EDAA): es la Alianza que propone prácticas de privacidad responsables en toda la industria de la publicidad digital, brindando a los consumidores una mayor transparencia y control a través de principios multifacéticos que se aplican a datos de sitios múltiples y datos de aplicaciones cruzadas reunidos en cualquier computadora de escritorio.
-
-REGLAMENTO GENERAL DE PROTECCIÓN DE DATOS PERSONALES (RGPD)/GENERAL DATA PROTECTION REGULATION: es la normativa que regula la protección de los datos personales de los ciudadanos que vivan en la Unión Europea.
-
-5\. REGLAMENTO GENERAL DE PROTECCIÓN DE DATOS PERSONALES (RGPD)
-
-NED implementa su recolección y tratamiento de datos, de acuerdo con la normatividad legal vigente, por lo cual:
-
-Cuenta con un protocolo de seguridad establecido e implementado por todo el equipo de trabajo, el cual está capacitado con todas las normas de seguridad sobre los datos personales que se recolectan y almacenan en NED, para un uso apropiado de esta información.
-
-Utiliza para el manejo de la información, herramientas e integraciones con terceros que cumplen con estándares internacionales con fines específicos sin derecho a ser compartidos o usados con un propósito distinto al que autorizó inicialmente el Usuario o el Proveedor.
-
-Cumple con principios generales de estándares internacionales en cuanto a calidad de los datos, consentimiento y derecho a la información; y le ofrece a todos los Usuarios de los datos, los derechos de acceso, rectificación, portabilidad de los datos, restricción, supresión y oposición.
-
-Cumple con los criterios generales de licitud, lealtad y transparencia de tratamiento de datos.
-
-Los fines están determinados, explícitos y son legítimos.
-
-Aplica la minimización de datos, al recolectar solo los datos adecuados, pertinentes y limitados a lo necesario. Garantiza la exactitud y actualización de los mismos y los conserva sólo por el tiempo necesario para los fines del tratamiento.
-
-Adecúa las medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado.
-
-6\. AUTORIZACIÓN EXPRESA PARA LA TRANSFERENCIA Y USOS DE LOS DATOS PERSONALES
-
-Tus datos personales se podrán procesar en cualquier otro país dependiendo de la ubicación de los proveedores, socios comerciales y demás entidades a las que se permita el acceso a esta información bajo las condiciones de las presentes Políticas de Privacidad. Al acceder o utilizar NED, o al transmitirnos tus datos personales, autorizas previa. expresa y específicamente a dicha transferencia y a cualquier finalidad relacionada con ella.
-
-7\. FINALIDAD DEL TRATAMIENTO DE LOS DATOS PERSONALES
-
-NED en su condición de Encargado y/o Responsable del tratamiento de la información de carácter personal que recopila, almacena, actualiza, transmite o suprime datos de sus Usuarios, Proveedores, Terceros, Empleados, Aliados, etc., y comunidad en general, les da tratamiento a los datos para las finalidades descritas a continuación, no sin antes advertir que estas se limitan estrictamente al desarrollo del objeto social de NED y que se encuentran organizadas a través de las siguientes bases de datos.
-
-USUARIOS Y/O PROVEEDORES.
-
-NED solo recibirá de sus USUARIOS y PROVEEDORES los datos que sean necesarios, pertinentes y no excesivos para la finalidad del servicio que presta. Cuando se le exija a NED, por su naturaleza jurídica, la divulgación de datos del USUARIO o del PROVEEDOR, esta se efectuará con las previsiones que den cumplimiento a lo dispuesto en la norma y que prevengan a terceros sobre la finalidad de la información que se divulga.
-
-Cuando NED entregue datos de sus USUARIOS o PROVEEDORES, estos deberán proteger los datos personales suministrados, conforme lo dispuesto en esta política. Para tal efecto se incluirá la previsión de auditoría respectiva en el contrato o documento que legitima la entrega de los datos personales. NED verificará que los datos solicitados sean necesarios, pertinentes y no excesivos respecto de la finalidad que fundamenta la solicitud de acceso a los mismos.
-
-NED, en ejercicio de su objeto social, recopilará la información personal del Usuario y del Proveedor que se inscriba en la Plataforma con el fin de que el primero pueda interactuar con los negocios, y que el segundo pueda promocionar los productos ofrecidos a través de su aplicación. La finalidad de recopilar y tratar los datos personales de los Usuarios y los Proveedores, hace referencia a la necesidad de que ambas partes creen una cuenta dentro de la Plataforma para efectos de poder acceder a ella y establecer conexiones y acceso a beneficios. De esta manera el tratamiento de los datos personales se limita a los estrictamente necesarios para cumplir con la finalidad referenciada.
-
-Actividades necesarias, pertinentes y no excesivas para las finalidades mencionadas:
-
-\- Celebración de los contratos necesarios con los PROVEEDORES para el cumplimiento del objeto social de NED.
-
-\- Creación de accesos en los sistemas suministrados por NED.
-
-\- Realizar encuestas y/o sondeos de opinión y de seguimientos de calidad de los servicios.
-
-\- Ser contactado para renovaciones, ofrecimiento de productos y servicios.
-
-\- Envío de información a entidades administrativas, gubernamentales o judiciales.
-
-\- Envió y/o Recepción de mensajes o a través de cualquier otro medio análogo y/o digital de comunicación creado o por crearse.
-
-\- Ejecución de obligaciones contractuales.
-
-\- Con propósitos de seguridad o prevención de fraude.
-
-\- Cualquier otra finalidad que resulte en el desarrollo del contrato o la relación entre el Usuario y/o el Proveedor y NED.
-
-8\. ÁREA RESPONSABLE DE LA ATENCIÓN DE PETICIONES, QUEJAS, SUGERENCIAS, CONSULTAS Y RECLAMOS
-
-Todo USUARIO o PROVEEDOR titular de Datos Personales tiene derecho a realizar consultas y solicitudes a NED de forma gratuita, con el fin de conocer, acceder, actualizar, rectificar, suprimir información, solicitar la portabilidad de los datos y revocar la autorización o para realizar peticiones, quejas y reclamos respecto al Tratamiento que NED da a la información.
-
-El Usuario o Proveedor puede contactarse con NED vía correo electrónico o dejando un mensaje en su Plataforma.
-
-La consulta debe estar dirigida a NED, con el nombre completo del Usuario y/o el Proveedor, la descripción de la consulta, solicitud, petición, queja o reclamo, la dirección de residencia, el teléfono de contacto y el correo electrónico. El Usuario y/o el Proveedor titular de la información deberá presentar y/o adjuntar los siguientes documentos:
-
-Si se trata del Usuario o del Proveedor: Documento de identidad válido.
-
-Si se trata del causahabiente: Documento de identidad válido, Registro Civil de Defunción del Usuario. Documento que acredite la calidad en que actúa y el número del documento de identidad del Usuario.
-
-Si se trata de un representante legal y/o apoderado: Documento de identidad válido, Documento que acredite la calidad de Representante legal y/o apoderado del Usuario y/o el Proveedor y el número del documento de identidad del Usuario del Proveedor.
-
-En caso que la consulta resulte incompleta, NED solicitará al interesado para que subsane las fallas dentro de los cinco (5) días siguientes a la recepción del reclamo. Transcurridos dos meses desde la fecha del requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido de la reclamación o petición.
-
-La consulta será atendida en un término máximo de diez (10) días hábiles contados a partir de la fecha de radicación. Cuando no fuere posible atender la consulta dentro de dicho término, se informarán los motivos de la demora, y la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término.
-
-Las consultas deberán ser comunicadas a:
-
-Correo electrónico: [info@ned.mobi](mailto:info@ned.mobi)
-
-9\. DERECHOS DEL TITULAR DE LA INFORMACIÓN
-
-El titular de los datos personales, así como la información personal especialmente protegidos tendrá los siguientes derechos:
-
-Derecho de Hábeas Data: Comprende los derechos que tiene los titulares de los datos personales de conocer, actualizar, rectificar y excluir la información de bases de datos, bien porque se está haciendo un uso indebido de ella, o por simple voluntad del titular, salvo las excepciones previstas en la normatividad. Este derecho se podrá ejercer, entre otros frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado.
-
-Derecho a la revocatoria del consentimiento: El titular de los datos personales tiene el derecho de revocar el consentimiento o la autorización que habilita a NED para un tratamiento con determinada finalidad, salvo en aquellos casos contemplados como excepciones por la ley o contractualmente pactados en contrario.
-
-Derecho de oposición: El titular del dato tiene el derecho de oponerse al tratamiento de sus datos personales, salvo los casos en que tal derecho no proceda por disposición legal por vulnerar intereses generales superiores al interés particular.
-
-Derecho a presentar quejas y reclamos o ejercer acciones: El titular del dato personal tiene derecho a presentar frente a NED, y en subsidio ante la Superintendencia de Industria y Comercio, o la entidad que fuera competente, quejas y reclamos, así como las acciones que resultaren pertinentes, para la protección de sus datos.
-
-Derecho a solicitar prueba de la autorización: El titular del dato personal podrá solicitar prueba de la autorización otorgada a NED, salvo cuando expresamente se exceptúa como requisito para el tratamiento de conformidad con lo previsto en el Reglamento General de Protección de Datos Personales.
-
-Derecho a otorgar autorización para el tratamiento de datos: En desarrollo del principio del consentimiento informado, el titular del dato tiene derecho a otorgar su autorización para llevar a cabo el tratamiento de los datos personales. Dicha autorización es cualificada, toda vez que es previa, expresa e informada.
-
-Sin embargo, de manera excepcional, esta autorización no será requerida en los siguientes casos:
-
-Cuando sea requerida por entidad pública o administrativa en cumplimiento de sus funciones legales, o por orden judicial.
-
-Cuando se trate de datos de naturaleza pública.
-
-En casos de emergencia médica o sanitaria.
-
-Cuando sea tratamiento de información autorizado por la ley para fines históricos, estadísticos o científicos.
-
-Cuando se trate de datos personales relacionados con el registro civil de las personas.
-
-10\. INFORMACIÓN RECIBIDA DE LOS USUARIOS Y/O PROVEEDORES Y/O TERCEROS.
-
-NED puede recopilar dos tipos de datos e información:
-
-Información No Personal: Es información anónima y no identificable ("información No Personal"). NED no conoce la identidad del Usuario y/o del Proveedor que por primera vez ingresa a la Plataforma sin iniciar sesión o registrarse como Usuario y/o Proveedor. La información no personal se clasifica en información técnica e información de comportamiento, como se detalla a continuación:
-
-Información técnica
-
-Tipo de sistema operativo (Windows, Linux, etc..)
-
-Tipo de navegador (Explorer, Firefox, Chrome, Safari, etc..)
-
-Resolución de la pantalla (por ejemplo 800 x 600, 1024 x 768, etc..)
-
-Idioma teclado y navegador (por ejemplo, Inglés)
-
-Dirección IP.
-
-Las configuraciones de los computadores, ajustes y cualquier otro dato técnico o información similar.
-
-Información de comportamiento
-
-Enlaces que el Usuario y/o el Proveedor utiliza durante la navegación en la página.
-
-Información relacionada con las actividades del Usuario y/o del Proveedor en la página, como la fecha de ingreso, hora en que se accede a la página, duración de la visita a la página, entre otros.
-
-Cualquier información sobre el comportamiento en la página.
-
-Información de ubicación:
-
-Si el Usuario y/o el Proveedor permite a la página acceder a los servicios de ubicación a través del sistema de permisos que utiliza el sistema operativo para móviles, NED también podrá recopilar la ubicación exacta del dispositivo del Usuario y/o del Proveedor o la ubicación aproximada de la dirección IP.
-
-Uso e información de preferencias:
-
-Recopilamos información sobre el Usuario y del Proveedor y los visitantes de NED cuando interactúan con los Servicios, preferencias expresadas y configuraciones seleccionadas. En algunos casos, NED, lo hace a través del uso de cookies, etiquetas de píxel y tecnologías similares que crean y mantienen identificadores únicos.
-
-Información del dispositivo:
-
-Podemos recopilar información acerca del dispositivo móvil del Usuario y/o del Proveedor, lo que incluye, por ejemplo, el modelo de hardware, el sistema operativo y la versión, los nombres y las versiones de los archivos y el software, el idioma preferido, el identificador único de dispositivo, identificadores de publicidad, el número de serie, la información de movimiento del dispositivo y la información de la red móvil.
-
-Información del registro:
-
-Cuando el Usuario o el Proveedor interactúan con NED, la Plataforma recopila los registros del servidor, que pueden incluir información como direcciones IP del dispositivo, fechas y horas de acceso, funciones de la página web o las páginas visitadas, bloqueos de la página web y otra actividad del sistema, tipo de navegador y el sitio de terceros o servicio que estaba utilizando antes de interactuar con nuestros Servicios.
-
-Información Personal: Es información individualmente identificable ("Información Personal") que identifica al Usuario o al Proveedor y es de carácter privado. La Información Personal recopilada por NED consta de los datos personales ingresados voluntariamente por el Usuario o el Proveedor y que serán necesarios para la prestación del servicio.
-
-11\. BASE DE DATOS
-
-NED actúa como responsable y encargado del tratamiento de las siguientes bases de datos:
-
-Base de datos de los Usuarios de NED.
-
-Base de datos de los Proveedores de NED
-
-Base de datos de aliados, terceros, etc.
-
-Cada base de datos recopila y almacena la información personal respectiva, con autorización previa y de acuerdo a los fines establecidos en la presente política de privacidad. Dicha información puede tener manejo interno, es decir, dentro del LOBBY y/o externo, como con aliados o terceros. La información personal contenida en esta base de datos es custodiada mientras dura la relación comercial más un periodo adicional de 10 años. Si en un caso individual, existen indicios de una necesidad de protección o de interés histórico de estos datos, se prolongará el plazo de almacenamiento hasta que se haya aclarado la necesidad legal de protección.
-
-12\. RECOPILACIÓN DE LA INFORMACIÓN
-
-Existen momentos en que NED recibe la información:
-
-Al momento en que el Usuario diligencia el formulario.
-
-Al momento en que el Proveedor o tercero diligencia el formulario.
-
-Cuando el Usuario carga cualquier otro tipo de información en NED de manera posterior.
-
-Cuando el Proveedor o tercero carga cualquier otro tipo de información en NED de manera posterior.
-
-13\. TRANSFERENCIA DE DATOS A TERCEROS
-
-Como norma general, sus datos no se transmitirán a terceros, excepto en los casos en los que está legalmente autorizado a hacerlo, en caso de que la transferencia de datos sea necesaria para el establecimiento de la relación contractual o cuando nos hayas dado tu consentimiento explícito previo para la transferencia de los datos.
-
-Para el manejo interno de los datos, éstos podrán ser conocidos por el personal autorizado de NED, los cuales deberán conocer los procedimientos de seguridad y recolección de datos.
-
-Para el manejo externo de los datos, es decir, cuando le transfiero o transmito los datos personales a terceras personas nos aseguraremos que ellos cumplan con la legislación en materia de protección de datos, con las medidas de seguridad y las mismas garantías otorgadas por nosotros.
-
-El alcance de los datos transmitidos será el mínimo necesario. Lo anterior de conformidad con las autorizaciones que hayan sido otorgadas por el Usuario o por el Proveedor titular de los datos personales. NED para estos casos suscribirá el contrato de transmisión a que haya lugar si procede de acuerdo con la ley vigente. Una vez cese la necesidad de Tratamiento de los Datos Personales, los mismos serán eliminados de las bases de datos de NED en términos seguros.
-
-14\. DEBERES DE LOS RESPONSABLES Y ENCARGADOS
-
-NED en calidad de responsable y/o encargado, según sea el caso, del tratamiento de datos personales bajo su custodia, deberá cumplir los siguientes deberes, sin perjuicio de las demás disposiciones previstas en la ley y en otras que rijan su actividad:
-
-Garantizar al titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de Hábeas Data.
-
-Solicitar y conservar, en las condiciones previstas en la presente política, copia de la respectiva autorización otorgada por el titular.
-
-Informar debidamente al titular sobre la finalidad de la recolección y los derechos que le asisten por virtud de la autorización otorgada.
-
-Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
-
-Garantizar que la información que se suministre al encargado del tratamiento sea veraz, completa, exacta, actualizada, comprobable y comprensible.
-
-Realizar oportunamente la actualización, rectificación o supresión de los datos en los términos de la ley; comunicando de forma oportuna al encargado del tratamiento, todas las novedades respecto de los datos que previamente le haya suministrado.
-
-Rectificar la información cuando sea incorrecta y comunicar lo pertinente al encargado del tratamiento.
-
-Suministrar al encargado del tratamiento, según el caso, únicamente datos cuyo tratamiento esté previamente autorizado de conformidad con lo previsto en la ley.
-
-Exigir al encargado del tratamiento en todo momento respeto a las condiciones de seguridad y privacidad de la información del titular.
-
-Tramitar las consultas y reclamos formulados en los términos señalados en esta política y en la ley.
-
-Informar al encargado del tratamiento la circunstancia de que determinada información se encuentra en discusión por parte del titular, una vez se haya presentado la reclamación y no haya finalizado el trámite respectivo.
-
-Informar a solicitud del titular sobre el uso dado a sus datos.
-
-Informar a la autoridad de protección de datos cuando se presenten violaciones a los códigos de seguridad y existan riesgos en la administración de la información de los titulares.
-
-Abstenerse de circular información que esté siendo controvertida por el titular y cuyo bloqueo haya sido ordenado por una autoridad judicial.
-
-Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella.
-
-Informar a la autoridad competente cuando se presenten violaciones a los "Códigos de Seguridad" y existan riesgos en la administración de la información de los titulares.
-
-Auditar de forma periódica el cumplimiento de esta política por parte de los destinatarios de esta, integrada las buenas prácticas en seguridad de la información.
-
-Llevar un registro de bases de datos que contengan datos personales.
-
-Regular en los contratos con terceros el acceso a las bases que contengan información de carácter personal.
-
-15\. TEMPORALIDAD DEL DATO PERSONAL.
-
-En el tratamiento de datos personales que efectúa NED, la permanencia de los datos en sus sistemas de información estará determinada por la finalidad de dicho tratamiento.
-
-En consecuencia, agotada la finalidad para la cual se recolectaron los datos, NED procederá a su destrucción o devolución, según el caso, o bien a conservarlos según lo dispuesto en la ley, adoptando las medidas técnicas que impidan un tratamiento inadecuado.
-
-16\. MEDIDAS DE SEGURIDAD
-
-En el tratamiento de los datos personales objeto de regulación en esta política, NED adoptará medidas de seguridad física, lógicas y administrativas, las cuales se clasifican en nivel alto, medio y bajo, conforme el riesgo que pueda derivar de la criticidad de los datos personales tratados.
-
-17\. COOKIES Y ALMACENAMIENTO DE INFORMACIÓN LOCAL
-
-NED puede usar tecnologías como "cookies" (o tecnologías similares), que almacena cierta información en el computador ("Almacenamiento Local") y que permite la activación automática de ciertas características y el mejor uso del servicio.
-
-18\. SEGURIDAD
-
-NED prevé, cuida y adopta las medidas técnicas, humanas y administrativas que sean necesarias para mantener la seguridad de la información de los titulares de la cuenta y procura evitar su pérdida, adulteración, acceso o consulta de terceros no autorizados a la Plataforma a través de tecnologías estándar de la industria y los procedimientos internos, incluso mediante el uso de símbolos y mecanismos de encriptación. Sin embargo, NED no garantiza que nunca se produzcan accesos no autorizados. Así mismo, te garantizamos que:
-
-NED cuenta con protocolos de seguridad y acceso a los sistemas de información, almacenamiento y procesamiento, incluidas medidas físicas de control de riesgos de seguridad. Permanentemente se realiza monitoreo al sistema a través de análisis de vulnerabilidades. El personal de NED que realiza el tratamiento de los datos personales ejecuta dichos protocolos con el fin de garantizar la seguridad de la información.
-
-NED tiene el deber de notificar si existe una brecha de seguridad en la información del titular de la cuenta dentro de las 72 horas a la misma.
-
-El acceso a las diferentes bases de datos se encuentra restringido incluso para los empleados y colaboradores.
-
-Todos los empleados y terceros han suscrito cláusulas de confidencialidad en sus contratos y están comprometidos con la manipulación adecuada de las bases de datos atendiendo a los lineamientos sobre tratamiento de la información establecida en la Ley.
-
-Es responsabilidad del titular de la cuenta tener todos los controles de seguridad en sus equipos o redes privadas para su navegación hacia nuestros portales.
-
-19\. CAMBIOS EN LA POLÍTICA DE PRIVACIDAD
-
-Cualquier información del titular de la cuenta se encuentra regulada por los Términos y Condiciones y Políticas de Privacidad de NED. NED se reserva el derecho de modificarlas en cualquier momento, por lo cual se recomienda al titular de la cuenta visitar esta página con frecuencia. En caso de cualquier cambio material. NED hará lo posible para publicar un aviso de dicha modificación en la Plataforma.
-
-Cualquier cambio en la Política de Privacidad empezará a regir a partir de la "última actualización" y el uso continuado del servicio por el titular de la cuenta en la fecha de última revisión constituirá aceptación de los mismos.
-
-20\. REVOCATORIA DE LA AUTORIZACIÓN Y/O SUPRESIÓN DEL DATO
-
-Todo titular de la cuenta o causahabiente de Datos Personales tiene derecho a solicitar a NED la eliminación total o parcial de sus Datos Personales. Para ello se seguirá el procedimiento establecido en el punto anterior de este documento.
-
-La supresión de Datos operará y será definitiva siempre y cuando los mismos: (a) no estén siendo tratados conforme a lo establecido por la legislación vigente, (b) hayan dejado de ser necesarios para la finalidad con la cual se recaudaron o, (c) se haya superado el periodo de tiempo requerido para cumplir con el fin por el cual se recaudaron.
-
-NED podrá negar la eliminación cuando: (a) El titular de la cuenta tenga el deber legal y/o contractual de permanecer en la base de datos; (b) La supresión de los datos obstaculice actuaciones judiciales o administrativas en curso.
-
-21\. VIGENCIA
-
-Las presentes Políticas de Tratamiento de la Información entran en vigencia a partir de su aceptación expresa, inequívoca y con conocimiento del propósito para el cual se efectúa el tratamiento de sus datos personales por parte de NED.
-
-Las Bases de Datos que contienen la información de los Usuarios y Proveedores tendrán una vigencia de 10 años prorrogables por períodos iguales.
-
-22\. GENERAL
-
-En caso de cualquier controversia entre el titular de la cuenta y NED con relación a las Políticas de Privacidad, las partes se comprometen a llevar las diferencias ante la Jurisdicción Ordinaria colombiana y aceptan que sea esta Jurisdicción la competente de resolver los litigios generados entre ambos.
-
-23\. CONSENTIMIENTO, PREVIO, EXPRESO E INFORMADO.
-
-Con la lectura y aceptación de las presentes Políticas de Tratamiento de Datos Personales, el Usuario y el Proveedor aceptan de manera previa, expresa e informada, el tratamiento de sus datos personales por parte de NED, así como de los terceros relacionados en este documento, reconociendo que se trata en todo momento de una finalidad legítima, sin que ello implique bajo ninguna circunstancia la posibilidad de que sean divulgados sus datos personales a terceras personas ajenas a las relacionadas en las presentes Políticas, sin su previa autorización por escrito, en virtud del principio de acceso y circulación restringida de los Datos Personales.
-
-NED garantiza que la información sujeta a Tratamiento debe corresponderse a los postulados de veracidad, completitud y exactitud, e igualmente, deben ser comprobables y comprensibles. Igualmente, garantiza que cuenta con todos los medios técnicos disponibles y necesarios para que la información compilada sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares, a NED y a los Terceros.
-
-La información objeto de Tratamiento por parte de las personas previamente relacionadas están sujetas a confidencialidad, y por consiguiente, NED y los Terceros se encuentran obligadas a garantizar la reserva de la información.
-
-24\. NOTIFICACIONES
-
-NED se encuentra ubicado en la siguiente dirección y los datos de contacto son los siguientes, lo anterior para efectos de ser notificado de cualquier acto judicial o de cualquier tipo.
-
-Dirección: Sabaneta, Antioquia.
-
-Correo Electrónico: [info@ned.mobi](mailto:info@ned.mobi)
-
-Última Actualización: 08/03/2025
