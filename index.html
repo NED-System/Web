@@ -13,6 +13,11 @@
   <meta property="og:description" content="Únete a la plataforma de fidelización para consumidores y negocios." />
   <meta property="og:image" content="/assets/logo/Logo_NED_ico.png" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NED - Disfruta el poder de la Lealtad" />
+  <meta name="twitter:description" content="Únete a la plataforma de fidelización para consumidores y negocios." />
+  <meta name="twitter:image" content="https://ned.com.co/assets/logo/Logo_NED_ico.png" />
+  <link rel="canonical" href="https://ned.com.co/" />
   <!-- Eliminadas meta etiquetas de caché restrictivas para mejorar rendimiento -->
   <link rel="preconnect" href="https://conversations-widget.brevo.com" />
   <link rel="manifest" href="/manifest.json" />
@@ -20,6 +25,84 @@
   <link rel="stylesheet" href="/styles/style.css?v=5.9" />
   <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
   <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NED System",
+    "url": "https://ned.com.co",
+    "logo": "https://ned.com.co/assets/logo/LogoNED.png",
+    "sameAs": [
+      "https://www.facebook.com/nedleal",
+      "https://www.instagram.com/ned_leal",
+      "https://twitter.com/NEDmobi",
+      "https://tiktok.com/@nedmobi"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NED Leal",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "BusinessApplication, LifestyleApplication",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.nedsystem.movil",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el costo de la plataforma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NED es totalmente gratis para los consumidores. Si tienes un negocio, podrás comenzar con el plan gratuito, si deseas crear dinámicas más avanzadas, puedes optar por uno de los planes disponibles, el precio es muy muy accesible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo cancelar el plan en cualquier momento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, puedes cancelar tu plan de suscripción mensual en cualquier momento sin penalizaciones ni compromisos a largo plazo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo crear dinámicas comerciales?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Te invitamos a ver los videos tutoriales en nuestro sitio para aprender paso a paso a crear y compartir dinámicas comerciales de puntos, referidos, sorteos y cumpleaños."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo compartir contenido de NED en mis redes sociales?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "¡Sí, por supuesto! Compartir tu perfil y dinámicas te ayudará a atraer más clientes. Ofrecemos herramientas integradas para compartir perfiles, productos y dinámicas fácilmente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo puedo activar la opción para llevar un control de mis ventas fiadas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes activar de manera rápida el control de cuentas por cobrar (ventas fiadas) para tu negocio desde la aplicación de NED."
+        }
+      }
+    ]
+  }
+  </script>
   <!-- Brevo Conversations {literal} -->
   <script>
     (function (d, w, c) {
@@ -40,7 +123,6 @@
   <script src="/components/header.js" defer></script>
   <script src="/components/footer.js" defer></script>
   <script src="/scripts/animations.js?v=5.9" defer></script>
-  <script src="/scripts/register-sw.js" defer></script>
   <script src="/js/main.js" defer></script>
 </head>
 
@@ -59,14 +141,14 @@
         <!-- PORTAL CONSUMIDOR -->
         <a href="/pages/consumidores.html" class="usuarios-card-link">
           <div class="usuarios-card consumers-card">
-            <h3 class="h3__usuarios" id="consumidores-title">CONSUMIDOR</h3>
+            <h2 class="h3__usuarios" id="consumidores-title">CONSUMIDOR</h2>
             <div class="icon-container">
               <img class="flecha__usuarios" src="/assets/Inicio/icons8-expand-arrow-50.png" alt="flecha hacia abajo"
                 width="40" height="40" loading="eager" />
             </div>
             <div class="img-wrapper">
               <img class="img__seccion" id="ima__consumidor" src="/assets/Inicio/consumidores-3.png"
-                alt="Ilustración de consumidores" width="300" height="300" loading="eager" />
+                alt="Ilustración de consumidores" width="300" height="300" loading="eager" fetchpriority="high" />
             </div>
             <div class="card-btn">Vamos <span class="arrow">→</span></div>
           </div>
@@ -75,14 +157,14 @@
         <!-- PORTAL NEGOCIO -->
         <a href="/pages/negocios.html" class="usuarios-card-link">
           <div class="usuarios-card businesses-card">
-            <h3 class="h3__usuarios" id="negocios_title">NEGOCIO</h3>
+            <h2 class="h3__usuarios" id="negocios_title">NEGOCIO</h2>
             <div class="icon-container">
               <img class="flecha__usuarios" src="/assets/Inicio/icons8-expand-arrow-50.png" alt="flecha hacia abajo"
                 width="40" height="40" loading="eager" />
             </div>
             <div class="img-wrapper">
               <img class="img__seccion" id="ima__negocio" src="/assets/Inicio/negocios-3.png"
-                alt="Ilustración de negocios" width="300" height="300" loading="eager" />
+                alt="Ilustración de negocios" width="300" height="300" loading="eager" fetchpriority="high" />
             </div>
             <div class="card-btn">Quiero crecer <span class="arrow">→</span></div>
           </div>

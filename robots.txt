@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /share.html
+
+Sitemap: https://ned.com.co/sitemap.xml
