@@ -185,6 +185,27 @@ li {
   border-radius: 2px;
 }
 
+/* Nav Login Button (Web App) */
+.nav_links a.nav-login-btn {
+  background-color: var(--magenta);
+  color: white !important;
+  padding: 0.45rem 1.1rem;
+  border-radius: 8px;
+  border: 2px solid var(--text-negro);
+  box-shadow: 2.5px 2.5px 0px var(--text-negro);
+  font-weight: 800;
+  font-size: 1.15rem;
+  opacity: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.nav_links a.nav-login-btn:hover {
+  background-color: var(--amarillo);
+  color: var(--text-negro) !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 4.5px 4.5px 0px var(--text-negro);
+}
+
 /* Main Content */
 main {
   padding-top: 2rem;
