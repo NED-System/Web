@@ -95,5 +95,9 @@ function loadHeader() {
     }
 }
 
-// Cargar el header cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', loadHeader);
+// Cargar el header cuando el DOM esté listo o inmediatamente si ya cargó
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadHeader);
+} else {
+    loadHeader();
+}

@@ -79,5 +79,9 @@ function loadFooter() {
     }
 }
 
-// Cargar el footer cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', loadFooter);
+// Cargar el footer cuando el DOM esté listo o inmediatamente si ya cargó
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadFooter);
+} else {
+    loadFooter();
+}
