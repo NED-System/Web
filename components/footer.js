@@ -43,6 +43,7 @@ function createFooter() {
                             <li><a href="${basePath}pages/consumidores.html">Consumidores</a></li>
                             <li><a href="${basePath}pages/negocios.html">Negocios</a></li>
                             <li><a href="${basePath}pages/planes.html">Planes</a></li>
+                            <li><a href="${basePath}pages/simulador-plan-puntos.html">Simulador Plan de Puntos</a></li>
                             <li><a href="${basePath}pages/compartir.html">Crear Flyer</a></li>
                             <li><a href="https://app.ned.mobi/" target="_blank" rel="noopener noreferrer">Web App (Iniciar Sesión)</a></li>
                         </ul>

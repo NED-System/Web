@@ -1,0 +1,619 @@
+/* ==========================================================================
+   Simulador Plan de Puntos - Stylesheet (NED System)
+   Soporte Triple: Método 3 (La Servilleta), Método 2 (5 Pasos), Método 1 (16 Pasos)
+   ========================================================================== */
+
+.simulador-hero {
+    background-color: #fcf8f5;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+    border-bottom: 3.5px solid var(--text-negro, #1d1d1f);
+}
+
+.simulador-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.simulador-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.simulador-header h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-negro, #1d1d1f);
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.simulador-subtitle {
+    font-size: 1.15rem;
+    color: #4a4a4a;
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.simulador-badge {
+    display: inline-block;
+    background-color: var(--amarillo, #ffcf25);
+    color: var(--text-negro, #1d1d1f);
+    font-weight: 800;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    border: 2px solid var(--text-negro, #1d1d1f);
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.6px;
+    box-shadow: 2px 2px 0px var(--text-negro, #1d1d1f);
+}
+
+/* ==========================================================================
+   Selector de Pestañas entre Métodos (Triple)
+   ========================================================================== */
+
+.method-tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.method-tab-btn {
+    padding: 0.85rem 1.4rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    background-color: #ffffff;
+    color: var(--text-negro, #1d1d1f);
+    border: 2.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 14px;
+    box-shadow: 4px 4px 0px var(--text-negro, #1d1d1f);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.method-tab-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--text-negro, #1d1d1f);
+}
+
+.method-tab-btn.active {
+    background-color: var(--magenta, #c4227d);
+    color: #ffffff;
+    box-shadow: 5px 5px 0px var(--text-negro, #1d1d1f);
+}
+
+/* ==========================================================================
+   Wizard Container & Progress Bar
+   ========================================================================== */
+
+.wizard-box {
+    background: #ffffff;
+    border: 3.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 24px;
+    box-shadow: 8px 8px 0px var(--text-negro, #1d1d1f);
+    padding: 2.5rem;
+    margin-top: 1rem;
+}
+
+.wizard-progress-header {
+    margin-bottom: 2rem;
+}
+
+.wizard-progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.wizard-step-counter {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--magenta, #c4227d);
+}
+
+.wizard-tagline {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #777;
+}
+
+.wizard-progress-track {
+    width: 100%;
+    height: 12px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid var(--text-negro, #1d1d1f);
+    overflow: hidden;
+}
+
+.wizard-progress-fill {
+    height: 100%;
+    background-color: var(--magenta, #c4227d);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Step Cards */
+.step-card {
+    animation: fadeInStep 0.3s ease-in-out;
+}
+
+@keyframes fadeInStep {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.step-number {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    background: var(--amarillo, #ffcf25);
+    color: var(--text-negro, #1d1d1f);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px solid var(--text-negro, #1d1d1f);
+    box-shadow: 3px 3px 0px var(--text-negro, #1d1d1f);
+    flex-shrink: 0;
+}
+
+.step-header h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-negro, #1d1d1f);
+    margin: 0;
+}
+
+.step-description {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Inputs */
+.step-inputs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-negro, #1d1d1f);
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.custom-select {
+    padding: 0.85rem 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 600;
+    border: 2.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 12px;
+    background-color: #fafafa;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus,
+.custom-select:focus {
+    background-color: #ffffff;
+    border-color: var(--magenta, #c4227d);
+    box-shadow: 4px 4px 0px var(--text-negro, #1d1d1f);
+}
+
+/* Hide placeholder text when input is focused */
+.input-group input:focus::placeholder {
+    color: transparent;
+}
+
+.input-help {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.input-label-bold {
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+/* Presets (Horizontal / Vertical) */
+.preset-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.preset-btn {
+    padding: 0.75rem 1.4rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background: #ffffff;
+    color: var(--text-negro, #1d1d1f);
+    border: 2px solid var(--text-negro, #1d1d1f);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0px var(--text-negro, #1d1d1f);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.preset-btn:hover,
+.preset-btn.active {
+    background-color: var(--magenta, #c4227d);
+    color: #ffffff;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px var(--text-negro, #1d1d1f);
+}
+
+.vertical-presets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.preset-btn-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 1.2rem;
+    background-color: #fafafa;
+    border: 2.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 14px;
+    box-shadow: 3px 3px 0px var(--text-negro, #1d1d1f);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.preset-btn-card:hover,
+.preset-btn-card.active {
+    background-color: #fffdf5;
+    border-color: var(--magenta, #c4227d);
+    box-shadow: 5px 5px 0px var(--text-negro, #1d1d1f);
+    transform: translate(-2px, -2px);
+}
+
+.preset-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-negro, #1d1d1f);
+    margin-bottom: 0.2rem;
+}
+
+.preset-desc {
+    font-size: 0.88rem;
+    color: #666;
+}
+
+/* Calculation Result Box */
+.calculation-result-box {
+    background-color: #f7f7f9;
+    border: 3px solid var(--text-negro, #1d1d1f);
+    border-radius: 18px;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 6px 6px 0px var(--text-negro, #1d1d1f);
+    margin-top: 1rem;
+}
+
+.calculation-result-box.mini {
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.calculation-result-box.highlight-yellow {
+    background-color: #fff9e6;
+}
+
+.calc-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
+
+.calc-value {
+    font-family: "Outfit", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-negro, #1d1d1f);
+    display: block;
+}
+
+.results-duo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+/* ==========================================================================
+   MÉTODO 3: "LA PRUEBA DE LA SERVILLETA" (UX/UI ESTILO LIBRETA)
+   ========================================================================== */
+
+.servilleta-container {
+    margin-top: 2.5rem;
+}
+
+.servilleta-paper {
+    background-color: #fffefb;
+    border: 3.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px var(--text-negro, #1d1d1f);
+    padding: 2.5rem;
+    font-family: "Courier New", Courier, monospace;
+    color: var(--text-negro, #1d1d1f);
+}
+
+.servilleta-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.servilleta-tag {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 0.85rem;
+    background: var(--amarillo, #ffcf25);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    border: 2px solid var(--text-negro, #1d1d1f);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.servilleta-header h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.servilleta-divider {
+    font-weight: 900;
+    color: #888;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 1.2rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.servilleta-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.serv-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serv-line strong {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.servilleta-callout {
+    background-color: #fff9e6;
+    border: 2px dashed var(--text-negro, #1d1d1f);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.servilleta-projection h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.servilleta-alert-box {
+    border: 3px solid var(--text-negro, #1d1d1f);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin: 1.8rem 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.servilleta-alert-box.servilleta-green {
+    background-color: #eefbf3;
+    border-color: #0d8a43;
+}
+
+.servilleta-alert-box.servilleta-red {
+    background-color: #fde8e8;
+    border-color: #d93838;
+}
+
+.servilleta-alert-box h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 0.4rem;
+}
+
+.servilleta-alert-box p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.servilleta-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-servilleta-reset {
+    padding: 1rem 2.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    background-color: var(--magenta, #c4227d);
+    color: #ffffff;
+    border: 3px solid var(--text-negro, #1d1d1f);
+    border-radius: 14px;
+    box-shadow: 5px 5px 0px var(--text-negro, #1d1d1f);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.btn-servilleta-reset:hover {
+    background-color: var(--amarillo, #ffcf25);
+    color: var(--text-negro, #1d1d1f);
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--text-negro, #1d1d1f);
+}
+
+.btn-servilleta-reset:active {
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 0px var(--text-negro, #1d1d1f);
+}
+
+/* ==========================================================================
+   Wizard Navigation Actions
+   ========================================================================== */
+
+.wizard-footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #e0e0e0;
+}
+
+.btn-wizard {
+    padding: 0.85rem 2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    border: 2.5px solid var(--text-negro, #1d1d1f);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-wizard.primary {
+    background-color: var(--magenta, #c4227d);
+    color: #ffffff;
+    box-shadow: 4px 4px 0px var(--text-negro, #1d1d1f);
+}
+
+.btn-wizard.primary:hover {
+    background-color: var(--amarillo, #ffcf25);
+    color: var(--text-negro, #1d1d1f);
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px var(--text-negro, #1d1d1f);
+}
+
+.btn-wizard.secondary {
+    background-color: #ffffff;
+    color: var(--text-negro, #1d1d1f);
+    box-shadow: 4px 4px 0px var(--text-negro, #1d1d1f);
+}
+
+.btn-wizard.secondary:hover {
+    background-color: #f0f0f0;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--text-negro, #1d1d1f);
+}
+
+/* Text Colors */
+.text-green { color: #0d8a43; }
+.text-magenta { color: var(--magenta, #c4227d); }
+.text-yellow { color: #b8860b; }
+
+/* Responsive & Print */
+@media (max-width: 768px) {
+    .simulador-header h1 {
+        font-size: 2.1rem;
+    }
+
+    .wizard-box,
+    .servilleta-paper {
+        padding: 1.4rem;
+    }
+
+    .results-duo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wizard-footer-actions {
+        flex-direction: column-reverse;
+        gap: 0.8rem;
+    }
+
+    .btn-wizard, .btn-activate-app {
+        width: 100%;
+    }
+}
+
+@media print {
+    header, footer, #header-placeholder, #footer-placeholder, .wizard-box, .simulador-header, .method-tabs-nav {
+        display: none !important;
+    }
+
+    .servilleta-container {
+        display: block !important;
+    }
+
+    .servilleta-paper {
+        box-shadow: none;
+        border: none;
+    }
+
+    .servilleta-actions {
+        display: none !important;
+    }
+}

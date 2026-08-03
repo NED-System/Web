@@ -39,6 +39,7 @@ function createHeader() {
                     <li role="none"><a href="${basePath}pages/consumidores.html" role="menuitem">Consumidores</a></li>
                     <li role="none"><a href="${basePath}pages/negocios.html" role="menuitem">Negocios</a></li>
                     <li role="none"><a href="${basePath}pages/planes.html" role="menuitem">Planes</a></li>
+                    <li role="none"><a href="${basePath}pages/simulador-plan-puntos.html" role="menuitem">Simulador Puntos</a></li>
                     <li role="none"><a href="${basePath}pages/compartir.html" role="menuitem">Crear Flyer</a></li>
                     <li role="none"><a href="https://app.ned.mobi/" target="_blank" rel="noopener noreferrer" class="nav-login-btn" role="menuitem">Iniciar Sesión</a></li>
                 </ul>

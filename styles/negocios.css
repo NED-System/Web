@@ -100,14 +100,17 @@ main {
     font-size: 1.3rem;
 }
 
-/* Web App Login Button in Hero */
+/* Web App & Simulador Buttons in Hero */
 .hero_cta_container {
     margin-top: 1.8rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.btn_web_app {
+.btn_web_app,
+.btn_simulador {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +126,12 @@ main {
     box-shadow: 4px 4px 0px var(--text-negro);
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s, color 0.2s;
+}
+
+.btn_simulador {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
 }
 
 .btn_web_app:hover {
@@ -133,17 +141,27 @@ main {
     box-shadow: 7px 7px 0px var(--text-negro);
 }
 
-.btn_web_app:active {
+.btn_simulador:hover {
+    background-color: var(--magenta);
+    color: #ffffff;
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px var(--text-negro);
+}
+
+.btn_web_app:active,
+.btn_simulador:active {
     transform: translate(-1px, -1px);
     box-shadow: 2px 2px 0px var(--text-negro);
 }
 
-.btn_web_app svg {
+.btn_web_app svg,
+.btn_simulador svg {
     flex-shrink: 0;
     transition: transform 0.2s ease;
 }
 
-.btn_web_app:hover svg {
+.btn_web_app:hover svg,
+.btn_simulador:hover svg {
     transform: translate(2px, -2px);
 }
 

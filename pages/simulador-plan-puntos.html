@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simula y evalúa la viabilidad financiera de tu plan de puntos con NED. Calculadora expresa de servilleta y asistente de sostenibilidad." />
+    <link rel="canonical" href="https://ned.com.co/pages/simulador-plan-puntos.html" />
+    <meta name="theme-color" content="#C4227D" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Simulador Plan de Puntos | NED Negocios</title>
+    <link rel="stylesheet" href="/styles/style.css?v=6.3" />
+    <link rel="stylesheet" href="/styles/negocios.css?v=6.3" />
+    <link rel="stylesheet" href="/styles/simulador.css?v=6.3" />
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
+    <!-- Brevo Conversations -->
+    <script>
+      (function (d, w, c) {
+        w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+        w[c] =
+          w[c] ||
+          function () {
+            (w[c].q = w[c].q || []).push(arguments);
+          };
+        var s = d.createElement("script");
+        s.async = true;
+        s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
+        if (d.head) d.head.appendChild(s);
+      })(document, window, "BrevoConversations");
+    </script>
+    <!-- Include component scripts -->
+    <script src="/components/header.js?v=6.3" defer></script>
+    <script src="/components/footer.js?v=6.3" defer></script>
+    <script src="/scripts/animations.js?v=6.3" defer></script>
+    <script src="/scripts/simulador.js?v=4.0" defer></script>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="simulador-hero">
+        <div class="simulador-container">
+          <div class="simulador-header">
+            <span class="simulador-badge">Herramienta Financiera para Negocios</span>
+            <h1>Simulador <span class="highlight">Plan de Puntos</span></h1>
+            <p class="simulador-subtitle">
+              Calcula si un premio es rentable para tu negocio en menos de 1 minuto con la cuenta rápida de la servilleta o simula tu programa completo. Esta es una herramienta guia, los resultados pueden variar.
+            </p>
+          </div>
+
+          <!-- Selector de Pestañas (Método 3 y Método 2) -->
+          <div class="method-tabs-nav">
+            <button type="button" id="tab-btn-metodo3" class="method-tab-btn active">
+              La Prueba de la Servilleta (Express 3 Pasos)
+            </button>
+            <button type="button" id="tab-btn-metodo2" class="method-tab-btn">
+              Asistente Financiero (5 Pasos + Semáforo)
+            </button>
+          </div>
+
+          <!-- =================================================================== -->
+          <!-- CONTENEDOR MÉTODO 3: LA PRUEBA DE LA SERVILLETA (EXPRESS 3 PASOS) -->
+          <!-- =================================================================== -->
+          <div id="simulador-metodo3-container" class="method-container" style="display: block;">
+            <div class="wizard-box">
+              <div class="wizard-progress-header">
+                <div class="wizard-progress-info">
+                  <span id="m3-step-counter" class="wizard-step-counter">Paso 1 de 3</span>
+                  <span class="wizard-tagline">Calculadora Expresa para Comerciantes</span>
+                </div>
+                <div class="wizard-progress-track">
+                  <div id="m3-progress-bar" class="wizard-progress-fill" style="width: 33.3%;"></div>
+                </div>
+              </div>
+
+              <!-- M3 - Paso 1: El Regalo -->
+              <div class="step-card active" id="m3-step-card-1">
+                <div class="step-header">
+                  <span class="step-number">01</span>
+                  <h2>El Regalo (Premio)</h2>
+                </div>
+                <p class="step-description">Indica qué vas a regalar y cuánto te cuesta producirlo o comprarlo a ti.</p>
+                
+                <div class="step-inputs-grid">
+                  <div class="input-group">
+                    <label for="m3-input-reward-name">¿Qué vas a regalar?</label>
+                    <input type="text" id="m3-input-reward-name" placeholder="Ej. Una Hamburguesa Clásica" />
+                  </div>
+                  <div class="input-group">
+                    <label for="m3-input-reward-cost">¿Cuánto te cuesta a ti este regalo? ($)</label>
+                    <input type="number" id="m3-input-reward-cost" placeholder="Ej. 6000" />
+                    <span class="input-help">Costo directo de preparación o compra (Ej: Te cuesta $6.000 hacerla).</span>
+                  </div>
+                </div>
+
+                <div class="business-type-selector" style="margin-top: 1.5rem;">
+                  <label class="input-label-bold">Selecciona el perfil de tu Negocio:</label>
+                  <div class="preset-selector vertical-presets">
+                    <button type="button" class="preset-btn-card" data-m3-btype="barberia">
+                      <strong class="preset-title">Negocio costo insumo bajo</strong>
+                      <span class="preset-desc">Ej: Barberías / Servicios. El regalo puede representar hasta el 15% - 20% de la venta requerida (margen alto >70%).</span>
+                    </button>
+                    <button type="button" class="preset-btn-card active" data-m3-btype="comidas">
+                      <strong class="preset-title">Negocio costo insumo medio</strong>
+                      <span class="preset-desc">Ej: Comidas Rápidas. El regalo no debería superar el 10% - 12% de la venta requerida.</span>
+                    </button>
+                    <button type="button" class="preset-btn-card" data-m3-btype="tienda">
+                      <strong class="preset-title">Negocio margen muy estrecho</strong>
+                      <span class="preset-desc">Ej: Tiendas de Barrio / Abarrotes. El regalo no debería superar el 3% - 5% de la venta requerida.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- M3 - Paso 2: La Meta para el Cliente -->
+              <div class="step-card" id="m3-step-card-2" style="display: none;">
+                <div class="step-header">
+                  <span class="step-number">02</span>
+                  <h2>La Meta para el Cliente</h2>
+                </div>
+                <p class="step-description">¿Cuántos puntos necesita tu cliente para reclamar este premio?</p>
+                
+                <div class="step-inputs-grid">
+                  <div class="input-group">
+                    <label for="m3-input-points-required">Puntos necesarios para reclamar</label>
+                    <input type="number" id="m3-input-points-required" placeholder="Ej. 50" />
+                    <span class="input-help">Ejemplo: 50 puntos.</span>
+                  </div>
+                  <div class="input-group">
+                    <label for="m3-input-value-per-point">Regla base: Monto gastado por 1 punto ($)</label>
+                    <input type="number" id="m3-input-value-per-point" value="1000" placeholder="1000" />
+                    <span class="input-help">Por defecto: $1.000 en compras = 1 punto.</span>
+                  </div>
+                </div>
+
+                <div class="results-duo-grid" style="margin-top: 1.5rem;">
+                  <div class="calculation-result-box">
+                    <span class="calc-label">Venta total que te debe hacer el cliente</span>
+                    <span class="calc-value" id="m3-calc-spend-required">$50.000</span>
+                  </div>
+                  <div class="calculation-result-box highlight-yellow">
+                    <span class="calc-label">Costo real por cada punto que das</span>
+                    <span class="calc-value" id="m3-calc-cost-per-point">$120</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- M3 - Paso 3: Estimación de Clientes -->
+              <div class="step-card" id="m3-step-card-3" style="display: none;">
+                <div class="step-header">
+                  <span class="step-number">03</span>
+                  <h2>Estimación de Clientes al Mes</h2>
+                </div>
+                <p class="step-description">¿Cuántos clientes estimas que completarán la meta cada mes? (Elige en 1 clic):</p>
+                
+                <div class="preset-selector vertical-presets">
+                  <button type="button" class="preset-btn-card" data-m3-preset-customers="10">
+                    <strong class="preset-title">Negocio Pequeño</strong>
+                    <span class="preset-desc">~10 clientes al mes completan la meta</span>
+                  </button>
+                  <button type="button" class="preset-btn-card active" data-m3-preset-customers="25">
+                    <strong class="preset-title">Negocio Mediano</strong>
+                    <span class="preset-desc">~25 clientes al mes completan la meta (Recomendado)</span>
+                  </button>
+                  <button type="button" class="preset-btn-card" data-m3-preset-customers="50">
+                    <strong class="preset-title">Negocio Concurrido</strong>
+                    <span class="preset-desc">~50 clientes al mes completan la meta</span>
+                  </button>
+                </div>
+
+                <div class="step-inputs-grid" style="margin-top: 1.2rem;">
+                  <div class="input-group">
+                    <label for="m3-input-target-customers">O ingresa un número manual de clientes:</label>
+                    <input type="number" id="m3-input-target-customers" value="25" placeholder="25" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles Wizard M3 -->
+              <div class="wizard-footer-actions">
+                <button type="button" id="btn-m3-prev" class="btn-wizard secondary">&larr; Anterior</button>
+                <button type="button" id="btn-m3-next" class="btn-wizard primary">Siguiente &rarr;</button>
+              </div>
+            </div>
+
+            <!-- RESULTADOS: "LA PRUEBA DE LA SERVILLETA" -->
+            <div class="simulador-card servilleta-container" id="m3-servilleta-results" style="display: none;">
+              <div class="servilleta-paper">
+                <div class="servilleta-header">
+                  <span class="servilleta-tag">LA CUENTA RÁPIDA DE LA SERVILLETA</span>
+                  <h2>RESUMEN DE TU PLAN DE PUNTOS</h2>
+                </div>
+
+                <div class="servilleta-divider">----------------------------------------------------------</div>
+
+                <div class="servilleta-lines">
+                  <div class="serv-line">
+                    <span>• Tu cliente debe comprarte:</span>
+                    <strong id="servilleta-required-spend">$50.000</strong>
+                  </div>
+                  <div class="serv-line">
+                    <span>• A ti te cuesta el premio:</span>
+                    <strong id="servilleta-reward-cost">$6.000</strong>
+                  </div>
+                </div>
+
+                <div class="servilleta-callout">
+                  <strong>POR CADA CLIENTE QUE COMPLETE LA META:</strong><br />
+                  Te entran <strong id="servilleta-spend-explanation">$50.000</strong> en ventas y tu costo en el premio es de solo <strong id="servilleta-cost-explanation">$6.000</strong>.
+                </div>
+
+                <div class="servilleta-divider">----------------------------------------------------------</div>
+
+                <div class="servilleta-projection">
+                  <h3>PROYECCIÓN MENSUAL (con <span id="servilleta-customers-count">25</span> clientes):</h3>
+                  <div class="serv-line">
+                    <span>• Ventas generadas:</span>
+                    <strong id="servilleta-monthly-sales" class="text-green">$1.250.000</strong>
+                  </div>
+                  <div class="serv-line">
+                    <span>• Inversión en regalos:</span>
+                    <strong id="servilleta-monthly-investment" class="text-magenta">$150.000</strong>
+                  </div>
+                </div>
+
+                <div class="servilleta-divider">----------------------------------------------------------</div>
+
+                <!-- Alerta Inteligente por Tipo de Negocio -->
+                <div id="servilleta-alert-box" class="servilleta-alert-box servilleta-green">
+                  <h4 id="servilleta-alert-title">🟢 ¡EXCELENTE NEGOCIO!</h4>
+                  <p id="servilleta-alert-message">
+                    Estás entregando solo el 12% del valor de la venta en el premio. Tu margen soporta perfectamente la estrategia.
+                  </p>
+                </div>
+
+                <div class="servilleta-actions">
+                  <button type="button" id="btn-m3-reset" class="btn-servilleta-reset">
+                    🔄 Ajustar Otra Cuenta
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =================================================================== -->
+          <!-- CONTENEDOR MÉTODO 2: ASISTENTE FINANCIERO (5 PASOS + SEMÁFORO) -->
+          <!-- =================================================================== -->
+          <div id="simulador-metodo2-container" class="method-container" style="display: none;">
+            <div class="wizard-box">
+              <div class="wizard-progress-header">
+                <div class="wizard-progress-info">
+                  <span id="m2-step-counter" class="wizard-step-counter">Paso 1 de 5</span>
+                  <span class="wizard-tagline">Evaluación de Viabilidad Financiera</span>
+                </div>
+                <div class="wizard-progress-track">
+                  <div id="m2-progress-bar" class="wizard-progress-fill" style="width: 20%;"></div>
+                </div>
+              </div>
+
+              <!-- M2 Steps -->
+              <div class="step-card active" id="m2-step-card-1">
+                <div class="step-header"><span class="step-number">01</span><h2>Definir el Premio</h2></div>
+                <p class="step-description">Indica el producto o servicio que entregará tu negocio como recompensa.</p>
+                <div class="step-inputs-grid">
+                  <div class="input-group"><label for="m2-input-reward-name">Nombre del premio</label><input type="text" id="m2-input-reward-name" placeholder="Ej. Hamburguesa Clásica" /></div>
+                  <div class="input-group"><label for="m2-input-reward-cost">Costo real directo ($)</label><input type="number" id="m2-input-reward-cost" placeholder="Ej. 14500" /></div>
+                  <div class="input-group">
+                    <label for="m2-input-category">Categoría</label>
+                    <select id="m2-input-category" class="custom-select">
+                      <option value="product" selected>Producto Físico</option>
+                      <option value="service">Servicio</option>
+                      <option value="discount">Descuento %</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-card" id="m2-step-card-2" style="display: none;">
+                <div class="step-header"><span class="step-number">02</span><h2>Mecánica de Puntos</h2></div>
+                <p class="step-description">Establece los puntos necesarios y la tasa de acumulación por compra.</p>
+                <div class="step-inputs-grid">
+                  <div class="input-group"><label for="m2-input-points-required">Puntos requeridos</label><input type="number" id="m2-input-points-required" placeholder="Ej. 150" /></div>
+                  <div class="input-group"><label for="m2-input-points-per-unit">Monto por 1 punto ($)</label><input type="number" id="m2-input-points-per-unit" placeholder="Ej. 1000" /></div>
+                  <div class="input-group"><label for="m2-input-expiration-months">Vigencia (meses)</label><input type="number" id="m2-input-expiration-months" placeholder="Ej. 12" /></div>
+                </div>
+                <div class="results-duo-grid" style="margin-top: 1.5rem;">
+                  <div class="calculation-result-box"><span class="calc-label">Gasto necesario</span><span class="calc-value" id="m2-calc-spend-required">$150.000</span></div>
+                  <div class="calculation-result-box highlight-yellow"><span class="calc-label">Costo % sobre venta</span><span class="calc-value" id="m2-calc-program-cost-pct">9,7%</span></div>
+                </div>
+              </div>
+
+              <div class="step-card" id="m2-step-card-3" style="display: none;">
+                <div class="step-header"><span class="step-number">03</span><h2>Margen del Negocio</h2></div>
+                <p class="step-description">Compara el costo del programa frente al margen real de ganancia de tu negocio.</p>
+                <div class="step-inputs-grid">
+                  <div class="input-group"><label for="m2-input-gross-margin">Margen bruto promedio (%)</label><input type="number" id="m2-input-gross-margin" placeholder="Ej. 60" /></div>
+                </div>
+                <div class="calculation-result-box highlight-magenta" style="margin-top: 1.5rem;">
+                  <span class="calc-label">Margen que se "Regala"</span><span class="calc-value" id="m2-calc-margin-given-away">16,1%</span>
+                </div>
+              </div>
+
+              <div class="step-card" id="m2-step-card-4" style="display: none;">
+                <div class="step-header"><span class="step-number">04</span><h2>Proyección de Clientes</h2></div>
+                <p class="step-description">No todos los clientes que acumulan puntos llegan a canjearlos (Breakage).</p>
+                <div class="step-inputs-grid">
+                  <div class="input-group"><label for="m2-input-estimated-customers">Clientes acumuladores</label><input type="number" id="m2-input-estimated-customers" placeholder="Ej. 500" /></div>
+                  <div class="input-group"><label for="m2-input-redemption-rate">Tasa de canje (%)</label><input type="number" id="m2-input-redemption-rate" placeholder="Ej. 60" /></div>
+                </div>
+                <div class="calculation-result-box mini" style="margin-top: 1.2rem;"><span class="calc-label">Clientes efectivos</span><span class="calc-value" id="m2-calc-claiming-customers">300 clientes</span></div>
+              </div>
+
+              <div class="step-card" id="m2-step-card-5" style="display: none;">
+                <div class="step-header"><span class="step-number">05</span><h2>Ingresos e Atribución (Lift)</h2></div>
+                <p class="step-description">Estima qué porcentaje del ingreso es atribuible directamente al incentivo de puntos.</p>
+                <div class="step-inputs-grid">
+                  <div class="input-group">
+                    <label for="m2-input-avg-revenue">Ingreso por cliente antes del premio ($)</label>
+                    <input type="number" id="m2-input-avg-revenue" placeholder="Calculado: $150.000" />
+                    <span class="input-help" id="m2-help-avg-revenue">Calculado automáticamente desde el gasto necesario (Puntos × Monto por punto).</span>
+                  </div>
+                  <div class="input-group"><label for="m2-input-attribution-pct">% Atribuible al programa (%)</label><input type="number" id="m2-input-attribution-pct" placeholder="Ej. 15" /></div>
+                </div>
+                <div class="scenario-slider-box" style="margin-top: 1.5rem;">
+                  <div class="slider-header-info"><label for="m2-sensitivity-slider">Sensibilidad (Tasa Canje):</label><span class="slider-badge" id="m2-sensitivity-val">60%</span></div>
+                  <input type="range" id="m2-sensitivity-slider" min="20" max="90" step="5" value="60" class="custom-range-slider" />
+                </div>
+                <div class="scenario-live-grid">
+                  <div class="scenario-card"><span class="scen-title">Costo Proyectado</span><span class="scen-val" id="m2-sens-cost">$4.350.000</span></div>
+                  <div class="scenario-card highlight-green"><span class="scen-title">Ingreso Incremental</span><span class="scen-val" id="m2-sens-revenue">$11.250.000</span></div>
+                  <div class="scenario-card highlight-yellow"><span class="scen-title">ROI Incremental</span><span class="scen-val" id="m2-sens-roi">158%</span></div>
+                </div>
+              </div>
+
+              <div class="wizard-footer-actions">
+                <button type="button" id="btn-m2-prev" class="btn-wizard secondary">&larr; Anterior</button>
+                <button type="button" id="btn-m2-next" class="btn-wizard primary">Siguiente &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Dashboard M2 -->
+            <div class="simulador-card dashboard-card" id="m2-dashboard" style="display: none;">
+              <div class="dashboard-header"><span class="simulador-badge">Diagnóstico de Viabilidad</span><h2>Panel de Sostenibilidad</h2></div>
+              <div id="m2-semaforo-card" class="m2-semaforo-card status-green">
+                <h3 id="m2-semaforo-title">🟢 Programa Financieramente Viable</h3>
+                <p id="m2-semaforo-desc">El ROI incremental es positivo y el costo del programa absorbe menos del 20% de tu margen bruto.</p>
+              </div>
+              <div class="dashboard-sections-grid" style="margin-top: 2rem;">
+                <div class="dash-box"><h3>🎯 Mecánica</h3><ul class="dash-list"><li><span>Premio:</span> <strong id="m2-dash-reward-name">Hamburguesa Clásica</strong></li><li><span>Costo Premio:</span> <strong id="m2-dash-reward-cost">$14.500</strong></li><li><span>Gasto Requerido:</span> <strong id="m2-dash-spend-required">$150.000</strong></li><li><span>Costo por Punto:</span> <strong id="m2-dash-cost-per-point">$96,67</strong></li></ul></div>
+                <div class="dash-box"><h3>⚖️ Margen</h3><ul class="dash-list"><li><span>Costo % Venta:</span> <strong id="m2-dash-program-cost-pct">9,7%</strong></li><li><span>Margen Regalado:</span> <strong id="m2-dash-margin-given-away">16,1%</strong></li><li><span>Pasivo Puntos:</span> <strong id="m2-dash-points-liability" class="text-magenta">$1.933.333</strong></li></ul></div>
+                <div class="dash-box featured"><h3>📈 Impacto</h3><ul class="dash-list"><li><span>Costo Proyectado:</span> <strong id="m2-dash-projected-cost">$4.350.000</strong></li><li><span>Ingreso Incremental:</span> <strong id="m2-dash-incremental-revenue" class="text-green">$11.250.000</strong></li><li><span>ROI Programa:</span> <strong id="m2-dash-roi" class="text-yellow">158%</strong></li></ul></div>
+              </div>
+              <div class="dashboard-actions" style="display: flex; justify-content: center; margin-top: 2rem;">
+                <button type="button" id="btn-m2-reset" class="btn-servilleta-reset">
+                  🔄 Reiniciar Simulador
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+  </body>
+</html>
