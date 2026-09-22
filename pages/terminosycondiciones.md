@@ -1,141 +1,151 @@
-**TÉRMINOS Y CONDICIONES DE USO DE LA PLATAFORMA DE NED SYSTEM S.A.S.**
+**TÉRMINOS Y CONDICIONES DE USO DE LA PLATAFORMA NED**
 
-POR FAVOR LEA CUIDADOSAMENTE ESTAS CONDICIONES DEL SERVICIO, YA QUE CONTIENEN LAS REGLAS DE USO DE LA PLATAFORMA WEB Y APLICATIVOS MÓVILES, ASÍ COMO LAS OBLIGACIONES DE CUMPLIMIENTO DICTADAS POR LA NORMATIVIDAD LEGAL VIGENTE EN LA REPÚBLICA DE COLOMBIA.
+**NED SYSTEM S.A.S. - NIT 901.404.605 - 9\
+Versión Actualizada - Septiembre 2026**
 
-Bienvenido(a) a **NED**, una Plataforma Tecnológica que comprende aplicativos móviles e infraestructura web (en adelante la “Plataforma”), de propiedad exclusiva de **NED SYSTEM S.A.S.**, la cual presta sus servicios a través de los sistemas operativos Android, iOS y entorno Web.
+**POR FAVOR LEA CUIDADOSAMENTE ESTAS CONDICIONES DEL SERVICIO, YA QUE CONTIENEN LAS REGLAS DE USO DE LA PLATAFORMA WEB Y APLICATIVOS MÓVILES, ASÍ COMO LAS OBLIGACIONES DE CUMPLIMIENTO DICTADAS POR LA NORMATIVIDAD LEGAL VIGENTE EN LA REPÚBLICA DE COLOMBIA.**
 
-Usted y todas las personas naturales o jurídicas que utilicen NED, habiéndose o no registrado, se denominarán en este documento de forma genérica como **Usuario**. El Usuario que hace uso de NED declara conocer, entender y aceptar en su totalidad los presentes Términos y Condiciones de Uso y las Políticas de Tratamiento de Datos Personales (en adelante, los “Términos y Condiciones”).
+Bienvenido(a) a NED, una Plataforma Tecnológica que comprende aplicativos móviles e infraestructura web (en adelante la “Plataforma”), de propiedad exclusiva de NED SYSTEM S.A.S., la cual presta sus servicios a través de los sistemas operativos Android, iOS y entorno Web.
 
-El Operador de la Plataforma es **NED SYSTEM S.A.S.**, sociedad comercial legalmente constituida en Colombia, identificada con NIT 901.404.605 – 9 (en adelante, **NED**).
+Usted y todas las personas naturales o jurídicas que utilicen NED, habiéndose o no registrado, se denominarán en este documento de forma genérica como Usuario. El Usuario que hace uso de NED declara conocer, entender y aceptar en su totalidad los presentes Términos y Condiciones de Uso y las Políticas de Tratamiento de Datos Personales.
 
-**NED** está plenamente comprometida con proteger la información del Usuario de acuerdo con la legislación colombiana: Ley 1266 de 2008, Ley 1581 de 2012 (Habeas Data) y su Decreto Reglamentario 1377 de 2013, el Estatuto del Consumidor (Ley 1480 de 2011), y demás normas concordantes con el orden público y el comercio electrónico.
+El Operador de la Plataforma es NED SYSTEM S.A.S., sociedad comercial legalmente constituida en Colombia, identificada con NIT 901.404.605 – 9 (en adelante, NED). NED está plenamente comprometida con proteger la información del Usuario de acuerdo con la legislación colombiana: Ley 1266 de 2008, Ley 1581 de 2012 (Habeas Data) y su Decreto Reglamentario 1377 de 2013, el Estatuto del Consumidor (Ley 1480 de 2011), y demás normas concordantes.
 
 **1. DEFINICIONES**
 
-- **Operador de la Plataforma:** NED SYSTEM S.A.S., encargada de la administración operativa, técnica y funcional de la Plataforma.
-- **Plataforma:** Conjunto de herramientas digitales, aplicativos móviles (Android e iOS) y entornos web denominados "NED", destinados a la intermediación técnica, fidelización y optimización de relaciones comerciales.
-- **Objetivo de la Plataforma:** Funcionar como un canal técnico de intermediación (marketplace) y red social comercial, cuyo propósito es permitir a los Consumidores seguir a sus negocios preferidos, visualizar y compartir su contenido, e incentivar la lealtad comercial a través del suministro, visualización y gestión de dinámicas comerciales creadas de forma autónoma por los **Negocios**.
-- **Consumidor:** Persona natural (mayor de 18 años) o jurídica que accede de forma gratuita a la Plataforma con el fin de informarse sobre productos, servicios, interactuar dentro de la red social, seguir comercios y participar en las dinámicas comerciales suministradas directamente por el **Negocio**.
-- **Negocio:** Persona natural (mayor de 18 años y comerciante) o jurídica que accede a la Plataforma bajo la modalidad de suscripción paga para publicar información de su portafolio de productos y/o servicios, crear dinámicas de fidelización, gestionar herramientas de seguimiento contable y pautar anuncios.
-- **Usuario:** Término genérico que engloba tanto a Consumidores como a **Negocios** que interactúan, acceden, se informan o se registran dentro de la Plataforma.
-- **Dinámicas Comerciales:** Actividades autónomas de fidelización, incentivo y mercadeo creadas, parametrizadas y administradas bajo la entera responsabilidad del **Negocio** a través de la Plataforma.
-- **Recompensas:** Beneficios, premios, descuentos, unidades adicionales o incentivos que el **Negocio** se obliga a entregar directamente al Consumidor cuando este cumpla con los requisitos específicos configurados por el comercio dentro de una dinámica comercial.
-- **Datos Personales:** Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables, conforme a la Ley 1581 de 2012.
+- **Operador de la Plataforma:** NED SYSTEM S.A.S., encargada de la administración operativa, técnica y funcional de la Plataforma.
+- **Plataforma:** Conjunto de herramientas digitales, aplicativos móviles (Android e iOS) y entornos web denominados 'NED', destinados a la intermediación técnica, fidelización y optimización de relaciones comerciales.
+- **Objetivo de la Plataforma:** Funcionar como un canal técnico de intermediación (marketplace) y red social comercial, cuyo propósito es permitir a los Consumidores seguir a sus negocios preferidos, visualizar y compartir su contenido, e incentivar la lealtad comercial.
+- **Consumidor:** Persona natural (mayor de 18 años) o jurídica que accede de forma gratuita a la Plataforma con el fin de informarse sobre productos, servicios, interactuar dentro de la red social, seguir comercios y participar en las dinámicas comerciales.
+- **Negocio o Comercio:** Persona natural (mayor de 18 años y comerciante) o jurídica que accede a la Plataforma bajo la modalidad de suscripción paga para publicar información de su portafolio, crear dinámicas de fidelización, gestionar herramientas de seguimiento contable y pautar anuncios.
+- **Usuario:** Término genérico que engloba tanto a Consumidores como a Negocios que interactúan, acceden, se informan o se registran dentro de la Plataforma.
+- **Dinámicas Comerciales:** Actividades autónomas de fidelización, incentivo y mercadeo creadas, parametrizadas y administradas bajo la entera responsabilidad del Negocio a través de la Plataforma.
+- **Recompensas:** Beneficios, premios, descuentos, unidades adicionales o incentivos que el Negocio se obliga a entregar directamente al Consumidor cuando este cumpla con los requisitos específicos configurados.
+- **Sistemas POS:** Software de Punto de Venta, Cajas Registradoras o Sistemas ERP de facturación propios del Comercio.
+- **Datos Personales:** Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables, conforme a la Ley 1581 de 2012.
 
 **2. OBJETO Y ALCANCE DE LA INTERMEDIACIÓN**
 
-Los presentes Términos y Condiciones regulan la autorización de uso que **NED** otorga a los Usuarios sobre la Plataforma. **NED** actúa única y exclusivamente como un *operador de plataforma de comercio electrónico e intermediario tecnológico*en los términos del artículo 53 de la Ley 1480 de 2011.
+Los presentes Términos y Condiciones regulan la autorización de uso que NED otorga a los Usuarios sobre la Plataforma. NED actúa única y exclusivamente como un operador de plataforma de comercio electrónico e intermediario tecnológico en los términos del artículo 53 de la Ley 1480 de 2011.
 
-**NED** no es productor, comercializador, proveedor, distribuidor, ni agente de los productos o servicios exhibidos por los **Negocios**. El contrato de compraventa o la relación de consumo se perfecciona y ejecuta directamente entre el Consumidor y el **Negocio**. En consecuencia, **NED** no tiene control, ni asume responsabilidad alguna por:
+NED no es productor, comercializador, proveedor, distribuidor, ni agente de los productos o servicios exhibidos por los Negocios. El contrato de compraventa o la relación de consumo se perfecciona y ejecuta directamente entre el Consumidor y el Negocio. En consecuencia, NED no tiene control, ni asume responsabilidad alguna por:
 
-- La calidad, idoneidad, seguridad, garantías, vicios ocultos o el estado de los productos o servicios ofrecidos por los **Negocios**.
-- El cumplimiento, entrega, veracidad, stock o efectividad de las Recompensas prometidas por los **Negocios** a través de las Dinámicas Comerciales.
+- ` `La calidad, idoneidad, seguridad, garantías, vicios ocultos o el estado de los productos o servicios ofrecidos por los Negocios.
+- ` `El cumplimiento, entrega, veracidad, stock o efectividad de las Recompensas prometidas por los Negocios a través de las Dinámicas Comerciales.
 
 **3. ACEPTACIÓN, MODELO DE PAGOS Y SUSCRIPCIONES**
 
-Al iniciar sesión, registrarse, descargar o usar la Plataforma, el Usuario manifiesta su consentimiento libre, expreso e informado para obligarse bajo estos Términos y Condiciones. Si no está de acuerdo, deberá abstenerse inmediatamente de utilizar la Plataforma.
+Al iniciar sesión, registrarse, descargar o usar la Plataforma, el Usuario manifiesta su consentimiento libre, expreso e informado para obligarse bajo estos Términos y Condiciones.
 
-- **Para el Consumidor:** El acceso, uso de la red social, seguimiento a comercios y visualización de ofertas dentro de la Plataforma es de carácter *gratuito*.
-- **Para el Negocio:** El uso de las herramientas de gestión, publication de catálogos, uso del chat y creación de dinámicas comerciales está sujeto al pago de una *suscripción mensual*. Los planes de pago otorgan beneficios escalonados según las capacidades contratadas, tales como: límite de seguidores permitidos, cantidad de productos o servicios registrados, y el tipo/volumen de dinámicas comerciales concurrentes a las que tendrá acceso. La falta de pago de la suscripción mensual facultará a **NED** para suspender o restringir el acceso del **Negocio** a las funcionalidades de administración de la cuenta de manera inmediata.
+- **Para el Consumidor:** El acceso, uso de la red social, seguimiento a comercios y visualización de ofertas dentro de la Plataforma es de carácter gratuito.
+- **Para el Negocio:** El uso de las herramientas de gestión, publicación de catálogos, uso del chat, integración POS y creación de dinámicas comerciales está sujeto al pago de una suscripción mensual. Los planes de pago (Plan Start, Plan Lite, Plan PRO o Plan PREMIUM) otorgan beneficios escalonados. La falta de pago de la suscripción facultará a NED para suspender o restringir el acceso del Negocio a las funcionalidades avanzadas de administración de manera inmediata.
 
 **4. DERECHOS OTORGADOS Y NOTIFICACIONES**
 
-El Usuario autoriza de manera expresa a **NED** para:
+El Usuario autoriza de manera expresa a NED para:
 
-- Utilizar las capacidades de procesamiento, almacenamiento y hardware de su dispositivo móvil para la correcta ejecución técnica de la Plataforma.
-- Desplegar anuncios publicitarios propios o de socios comerciales en las interfaces de la Plataforma.
-- Vincular métodos de autenticación de terceros (como Google/Gmail o Facebook) para agilizar el registro e inicio de sesión.
-- Acceder a la ubicación del dispositivo con el fin de optimizar la visualización de comercios cercanos, previa autorización en el sistema operativo.
+- ` `Utilizar las capacidades de procesamiento, almacenamiento y hardware de su dispositivo móvil para la correcta ejecución técnica de la Plataforma.
+- ` `Desplegar anuncios publicitarios propios o de socios comerciales en las interfaces de la Plataforma.
+- ` `Vincular métodos de autenticación de terceros (como Google/Gmail o Facebook) para agilizar el registro e inicio de sesión.
+- ` `Acceder a la ubicación del dispositivo con el fin de optimizar la visualización de comercios cercanos, previa autorización en el sistema operativo.
 
-**Notificaciones Push:** El Usuario acepta expresamente la recepción de notificaciones emergentes (push) en su dispositivo móvil relacionadas con chats entrantes, actualizaciones de comercios que sigue, y la activación de dinámicas comerciales. El Consumidor podrá configurar o desactivar estas alertas desde los ajustes de la Plataforma o de su dispositivo móvil en cualquier momento.
+Notificaciones Push: El Usuario acepta expresamente la recepción de notificaciones emergentes (push) en su dispositivo móvil relacionadas con chats entrantes, actualizaciones de comercios que sigue, y la activación de dinámicas comerciales. El Consumidor podrá configurar o desactivar estas alertas desde los ajustes de la Plataforma o de su dispositivo móvil.
 
 **5. PROPIEDAD INTELECTUAL Y CONTENIDO GENERADO POR EL USUARIO**
 
-Los **Negocios** son autónomos y exclusivamente responsables de las imágenes, fotografías, textos y descripciones que carguen en la Plataforma. Al publicar contenido, el **Negocio** garantiza y declara bajo la gravedad de juramento que:
+Los Negocios son autónomos y exclusivamente responsables de las imágenes, fotografías, textos y descripciones que carguen en la Plataforma. Al publicar contenido, el Negocio garantiza y declara bajo la gravedad de juramento que:
 
-- Es el autor original de las imágenes o cuenta con las licencias, autorizaciones y derechos de propiedad intelectual necesarios para su explotación comercial y reproducción digital.
-- **Uso de marcas de terceros:** El **Negocio** podrá capturar y exhibir fotografías reales de los productos legítimos que vende en su establecimiento, aun cuando estas muestren marcas, logotipos o signos distintivos de empresas reconocidas, siempre que dicha exhibición se realice de buena fe, de forma informativa para el consumidor, y no configure actos de competencia desleal, confusión o engaño (conforme a la Decisión 486 de la Comunidad Andina).
-- **Indemnidad:** El **Negocio** mantendrá indemne a **NED** ante cualquier reclamación, demanda, sanción o litigio interpuesto por terceros o autoridades gubernamentales por concepto de infracción a derechos de autor, propiedad industrial o marcas.
-- **Prohibición de contenido inapropiado:** Queda terminantemente prohibido cargar imágenes, textos o contenidos de carácter sexual, pornográfico, obsceno, violento, racista, discriminatorio, xenófobo o que atenten contra los derechos humanos. **NED** se reserva el derecho de retirar de forma inmediata y sin previo aviso de sus servidores cualquier contenido que infrinja esta disposición o si así lo requiere una autoridad judicial o administrativa colombiana.
+- ` `Es el autor original de las imágenes o cuenta con las licencias, autorizaciones y derechos de propiedad intelectual necesarios para su explotación comercial y reproducción digital.
+- **Uso de marcas de terceros:** El Negocio podrá capturar y exhibir fotografías reales de los productos legítimos que vende en su establecimiento, aun cuando estas muestren marcas, logotipos o signos distintivos de empresas reconocidas, siempre que dicha exhibición se realice de buena fe y de forma informativa.
+- **Indemnidad:** El Negocio mantendrá indemne a NED ante cualquier reclamación, demanda, sanción o litigio interpuesto por terceros o autoridades por concepto de infracción a derechos de autor o propiedad industrial.
+- **Prohibición de contenido inapropiado:** Queda terminantemente prohibido cargar contenidos de carácter sexual, pornográfico, obsceno, violento, racista, discriminatorio o ilegal. NED se reserva el derecho de retirar de forma inmediata y sin previo aviso cualquier contenido infractor.
 
 **6. FUNCIONALIDAD DE CHAT INTERNO**
 
-La Plataforma dispone de un canal de mensajería instantánea (Chat) para facilitar la comunicación directa entre Consumidores y **Negocios**.
+La Plataforma dispone de un canal de mensajería instantánea (Chat) para facilitar la comunicación directa entre Consumidores y Negocios.
 
-- El Chat debe ser usado exclusivamente para fines comerciales, consultas sobre productos, servicios, dinámicas o soporte directo de la relación de consumo.
-- Está prohibido el uso del Chat para el envío de spam, enlaces maliciosos (phishing), contenido acosador, injurioso o ilegal.
-- **NED** opera como proveedor técnico de la infraestructura de mensajería y no monitorea las conversaciones privadas de forma activa, pero se reserva el derecho de bloquear cuentas o chats específicos ante reportes fundados de abuso, fraude o violación de los presentes Términos y Condiciones.
+- ` `El Chat debe ser usado exclusivamente para fines comerciales, consultas sobre productos, servicios, dinámicas o soporte directo de la relación de consumo.
+- ` `Está prohibido el uso del Chat para el envío de spam, enlaces maliciosos (phishing), contenido acosador o ilegal.
+- ` `NED opera como proveedor técnico de la infraestructura de mensajería y no monitorea las conversaciones privadas de forma activa, pero se reserva el derecho de bloquear cuentas ante reportes fundados de abuso.
 
-**7. HERRAMIENTA DE "VENTAS FIADAS" - EXCLUSIÓN DE ACTIVIDAD FINANCIERA**
+**7. HERRAMIENTA DE 'VENTAS FIADAS' - EXCLUSIÓN DE ACTIVIDAD FINANCIERA**
 
-La Plataforma incluye una opción denominada **"Ventas Fiadas"**. Las partes (Consumidores y **Negocios**) aceptan y entienden que:
+La Plataforma incluye una opción denominada 'Ventas Fiadas'. Las partes aceptan y entienden que:
 
-- Esta función constituye exclusivamente una *herramienta técnica de registro contable y de control numérico manual*, diseñada para que el comercio y su respectivo cliente realicen un seguimiento visual y organizado sobre estados de cuenta internos o créditos comerciales directos y privados otorgados bajo la exclusiva confianza y riesgo del **Negocio**.
-- **NED** no realiza captación masiva y habitual de dineros del público, no es una pasarela de pagos para este módulo, no actúa como entidad financiera, ni capta, custodia, administra o transfiere recursos económicos vinculados a esta funcionalidad.
-- El recaudo, cobro, plazos, intereses (los cuales no podrán superar la tasa de usura legal dictada por la Superintendencia Financiera de Colombia) y la gestión de cartera son responsabilidad exclusiva del **Negocio**. **NED**no responde por deudas insolutas, inexactitudes en el registro manual o pérdidas económicas derivadas del uso de esta función.
+- ` `Esta función constituye exclusivamente una herramienta técnica de registro contable y de control numérico manual privada entre el Comercio y el Consumidor.
+- ` `NED no realiza captación masiva y habitual de dinero, no es una pasarela de pagos para este módulo, no actúa como entidad financiera, ni capta, custodia, administra o transfiere recursos económicos vinculados a esta funcionalidad.
+- ` `El recaudo, cobro, plazos e intereses son responsabilidad exclusiva del Negocio. NED no responde por deudas insolutas ni por pérdidas económicas derivadas del uso de esta función.
 
 **8. REGULACIÓN ESPECÍFICA DE LAS DINÁMICAS COMERCIALES**
 
-El corazón operativo de la Plataforma es la gestión de Dinámicas Comerciales. El **Negocio** asume de forma total, exclusiva y autónoma el *riesgo comercial y financiero* de las dinámicas que decida activar. Es deber del **Negocio** realizar los estudios financieros, de rentabilidad y control de inventarios previos a la publicación de cualquier oferta, asumiendo los riesgos de descalce financiero, entrega excesiva de beneficios por encima de sus márgenes de utilidad, o ruptura de stock de las recompensas prometidas.
+El Negocio asume de forma total, exclusiva y autónoma el riesgo comercial y financiero de las dinámicas que decida activar. Es deber del Negocio realizar los análisis financieros y de inventarios previos a la publicación de cualquier oferta.
 
-**Parágrafo sobre Operaciones Manuales:** El Usuario acepta y comprende que en la versión actual de la Plataforma, los movimientos y validaciones de compra se registran de forma *manual*. Esto implica la existencia de un riesgo intrínseco de error humano, registro de transacciones inexistentes o actos malintencionados por parte de los operarios de los sistemas. Los Usuarios eximen a **NED** de fallos derivados del registro indebido de estas operaciones manuales.
+Parágrafo sobre Operaciones Manuales: En las validaciones manuales existe un riesgo de error humano o registro erróneo. Los Usuarios eximen a NED de fallos derivados del registro indebido de estas operaciones.
 
-Las Dinámicas Comerciales vigentes se regirán por las siguientes reglas técnicas:
+Las Dinámicas Comerciales se regirán por las siguientes reglas técnicas específicas:
 
-- **Nuevo Consumidor:** Permite al **Negocio** disparar una notificación automatizada con un saludo o una recompensa específica cuando un Consumidor decide "seguir" su perfil comercial en la Plataforma. El comercio solo podrá tener *una (1) dinámica de este tipo activa de forma simultánea*.
-- **Descuento:** Módulo para publicitar productos o servicios específicos que cuentan con una rebaja sobre su precio ordinario de venta. El **Negocio** podrá crear y enviar de forma concurrente todas las dinámicas de descuento que considere pertinentes.
-- **Dos x Uno (2x1):** Dinámica promocional bajo la premisa de "pague uno y lleve dos" aplicable al portafolio que el comercio determine. El **Negocio** podrá estructurar y enviar la cantidad de ofertas concurrentes de este tipo que desee.
-- **Anuncio:** Herramienta publicitaria de texto e imagen para emitir comunicados informativos relacionados con la actividad del negocio. Sin límite de concurrencia.
-- **Sorteo:** Permite la gestión de actividades promocionales basadas en el azar. El **Negocio** parametrizará de forma obligatoria: un monto mínimo de compra para participar, una fecha y una hora límite.
-  - **Mecanismo:** El algoritmo interno de **NED** seleccionará de forma 100% aleatoria al ganador entre los clientes elegibles.
-  - **Modificaciones y Eliminación:** El **Negocio** podrá modificar los detalles del sorteo después de enviado, pero *no podrá bajo ninguna circunstancia eliminar ni cancelar la dinámica si esta ya fue transmitida y cuenta con al menos una (1) boleta o cupón digital asignado* a un Consumidor.
-  - **Vigencia y Reclamación:** El Consumidor seleccionado como ganador dispondrá de un término máximo de *treinta (30) días calendario*, contados a partir de la finalización del sorteo, para reclamar el premio ante el establecimiento físico del **Negocio**. Transcurrido este lapso sin que se verifique el reclamo, la recompensa desaparecerá del sistema de forma automática.
-  - **Validación:** El ganador deberá presentarse en el comercio y validar su condición a través de la interfaz de su aplicación móvil, exhibiendo adicionalmente su documento de identidad físico y original. El **Negocio** solo puede tener *un (1) sorteo activo de forma simultánea*.
-- **Cumpleaños:** Envío automatizado de un mensaje personalizado (con o sin recompensa adjunta) que se despacha al Consumidor exclusivamente el día de su aniversario de nacimiento de acuerdo a los datos de registro. Límite máximo de *una (1) dinámica de este tipo activa simultáneamente*.
-- **Referidos:** Dinámica de crecimiento que permite al **Negocio** configurar dos recompensas diferenciadas: una destinada al cliente fidelizado que recomiende el negocio con un tercero, y otra para el nuevo consumidor que se registre y siga al comercio a raíz de dicha recomendación. Límite máximo de *una (1) dinámica vigente de forma simultánea*.
-- **Plan de Puntos:** Sistema que faculta al **Negocio** a otorgar puntos virtuales a los Consumidores por efectuar compras que superen un monto mínimo establecido. Dichos puntos podrán ser redimidos posteriormente por productos, servicios o dinero en efectivo, según los parámetros previamente elegidos por el **Negocio**.
-  - **Terminación o Vencimiento:** Si el **Negocio** decide eliminar el Plan de Puntos o este cumple su periodo de vigencia, la Plataforma enviará automáticamente una notificación push a todos los seguidores que posean puntos acumulados con el texto exacto: *“Lamentablemente nuestro plan de puntos ha terminado, tienes 30 días para redimirlos”.*
-  - Tras esta acción, el Consumidor dispondrá de un término perentorio de *treinta (30) días calendario* para redimir sus puntos acumulados. Expirado este plazo, el icono de la dinámica se removerá de la sección "Tus Premios" del Consumidor, extinguiéndose los puntos sin lugar a reclamaciones o compensaciones contra el **Negocio** o contra **NED**.
-- **Alianzas Comerciales:** Funcionalidad de cooperación mercantil digital que faculta a dos (2) **Negocios**independientes a suscribir un acuerdo mutuo dentro de la Plataforma para otorgar beneficios cruzados a sus bases de clientes comunes (v.g., comprar en el Comercio "A" desbloquea una recompensa o beneficio aplicable en el Comercio "B"). La ejecución de estas alianzas se efectúa bajo el riesgo de los comercios aliados.
+- **Nuevo Consumidor:** Permite al Negocio enviar un saludo u otorgar bonos de descuento para compras mediante cupones alfanuméricos de un solo uso que se validan de forma automática desde la Plataforma. Para hacer efectivo el beneficio, el Consumidor debe suministrar este código al Negocio en el punto de venta. Si el Consumidor pierde el acceso a su cuenta, no podrá visualizar ni exigir dichos cupones. Asimismo, la validación y quema del código requiere de forma obligatoria que el Negocio cuente con conexión a internet/red activa al momento de la venta.
+- **Descuento:** Módulo para publicitar productos con rebajas sobre su precio ordinario. Sin límite de concurrencia.
+- **Dos x Uno (2x1):** Oferta promocional bajo la premisa 'pague uno y lleve dos'.
+- **Anuncio:** Comunicados informativos de texto e imagen.
+- **Sorteo:** Selección aleatoria de ganadores mediante el algoritmo interno de NED. El Negocio no podrá cancelar ni eliminar un sorteo si este ya cuenta con al menos un (1) cupón digital asignado. El ganador dispondrá de máximo treinta (30) días calendario para reclamar el premio presentando su documento original.
+- **Cumpleaños:** Envío automatizado de bonos de descuento mediante cupones alfanuméricos de un solo uso. Los cupones de esta dinámica expiran e invalidan de forma automática en un término estricto e improrrogable de veinticuatro (24) horas contadas a partir de su emisión. El Consumidor debe presentar el código en el punto de venta, requiriéndose obligatoriamente conexión a internet/red por parte del Negocio para su validación.
+- **Referidos:** Permite otorgar descuentos sobre las compras de los consumidores, tanto para el referido como para el referente, según lo configurado autónomamente por el Negocio. La validación, verificación y aplicación efectiva de estos descuentos depende indispensablemente de que el Negocio disponga de conexión a internet/red activa al momento de registrar la venta.
+- **Plan de Puntos:** Otorgamiento de puntos virtuales redimibles. Si el Plan de Puntos finaliza, la app notificará a los clientes, quienes dispondrán de 30 días para redimirlos. Vencido dicho plazo, los puntos no redimidos se extinguirán de pleno derecho.
+- **Alianzas Comerciales:** Beneficios cruzados entre dos (2) Negocios independientes suscritos en la Plataforma.
 
-**9. PRIVACIDAD, HABEAS DATA Y PROTECCIÓN DE DATOS PERSONALES**
+**9. EXHIBICIÓN DE PORTAFOLIOS, CATÁLOGOS DE PRODUCTOS Y SERVICIOS**
 
-**NED** actúa como Responsable del Tratamiento de los datos personales capturados en el proceso de registro, rigiéndose estrictamente por su Política de Privacidad, la Ley 1581 de 2012 y el Decreto 1377 de 2013.
+- **9.1. Vitrina Informativa:** La Plataforma permite a los Comercios crear, publicar y exhibir catálogos y portafolios de productos y servicios (indicando precios y el estado del bien como 'Nuevo' o 'Usado') para consulta de los Consumidores.
+- **9.2. Ausencia de Sincronización en Tiempo Real con Inventario:** Los Usuarios y Comercios aceptan que estos catálogos no están conectados en tiempo real con los sistemas de inventario físicos o sistematizados del Comercio. La publicación de un producto no garantiza su disponibilidad en stock ni el congelamiento definitivo de su precio.
+- **9.3. Variación de Precios y Disponibilidad:** El Comercio es el único responsable de actualizar sus precios y existencias. NED no asume responsabilidad por discrepancias entre la información exhibida en la app y la disponibilidad o precios reales en el establecimiento.
+- **9.4. Garantías y Estado del Producto (Nuevos/Usados):** La clasificación del estado del producto y sus condiciones de garantía dependen exclusivamente del Comercio. NED no actúa como distribuidor ni vendedor directo y queda liberada de cualquier reclamación por idoneidad, calidad o vicios ocultos de los productos ofertados.
 
-**Minimización de Datos y Regla de Privacidad de la Red Social:** En procura de proteger la privacidad, seguridad y datos sensibles de los Consumidores, los **Negocios** *solo podrán visualizar el Nombre y el ID único (Identificador digital)*de aquellos Consumidores que decidan seguirlos. **NED** bajo ninguna circunstancia compartirá con los **Negocios** datos de contacto directos o sensibles de los Consumidores tales como números de teléfono, celulares, correos electrónicos ni direcciones de residencia física. Cualquier vulneración o intento de extracción de información por fuera de estos parámetros será causal de expulsión inmediata de la Plataforma.
+**10. ADMINISTRACIÓN MULTISUCURSAL CENTRALIZADA (PLAN PREMIUM)**
 
-**10. RESTRICCIONES DE USO Y CAUSALES DE EXPULSIÓN**
+- **10.1. Gestión Centralizada:** Los Comercios con suscripción en Plan PREMIUM pueden administrar de forma centralizada múltiples sucursales y enviar dinámicas comerciales o notificaciones a los seguidores de una, varias o la totalidad de sus sedes.
+- **10.2. Responsabilidad por Selección de Sucursal:** La selección de las sucursales de destino es responsabilidad exclusiva del Comercio. NED no realiza filtros sobre la parametrización elegida por el usuario administrador.
+- **10.3. Exoneración por Errores de Parametrización:** NED queda totalmente eximida de responsabilidad si el Comercio selecciona por error una sucursal equivocada y despacha promociones o dinámicas a clientes de una sede no participante.
+- **10.4. Obligación Directa frente al Consumidor:** Cualquier confusión o falsa expectativa generada en el consumidor por errores de configuración del Comercio deberá ser resuelta y asumida de forma directa e indelegable por el propio Comercio, manteniendo indemne a NED.
 
-Los Usuarios tienen estrictamente prohibido realizar las siguientes conductas:
+**11. INTEGRACIONES POS Y SERVICIOS CONECTADOS**
 
-- Usar la Plataforma para fines ilícitos, fraudulentos o contrarios a la ley colombiana.
-- Registrar o permitir el uso de cuentas a personas menores de dieciocho (18) años.
-- Publicar contenido injurioso, calumnioso, discriminatorio, violento o con connotación sexual.
-- Efectuar capturas de pantalla masivas, ingeniería inversa, extracción automatizada de datos (scraping), descompilación o alterar los sistemas de seguridad informática de **NED**.
-- Infringir derechos de propiedad intelectual de **NED** o de terceros dentro de la interfaz.
+- **11.1. Condiciones y Planes Habilitados:** La integración con Sistemas POS exige mantener activa una suscripción en Plan PRO o Plan PREMIUM. El descenso de plan o mora desactivará automáticamente el acceso a los componentes de integración.
 
-El incumplimiento de cualquiera de estas restricciones facultará a **NED** para suspender temporalmente o cancelar de forma definitiva la cuenta del Usuario, sin que esto genere derecho a indemnización alguna y sin perjuicio de las acciones legales civiles o penales a que haya lugar.
+11\.2. Modalidades de Integración:
 
-**11. DISPONIBILIDAD DE LA PLATAFORMA Y ESTABILIDAD TECNOLÓGICA**
+- **A. Factura Manual:**  El cajero digita la identificación del cliente, número de factura y monto. El Comercio asume la responsabilidad exclusiva por errores de digitación de su personal.
+- **B. Escaneo de Tirilla:**  Lectura de códigos QR o de barras mediante la App NED Leal. Cuenta con un control antifraude de Idempotencia de 72 Horas que rechaza cualquier intento de re-escaneo o duplicidad del mismo ticket dentro de dicho término.
+- **C. API Directa (Máquina a Máquina):**  Conexión vía HTTP POST (/api/pos/compra). NED ofrece un tiempo de respuesta de servicio (SLA) inferior a 20 milisegundos (< 20 ms) en su infraestructura propia.
+- **11.3. Custodia de Llaves de API:** En la modalidad de API Directa, el Comercio es el único responsable de custodiar sus credenciales secretas (API\_KEY y API\_SECRET). NED no responderá por fraudes o usos no autorizados derivados del descuido o filtración de dichas llaves por parte del Comercio.
+- **11.4. Exclusión de Software y Redes de Terceros:** NED no garantiza el funcionamiento ininterrumpido de proveedores de internet, hardware o software POS/ERP de terceros (ej. Siigo, Alegra, Softland, ICG, Micros).
+- **11.5. Reglas de Factura (Regex):** La configuración opcional de expresiones regulares para validar el formato de factura es responsabilidad directa del Comercio.
+- **11.6. Alcance del Módulo de Auditoría POS:** Los reportes exportables en XLSX o CSV son de carácter informativo operativo y promocional. NED no actúa como proveedor de facturación electrónica ni sustituye los reportes contables o tributarios ante la DIAN.
+- **11.7. Datos Personales en Punto de Venta:** El Comercio garantiza que cuenta con las autorizaciones previas y expresas de los clientes para la transmisión de sus datos a NED recopilados en caja.
 
-El Usuario acepta que la disponibilidad técnica de la Plataforma depende de infraestructuras de telecomunicaciones, servidores en la nube de terceros y redes móviles ajenas al control directo de **NED**. **NED** no garantiza un funcionamiento ininterrumpido o libre de errores al 100%.
+**12. PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES**
 
-En caso de fallos técnicos generalizados o caídas de servidores que ocurran mientras una dinámica comercial o sorteo se encuentre vigente, **NED** asumirá exclusivamente el compromiso técnico de reestablecer los servicios en el menor tiempo posible y volver a publicar o extender la vigencia de la dinámica afectada dentro de la interfaz una vez las condiciones operativas se encuentren normalizadas.
+NED rige el tratamiento de datos personales bajo la Ley 1581 de 2012 y su Política de Privacidad.
 
-**12. LEY APLICABLE Y JURISDICCIÓN**
+Minimización de Datos: Los Negocios solo podrán visualizar el Nombre y el ID único de los Consumidores que decidan seguirlos. NED bajo ninguna circunstancia compartirá teléfonos, correos electrónicos ni direcciones de residencia de los Consumidores con los Comercios.
 
-Los presentes Términos y Condiciones se rigen en su integridad por las leyes de la República de Colombia. Cualquier controversia, reclamación o diferencia que surja entre los Usuarios y **NED** con ocasión de la interpretación, ejecución o resolución de los presentes términos, que no pueda ser conciliada directamente de forma amistosa, será sometida ante los jueces ordinarios de la República de Colombia.
+**13. RESTRICCIONES DE USO Y CAUSALES DE EXPULSIÓN**
 
-**13. CANALES DE ATENCIÓN Y NOTIFICACIONES**
+Queda estrictamente prohibido usar la Plataforma para fines ilícitos, registrar a menores de edad, publicar contenido inapropiado o realizar ingeniería inversa/scraping sobre los sistemas de NED. El incumplimiento acarreará la suspensión o cancelación definitiva de la cuenta sin indemnización.
 
-Para la atención de peticiones, quejas, reclamos (PQR), soporte técnico, o para el ejercicio de los derechos de Habeas Data (acceso, rectificación, actualización o supresión de datos), los Usuarios podrán contactar a **NED** a través de:
+**14. DISPONIBILIDAD Y ESTABILIDAD TECNOLÓGICA**
 
-- **Razón Social:** NED SYSTEM S.A.S.
-- **NIT:** 901.404.605 – 9
-- **Dirección Física:** Sabaneta, Antioquia - Colombia
-- **Correo Electrónico de Contacto:** info@ned.mobi
+NED no garantiza un funcionamiento ininterrumpido al 100% debido a la dependencia de redes de telecomunicaciones y servidores en la nube. En caso de fallas masivas durante un sorteo o dinámica activa, NED reestablecerá los servicios y extenderá la vigencia de las dinámicas afectadas una vez normalizada la operación.
 
-**NED** emitirá respuesta formal a las consultas o solicitudes de soporte en un término máximo de cinco (5) días hábiles, contados a partir del día hábil siguiente a la recepción de la comunicación.
+**15. LEY APLICABLE Y JURISDICCIÓN**
 
-**Última Actualización:** 23 de junio de 2026.
+Estos Términos y Condiciones se rigen por las leyes de la República de Colombia. Cualquier controversia no resuelta de forma amistosa se someterá ante los jueces ordinarios de Colombia.
 
+**16. CANALES DE ATENCIÓN Y NOTIFICACIONES**
+
+- **Razón Social:** NED SYSTEM S.A.S.
+- **NIT:** 901.404.605 – 9
+- **Dirección Física:** Sabaneta, Antioquia - Colombia.
+- **Correo Electrónico de Contacto:** info@ned.mobi.
+
+Última Actualización: 23 de septiembre de 2026.
