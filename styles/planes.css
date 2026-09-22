@@ -20,12 +20,12 @@ main {
     color: var(--text-negro);
 }
 
-/* Estilos para la sección de planes de precios (Grid responsivo de 4 columnas) */
+/* Estilos para la sección de planes de precios (Grid responsivo de 3 columnas) */
 .planes_precios {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin: 4rem auto;
+    margin: 3.5rem auto;
     max-width: 1200px;
     padding: 0 1rem;
     align-items: stretch;
@@ -134,7 +134,7 @@ main {
 }
 
 .plan_start .plan_header {
-    background-color: #64748b;
+    background-color: #8E8E93;
 }
 
 .plan_lite .plan_header {
@@ -142,11 +142,11 @@ main {
 }
 
 .plan_pro .plan_header {
-    background-color: var(--magenta);
+    background-color: #C4227D;
 }
 
 .plan_premium .plan_header {
-    background-color: var(--text-negro);
+    background-color: #2C303E;
 }
 
 .plan_content {
@@ -348,13 +348,188 @@ main {
     z-index: 12;
 }
 
+/* Tabla Comparativa Rápida */
+.planes_comparativa_seccion {
+    max-width: 1200px;
+    margin: 4.5rem auto 2.5rem;
+    padding: 0 1rem;
+}
+
+.planes_comparativa_titulo {
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.8rem, 2.3vw, 2.4rem);
+    font-weight: 800;
+    color: var(--text-negro);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.planes_comparativa_subtitulo {
+    font-size: 1.05rem;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.planes_tabla_wrapper {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(43, 45, 66, 0.05);
+    border: 1px solid rgba(43, 45, 66, 0.08);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2.5rem;
+}
+
+.planes_tabla {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+    text-align: left;
+}
+
+.planes_tabla th,
+.planes_tabla td {
+    padding: 1.15rem 1.4rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(43, 45, 66, 0.06);
+}
+
+.planes_tabla thead th {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.planes_tabla thead th:first-child {
+    text-align: left;
+    background-color: #2b2d42;
+    border-top-left-radius: 20px;
+    width: 34%;
+}
+
+.planes_tabla thead th.th_start {
+    background-color: #8E8E93;
+    width: 22%;
+}
+
+.planes_tabla thead th.th_pro {
+    background-color: #C4227D;
+    width: 22%;
+}
+
+.planes_tabla thead th.th_premium {
+    background-color: #2C303E;
+    border-top-right-radius: 20px;
+    width: 22%;
+}
+
+.planes_tabla tbody td:first-child {
+    font-weight: 700;
+    color: var(--text-negro);
+    background: #fafafa;
+}
+
+.planes_tabla tbody td {
+    text-align: center;
+    color: #475569;
+}
+
+.planes_tabla tbody tr:hover td {
+    background-color: #fff9fc;
+}
+
+.planes_tabla tbody tr:hover td:first-child {
+    background-color: #f8fafc;
+}
+
+.tabla_link_pos {
+    color: var(--magenta);
+    text-decoration: underline;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.tabla_link_pos:hover {
+    color: #a31966;
+}
+
+/* Notas y Soporte para el Footer de la Sección */
+.planes_notas_soporte {
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 2.2rem 2.4rem;
+    margin: 1rem auto 4rem;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.planes_notas_soporte h4 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-negro);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.planes_notas_soporte ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.planes_notas_soporte li {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.planes_notas_soporte li::before {
+    content: "•";
+    position: absolute;
+    left: 0.4rem;
+    color: var(--magenta);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.planes_notas_soporte a {
+    color: var(--magenta);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.planes_notas_soporte a:hover {
+    color: #a31966;
+}
+
 /* Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .planes_precios {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem 1.5rem;
     }
     
+    .plan_card.plan_premium {
+        grid-column: span 2;
+        max-width: 550px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .plan_card.plan_pro.highlighted {
         transform: none;
     }
@@ -365,15 +540,22 @@ main {
 }
 
 @media (max-width: 768px) {
-    .caracteristicas_grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 640px) {
     .planes_precios {
         grid-template-columns: 1fr;
         padding: 0 1rem;
         gap: 2.5rem;
+    }
+
+    .plan_card.plan_premium {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .caracteristicas_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .planes_notas_soporte {
+        padding: 1.5rem;
     }
 }

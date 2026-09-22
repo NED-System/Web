@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conoce las alternativas de integración POS en NED para planes PRO y PREMIUM: Factura Manual, Escaneo de Tirilla QR/Barras y API Directa. Flexibilidad total para tu comercio con antifraude garantizado." />
+  <link rel="canonical" href="https://ned.com.co/pages/integracion-pos.html" />
+  <meta name="theme-color" content="#C4227D" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Integración POS para tu Negocio (Planes PRO y PREMIUM) | NED</title>
+  <link rel="stylesheet" href="/styles/style.css?v=6.5" />
+  <link rel="stylesheet" href="/styles/integracion-pos.css?v=6.5" />
+  <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
+  <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
+
+  <!-- Brevo Conversations {literal} -->
+  <script>
+    (function (d, w, c) {
+      w.BrevoConversationsID = "6400fe62de13f029ac4c064c";
+      w[c] =
+        w[c] ||
+        function () {
+          (w[c].q = w[c].q || []).push(arguments);
+        };
+      var s = d.createElement("script");
+      s.async = true;
+      s.src = "https://conversations-widget.brevo.com/brevo-conversations.js";
+      if (d.head) d.head.appendChild(s);
+    })(document, window, "BrevoConversations");
+  </script>
+  <!-- /Brevo Conversations {/literal} -->
+
+  <!-- Include component scripts -->
+  <script src="/components/header.js?v=6.5" defer></script>
+  <script src="/components/footer.js?v=6.5" defer></script>
+  <script src="/scripts/animations.js?v=6.5" defer></script>
+</head>
+
+<body>
+  <!-- Header placeholder (El menú superior permanece intacto) -->
+  <div id="header-placeholder"></div>
+
+  <main class="pos-main">
+    <!-- HERO SECTION -->
+    <section class="pos-hero">
+      <div class="pos-container">
+        <span class="pos-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L1 21h22L12 2zm0 3.8L20.2 19H3.8L12 5.8zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
+          </svg>
+          Exclusivo Planes PRO y PREMIUM
+        </span>
+        <h1>Integración POS: <span class="highlight">Flexibilidad Total</span> para tu Comercio</h1>
+        <p class="pos-hero-subtitle">
+          Premia a tus clientes, acumula puntos y redime bonos al instante en cada compra.
+          En NED <strong>no estás obligado a casarte con un solo método</strong>: activa uno, dos o los tres según cómo opere tu establecimiento.
+        </p>
+
+        <!-- Callout de Libertad Operativa -->
+        <div class="pos-flexibility-box">
+          <div class="pos-flexibility-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+            </svg>
+          </div>
+          <div class="pos-flexibility-text">
+            <h3>Tú decides cómo facturar en mostrador</h3>
+            <p>
+              ¿Tienes una caja con software contable y otra rápida con cobro manual en tablet? Puedes utilizar la <strong>API Directa</strong> en tu sistema central y el <strong>Escaneo de Tirilla</strong> o <strong>Factura Manual</strong> en tus puntos adicionales. Todo se consolida en una sola cuenta de negocio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASO PREVIO: CONFIGURACIÓN EN EL PANEL -->
+    <section class="pos-section">
+      <div class="pos-container">
+        <div class="pos-section-header">
+          <h2>Configuración Inicial en tu Panel</h2>
+          <p>Solo toma 2 minutos habilitar los métodos desde tu celular o computador antes de empezar.</p>
+        </div>
+
+        <!-- Banner de Requisito -->
+        <div class="pos-requirement-card">
+          <span class="pos-requirement-badge">Requisito</span>
+          <p class="pos-requirement-text">
+            Tu negocio debe contar con <strong>Plan PRO</strong> o <strong>Plan PREMIUM</strong> activo en NED. Si estás en planes Start o Lite, la plataforma te permite subir de plan con un solo clic desde tu perfil o consultando nuestra <a href="/pages/planes.html" style="color: var(--pos-primary); font-weight: 700; text-decoration: underline;">tabla de planes</a>.
+          </p>
+        </div>
+
+        <!-- Pasos de Configuración -->
+        <div class="pos-steps-grid">
+          <div class="pos-step-card">
+            <div class="pos-step-number">1</div>
+            <h4>Ingresa a Integración POS</h4>
+            <p>Abre la App o Web de NED Leal con tu cuenta de negocio y selecciona en el menú lateral: <strong>"Integración POS"</strong>.</p>
+          </div>
+
+          <div class="pos-step-card">
+            <div class="pos-step-number">2</div>
+            <h4>Activa tus Métodos</h4>
+            <p>En la pestaña <strong>Configuración</strong>, enciende con un interruptor los métodos que quieras usar: API Directa, Factura Manual o Escaneo de Tirilla.</p>
+          </div>
+
+          <div class="pos-step-card">
+            <div class="pos-step-number">3</div>
+            <h4>Regla de Factura (Opcional)</h4>
+            <p>Define el formato de tus tickets para evitar errores humanos (ej. <span class="pos-code-pill">^FAC-[0-9]{4,8}$</span>) y pruébalo en el botón <strong>"Probar"</strong>.</p>
+          </div>
+
+          <div class="pos-step-card">
+            <div class="pos-step-number">4</div>
+            <h4>Guarda y Comienza</h4>
+            <p>Haz clic en <strong>"Guardar Configuración"</strong>. Tus cajas y tu app quedan listas inmediatamente para procesar transacciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAS 3 ALTERNATIVAS -->
+    <section class="pos-section" style="background-color: #ffffff; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;">
+      <div class="pos-container">
+        <div class="pos-section-header">
+          <h2>Las 3 Alternativas de Integración</h2>
+          <p>Conoce qué representa cada opción para tu operación y cómo actúa el cajero en la práctica día a día.</p>
+        </div>
+
+        <div class="pos-cards-grid">
+          <!-- TARJETA 1: FACTURA MANUAL -->
+          <div class="pos-method-card">
+            <span class="pos-card-badge-top badge-manual">Listo para usar</span>
+            <div class="pos-card-header">
+              <div class="pos-method-icon-wrap icon-wrap-manual">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+              </div>
+              <h3>1. Factura Manual</h3>
+              <p class="pos-card-subtitle">Desde la App NED Leal en mostrador (celular o tablet).</p>
+            </div>
+            <div class="pos-card-body">
+              <div class="pos-info-block">
+                <h4>¿Para quién es?</h4>
+                <p>Comercios que facturan en un sistema independiente o talonario físico y <strong>no tienen equipo de programadores</strong>. Desean registrar la venta en segundos desde el mostrador.</p>
+              </div>
+
+              <div class="pos-info-block">
+                <h4>Operación del cajero:</h4>
+                <ul class="pos-daily-steps">
+                  <li>
+                    <span class="pos-step-bullet">1</span>
+                    <span>Toca <strong>"Modo Factura POS"</strong> en la app del negocio.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">2</span>
+                    <span>Digita la cédula o celular. Si el cliente tiene un <strong>Bono de Cumpleaños</strong> o <strong>Nuevo Cliente</strong>, la app lo muestra para aplicarlo con un toque.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">3</span>
+                    <span>Digita el número de factura y el monto total de la venta.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">4</span>
+                    <span>Toca <strong>"Registrar Compra"</strong>. Si la factura ya existía, el sistema la bloquea de inmediato por seguridad antifraude.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pos-card-highlight-box">
+                <p><strong>Resultado:</strong> El cliente recibe al instante una notificación push con sus puntos y boletas acumuladas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA 2: ESCANEO DE TIRILLA -->
+          <div class="pos-method-card">
+            <span class="pos-card-badge-top badge-scan">Alta Rapidez</span>
+            <div class="pos-card-header">
+              <div class="pos-method-icon-wrap icon-wrap-scan">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 5v4h2V5h4V3H5c-1.1 0-2 .9-2 2zm2 10H3v4c0 1.1.9 2 2 2h4v-2H5v-4zm14 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zm0-16h-4v2h4v4h2V5c0-1.1-.9-2-2-2zM7 7h2v10H7V7zm4 0h1v10h-1V7zm3 0h2v10h-2V7zm3 0h1v10h-1V7z"/>
+                </svg>
+              </div>
+              <h3>2. Escaneo de Tirilla</h3>
+              <p class="pos-card-subtitle">Cámara QR o lector de código de barras térmico.</p>
+            </div>
+            <div class="pos-card-body">
+              <div class="pos-info-block">
+                <h4>¿Para quién es?</h4>
+                <p>Supermercados, droguerías, boutiques y cafés con flujo ágil que imprimen tirilla térmica con <strong>código de barras o QR de factura electrónica</strong> y quieren evitar teclear números largos.</p>
+              </div>
+
+              <div class="pos-info-block">
+                <h4>Operación del cajero:</h4>
+                <ul class="pos-daily-steps">
+                  <li>
+                    <span class="pos-step-bullet">1</span>
+                    <span>Selecciona la pestaña <strong>"Escanear Tirilla"</strong> en la app.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">2</span>
+                    <span>Apunta la cámara del celular o tablet al código impreso en el ticket.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">3</span>
+                    <span>La app lee el código y <strong>autocompleta el número de factura</strong> en milisegundos.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">4</span>
+                    <span>Ingresa la cédula, confirma el monto y pulsa <strong>"Registrar Compra"</strong>.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pos-card-highlight-box">
+                <p><strong>Blindaje 72 horas:</strong> Si alguien intenta volver a escanear el mismo ticket más tarde o al día siguiente, el sistema rechaza el intento informando que ya fue redimido.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA 3: API DIRECTA -->
+          <div class="pos-method-card featured">
+            <span class="pos-card-badge-top badge-api">100% Automático</span>
+            <div class="pos-card-header">
+              <div class="pos-method-icon-wrap icon-wrap-api">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6h16v2H4zm2 4h12v2H6zm-2 4h16v2H4zm4 4h8v2H8z"/>
+                </svg>
+              </div>
+              <h3>3. API Directa</h3>
+              <p class="pos-card-subtitle">Integración directa máquina a máquina con tu software POS.</p>
+            </div>
+            <div class="pos-card-body">
+              <div class="pos-info-block">
+                <h4>¿Para quién es?</h4>
+                <p>Cadenas y comercios con software POS o ERP (Siigo, Alegra, Softland, ICG, Micros o desarrollo propio). <strong>El cajero no toca la app de NED</strong>; todo ocurre tras bambalinas.</p>
+              </div>
+
+              <div class="pos-info-block">
+                <h4>Configuración simple:</h4>
+                <p style="margin-bottom: 8px;">1. En <strong>"API Keys"</strong> del panel NED, genera tu <span class="pos-code-pill">API_KEY</span> y <span class="pos-code-pill">API_SECRET</span>.</p>
+                <p>2. Entrega a tu programador o proveedor POS la documentación técnica para conectar con un llamado HTTP POST ultrarrápido.</p>
+              </div>
+
+              <div class="pos-info-block">
+                <h4>Operación del cajero:</h4>
+                <ul class="pos-daily-steps">
+                  <li>
+                    <span class="pos-step-bullet">1</span>
+                    <span>Cobra normalmente en la pantalla de su software habitual.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">2</span>
+                    <span>Pide la cédula y digita el código del bono si el cliente lo presenta.</span>
+                  </li>
+                  <li>
+                    <span class="pos-step-bullet">3</span>
+                    <span>Al presionar "Cobrar" o "Imprimir", el POS envía la venta a NED en segundo plano con respuesta en <strong>menos de 20 milisegundos</strong> sin frenar la caja.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pos-card-highlight-box">
+                <p><strong>Motor Redis 7:</strong> Idempotencia atómica instantánea que garantiza cero bloqueos y máxima protección antifraude.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUADRO COMPARATIVO -->
+    <section class="pos-section">
+      <div class="pos-container">
+        <div class="pos-section-header">
+          <h2>Cuadro Comparativo para tu Negocio</h2>
+          <p>Elige la alternativa que mejor se adapte al volumen y tecnología de tus puntos de venta.</p>
+        </div>
+
+        <div class="pos-table-wrapper">
+          <table class="pos-table">
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>1. Factura Manual</th>
+                <th>2. Escaneo de Tirilla</th>
+                <th>3. API Directa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dispositivo requerido</td>
+                <td>Teléfono o tablet con App NED</td>
+                <td>Teléfono o tablet con cámara</td>
+                <td>La misma caja registradora / PC</td>
+              </tr>
+              <tr>
+                <td>¿Requiere programador?</td>
+                <td><span class="pos-table-tag tag-cross">❌ No, listo para usar</span></td>
+                <td><span class="pos-table-tag tag-cross">❌ No, listo para usar</span></td>
+                <td><span class="pos-table-tag tag-check">✅ Sí (configuración única POS)</span></td>
+              </tr>
+              <tr>
+                <td>Intervención del cajero</td>
+                <td>Digita factura y monto en la app</td>
+                <td>Escanea el ticket y confirma</td>
+                <td><strong style="color: #059669;">Cero</strong> (cobra en su sistema de siempre)</td>
+              </tr>
+              <tr>
+                <td>Velocidad de atención</td>
+                <td>~15 a 20 segundos</td>
+                <td>~5 a 8 segundos</td>
+                <td><span class="pos-table-tag tag-fast">⚡ Automático (&lt; 20 ms)</span></td>
+              </tr>
+              <tr>
+                <td>Soporte de Bonos (Cumpleaños / Bienvenida)</td>
+                <td>Sí (automático en pantalla)</td>
+                <td>Sí (automático en pantalla)</td>
+                <td>Sí (enviando el campo de bono)</td>
+              </tr>
+              <tr>
+                <td>Prevención de fraudes</td>
+                <td>Idempotencia 72 horas</td>
+                <td>Idempotencia 72 horas</td>
+                <td>Idempotencia atómica en Redis 7 (72h)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDITORÍA Y CIERRE CONTABLE (REPORTE Z / X) -->
+    <section class="pos-section" style="background-color: #ffffff; border-top: 1px solid #f1f5f9;">
+      <div class="pos-container">
+        <div class="pos-section-header">
+          <h2>El Cierre Contable: Módulo de Auditoría</h2>
+          <p>Concilia tus puntos, ventas y bonos canjeados contra el Reporte Z de tu caja en un par de clics.</p>
+        </div>
+
+        <div class="pos-audit-card">
+          <div class="pos-audit-content">
+            <h3>Control total para el dueño y el contador</h3>
+            <p>
+              Independientemente de si utilizas Factura Manual, Escaneo de Tirilla o API Directa, todas las transacciones quedan consolidadas en tu módulo de <strong>Auditoría POS</strong>.
+            </p>
+            <ul class="pos-audit-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Desglose en vivo de ventas registradas por cada canal.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Monitoreo de bonos de descuento aplicados y clientes beneficiados.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Registro de intentos de facturas duplicadas bloqueadas por el sistema.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span>Exportación directa a hojas de cálculo para tu software contable o la DIAN.</span>
+              </li>
+            </ul>
+            <p style="font-size: 0.9rem; color: #64748b;">
+              * Los reportes respetan los turnos de cajero si configuraste el identificador de caja.
+            </p>
+          </div>
+
+          <!-- Gráfico visual interactivo -->
+          <div class="pos-audit-visual">
+            <div class="pos-audit-visual-header">
+              <span>Panel de Auditoría POS</span>
+              <span class="pos-badge-live">● Tiempo Real</span>
+            </div>
+            <div class="pos-audit-metrics-grid">
+              <div class="pos-metric-box">
+                <span class="pos-metric-label">Ventas Vía API</span>
+                <span class="pos-metric-val">1.420</span>
+              </div>
+              <div class="pos-metric-box">
+                <span class="pos-metric-label">Ventas Tirilla / Manual</span>
+                <span class="pos-metric-val">389</span>
+              </div>
+              <div class="pos-metric-box">
+                <span class="pos-metric-label">Bonos Redimidos</span>
+                <span class="pos-metric-val">$ 1.850.000</span>
+              </div>
+              <div class="pos-metric-box">
+                <span class="pos-metric-label">Duplicadas Bloqueadas</span>
+                <span class="pos-metric-val" style="color: #34d399;">14 (100% Antifraude)</span>
+              </div>
+            </div>
+            <div class="pos-export-buttons">
+              <div class="pos-btn-export">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Exportar XLSX (Excel)
+              </div>
+              <div class="pos-btn-export">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Exportar CSV
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="pos-section">
+      <div class="pos-container">
+        <div class="pos-section-header">
+          <h2>Preguntas Frecuentes sobre Integración POS</h2>
+          <p>Resolvemos las dudas más habituales de los comercios antes de empezar.</p>
+        </div>
+
+        <div class="pos-faq-grid">
+          <div class="pos-faq-item">
+            <h4>¿Puedo combinar varios métodos al mismo tiempo?</h4>
+            <p><strong>Sí, totalmente.</strong> Puedes tener tu caja principal conectada por API Directa y usar la tablet con Escaneo de Tirilla o Factura Manual en eventos, islas o cajas auxiliares.</p>
+          </div>
+
+          <div class="pos-faq-item">
+            <h4>¿Qué ocurre si alguien intenta registrar una factura dos veces?</h4>
+            <p>El sistema cuenta con un blindaje antifraude de <strong>72 horas</strong>. Si se envía el mismo número de factura para el mismo negocio, se rechaza de inmediato protegiendo tus puntos y promociones.</p>
+          </div>
+
+          <div class="pos-faq-item">
+            <h4>¿Tiene costo adicional en mi Plan PRO o Plan PREMIUM?</h4>
+            <p><strong>No.</strong> Las 3 modalidades de integración POS están completamente incluidas en tu suscripción de Plan PRO o Plan PREMIUM sin tarifas ocultas por transacción.</p>
+          </div>
+
+          <div class="pos-faq-item">
+            <h4>¿La API Directa demora el cobro en mi caja?</h4>
+            <p><strong>No.</strong> El motor de NED responde en <strong>menos de 20 milisegundos</strong>. Tu software POS no experimentará retrasos al imprimir el ticket o autorizar la compra.</p>
+          </div>
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="pos-cta-banner">
+          <h2>¿Listo para integrar tus puntos de venta?</h2>
+          <p>
+            Comienza hoy mismo en tu panel de negocio o actualiza tu plan para disfrutar de todas las alternativas de integración POS.
+          </p>
+          <div class="pos-cta-buttons">
+            <a href="https://app.ned.mobi/" target="_blank" rel="noopener noreferrer" class="pos-btn-primary">
+              Ir al Panel Web de Negocio
+            </a>
+            <a href="/pages/planes.html" class="pos-btn-secondary">
+              Ver Planes PRO y PREMIUM
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer placeholder (Aquí se carga el footer dinámico) -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/main.js" defer></script>
+</body>
+
+</html>

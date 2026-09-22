@@ -28,9 +28,7 @@ function createFooter() {
                     <div class="footer_links">
                         <h3>INFORMACIÓN</h3>
                         <ul>
-                            <li><a href="https://nedmobi.notion.site/1a20e0b664ca807c87e5e4a5c7775933?pvs=105" target="_blank" rel="noopener noreferrer">Únete a la lista de espera</a></li>
                             <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
-                            <li><a href="https://nedmobi.notion.site/1990e0b664ca8049b323ed327d1eca70?pvs=105" target="_blank" rel="noopener noreferrer">Registra aquí tu cupón</a></li>
                             <li><a href="https://linktr.ee/nedleal" target="_blank" rel="noopener noreferrer">Redes sociales</a></li>
                             <li><a href="https://play.google.com/store/apps/details?id=com.nedsystem.movil" target="_blank" rel="noopener noreferrer">Descarga la app Android</a></li>
                             <li><a href="https://apps.apple.com/app/nedleal/id6760373778" target="_blank" rel="noopener noreferrer">Descarga la app iOS</a></li>
@@ -54,6 +52,7 @@ function createFooter() {
                             <li><a href="${basePath}pages/terminosycondiciones.html">Términos & Condiciones de uso</a></li>
                             <li><a href="${basePath}pages/privacidad.html">Política de privacidad</a></li>
                             <li><a href="${basePath}pages/eliminadatos.html">Política eliminación de datos</a></li>
+                            <li><a href="${basePath}pages/integracion-pos.html">Integración POS (Pro & Premium)</a></li>
                             <li><a href="https://nedmobi.notion.site/1990e0b664ca80c18d2ddc5de0099f95?pvs=105" target="_blank" rel="noopener noreferrer">Ir al formulario de contacto</a></li>
                         </ul>
                     </div>
