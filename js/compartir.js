@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let urlValue = inputQrLink.value.trim();
         if (!urlValue) {
-            // Valor por defecto si no ingresa nada (perfil genérico o landing)
-            urlValue = 'https://ned.com.co';
+            // Valor por defecto si no ingresa nada (lleva a la página de descarga inteligente)
+            urlValue = 'https://ned.mobi/descargar';
         }
         
         // Codificar el texto para la URL
