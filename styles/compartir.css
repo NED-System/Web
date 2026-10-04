@@ -363,98 +363,169 @@
     background-color: rgba(43, 45, 66, 0.45);
 }
 
-/* Tarjeta del Flyer (Aspecto de Cartel) */
+/* Tarjeta del Flyer (Aspecto Comercial y Llamativo para Redes & Cartelería) */
 .flyer_card {
     width: 100%;
-    max-width: 550px;
-    aspect-ratio: 8.5 / 11;
+    max-width: 530px;
+    aspect-ratio: 4 / 5.15;
     border: 4px solid var(--text-negro);
-    border-radius: 24px;
-    box-shadow: 12px 12px 0px var(--text-negro);
+    border-radius: 28px;
+    box-shadow: 10px 10px 0px var(--text-negro);
     overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     flex-shrink: 0;
     container-type: inline-size;
 }
 
-/* Zonas internas del Flyer */
-.flyer_banner {
-    padding: 3.2cqw 6cqw;
+/* 1. Barra Superior Co-Branding / Floating Pill */
+.flyer_top_bar {
+    padding: 3cqw 4cqw 0 4cqw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3cqw;
-    font-family: "Outfit", sans-serif;
-    font-weight: 850;
-    font-size: 5.2cqw;
-    letter-spacing: 3.5px;
-    text-transform: uppercase;
-    border-bottom: 0.7cqw solid var(--text-negro);
+    width: 100%;
 }
 
-.flyer_banner_icon {
-    height: 8cqw;
+.flyer_top_pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.8cqw;
+    padding: 1.2cqw 3.5cqw;
+    border-radius: 999px;
+    border: 0.45cqw solid var(--text-negro);
+    box-shadow: 0.6cqw 0.6cqw 0px var(--text-negro);
+    background-color: var(--magenta);
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 850;
+    font-size: 2.3cqw;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+}
+
+.flyer_top_icon {
+    height: 4.6cqw;
     width: auto;
     object-fit: contain;
 }
 
+.flyer_top_tag {
+    white-space: nowrap;
+}
+
+.flyer_top_star {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+    padding: 0.2cqw 1.2cqw;
+    border-radius: 999px;
+    border: 0.35cqw solid var(--text-negro);
+    font-weight: 900;
+    font-size: 2.1cqw;
+    letter-spacing: 0.5px;
+}
+
+/* 2. Cuerpo del Flyer */
 .flyer_body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 3.5cqw 5.5cqw;
-    gap: 1.8cqw;
-    justify-content: flex-start;
+    padding: 2.5cqw 4.8cqw 3.8cqw 4.8cqw;
+    gap: 2.2cqw;
+    justify-content: space-between;
+}
+
+/* Cabecera del Negocio (Título y Usuario) */
+.flyer_header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8cqw;
+    width: 100%;
 }
 
 .flyer_title {
     font-family: "Outfit", sans-serif;
-    font-size: 6.8cqw;
+    font-size: 6.4cqw;
     font-weight: 900;
     text-align: center;
-    line-height: 1.1;
-    word-break: break-word;
+    line-height: 1.08;
+    letter-spacing: -0.5px;
     margin: 0;
+    color: var(--text-negro);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    word-break: break-word;
 }
 
-.flyer_user {
+.flyer_user_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1cqw;
+    background-color: #f3f4f6;
+    border: 0.4cqw solid var(--text-negro);
+    padding: 0.5cqw 2.6cqw;
+    border-radius: 999px;
+    box-shadow: 0.4cqw 0.4cqw 0px rgba(0, 0, 0, 0.1);
     font-family: "Outfit", sans-serif;
-    font-size: 3.6cqw;
-    font-weight: 800;
+    font-size: 3cqw;
+    font-weight: 850;
     color: var(--text-negro);
-    text-align: center;
-    margin-top: -1cqw;
-    margin-bottom: 0.5cqw;
     letter-spacing: 0.2px;
 }
 
-.flyer_card.theme-dark .flyer_user {
-    color: var(--amarillo);
+.flyer_user_at {
+    color: var(--magenta);
+    font-weight: 900;
 }
 
-/* Contenedor de la foto del negocio */
+.flyer_user {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.flyer_verified_check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.4cqw;
+    height: 3.4cqw;
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 2.1cqw;
+    font-weight: 900;
+    line-height: 1;
+    margin-left: 0.4cqw;
+    border: 0.25cqw solid var(--text-negro);
+}
+
+/* 3. Showcase de Foto con Sticker Comercial Flotante */
+.flyer_photo_card {
+    position: relative;
+    width: 100%;
+}
+
 .flyer_photo_container {
     width: 100%;
-    max-width: 100%;
-    aspect-ratio: 2.0 / 1; /* Bloquea las medidas del contenedor con una proporción horizontal ideal */
-    border: 0.6cqw solid var(--text-negro);
-    border-radius: 3cqw;
+    aspect-ratio: 2.1 / 1;
+    border: 0.55cqw solid var(--text-negro);
+    border-radius: 3.6cqw;
     overflow: hidden;
-    background-color: #f3f4f6;
+    background: #f8fafc;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0.8cqw 0.8cqw 0px rgba(0, 0, 0, 0.1);
-    margin-top: 5.6cqw;
+    box-shadow: 0.8cqw 0.8cqw 0px rgba(0, 0, 0, 0.12);
 }
 
 .flyer_photo_img {
@@ -465,68 +536,178 @@
 }
 
 .flyer_photo_placeholder {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    color: #9ca3af;
-    font-weight: 700;
-    font-size: 0.95rem;
-    padding: 1.5rem;
+    justify-content: center;
+    gap: 0.8cqw;
+    padding: 1.5cqw;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     text-align: center;
 }
 
-.flyer_photo_placeholder svg {
-    width: 52px;
-    height: 52px;
-    opacity: 0.5;
+.placeholder_icon_box {
+    width: 8cqw;
+    height: 8cqw;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 0.35cqw solid var(--text-negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--magenta);
+    box-shadow: 0.4cqw 0.4cqw 0px rgba(0, 0, 0, 0.08);
 }
 
-/* CTA */
+.placeholder_icon_box svg {
+    width: 5cqw;
+    height: 5cqw;
+}
+
+.placeholder_title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 850;
+    font-size: 2.8cqw;
+    color: var(--text-negro);
+}
+
+.placeholder_subtitle {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1.9cqw;
+    color: #64748b;
+    max-width: 85%;
+    line-height: 1.2;
+}
+
+/* Sticker Comercial Flotante */
+.flyer_badge_sticker {
+    position: absolute;
+    top: 1.6cqw;
+    right: 1.6cqw;
+    z-index: 5;
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+    border: 0.45cqw solid var(--text-negro);
+    box-shadow: 0.6cqw 0.6cqw 0px var(--text-negro);
+    padding: 0.8cqw 2.4cqw;
+    border-radius: 999px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 2.7cqw;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    transform: rotate(-1.5deg);
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+/* 4. Llamado a la Acción Comercial (Ribbon) */
+.flyer_cta_ribbon {
+    width: 100%;
+    background-color: var(--magenta);
+    color: #ffffff;
+    border: 0.5cqw solid var(--text-negro);
+    border-radius: 2.2cqw;
+    box-shadow: 0.7cqw 0.7cqw 0px var(--text-negro);
+    padding: 1.5cqw 2.6cqw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .flyer_cta {
     font-family: "Outfit", sans-serif;
     font-weight: 900;
-    font-size: 3.8cqw;
+    font-size: 3.4cqw;
+    line-height: 1.18;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    line-height: 1.25;
-    padding: 0 1.5cqw;
+    letter-spacing: 0.5px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-word;
-    overflow-wrap: break-word;
-    margin-top: 2.4cqw;
 }
 
-/* Sección inferior con el QR */
+/* 5. Sección de Conversión: Código QR + Pasos de Beneficio */
 .flyer_qr_section {
     display: flex;
+    align-items: stretch;
+    gap: 3.2cqw;
+    border: 0.55cqw solid var(--text-negro);
+    border-radius: 3.6cqw;
+    padding: 2.4cqw;
+    background-color: var(--amarillo);
+    box-shadow: 0.9cqw 0.9cqw 0px var(--text-negro);
+}
+
+.flyer_qr_box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 3.5cqw;
-    border: 0.6cqw solid var(--text-negro);
-    border-radius: 3.5cqw;
-    padding: 2.2cqw;
-    background: #ffffff;
-    box-shadow: 0.8cqw 0.8cqw 0px rgba(0, 0, 0, 0.06);
-    margin-top: 1.5cqw;
+    justify-content: center;
+    gap: 1cqw;
+    flex-shrink: 0;
+}
+
+.qr_scan_corners {
+    position: relative;
+    padding: 1cqw;
+}
+
+.qr_scan_corners .corner {
+    position: absolute;
+    width: 2.4cqw;
+    height: 2.4cqw;
+    border-color: var(--text-negro);
+    border-style: solid;
+    pointer-events: none;
+}
+
+.qr_scan_corners .corner.top-left {
+    top: 0;
+    left: 0;
+    border-width: 0.6cqw 0 0 0.6cqw;
+    border-top-left-radius: 1cqw;
+}
+
+.qr_scan_corners .corner.top-right {
+    top: 0;
+    right: 0;
+    border-width: 0.6cqw 0.6cqw 0 0;
+    border-top-right-radius: 1cqw;
+}
+
+.qr_scan_corners .corner.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 0.6cqw 0.6cqw;
+    border-bottom-left-radius: 1cqw;
+}
+
+.qr_scan_corners .corner.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-width: 0 0.6cqw 0.6cqw 0;
+    border-bottom-right-radius: 1cqw;
 }
 
 .flyer_qr_container {
-    width: 22cqw;
-    height: 22cqw;
-    border: 0.5cqw solid var(--text-negro);
-    border-radius: 1.6cqw;
+    width: 21cqw;
+    height: 21cqw;
+    background-color: #ffffff;
+    border: 0.45cqw solid var(--text-negro);
+    border-radius: 2cqw;
     overflow: hidden;
-    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 }
 
 .flyer_qr_img {
@@ -536,181 +717,397 @@
 }
 
 .flyer_qr_placeholder {
-    font-size: 2.2cqw;
+    font-size: 2cqw;
     font-weight: 800;
     text-align: center;
     color: #9ca3af;
-    padding: 0.4cqw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8cqw;
+    gap: 0.5cqw;
 }
 
 .flyer_qr_placeholder svg {
-    width: 7cqw;
-    height: 7cqw;
+    width: 6cqw;
+    height: 6cqw;
     opacity: 0.5;
 }
 
-.flyer_qr_info {
+.qr_scan_label {
+    background-color: var(--text-negro);
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.8cqw;
+    letter-spacing: 0.6px;
+    padding: 0.35cqw 1.8cqw;
+    border-radius: 999px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    box-shadow: 0.3cqw 0.3cqw 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Pasos y Co-branding */
+.flyer_steps_content {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2cqw;
+    min-width: 0;
+}
+
+.flyer_steps_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2cqw;
+}
+
+.step_item {
+    display: flex;
+    align-items: center;
+    gap: 1.4cqw;
+}
+
+.step_num {
+    width: 4.4cqw;
+    height: 4.4cqw;
+    border-radius: 50%;
+    background-color: var(--magenta);
+    color: #ffffff;
+    border: 0.35cqw solid var(--text-negro);
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 2.5cqw;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0.3cqw 0.3cqw 0px rgba(0, 0, 0, 0.1);
+}
+
+.step_text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 750;
+    font-size: 2.3cqw;
+    color: var(--text-negro);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.step_text strong {
+    font-weight: 900;
+    color: var(--text-negro);
+}
+
+.flyer_footer_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.3cqw dashed rgba(43, 45, 66, 0.25);
+    padding-top: 1cqw;
+    margin-top: 0.2cqw;
+    gap: 1cqw;
 }
 
 .flyer_logo {
-    height: 5.6cqw;
+    height: 4.4cqw;
     width: auto;
     object-fit: contain;
-}
-
-.flyer_qr_footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin-top: 1cqw;
-    gap: 2cqw;
 }
 
 .flyer_store_badges {
     display: flex;
     align-items: center;
-    gap: 1cqw;
+    gap: 0.8cqw;
+}
+
+.stores_label {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8cqw;
+    font-weight: 800;
+    color: #4b5563;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
 }
 
 .store_badge_icon {
-    height: 4cqw;
+    height: 3.6cqw;
     width: auto;
     object-fit: contain;
     filter: grayscale(100%);
 }
 
-.flyer_card.theme-dark .store_badge_icon {
-    filter: grayscale(100%) invert(1);
-}
+/* 6. TEMAS DEL FLYER (Esquemas de Colores Comerciales) */
 
-.flyer_qr_subtext {
-    font-family: "Nunito", sans-serif;
-    font-weight: 750;
-    font-size: 2.4cqw;
-    color: #4b5563;
-    line-height: 1.35;
-    text-align: left;
-}
-
-/* TEMAS DEL FLYER (Variables internas de estilo) */
-/* 1. Clásico NED (Magenta/Amarillo) */
+/* TEMA 1: NED Pop (Vibrante Magenta & Amarillo) */
 .flyer_card.theme-ned {
     background-color: #ffffff;
     border-color: var(--text-negro);
 }
 
-.flyer_card.theme-ned .flyer_banner {
+.flyer_card.theme-ned .flyer_top_pill {
     background-color: var(--magenta);
     color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-ned .flyer_top_star {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
 }
 
 .flyer_card.theme-ned .flyer_title {
     color: var(--text-negro);
 }
 
-.flyer_card.theme-ned .flyer_cta {
-    color: var(--magenta);
+.flyer_card.theme-ned .flyer_user_badge {
+    background-color: #f3f4f6;
+    border-color: var(--text-negro);
+    color: var(--text-negro);
 }
 
-.flyer_card.theme-ned .flyer_qr_section {
-    background: var(--amarillo);
+.flyer_card.theme-ned .flyer_badge_sticker {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
     border-color: var(--text-negro);
 }
 
-/* 2. Amarillo Brillante */
-.flyer_card.theme-yellow {
+.flyer_card.theme-ned .flyer_cta_ribbon {
+    background-color: var(--magenta);
+    color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-ned .flyer_qr_section {
     background-color: var(--amarillo);
     border-color: var(--text-negro);
 }
 
-.flyer_card.theme-yellow .flyer_banner {
-    background-color: var(--text-negro);
+.flyer_card.theme-ned .step_num {
+    background-color: var(--magenta);
     color: #ffffff;
-}
-
-.flyer_card.theme-yellow .flyer_title {
-    color: var(--text-negro);
-}
-
-.flyer_card.theme-yellow .flyer_cta {
-    color: var(--text-negro);
-}
-
-.flyer_card.theme-yellow .flyer_qr_section {
-    background: #ffffff;
     border-color: var(--text-negro);
 }
 
-/* 3. Dark Mode Premium */
+/* TEMA 2: VIP Dark & Gold (Lujoso, Alto Contraste para Redes) */
 .flyer_card.theme-dark {
-    background-color: var(--text-negro);
+    background-color: #12131a;
     border-color: #ffffff;
+    box-shadow: 10px 10px 0px var(--amarillo);
     color: #ffffff;
 }
 
-.flyer_card.theme-dark .flyer_banner {
+.flyer_card.theme-dark .flyer_top_pill {
+    background-color: var(--amarillo);
+    color: #12131a;
+    border-color: #ffffff;
+    box-shadow: 0.6cqw 0.6cqw 0px #ffffff;
+}
+
+.flyer_card.theme-dark .flyer_top_star {
     background-color: var(--magenta);
     color: #ffffff;
-    border-bottom: 3.5px solid #ffffff;
+    border-color: #12131a;
 }
 
 .flyer_card.theme-dark .flyer_title {
     color: #ffffff;
 }
 
-.flyer_card.theme-dark .flyer_photo_container {
-    border-color: #ffffff;
-    background-color: #374151;
+.flyer_card.theme-dark .flyer_user_badge {
+    background-color: #1c1e29;
+    border-color: var(--amarillo);
+    color: #ffffff;
 }
 
-.flyer_card.theme-dark .flyer_cta {
+.flyer_card.theme-dark .flyer_user_at {
     color: var(--amarillo);
 }
 
-.flyer_card.theme-dark .flyer_qr_section {
-    background: #1f2937;
+.flyer_card.theme-dark .flyer_photo_container {
     border-color: #ffffff;
+    background-color: #1e202b;
+}
+
+.flyer_card.theme-dark .placeholder_title {
+    color: #ffffff;
+}
+
+.flyer_card.theme-dark .placeholder_subtitle {
+    color: #94a3b8;
+}
+
+.flyer_card.theme-dark .placeholder_icon_box {
+    background-color: #12131a;
+    border-color: #ffffff;
+    color: var(--amarillo);
+}
+
+.flyer_card.theme-dark .flyer_badge_sticker {
+    background-color: var(--magenta);
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0.6cqw 0.6cqw 0px #ffffff;
+}
+
+.flyer_card.theme-dark .flyer_cta_ribbon {
+    background-color: var(--amarillo);
+    color: #12131a;
+    border-color: #ffffff;
+    box-shadow: 0.7cqw 0.7cqw 0px #ffffff;
+}
+
+.flyer_card.theme-dark .flyer_cta {
+    color: #12131a;
+}
+
+.flyer_card.theme-dark .flyer_qr_section {
+    background-color: #1a1c26;
+    border-color: #ffffff;
+    box-shadow: 0.9cqw 0.9cqw 0px var(--amarillo);
+}
+
+.flyer_card.theme-dark .qr_scan_corners .corner {
+    border-color: var(--amarillo);
 }
 
 .flyer_card.theme-dark .flyer_qr_container {
     border-color: #ffffff;
 }
 
-.flyer_card.theme-dark .flyer_qr_subtext {
-    color: #d1d5db;
+.flyer_card.theme-dark .qr_scan_label {
+    background-color: var(--amarillo);
+    color: #12131a;
 }
 
-/* 4. Minimalista */
-.flyer_card.theme-minimalist {
+.flyer_card.theme-dark .step_num {
+    background-color: var(--amarillo);
+    color: #12131a;
+    border-color: #ffffff;
+}
+
+.flyer_card.theme-dark .step_text {
+    color: #f1f5f9;
+}
+
+.flyer_card.theme-dark .step_text strong {
+    color: var(--amarillo);
+}
+
+.flyer_card.theme-dark .flyer_footer_row {
+    border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.flyer_card.theme-dark .stores_label {
+    color: #cbd5e1;
+}
+
+.flyer_card.theme-dark .store_badge_icon {
+    filter: grayscale(100%) invert(1);
+}
+
+/* TEMA 3: Amarillo Energy (Máxima Notoriedad Comercial) */
+.flyer_card.theme-yellow {
+    background-color: var(--amarillo);
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_top_pill {
+    background-color: var(--text-negro);
+    color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_top_star {
+    background-color: var(--magenta);
+    color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_title {
+    color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_user_badge {
+    background-color: #ffffff;
+    border-color: var(--text-negro);
+    color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_badge_sticker {
+    background-color: var(--magenta);
+    color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_cta_ribbon {
+    background-color: var(--text-negro);
+    color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+.flyer_card.theme-yellow .flyer_qr_section {
     background-color: #ffffff;
     border-color: var(--text-negro);
 }
 
-.flyer_card.theme-minimalist .flyer_banner {
-    background-color: var(--text-negro);
+.flyer_card.theme-yellow .step_num {
+    background-color: var(--magenta);
     color: #ffffff;
+    border-color: var(--text-negro);
+}
+
+/* TEMA 4: Boutique Chic (Minimalista & Sofisticado) */
+.flyer_card.theme-minimalist {
+    background-color: #ffffff;
+    border-color: #1e293b;
+    box-shadow: 10px 10px 0px #1e293b;
+}
+
+.flyer_card.theme-minimalist .flyer_top_pill {
+    background-color: #1e293b;
+    color: #ffffff;
+    border-color: #1e293b;
+}
+
+.flyer_card.theme-minimalist .flyer_top_star {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border-color: #1e293b;
 }
 
 .flyer_card.theme-minimalist .flyer_title {
-    color: var(--text-negro);
+    color: #0f172a;
 }
 
-.flyer_card.theme-minimalist .flyer_cta {
-    color: var(--text-negro);
+.flyer_card.theme-minimalist .flyer_user_badge {
+    background-color: #f8fafc;
+    border-color: #0f172a;
+    color: #0f172a;
+}
+
+.flyer_card.theme-minimalist .flyer_badge_sticker {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+.flyer_card.theme-minimalist .flyer_cta_ribbon {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
 }
 
 .flyer_card.theme-minimalist .flyer_qr_section {
-    background: #ffffff;
-    border-color: var(--text-negro);
+    background-color: #f8fafc;
+    border-color: #0f172a;
+}
+
+.flyer_card.theme-minimalist .step_num {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
 }
 
 /* Botones de acción */

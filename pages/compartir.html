@@ -9,8 +9,8 @@
     <meta name="theme-color" content="#C4227D" />
     <link rel="manifest" href="../manifest.json" />
     <title>NED - Creador de Flyers para tu Negocio</title>
-    <link rel="stylesheet" href="../styles/style.css?v=6.8" />
-    <link rel="stylesheet" href="../styles/compartir.css?v=6.8" />
+    <link rel="stylesheet" href="../styles/style.css?v=6.9" />
+    <link rel="stylesheet" href="../styles/compartir.css?v=6.9" />
     <link rel="icon" href="../assets/logo/Logo_NED_ico.png" />
     <link rel="apple-touch-icon" href="../assets/logo/Logo_NED_ico.png" />
     
@@ -32,9 +32,9 @@
     <!-- /Brevo Conversations {/literal} -->
     
     <!-- Component Scripts -->
-    <script src="../components/header.js?v=6.8" defer></script>
-    <script src="../components/footer.js?v=6.8" defer></script>
-    <script src="../scripts/animations.js?v=6.8" defer></script>
+    <script src="../components/header.js?v=6.9" defer></script>
+    <script src="../components/footer.js?v=6.9" defer></script>
+    <script src="../scripts/animations.js?v=6.9" defer></script>
 </head>
 
 <body>
@@ -44,9 +44,9 @@
     <main>
         <div class="compartir_container">
             <div class="compartir_header">
-                <span class="hero-badge">MATERIAL P.O.P. PARA TU LOCAL</span>
+                <span class="hero-badge">MATERIAL PROMOCIONAL Y REDES SOCIALES</span>
                 <h1>Crea el Flyer de tu Negocio</h1>
-                <p>Diseña un cartel publicitario personalizado con la foto de tu negocio y tu código QR. Descárgalo para imprimirlo o compartirlo y atrae a más clientes leales.</p>
+                <p>Diseña una publicación comercial llamativa para tus redes (Instagram, Facebook, WhatsApp) y carteles para tu local. ¡Atrae más clientes y haz que ganen puntos!</p>
             </div>
 
             <div class="creator_grid">
@@ -68,19 +68,36 @@
                                 <input type="text" id="biz_user" placeholder="ejemplo" maxlength="30" value="minegocio" />
                             </div>
                         </div>
+                        <div class="form_group" style="margin-bottom: 1.2rem;">
+                            <label for="biz_badge">Sticker destacado en la foto:</label>
+                            <select id="biz_badge">
+                                <option value="🎁 ¡GANA PREMIOS!" selected>🎁 ¡Gana Premios!</option>
+                                <option value="⭐ CLIENTE VIP">⭐ Cliente VIP</option>
+                                <option value="🔥 ¡PUNTOS EN CADA VISITA!">🔥 ¡Puntos en cada Visita!</option>
+                                <option value="🎉 PROMOS EXCLUSIVAS">🎉 Promos Exclusivas</option>
+                                <option value="🏷️ DESCUENTOS DIRECTOS">🏷️ Descuentos Directos</option>
+                                <option value="☕ 100% RECOMENDADO">☕ 100% Recomendado</option>
+                                <option value="custom">Sticker personalizado...</option>
+                            </select>
+                        </div>
+                        <div class="form_group" id="custom_badge_container" style="display: none; margin-bottom: 1.2rem;">
+                            <label for="biz_badge_custom">Escribe el texto de tu sticker:</label>
+                            <input type="text" id="biz_badge_custom" placeholder="Ej. 💥 2X1 EN BEBIDAS" maxlength="30" />
+                        </div>
                         <div class="form_group">
                             <label for="biz_cta">Mensaje o llamado a la acción (CTA):</label>
                             <select id="biz_cta">
-                                <option value="puntos">¡Sígueme en NED y gana premios!</option>
-                                <option value="fidelizar" selected>¡Puntos, sorteos, referidos y mucho mas, de una forma realmente simple!</option>
-                                <option value="catalogo">¡Conectémonos en NED!</option>
-                                <option value="visitanos">¡Encuéntranos en la App de NED!</option>
+                                <option value="fidelizar" selected>¡Acumula puntos y canjea premios en cada visita!</option>
+                                <option value="escanear">¡Escanea aquí y obtén recompensas exclusivas!</option>
+                                <option value="puntos">¡Hazte cliente frecuente y gana increíbles regalos!</option>
+                                <option value="premios">¡Puntos, sorteos y descuentos directos en tu celular!</option>
+                                <option value="comunidad">¡Únete a nuestro club de clientes leales en NED!</option>
                                 <option value="custom">Mensaje personalizado...</option>
                             </select>
                         </div>
                         <div class="form_group" id="custom_cta_container" style="display: none; margin-top: 1rem;">
                             <label for="biz_cta_custom">Escribe tu mensaje personalizado:</label>
-                            <input type="text" id="biz_cta_custom" placeholder="Ej. ¡2x1 en tu primera compra!" maxlength="70" />
+                            <input type="text" id="biz_cta_custom" placeholder="Ej. ¡2x1 en tu primera compra escaneando aquí!" maxlength="70" />
                         </div>
                     </div>
 
@@ -173,12 +190,12 @@
                     <div class="editor_section">
                         <h3><span class="badge">4</span> Tema de Diseño</h3>
                         <div class="form_group">
-                            <label>Elige un esquema de colores para tu cartel:</label>
+                            <label>Elige un estilo visual para tu cartel:</label>
                             <div class="theme_selector">
-                                <button type="button" class="theme_btn active" data-theme="ned">NED Clásico</button>
-                                <button type="button" class="theme_btn" data-theme="yellow">Amarillo Sol</button>
-                                <button type="button" class="theme_btn" data-theme="dark">Premium Dark</button>
-                                <button type="button" class="theme_btn" data-theme="minimalist">Minimalista</button>
+                                <button type="button" class="theme_btn active" data-theme="ned">NED Pop</button>
+                                <button type="button" class="theme_btn" data-theme="dark">VIP Dark & Gold</button>
+                                <button type="button" class="theme_btn" data-theme="yellow">Amarillo Energy</button>
+                                <button type="button" class="theme_btn" data-theme="minimalist">Boutique Chic</button>
                             </div>
                         </div>
                     </div>
@@ -186,68 +203,108 @@
 
                 <!-- PANEL DE VISTA PREVIA (DERECHA) -->
                 <section class="preview_panel" aria-label="Vista Previa del Flyer">
-                    <!-- FLYER CARD -->
+                    <!-- FLYER CARD (DISEÑO COMERCIAL) -->
                     <div class="flyer_card theme-ned" id="flyer_card">
-                        <!-- Banner Superior -->
-                        <div class="flyer_banner">
-                            <img src="../assets/logo/Logo_NED_ico.png" alt="Logo NED" class="flyer_banner_icon" />
-                            <span>SÍGUENOS EN NED</span>
+                        <!-- Top Co-Branding Bar -->
+                        <div class="flyer_top_bar">
+                            <div class="flyer_top_pill">
+                                <img src="../assets/logo/Logo_NED_ico.png" alt="Logo NED" class="flyer_top_icon" />
+                                <span class="flyer_top_tag">PROGRAMA DE FIDELIZACIÓN</span>
+                                <span class="flyer_top_star">★ VIP ★</span>
+                            </div>
                         </div>
 
                         <!-- Cuerpo del Flyer -->
                         <div class="flyer_body">
-                            <!-- Nombre del negocio -->
-                            <h2 class="flyer_title" id="flyer_title">Nombre de tu Negocio</h2>
-                            <!-- Usuario del negocio -->
-                            <div class="flyer_user" id="flyer_user">@minegocio</div>
-
-                            <!-- Foto del local o banner -->
-                            <div class="flyer_photo_container">
-                                <img src="" alt="Foto de tu local" class="flyer_photo_img" id="flyer_photo_img" style="display: none;" />
-                                <div class="flyer_photo_placeholder" id="flyer_photo_placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                        <polyline points="21 15 16 10 5 21"></polyline>
-                                    </svg>
-                                    <span>[ Sube una foto de tu negocio ]</span>
+                            <!-- Cabecera del Negocio -->
+                            <div class="flyer_header_content">
+                                <h2 class="flyer_title" id="flyer_title">Mi Negocio</h2>
+                                <div class="flyer_user_badge" id="flyer_user_badge">
+                                    <span class="flyer_user_at">@</span><span class="flyer_user" id="flyer_user">minegocio</span>
+                                    <span class="flyer_verified_check" title="Negocio Afiliado">✓</span>
                                 </div>
                             </div>
 
-                            <!-- Mensaje / CTA central -->
-                            <div class="flyer_cta" id="flyer_cta">
-                                ¡HAZTE CLIENTE LEAL Y GANA PUNTOS!
-                            </div>
-
-                            <!-- Sección inferior del QR y descarga -->
-                            <div class="flyer_qr_section" id="flyer_qr_section">
-                                <div class="flyer_qr_container">
-                                    <img src="" alt="Código QR para escanear" class="flyer_qr_img" id="flyer_qr_img" style="display: none;" />
-                                    <div class="flyer_qr_placeholder" id="flyer_qr_placeholder">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                            <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"></path>
-                                            <rect x="7" y="11" width="10" height="2"></rect>
-                                        </svg>
-                                        <span>Cargando QR...</span>
+                            <!-- Showcase de Foto con Sticker Comercial -->
+                            <div class="flyer_photo_card">
+                                <div class="flyer_photo_container">
+                                    <img src="" alt="Foto de tu local" class="flyer_photo_img" id="flyer_photo_img" style="display: none;" />
+                                    <div class="flyer_photo_placeholder" id="flyer_photo_placeholder">
+                                        <div class="placeholder_icon_box">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                                <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>
+                                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                                <polyline points="21 15 16 10 5 21"></polyline>
+                                            </svg>
+                                        </div>
+                                        <span class="placeholder_title">Tu Foto o Promoción Aquí</span>
+                                        <span class="placeholder_subtitle">Haz clic en el panel para subir una foto de tu negocio</span>
+                                    </div>
+                                    <!-- Sticker Comercial Flotante -->
+                                    <div class="flyer_badge_sticker" id="flyer_badge_display">
+                                        🎁 ¡GANA PREMIOS!
                                     </div>
                                 </div>
-                                 <div class="flyer_qr_info">
-                                     <div class="flyer_qr_subtext" id="flyer_qr_subtext">
-                                         1. Ve a la Play Store o App Store.<br>
-                                         2. Escribe NEDLEAL.<br>
-                                         3. Descarga y registrate.<br>
-                                         4. Busca el nombre o usuario de mi negocio.<br>
-                                         5. ¡Gana de muchas maneras!
-                                     </div>
-                                     <div class="flyer_qr_footer">
-                                         <img src="../assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
-                                         <div class="flyer_store_badges">
-                                             <img src="../assets/social/android-app.png" alt="Google Play" class="store_badge_icon" />
-                                             <img src="../assets/social/store-apple.png" alt="App Store" class="store_badge_icon" />
-                                         </div>
-                                     </div>
-                                 </div>
+                            </div>
+
+                            <!-- Llamado a la Acción Comercial (Ribbon) -->
+                            <div class="flyer_cta_ribbon">
+                                <div class="flyer_cta" id="flyer_cta">
+                                    ¡ACUMULA PUNTOS Y CANJEA PREMIOS EN CADA VISITA!
+                                </div>
+                            </div>
+
+                            <!-- Sección de Conversión: Código QR + Pasos Visuales -->
+                            <div class="flyer_qr_section" id="flyer_qr_section">
+                                <!-- QR Box con esquinas de escaneo -->
+                                <div class="flyer_qr_box">
+                                    <div class="qr_scan_corners">
+                                        <span class="corner top-left"></span>
+                                        <span class="corner top-right"></span>
+                                        <span class="corner bottom-left"></span>
+                                        <span class="corner bottom-right"></span>
+                                        <div class="flyer_qr_container">
+                                            <img src="" alt="Código QR para escanear" class="flyer_qr_img" id="flyer_qr_img" style="display: none;" />
+                                            <div class="flyer_qr_placeholder" id="flyer_qr_placeholder">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                    <path d="M7 7h.01M17 7h.01M7 17h.01"></path>
+                                                    <rect x="7" y="11" width="10" height="2"></rect>
+                                                </svg>
+                                                <span>Cargando...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="qr_scan_label">📷 ESCANEA AQUÍ</span>
+                                </div>
+
+                                <!-- Pasos de Beneficio y Co-branding -->
+                                <div class="flyer_steps_content">
+                                    <div class="flyer_steps_list">
+                                        <div class="step_item">
+                                            <span class="step_num">1</span>
+                                            <span class="step_text">Escanea el QR o descarga <strong>NEDLEAL</strong></span>
+                                        </div>
+                                        <div class="step_item">
+                                            <span class="step_num">2</span>
+                                            <span class="step_text">Acumula puntos en cada compra o visita</span>
+                                        </div>
+                                        <div class="step_item">
+                                            <span class="step_num">3</span>
+                                            <span class="step_text">¡Canjea increíbles regalos y descuentos!</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Footer con Logo y Tiendas -->
+                                    <div class="flyer_footer_row">
+                                        <img src="../assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
+                                        <div class="flyer_store_badges">
+                                            <span class="stores_label">Gratis en:</span>
+                                            <img src="../assets/social/android-app.png" alt="Google Play" class="store_badge_icon" />
+                                            <img src="../assets/social/store-apple.png" alt="App Store" class="store_badge_icon" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
