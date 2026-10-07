@@ -502,8 +502,17 @@
   border: 3px solid rgba(255, 255, 255, 0.35);
   border-top-color: #ffffff;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   animation: spin 0.8s linear infinite;
+}
+
+.btn_spinner[hidden] {
+  display: none !important;
+}
+
+.contacto_submit_btn.is-loading .btn_spinner,
+.btn_spinner.is-visible {
+  display: inline-block !important;
 }
 
 @keyframes spin {

@@ -7,7 +7,7 @@
 // Reemplaza esta URL con la URL asignada a tu Cloudflare Worker desplegado:
 // Ejemplo: "https://ned-contact-worker.tu-subdominio.workers.dev"
 // =============================================================================
-const WORKER_ENDPOINT = "https://ned-contact-worker.workers.dev";
+const WORKER_ENDPOINT = "https://ned-contact-worker.martinez-mario82.workers.dev";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contacto-form");
@@ -183,12 +183,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLoadingState(isLoading) {
     if (isLoading) {
       submitBtn.disabled = true;
+      submitBtn.classList.add("is-loading");
       btnText.textContent = "Enviando mensaje...";
       btnSpinner.hidden = false;
+      btnSpinner.classList.add("is-visible");
+      btnSpinner.style.display = "inline-block";
     } else {
       submitBtn.disabled = false;
+      submitBtn.classList.remove("is-loading");
       btnText.textContent = "Enviar Mensaje";
       btnSpinner.hidden = true;
+      btnSpinner.classList.remove("is-visible");
+      btnSpinner.style.display = "none";
     }
   }
 
