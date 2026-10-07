@@ -145,7 +145,8 @@ main {
     background-color: #C4227D;
 }
 
-.plan_premium .plan_header {
+.plan_premium .plan_header,
+.plan_enterprise .plan_header {
     background-color: #2C303E;
 }
 
@@ -348,6 +349,84 @@ main {
     z-index: 12;
 }
 
+/* Estilos específicos para Plan Enterprise */
+.price_value.price_enterprise_title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--text-negro);
+    letter-spacing: -0.5px;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.price_enterprise_subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #64748b;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-top: 0.1rem;
+    line-height: 1.35;
+}
+
+.circle_check_icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.shield_icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #0284c7;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.plan_corporate_header {
+    color: #64748b;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.85rem;
+}
+
+.plan_corporate_list {
+    margin-bottom: 2rem;
+}
+
+.plan_corporate_list li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.plan_enterprise .plan_features li strong {
+    color: #0284c7;
+    font-weight: 700;
+}
+
+.plan_link_enterprise {
+    color: #0284c7;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.plan_link_enterprise:hover {
+    color: #0369a1;
+}
+
+.plan_button_enterprise {
+    background-color: #2C303E;
+}
+
+.plan_button_enterprise:hover {
+    background-color: #0284c7;
+    box-shadow: 0 6px 15px rgba(2, 132, 199, 0.25);
+}
+
 /* Tabla Comparativa Rápida */
 .planes_comparativa_seccion {
     max-width: 1200px;
@@ -421,7 +500,8 @@ main {
     width: 22%;
 }
 
-.planes_tabla thead th.th_premium {
+.planes_tabla thead th.th_premium,
+.planes_tabla thead th.th_enterprise {
     background-color: #2C303E;
     border-top-right-radius: 20px;
     width: 22%;
@@ -523,7 +603,8 @@ main {
         gap: 2.5rem 1.5rem;
     }
     
-    .plan_card.plan_premium {
+    .plan_card.plan_premium,
+    .plan_card.plan_enterprise {
         grid-column: span 2;
         max-width: 550px;
         margin: 0 auto;
@@ -546,7 +627,8 @@ main {
         gap: 2.5rem;
     }
 
-    .plan_card.plan_premium {
+    .plan_card.plan_premium,
+    .plan_card.plan_enterprise {
         grid-column: span 1;
         max-width: 100%;
     }
