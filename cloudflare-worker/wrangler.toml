@@ -1,0 +1,9 @@
+name = "ned-contact-worker"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+DESTINATION_EMAIL = "info@ned.mobi"
+SENDER_EMAIL = "NED Contacto <contacto@ned.mobi>"
+# Nota: La variable RESEND_API_KEY debe agregarse como secreto:
+# npx wrangler secret put RESEND_API_KEY
