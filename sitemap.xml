@@ -32,4 +32,8 @@
     <loc>https://ned.com.co/pages/contacto.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ned.mobi/b/nedleal/aviso-privacidad</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

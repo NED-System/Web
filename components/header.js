@@ -14,6 +14,10 @@ function getBasePath() {
         return normalizedPath.replace(/\/pages\/.*$/, '/');
     }
 
+    if (normalizedPath.includes('/b/')) {
+        return normalizedPath.replace(/\/b\/.*$/, '/');
+    }
+
     return './';
 }
 

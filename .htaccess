@@ -26,6 +26,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
+# Rutas específicas directas
+RewriteRule ^b/nedleal/aviso-privacidad/?$ /b/nedleal/aviso-privacidad/index.html [L]
+
 # Rutas de compartido: Redirigir (302) al backend Laravel para renderizar Open Graph dinámico y landing real
 RewriteRule ^b/([^/]+)/?$ https://nedback.ned.mobi/b/$1 [R=302,QSA,L]
 RewriteRule ^d/([^/]+)/?$ https://nedback.ned.mobi/d/$1 [R=302,QSA,L]

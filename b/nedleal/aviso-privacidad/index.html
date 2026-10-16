@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad en Mostrador para Comercios | NED Leal</title>
+    <meta name="description" content="Descarga e imprime en PDF el Aviso de Privacidad en Mostrador y stickers para caja de tu comercio afiliado a NED. Cumplimiento Ley 1581 de 2012 y Decreto 1377 de 2013 en Colombia.">
+    <link rel="canonical" href="https://ned.mobi/b/nedleal/aviso-privacidad">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#c4227d">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aviso de Privacidad en Mostrador para Comercios | NED Leal">
+    <meta property="og:description" content="Personaliza y descarga gratis el cartel imprimible en PDF y stickers de caja con el texto legal de protección de datos para tu establecimiento.">
+    <meta property="og:url" content="https://ned.mobi/b/nedleal/aviso-privacidad">
+    <meta property="og:image" content="/assets/logo/Logo_NED_ico.png">
+
+    <!-- Estilos de Marca NED y Vista Imprimible -->
+    <link rel="stylesheet" href="/styles/style.css?v=7.0">
+    <link rel="stylesheet" href="/styles/aviso-privacidad.css?v=7.0">
+    <link rel="icon" href="/assets/logo/Logo_NED_ico.png">
+    <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png">
+
+    <!-- Component Scripts -->
+    <script src="/components/header.js?v=7.0" defer></script>
+    <script src="/components/footer.js?v=7.0" defer></script>
+    <script src="/scripts/animations.js?v=7.0" defer></script>
+
+    <!-- QRCode & html2pdf Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Script de la Página -->
+    <script src="/js/aviso-privacidad.js?v=7.0" defer></script>
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="aviso-page-main">
+        <div class="aviso-container">
+
+            <!-- Hero Section -->
+            <header class="aviso-hero">
+                <div class="hero-legal-badge">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    <span>Documento Oficial para Puntos de Venta • Ley 1581 de 2012</span>
+                </div>
+                <h1>Aviso de Privacidad en Mostrador</h1>
+                <p>Personaliza con la razón social de tu establecimiento y descarga o imprime en PDF los textos legales exigidos por el Artículo 15 del Decreto 1377 de 2013 (Decreto 1074 de 2015) para exhibir en tu caja o mostrador.</p>
+            </header>
+
+            <!-- Panel de Personalización (Editor de Datos) -->
+            <section class="editor-card no-print" aria-label="Controles de Personalización">
+                <div class="editor-grid">
+                    <div class="form-group">
+                        <label for="biz_name">
+                            <span>Razón Social / Nombre Comercial de tu Negocio</span>
+                            <span class="required-star">*</span>
+                        </label>
+                        <div class="input-with-icon">
+                            <span class="input-icon">🏪</span>
+                            <input type="text" id="biz_name" class="form-input" placeholder="Ej: Panadería La Central / Café Don Mario" maxlength="80">
+                        </div>
+                        <span class="form-hint">Aparece en el encabezado como Responsable del Tratamiento de Datos.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="biz_nit">
+                            <span>NIT o Cédula del Comercio (Opcional)</span>
+                        </label>
+                        <div class="input-with-icon">
+                            <span class="input-icon">🆔</span>
+                            <input type="text" id="biz_nit" class="form-input" placeholder="Ej: NIT 900.123.456-7" maxlength="40">
+                        </div>
+                        <span class="form-hint">Opcional para mayor formalidad jurídica en tu establecimiento.</span>
+                    </div>
+                </div>
+
+                <!-- Selector de Pestañas y Formato -->
+                <div class="format-tabs-header">
+                    <div class="format-tabs" role="tablist">
+                        <button type="button" class="tab-btn active" data-tab="tab-hablador" role="tab" aria-selected="true">
+                            <span class="tab-icon">📄</span>
+                            <span>Hablador Mostrador (Atril)</span>
+                        </button>
+                        <button type="button" class="tab-btn" data-tab="tab-stickers" role="tab" aria-selected="false">
+                            <span class="tab-icon">🏷️</span>
+                            <span>Stickers de Caja (POS)</span>
+                        </button>
+                        <button type="button" class="tab-btn" data-tab="tab-kit" role="tab" aria-selected="false">
+                            <span class="tab-icon">📦</span>
+                            <span>Kit Completo (1 Hoja)</span>
+                        </button>
+                    </div>
+
+                    <!-- Selector de Tamaño de Papel (visible para Hablador) -->
+                    <div class="size-selector" id="paper_size_container">
+                        <label for="paper_size">Tamaño de papel:</label>
+                        <select id="paper_size">
+                            <option value="media-carta" selected>Media Carta (Atril Acrílico 14x21 cm)</option>
+                            <option value="carta">Carta Completa (21.6x27.9 cm)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Barra de Acciones Principales -->
+            <div class="action-toolbar no-print">
+                <button type="button" id="btn_print" class="btn-action btn-primary-print" title="Abre el cuadro de impresión para enviar a tu impresora o guardar como PDF">
+                    <span>🖨️ Imprimir / Guardar en PDF</span>
+                </button>
+                <button type="button" id="btn_download_pdf" class="btn-action btn-secondary-pdf" title="Descarga directa de archivo PDF listo para llevar a una papelería o imprimir">
+                    <span>⬇️ Descargar PDF</span>
+                </button>
+                <button type="button" id="btn_copy_text" class="btn-action btn-tertiary-copy" title="Copia el texto al portapapeles para tirillas POS o reglamentos">
+                    <span>📋 Copiar Texto Legal</span>
+                </button>
+            </div>
+
+            <!-- Vista Previa Interactiva con Efecto de Atril Acrílico -->
+            <section class="preview-wrapper" aria-label="Vista Previa Imprimible">
+                <div class="preview-header-meta no-print">
+                    <span class="preview-title-badge">
+                        <span>👁️ Vista previa en tiempo real</span>
+                        <span class="btn-badge-live"><span class="live-dot"></span> Sincronizado</span>
+                    </span>
+                    <span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">
+                        Listo para imprimir en papel bond, opalina o adhesivo
+                    </span>
+                </div>
+
+                <!-- Marco del Mockup Acrílico -->
+                <div class="acrylic-stand-mockup">
+
+                    <!-- ==========================================================================
+                         FORMATO 1: Hablador de Mostrador / Afiche Acrílico (Versión Completa)
+                         ========================================================================== -->
+                    <div id="tab-hablador" class="tab-pane active">
+                        <article class="hablador-sheet size-media-carta" id="hablador_sheet">
+                            <!-- Cabecera de Marca y Cumplimiento -->
+                            <div class="hablador-header-bar">
+                                <div class="hablador-logo-area">
+                                    <img src="/assets/logo/LogoNED.png" alt="Logo NED Leal" class="hablador-logo-img">
+                                    <div class="hablador-brand-text">
+                                        <h2>NED Leal</h2>
+                                        <span>Fidelización Comercial</span>
+                                    </div>
+                                </div>
+                                <div class="hablador-legal-tag">
+                                    <span class="tag-title">Aviso de Privacidad</span>
+                                    <span class="tag-law">Art. 15 Decreto 1377 / 2013</span>
+                                </div>
+                            </div>
+
+                            <!-- Título Central -->
+                            <div class="hablador-title-banner">
+                                <h3>AVISO DE PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES</h3>
+                                <span class="sub-banner">PROGRAMA DE FIDELIZACIÓN Y BENEFICIOS EN PUNTO DE VENTA</span>
+                            </div>
+
+                            <!-- Identificación de los Responsables -->
+                            <div class="hablador-merchant-intro">
+                                El presente establecimiento de comercio: <strong><span class="display-biz-name">[INDICAR RAZÓN SOCIAL / NOMBRE COMERCIAL DEL NEGOCIO]</span></strong><strong class="display-biz-nit"></strong> y la sociedad tecnológica <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605 - 9, domiciliada en Sabaneta, Antioquia; correo: info@ned.mobi; web: https://ned.mobi), en calidad de Responsables del Tratamiento de Datos Personales, informan a sus clientes:
+                            </div>
+
+                            <!-- Secciones Legales -->
+                            <div class="hablador-sections-grid">
+                                <!-- Sección 1 -->
+                                <div class="legal-section-block">
+                                    <div class="legal-section-title">
+                                        <span class="sec-badge">1</span>
+                                        <span>Finalidad del Tratamiento:</span>
+                                    </div>
+                                    <div class="legal-section-body">
+                                        Los datos personales solicitados en caja (número de documento de identidad, número de teléfono celular y/o nombre) serán recolectados y tratados para las siguientes finalidades legítimas:
+                                        <ul class="legal-section-list lettered">
+                                            <li data-letter="a)">Registrar y sincronizar sus compras en la plataforma tecnológica NED.</li>
+                                            <li data-letter="b)">Acumular y gestionar sus puntos del programa de fidelización.</li>
+                                            <li data-letter="c)">Aplicar y redimir bonos de descuento y cupones comerciales.</li>
+                                            <li data-letter="d)">Asignar boletas digitales de participación en sorteos comerciales del establecimiento.</li>
+                                            <li data-letter="e)">Enviar notificaciones transaccionales y push vinculadas a su actividad con el comercio.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 2 -->
+                                <div class="legal-section-block">
+                                    <div class="legal-section-title">
+                                        <span class="sec-badge">2</span>
+                                        <span>Derechos del Titular (Habeas Data - Ley 1581 de 2012):</span>
+                                    </div>
+                                    <div class="legal-section-body">
+                                        Como titular de la información, a usted le asisten los derechos a:
+                                        <ul class="legal-section-list">
+                                            <li>Conocer, actualizar y rectificar sus datos personales.</li>
+                                            <li>Solicitar prueba de la autorización otorgada.</li>
+                                            <li>Ser informado sobre el uso que se ha dado a sus datos.</li>
+                                            <li>Revocar la autorización y/o solicitar la supresión de sus datos cuando sea procedente.</li>
+                                            <li>Acceder de forma gratuita a sus datos personales tratados.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 3 -->
+                                <div class="legal-section-block">
+                                    <div class="legal-section-title">
+                                        <span class="sec-badge">3</span>
+                                        <span>Datos Sensibles y Menores de Edad:</span>
+                                    </div>
+                                    <div class="legal-section-body">
+                                        Es de carácter facultativo responder preguntas sobre datos sensibles. La plataforma NED y nuestro programa de beneficios están dirigidos exclusivamente a mayores de 18 años; no se recolectan datos de niños, niñas ni adolescentes.
+                                    </div>
+                                </div>
+
+                                <!-- Sección 4 -->
+                                <div class="legal-section-block">
+                                    <div class="legal-section-title">
+                                        <span class="sec-badge">4</span>
+                                        <span>Política de Tratamiento y Canales de Atención:</span>
+                                    </div>
+                                    <div class="legal-section-body">
+                                        Puede consultar la Política de Tratamiento de Datos Personales completa en <strong>https://ned.mobi</strong> o en la aplicación móvil NED. Para consultas, reclamos o ejercer sus derechos de Habeas Data, puede comunicarse al correo electrónico: <strong>info@ned.mobi</strong> o ante los canales de este comercio.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pie del Hablador con QR y Contacto -->
+                            <div class="hablador-footer-box">
+                                <div class="hablador-footer-info">
+                                    <p><strong>Aviso obligatorio en mostrador:</strong> Exhiba este documento en un lugar visible al público cerca a su caja registradora o datáfono (Ley 1581 de 2012).</p>
+                                    <div class="hablador-contact-chips">
+                                        <span class="contact-chip">🌐 https://ned.mobi</span>
+                                        <span class="contact-chip">✉️ info@ned.mobi</span>
+                                        <span class="contact-chip">📍 Sabaneta, Antioquia</span>
+                                    </div>
+                                </div>
+                                <div class="hablador-qr-box">
+                                    <div class="hablador-qr-canvas qr-code-placeholder"></div>
+                                    <span>Escanear Política</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- ==========================================================================
+                         FORMATO 2: Plantilla de Stickers de Caja / Datáfono (Versión Compacta)
+                         ========================================================================== -->
+                    <div id="tab-stickers" class="tab-pane">
+                        <div class="stickers-sheet">
+                            <div class="stickers-sheet-intro no-print">
+                                <h3>Hoja de Stickers para Pantalla POS, Datáfono o Teclado</h3>
+                                <p>Imprime esta hoja en papel adhesivo o papel estándar y recorta cada sticker para pegarlo junto al lector de códigos de barras, pantalla de facturación o datáfono.</p>
+                            </div>
+
+                            <div class="stickers-grid">
+                                <!-- Sticker 1 -->
+                                <div class="pos-sticker-card">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9) conforme a la Ley 1581 de 2012. Conozca sus derechos y consulte la política de privacidad escaneando el código QR o en <strong>https://ned.mobi</strong> (Contacto: info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper">
+                                                <div class="sticker-qr-canvas qr-code-placeholder"></div>
+                                                <span>Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-footer-info">
+                                        <span>NED Leal • Fidelización en Caja</span>
+                                        <span>info@ned.mobi</span>
+                                    </div>
+                                </div>
+
+                                <!-- Sticker 2 -->
+                                <div class="pos-sticker-card">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9) conforme a la Ley 1581 de 2012. Conozca sus derechos y consulte la política de privacidad escaneando el código QR o en <strong>https://ned.mobi</strong> (Contacto: info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper">
+                                                <div class="sticker-qr-canvas qr-code-placeholder"></div>
+                                                <span>Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-footer-info">
+                                        <span>NED Leal • Fidelización en Caja</span>
+                                        <span>info@ned.mobi</span>
+                                    </div>
+                                </div>
+
+                                <!-- Sticker 3 -->
+                                <div class="pos-sticker-card">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9) conforme a la Ley 1581 de 2012. Conozca sus derechos y consulte la política de privacidad escaneando el código QR o en <strong>https://ned.mobi</strong> (Contacto: info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper">
+                                                <div class="sticker-qr-canvas qr-code-placeholder"></div>
+                                                <span>Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-footer-info">
+                                        <span>NED Leal • Fidelización en Caja</span>
+                                        <span>info@ned.mobi</span>
+                                    </div>
+                                </div>
+
+                                <!-- Sticker 4 -->
+                                <div class="pos-sticker-card">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9) conforme a la Ley 1581 de 2012. Conozca sus derechos y consulte la política de privacidad escaneando el código QR o en <strong>https://ned.mobi</strong> (Contacto: info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper">
+                                                <div class="sticker-qr-canvas qr-code-placeholder"></div>
+                                                <span>Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticker-footer-info">
+                                        <span>NED Leal • Fidelización en Caja</span>
+                                        <span>info@ned.mobi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========================================================================
+                         FORMATO 3: Kit Completo Punto de Venta (1 Hoja Carta Mixta)
+                         ========================================================================== -->
+                    <div id="tab-kit" class="tab-pane">
+                        <div class="kit-sheet">
+                            <!-- Hablador Compacto Arriba -->
+                            <article class="hablador-sheet size-media-carta" style="border: 1.5px solid #2b2d42; padding: 1.2rem 1.4rem;">
+                                <div class="hablador-header-bar" style="padding-bottom: 0.8rem; margin-bottom: 0.8rem;">
+                                    <div class="hablador-logo-area">
+                                        <img src="/assets/logo/LogoNED.png" alt="Logo NED Leal" class="hablador-logo-img" style="width: 60px;">
+                                        <div class="hablador-brand-text">
+                                            <h2 style="font-size: 1.1rem;">NED Leal</h2>
+                                            <span style="font-size: 0.65rem;">Fidelización Comercial</span>
+                                        </div>
+                                    </div>
+                                    <div class="hablador-legal-tag">
+                                        <span class="tag-title" style="font-size: 0.65rem;">Aviso Mostrador</span>
+                                        <span class="tag-law" style="font-size: 0.6rem;">Art. 15 Dto 1377/2013</span>
+                                    </div>
+                                </div>
+
+                                <div class="hablador-title-banner" style="padding: 6px 10px; margin-bottom: 0.8rem;">
+                                    <h3 style="font-size: 0.95rem;">AVISO DE PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES</h3>
+                                    <span class="sub-banner" style="font-size: 0.72rem;">PROGRAMA DE FIDELIZACIÓN EN PUNTO DE VENTA</span>
+                                </div>
+
+                                <div class="hablador-merchant-intro" style="font-size: 0.78rem; padding: 6px 10px; margin-bottom: 0.8rem;">
+                                    El presente establecimiento: <strong><span class="display-biz-name">[INDICAR RAZÓN SOCIAL / NOMBRE COMERCIAL DEL NEGOCIO]</span></strong><strong class="display-biz-nit"></strong> y la sociedad <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9, Sabaneta, Antioquia; info@ned.mobi; https://ned.mobi), en calidad de Responsables del Tratamiento, informan a sus clientes:
+                                </div>
+
+                                <div class="hablador-sections-grid" style="gap: 0.5rem; margin-bottom: 0.8rem;">
+                                    <div class="legal-section-block">
+                                        <div class="legal-section-title" style="font-size: 0.78rem;">
+                                            <span class="sec-badge" style="width: 17px; height: 17px; font-size: 0.65rem;">1</span>
+                                            <span>Finalidad del Tratamiento:</span>
+                                        </div>
+                                        <div class="legal-section-body" style="font-size: 0.72rem;">
+                                            Los datos solicitados en caja (cédula, celular y/o nombre) serán tratados para: sincronizar compras en NED, acumular y redimir puntos o cupones, asignar boletas de sorteos y enviar notificaciones de su actividad comercial.
+                                        </div>
+                                    </div>
+                                    <div class="legal-section-block">
+                                        <div class="legal-section-title" style="font-size: 0.78rem;">
+                                            <span class="sec-badge" style="width: 17px; height: 17px; font-size: 0.65rem;">2</span>
+                                            <span>Derechos Habeas Data (Ley 1581 de 2012):</span>
+                                        </div>
+                                        <div class="legal-section-body" style="font-size: 0.72rem;">
+                                            Usted tiene derecho a conocer, actualizar, rectificar o solicitar la supresión de sus datos de forma gratuita, y revocar su autorización en cualquier momento.
+                                        </div>
+                                    </div>
+                                    <div class="legal-section-block">
+                                        <div class="legal-section-title" style="font-size: 0.78rem;">
+                                            <span class="sec-badge" style="width: 17px; height: 17px; font-size: 0.65rem;">3</span>
+                                            <span>Datos Sensibles y Menores:</span>
+                                        </div>
+                                        <div class="legal-section-body" style="font-size: 0.72rem;">
+                                            Facultativo responder sobre datos sensibles. Programa exclusivo para mayores de 18 años.
+                                        </div>
+                                    </div>
+                                    <div class="legal-section-block">
+                                        <div class="legal-section-title" style="font-size: 0.78rem;">
+                                            <span class="sec-badge" style="width: 17px; height: 17px; font-size: 0.65rem;">4</span>
+                                            <span>Política Completa y Atención:</span>
+                                        </div>
+                                        <div class="legal-section-body" style="font-size: 0.72rem;">
+                                            Consulte en <strong>https://ned.mobi</strong> o correo <strong>info@ned.mobi</strong>.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hablador-footer-box" style="padding-top: 0.6rem;">
+                                    <div class="hablador-footer-info">
+                                        <p style="font-size: 0.65rem; margin-bottom: 2px;">Visible al público en caja (Ley 1581 de 2012).</p>
+                                        <div class="hablador-contact-chips">
+                                            <span class="contact-chip" style="font-size: 0.62rem;">🌐 https://ned.mobi</span>
+                                            <span class="contact-chip" style="font-size: 0.62rem;">✉️ info@ned.mobi</span>
+                                        </div>
+                                    </div>
+                                    <div class="hablador-qr-box" style="padding: 4px; min-width: 65px;">
+                                        <div class="hablador-qr-canvas qr-code-placeholder" style="width: 50px; height: 50px;"></div>
+                                        <span style="font-size: 0.55rem;">Política</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Divisor de Corte -->
+                            <div class="kit-divider">
+                                <span class="kit-divider-tag">✂ Recortar aquí para separar los stickers de caja</span>
+                            </div>
+
+                            <!-- 2 Stickers Abajo -->
+                            <div class="kit-stickers-row">
+                                <div class="pos-sticker-card" style="padding: 10px 12px;">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text" style="font-size: 0.68rem;">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9). Consulte la política escaneando el código QR o en <strong>https://ned.mobi</strong> (info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper" style="min-width: 55px;">
+                                                <div class="sticker-qr-canvas qr-code-placeholder" style="width: 45px; height: 45px;"></div>
+                                                <span style="font-size: 0.5rem;">Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pos-sticker-card" style="padding: 10px 12px;">
+                                    <div>
+                                        <div class="sticker-header-strip">
+                                            <span class="sticker-header-title">AVISO DE PRIVACIDAD – BENEFICIOS NED</span>
+                                            <span class="sticker-header-badge">LEY 1581</span>
+                                        </div>
+                                        <span class="sticker-merchant-tag">Comercio: <span class="display-biz-name">[NOMBRE DEL NEGOCIO]</span><span class="display-biz-nit"></span></span>
+                                        <div class="sticker-content-row">
+                                            <p class="sticker-legal-text" style="font-size: 0.68rem;">
+                                                Al suministrar su cédula o teléfono en caja para acumular puntos, redimir bonos o participar en sorteos, usted autoriza el tratamiento de sus datos a este Comercio y a <strong>NED SYSTEM S.A.S.</strong> (NIT 901.404.605-9). Consulte la política escaneando el código QR o en <strong>https://ned.mobi</strong> (info@ned.mobi).
+                                            </p>
+                                            <div class="sticker-qr-wrapper" style="min-width: 55px;">
+                                                <div class="sticker-qr-canvas qr-code-placeholder" style="width: 45px; height: 45px;"></div>
+                                                <span style="font-size: 0.5rem;">Escanear</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Guía Rápida Legal y Preguntas Frecuentes para el Comerciante -->
+            <section class="merchant-guide no-print">
+                <h3 class="guide-title">
+                    <span>💡 Guía Práctica de Cumplimiento para tu Establecimiento</span>
+                </h3>
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <h4>⚖️ ¿Por qué es obligatorio?</h4>
+                        <p>El Artículo 15 del Decreto 1377 de 2013 exige que cuando se recolecten datos personales en puntos físicos (caja registradora o datáfono), el comercio debe informar mediante un aviso visible a quién se autoriza y con qué finalidades legítimas.</p>
+                    </div>
+
+                    <div class="guide-card">
+                        <h4>📍 ¿Dónde ubicarlo?</h4>
+                        <p>Coloca el <strong>Hablador de Mostrador</strong> en un atril acrílico transparente junto al datáfono o pantalla del cajero. Pega los <strong>Stickers</strong> en el borde del monitor POS o en la base del mostrador para lectura inmediata del cliente.</p>
+                    </div>
+
+                    <div class="guide-card">
+                        <h4>🖨️ Recomendación de Impresión</h4>
+                        <p>Para mayor durabilidad y presentación profesional, imprime el Hablador en <strong>papel opalina o propalcote de 200g a 250g</strong>, o imprime los stickers en papel adhesivo mate resistente a la manipulación diaria en caja.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Toast de Notificación -->
+    <div id="toast_notice" class="toast-notice" role="status" aria-live="polite">
+        <span class="toast-icon">✨</span>
+        <span id="toast_message">Notificación</span>
+    </div>
+</body>
+</html>

@@ -14,6 +14,10 @@ function getBasePath() {
         return normalizedPath.replace(/\/pages\/.*$/, '/');
     }
 
+    if (normalizedPath.includes('/b/')) {
+        return normalizedPath.replace(/\/b\/.*$/, '/');
+    }
+
     return './';
 }
 
@@ -53,6 +57,7 @@ function createFooter() {
                             <li><a href="${basePath}pages/terminosycondiciones.html">Términos & Condiciones de uso</a></li>
                             <li><a href="${basePath}pages/privacidad.html">Política de privacidad</a></li>
                             <li><a href="${basePath}pages/eliminadatos.html">Política eliminación de datos</a></li>
+                            <li><a href="${basePath}b/nedleal/aviso-privacidad">Aviso de Privacidad (Mostrador)</a></li>
                             <li><a href="${basePath}pages/integracion-pos.html">Integración POS (Pro & Premium)</a></li>
                             <li><a href="${basePath}pages/contacto.html">Contacto y Soporte</a></li>
                         </ul>

@@ -4,7 +4,8 @@ const path = require('path');
 // Directorios a escanear en búsqueda de archivos HTML
 const dirsToScan = [
   './',          // Raíz del proyecto (donde está index.html)
-  './pages'      // Carpeta de páginas internas
+  './pages',     // Carpeta de páginas internas
+  './b/nedleal/aviso-privacidad' // Aviso de Privacidad en Mostrador
 ];
 
 // Función para obtener todos los archivos HTML en los directorios seleccionados
