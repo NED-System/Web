@@ -1,126 +1,160 @@
-**POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES (POLÍTICA DE PRIVACIDAD)**
 
-**NED SYSTEM S.A.S.**
+**POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES\
+(POLÍTICA DE PRIVACIDAD)**
 
-**ASPECTOS GENERALES Y MARCO LEGAL**
+**NED SYSTEM S.A.S. — NIT 901.404.605 - 9\
+Versión Oficial Actualizada — Octubre de 2026**
 
-La presente Política de Tratamiento de Datos Personales (en adelante, la "Política") regula la recolección, almacenamiento, uso, circulación, supresión, transmisión y transferencia de los datos de carácter personal que **NED SYSTEM S.A.S.** (en adelante, "**NED**"), sociedad comercial legalmente constituida en Colombia, domiciliada en el municipio de Sabaneta, Antioquia, recolecta de sus Usuarios (Consumidores y Proveedores), trabajadores, contratistas, aliados y terceros, en estricto cumplimiento de la **Ley 1581 de 2012**, el Decreto Único Reglamentario 1074 de 2015, y demás normas concordantes con el derecho fundamental de *Habeas Data* en la República de Colombia.
+**MARCO LEGAL Y AUTORIZACIÓN PREVIA:** La presente Política regula el tratamiento de datos personales efectuado por NED SYSTEM S.A.S., sociedad comercial legalmente constituida en Colombia, identificada con NIT 901.404.605 - 9, domiciliada en el municipio de Sabaneta, Antioquia, en calidad de Responsable del Tratamiento, en estricto cumplimiento de la Ley Estatutaria 1581 de 2012, el Decreto Reglamentario 1377 de 2013 (incorporado en el Decreto Único Reglamentario 1074 de 2015), la Ley 1266 de 2008 y demás disposiciones concordantes con el régimen de Habeas Data en la República de Colombia. Al registrarse, iniciar sesión o interactuar con los aplicativos móviles y entornos web (en adelante, la 'Plataforma'), el Titular otorga su consentimiento previo, expreso e informado para el tratamiento de su información conforme a este documento.
 
-Al diligenciar los formularios de registro, iniciar sesión, o interactuar con la plataforma web y aplicativos móviles (en adelante, la “Plataforma”), el Titular de los datos otorga su **consentimiento previo, expreso e informado** para que sus datos sean tratados de acuerdo con las finalidades y condiciones establecidas en este documento.
+**1. IDENTIFICACIÓN DEL RESPONSABLE DEL TRATAMIENTO**
 
-**1. OBJETIVOS**
+**• Razón Social:** NED SYSTEM S.A.S.\
+**• Número de Identificación Tributaria (NIT):** 901.404.605 – 9\
+**• Domicilio Principal:** Sabaneta, Antioquia, República de Colombia\
+**• Dirección de Notificación Judicial:** Carrera 44 No. 62 Sur - 33, Apto 401, Sabaneta, Antioquia\
+**• Teléfonos de Contacto:** 301 163 1422 / (604) 570 3901\
+**• Correo Electrónico Oficial de Habeas Data:** info@ned.mobi\
+**• Portal Web Oficial:** Plataforma Tecnológica NED
 
-- **Objetivo General:** Establecer los criterios y directrices institucionales bajo los cuales **NED** realiza el tratamiento legítimo de datos personales en su calidad de **Responsable del Tratamiento**.
-- **Objetivos Específicos:**
-  - Adoptar buenas prácticas de seguridad de la información para salvaguardar la privacidad de las personas naturales.
-  - Garantizar los derechos de los Titulares consagrados en el artículo 8 de la Ley 1581 de 2012.
-  - Definir los canales de comunicación para que los Titulares puedan conocer, actualizar, rectificar o suprimir sus datos de las bases de datos de **NED**.
+**2. OBJETIVOS Y ALCANCE DE LA POLÍTICA**
 
-**2. ALCANCE**
-
-Esta Política aplica a todos los datos personales de personas naturales que se encuentren registrados en las bases de datos automatizadas, físicas o digitales administradas por **NED**. El cumplimiento de estas directrices es obligatorio para todos los empleados, contratistas, directivos y aliados estratégicos que ejecuten operaciones de tratamiento por cuenta de **NED**.
-
-**NED** es una Plataforma de intermediación y red social comercial que conecta a Negocios con sus Seguidores o Clientes (Consumidores) con el fin de incentivar la lealtad y la fidelización a través de dinámicas comerciales (planes de puntos, sorteos, aniversarios, etc.). Para usar las funcionalidades de la Plataforma, es un requisito obligatorio e indispensable la lectura, comprensión y aceptación de esta Política.
+**2.1. Objetivo General:** Establecer los principios, directrices institucionales, medidas de seguridad y procedimientos organizacionales bajo los cuales NED realiza el tratamiento legítimo de datos personales en su calidad de Responsable del Tratamiento.\
+**2.2. Objetivos Específicos:**\
+a) Salvaguardar los derechos fundamentales a la intimidad, autodeterminación informativa y buen nombre consagrados en el artículo 15 de la Constitución Política de Colombia y la Ley 1581 de 2012.\
+b) Regular la captura de datos en todos los canales de interacción de NED, incluyendo los aplicativos móviles para Consumidores y Comercios (NED y NED Leal), entornos web, servicios de API Directa, el módulo de Reserva de Citas y contingencias operativas en Modo Offline.\
+c) Definir con absoluta claridad los canales idóneos y los plazos de ley para que los Titulares puedan ejercer sus derechos a conocer, actualizar, rectificar y suprimir sus datos personales.\
+**2.3. Alcance:** Esta Política rige de manera obligatoria e indelegable respecto de todos los datos personales de personas naturales registrados en las bases de datos automatizadas, físicas o digitales administradas por NED, comprendiendo Consumidores, representantes de Comercios afiliados, usuarios del módulo de citas, colaboradores, contratistas y terceros vinculados.
 
 **3. DEFINICIONES LEGALES**
 
-- **Autorización:** Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de sus datos personales. 
-- **Base de Datos:** Conjunto organizado de datos personales que sea objeto de Tratamiento. 
-- **Dato Personal:** Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables. 
-- **Dato Público:** Es el dato calificado como tal por la ley o la Constitución Política, tales como los contenidos en registros públicos, estado civil de las personas y sentencias judiciales ejecutoriadas.
-- **Dato Privado:** Es el dato que por su naturaleza íntima o reservada solo es relevante para el Titular.
-- **Dato Sensible:** Aquel que afecta la intimidad del Titular o cuyo uso indebido puede generar discriminación (e.g., orientación política, convicciones religiosas, datos biométricos, datos relativos a la salud o vida sexual).
-- **Consumidor:** Persona natural mayor de dieciocho (18) años que accede de forma gratuita a la Plataforma para interactuar con perfiles comerciales, seguir comercios y participar en dinámicas promocionales.
-- **Productor o Proveedor:** Persona natural o jurídica que contrata los servicios de administración comercial de **NED** mediante suscripción paga para publicitar su portafolio y fidelizar clientes.
-- **Titular:** Persona natural cuyos datos personales sean objeto de Tratamiento (Usuarios, empleados, proveedores, etc.).
-- **Responsable del Tratamiento:** Persona natural o jurídica que por sí misma o en asocio con otros decida sobre la base de datos y/o el Tratamiento de los datos. Para efectos de este documento, el Responsable es **NED SYSTEM S.A.S.**
-- **Encargado del Tratamiento:** Persona natural o jurídica que realice el Tratamiento de datos personales por cuenta del Responsable.
-- **Transferencia:** Operación que ocurre cuando el Responsable y/o Encargado del Tratamiento de datos personales, ubicado en Colombia, envía la información o los datos personales a un receptor, que a su vez es Responsable del Tratamiento y se encuentra dentro o fuera del país. 
-- **Transmisión:** Tratamiento de datos personales que implica la comunicación de los mismos dentro o fuera del territorio de la República de Colombia cuando tenga por objeto la realización de un Tratamiento por el Encargado por cuenta del Responsable. 
+**• Autorización:** Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de sus datos personales.
 
-**4. PROHIBICIÓN RADICAL DE DATOS DE MENORES DE EDAD**
+**• Aviso de Privacidad:** Comunicación verbal o escrita generada por el Responsable, dirigida al Titular para informarle sobre la existencia de la Política, su acceso y finalidades del tratamiento.
 
-La Plataforma está diseñada de forma exclusiva para personas **mayores de dieciocho (18) años**. **NED** no recolecta, ni procesa, de forma deliberada información de niños, niñas y adolescentes. Si se llega a comprobar que una cuenta fue creada por un menor de edad aportando datos falsos, **NED** procederá a la cancelación inmediata de la cuenta y a la supresión segura de toda la información asociada en sus servidores.
+**• Base de Datos:** Conjunto organizado de datos personales que sea objeto de Tratamiento manual o automatizado.
 
-**5. INFORMACIÓN OBJETO DE RECOLECCIÓN**
+**• Consumidor:** Persona natural mayor de dieciocho (18) años que accede a la Plataforma para interactuar con perfiles comerciales, agendar citas, seguir comercios y participar en dinámicas promocionales.
 
-**NED** recopila datos bajo el principio de **minimización de datos**, solicitando exclusivamente lo estrictamente necesario para el cumplimiento de sus servicios:
+**• Dato Personal:** Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables.
 
-- **Información Personal Registrada Directamente:** Nombre(s), apellido(s), razón social (para comercios), número de documento de identidad o NIT, fecha de nacimiento, género, correo electrónico, número de teléfono móvil, dirección de domicilio físico y contraseñas cifradas de acceso.
-- **Información Capturada por Autenticación de Terceros:** Al vincular cuentas de Google (Gmail) o Facebook, **NED** extraerá el nombre, correo electrónico y fecha de cumpleaños registrada en dicha red social.
-- **Información Técnica y de Comportamiento:** Dirección IP, modelo de hardware de dispositivo móvil, tipo de sistema operativo (iOS o Android), identificadores únicos de publicidad (IDFA/AAID), datos de bloqueos, analíticas de clicks y navegación, uso de preferencias en la interfaz y cookies técnicas indispensables para mantener la sesión activa.
-- **Datos de Geolocalización:** Si el Usuario otorga permisos explícitos en su dispositivo, se capturará la ubicación exacta o aproximada por GPS/IP para mapear los comercios físicos disponibles a su alrededor.
+**• Dato Privado:** Aquel que por su naturaleza íntima o reservada solo es relevante para el Titular.
 
-**6. FINALIDAD DEL TRATAMIENTO DE LOS DATOS PERSONALES**
+**• Dato Público:** Aquel calificado como tal por los mandatos de la ley o de la Constitución Política y que no sea semiprivado, privado o sensible.
 
-Los datos personales recolectados por **NED** serán tratados para el cumplimiento de las siguientes finalidades legítimas:
+**• Dato Sensible:** Aquel que afecta la intimidad del Titular o cuyo uso indebido puede generar discriminación (e.g., datos biométricos, convicciones filosóficas, pertenencia a organizaciones o datos relativos a la salud).
 
-**A. Respecto de los Consumidores y Proveedores:**
+**• Comercio o Negocio:** Persona natural o jurídica que contrata los servicios de suscripción de NED para publicar portafolios, fidelizar clientes, administrar citas y registrar compras.
 
-1. Gestionar la creación, autenticación, soporte técnico y mantenimiento de la cuenta de usuario dentro de la Plataforma.
-1. Permitir el funcionamiento de la red social interna, facilitando el seguimiento que los Consumidores hacen de sus Proveedores preferidos.
-1. Operar el sistema de **Mensajería Instantánea (Chat)** interno para la resolución de dudas comerciales directas entre Consumidores y Proveedores.
-1. Enviar **Notificaciones Push** y alertas automáticas al dispositivo móvil sobre chats nuevos, actualizaciones de perfiles seguidos, sorteos y dinámicas comerciales activadas por los comercios.
-1. Gestionar la infraestructura técnica del **Plan de Puntos**, asignando las boletas de los sorteos y procesando la redención de Recompensas de forma segura.
-1. Habilitar la visualización del módulo numérico y contable manual de **"Ventas Fiadas"** para el autocontrol de estados de cuenta entre las partes.
-1. Validar la identidad de los ganadores de los sorteos frente al Proveedor utilizando el identificador digital interno de la app (ID).
-1. Realizar análisis estadísticos y de tendencias agregadas para el mejoramiento de las herramientas de la app.
-1. Cobrar los cánones de suscripción mensual a los Proveedores a través de los sistemas internos habilitados.
-1. Dar cumplimiento a requerimientos formulados por autoridades judiciales o administrativas del orden nacional.
+**• Modo Offline:** Mecanismo tecnológico de operación local asíncrona en los aplicativos móviles ante la indisponibilidad temporal de conexión a internet.
 
-**B. Respecto de los Trabajadores, Contratistas y Proveedores de Servicios de NED:**
+**• Responsable del Tratamiento:** NED SYSTEM S.A.S., quien decide sobre las bases de datos y el tratamiento de la información.
 
-1. Gestionar los procesos de selección, contratación, nómina, afiliaciones al Sistema de Seguridad Social Integral y archivo histórico laboral.
+**• Titular:** Persona natural cuyos datos personales sean objeto de Tratamiento.
 
-**7. REGLA ESPECIAL DE PRIVACIDAD EN LA INTERACCIÓN COMERCIAL**
+**• Tratamiento:** Cualquier operación sobre datos personales, tales como recolección, almacenamiento, uso, circulación o supresión.
 
-En cumplimiento estricto del principio de **circulación restringida**, **NED** implementa una política de minimización de visualización de datos: **Los Proveedores solo podrán ver el Nombre y el ID único de los Consumidores que decidan seguirlos.**
+**4. PRINCIPIOS RECTORES DEL TRATAMIENTO**
 
-**NED** bajo ninguna circunstancia transferirá, compartirá o visibilizará el número de teléfono celular, el correo electrónico, ni la dirección de residencia física de los Consumidores a los Proveedores o comercios de la Plataforma. Las interacciones se centralizan técnicamente dentro del ecosistema cerrado de la app.
+NED aplica de forma armónica e integral los principios consagrados en el artículo 4 de la Ley 1581 de 2012: Legalidad, Finalidad legítima, Libertad (consentimiento previo), Veracidad o Calidad, Transparencia, Acceso y Circulación Restringida, Seguridad de la información y Confidencialidad.
 
-**8. TRANSFERENCIA Y TRANSMISIÓN INTERNACIONAL DE DATOS**
+**5. REGLA ESTRICTA DE MAYORÍA DE EDAD (MAYORES DE 18 AÑOS)**
 
-Para garantizar el soporte en la nube y la estabilidad de la Plataforma, **NED** podrá transmitir los datos personales a servidores de terceros proveedores de infraestructura tecnológica (tales como AWS, Google Cloud u otros operadores de data centers de primer nivel) ubicados en el exterior. Al aceptar esta Política, el Titular autoriza expresamente la transmisión internacional de sus datos, garantizando **NED** que dichos proveedores internacionales cuentan con estándares adecuados de seguridad alineados con las exigencias de la SIC.
+La Plataforma NED y los programas de beneficios comerciales asociados están dirigidos de forma estricta y exclusiva a personas con plena capacidad legal civil (mayores de 18 años). NED no admite el registro ni procesa deliberadamente datos de personas que no cumplan con la mayoría de edad legal. De comprobarse la creación de una cuenta en contravención a esta regla, NED procederá de inmediato a la cancelación definitiva de la cuenta y al bloqueo y supresión segura de los registros asociados conforme a la ley.
 
-**9. DERECHOS DEL TITULAR DE LA INFORMACIÓN**
+**6. INFORMACIÓN Y CATEGORÍAS DE DATOS RECOLECTADOS**
 
-De conformidad con el artículo 8 de la Ley 1581 de 2012, el Titular de los datos personales tiene derecho a:
+Bajo el principio de minimización de datos, NED solicita y trata exclusivamente la información requerida para el funcionamiento de sus servicios:\
+**• Datos de Registro Directo:** Nombres, apellidos, tipo y número de documento de identidad (cédula o NIT), fecha de nacimiento (requerida para validar la mayoría de edad y despachar dinámicas de cumpleaños), número de teléfono celular, dirección de correo electrónico, género (opcional), domicilio y contraseñas cifradas.\
+**• Autenticación Externa:** Identificador único de perfil, nombre, correo y cumpleaños suministrados al iniciar sesión vía Google o Facebook.\
+**• Punto de Venta (POS):** Número de identificación o teléfono suministrado en mostrador para acumulación de puntos, canje de bonos y número de factura.\
+**• Módulo de Reserva de Citas:** Nombre del cliente, teléfono de contacto para confirmaciones, servicio agendado, sucursal, fecha y franja horaria seleccionada.\
+**• Datos Técnicos y Geolocalización:** Dirección IP, identificador de dispositivo, modelo, sistema operativo (Android/iOS), analíticas de errores técnicos y geolocalización aproximada o precisa (GPS, previa autorización en el dispositivo para mapear comercios cercanos).\
+**• Almacenamiento Local Temporal (Caché Offline):** En situaciones de contingencia de red, la aplicación almacena localmente de forma cifrada saldos informativos de puntos, listados de citas e identificadores de transacciones diferidas con el exclusivo fin de sincronización posterior.
 
-1. Conocer, actualizar y rectificar sus datos personales frente a **NED**. Este derecho se podrá ejercer, entre otros, frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado.
-1. Solicitar prueba de la Autorización otorgada a **NED**, salvo las excepciones legales (artículo 10 de la Ley 1581 de 2012).
-1. Ser informado por **NED**, previa solicitud, respecto del uso que le ha dado a sus datos personales.
-1. Presentar ante la Superintendencia de Industria y Comercio (SIC) quejas por infracciones a lo dispuesto en la ley de protección de datos, una vez agotado el trámite de consulta o reclamo directo ante **NED**.
-1. Revocar la Autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. 
-1. Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento. 
+**7. FINALIDADES DEL TRATAMIENTO DE LOS DATOS PERSONALES**
 
-**10. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS (HAEBEAS DATA)**
+**A. Respecto de los Consumidores y Clientes Finales:**
 
-Para el ejercicio de cualquiera de sus derechos, el Titular o sus causahabientes legítimos deberán dirigir una solicitud formal al área responsable de atención:
+1\. Gestionar la creación, autenticación, soporte técnico y mantenimiento de la cuenta en la Plataforma.
 
-- **Canal Exclusivo de Peticiones y Reclamos:** Correo electrónico **info@ned.mobi**
-- **Requisitos de la Solicitud:** Nombre completo del Titular, documento de identidad escaneado, descripción detallada de los hechos que dan lugar a la consulta/reclamo, derecho que desea ejercer (conocer, actualizar, rectificar, suprimir o revocar), y datos de contacto para la respuesta.
+2\. Habilitar las herramientas de la red social comercial para seguir perfiles y visualizar ofertas y catálogos.
 
-**Términos de Respuesta:**
+3\. Facilitar la comunicación bidireccional mediante el módulo de Mensajería Instantánea (Chat) interno.
 
-- **Consultas:** Las consultas que versen sobre el conocimiento de datos almacenados serán atendidas en un término máximo de **diez (10) días hábiles** contados a partir de la fecha de su recibo. Si no fuere posible resolverla en dicho lapso, se informará al solicitante el motivo de la prórroga, y se le dará respuesta en un término no mayor a **fco (5) días hábiles** adicionales.
-- **Reclamos (Corrección, Supresión, Revocatoria):** Los reclamos serán atendidos en un término máximo de **quince (15) días hábiles** contados a partir del día siguiente a la fecha de su recibo. Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes para que subsane. Transcurridos dos (2) meses desde el requerimiento sin respuesta del Titular, se entenderá que ha desistido. Si no fuere posible atenderlo en el término inicial, se prorrogará por un máximo de **ocho (8) días hábiles** adicionales.
+4\. Enviar notificaciones push transaccionales (confirmaciones de compra, puntos, bonos, cupones y recordatorios de citas).
 
-**11. MEDIDAS DE SEGURIDAD DE LA INFORMACIÓN**
+5\. Operar técnicamente las dinámicas comerciales: Nuevo Consumidor, Sorteos, Plan de Puntos, Referidos y Cumpleaños.
 
-**NED** adopta medidas de seguridad de índole técnica, humana y administrativa (control de accesos restringido, encriptación en tránsito y reposo, auditorías periódicas de código) necesarias para evitar la adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento de los datos.
+6\. Coordinar, confirmar y enviar recordatorios de agenda a través del módulo de Reserva de Citas.
 
-**Notificación de Brechas:** En caso de presentarse un incidente o brecha de seguridad que ponga en riesgo la confidencialidad de los datos de los Usuarios, **NED** notificará a la Superintendencia de Industria y Comercio y a los Usuarios afectados dentro de las setenta y dos (72) horas siguientes al conocimiento del hecho, conforme a los lineamientos locales de seguridad de la información.
+7\. Garantizar la continuidad operativa mediante el Modo Offline, almacenando localmente de forma temporal datos informativos para sincronización asíncrona.
 
-**12. TEMPORALIDAD Y RETENCIÓN DE LOS DATOS**
+8\. Ejecutar controles antifraude, reglas de idempotencia de 72 horas y verificación de cupones alfanuméricos de un solo uso.
 
-Los datos personales permanecerán en los sistemas de **NED** únicamente durante el tiempo que subsista la finalidad para la cual fueron recolectados, o mientras dure la relación contractual/comercial entre el Usuario y **NED**. Una vez finalizado este vínculo, los datos se conservarán bloqueados durante el término legal necesario para atender posibles responsabilidades contractuales, contables, tributarias o judiciales bajo la ley colombiana, posterior a lo cual se procederá a su destrucción o anonimización definitiva de forma segura.
+9\. Elaborar estadísticas anonimizadas y métricas agregadas para optimizar las herramientas tecnológicas.
 
-**13. VIGENCIA Y MODIFICACIONES**
+10\. Validar la identidad de los ganadores de sorteos y beneficios frente al Comercio utilizando el ID único interno de la app.
 
-La presente versión de la Política entra en vigencia a partir de su publicación y aceptación por los Usuarios. **NED** se reserva el derecho de modificar esta Política en cualquier momento. Cualquier cambio sustancial relativo a las finalidades del tratamiento o la identidad del Responsable será notificado a través de la Plataforma o vía correo electrónico antes de su entrada en vigor, requiriéndose una nueva aceptación expresa del Usuario para continuar usando los servicios.
+11\. Atender solicitudes, quejas, reclamos (PQR) y trámites de Habeas Data, así como dar cumplimiento a requerimientos de autoridades judiciales o administrativas colombianas.
 
-- **Dirección Física de Notificaciones:** Sabaneta, Antioquia - Colombia.
-- **Contacto Electrónico:** info@ned.mobi
+**B. Respecto de los Comercios, Negocios y Proveedores:**
 
-**Última Actualización:** 23 de junio de 2026.
+1\. Administrar la relación contractual, facturación y cobro de suscripciones a planes PRO y PREMIUM.
 
+2\. Suministrar credenciales de integración (API\_KEY y API\_SECRET) y herramientas multisucursal centralizadas.
+
+3\. Disponer el módulo de Auditoría POS para reportes planos operativos y conciliación comercial.
+
+4\. Verificar la autenticidad del establecimiento y prevenir fraudes o usos indebidos de la marca NED.
+
+**C. Respecto de Colaboradores, Contratistas y Proveedores:**
+
+Gestionar procesos de selección, formalización de contratos laborales o comerciales, afiliaciones a la seguridad social, pagos de nómina, archivo histórico y cumplimiento de deberes legales laborales y fiscales.
+
+**8. MECANISMOS DE RECOLECCIÓN Y TRAZABILIDAD DEL CONSENTIMIENTO**
+
+NED asegura que toda recolección de datos personales cuenta con la autorización previa, expresa e informada del titular mediante:\
+**• Consentimiento Digital In-App:** En el registro de la app, el usuario marca una casilla de verificación no premarcada para aceptar la Política y los Términos. El backend registra un Audit Log inmutable con ID de usuario, marca temporal UTC, IP, versión de política y dispositivo.\
+**• Captura en Punto de Venta Físico (Aviso de Mostrador):** La captura de datos en caja para acumulación de puntos, bonos o citas se encuentra informada y amparada por el Aviso de Privacidad visible en el mostrador del comercio afiliado conforme a la Ley 1581 de 2012.
+
+**9. REGLA ESTRICTA DE CIRCULACIÓN RESTRINGIDA Y PRIVACIDAD COMERCIAL**
+
+**En cumplimiento estricto del principio de circulación restringida, LOS COMERCIOS AFILIADOS SOLO PUEDEN VISUALIZAR EL NOMBRE Y EL IDENTIFICADOR ÚNICO (ID) DE LOS CONSUMIDORES QUE LOS SIGAN O COMPREN EN SU ESTABLECIMIENTO. NED bajo ninguna circunstancia vende, arrienda ni comparte con los comercios el número de teléfono móvil, correo electrónico privado ni dirección de residencia del consumidor. Toda interacción se canaliza a través de la infraestructura cerrada de la Plataforma.**
+
+**10. TRANSFERENCIA Y TRANSMISIÓN INTERNACIONAL DE DATOS**
+
+Para garantizar la alta disponibilidad, redundancia y estabilidad tecnológica, NED aloja su infraestructura en proveedores de computación en la nube de primer nivel (tales como AWS, Google Cloud o Microsoft Azure) cuyos centros de cómputo se encuentran en el exterior. Al aceptar esta Política, el Titular autoriza expresamente esta transmisión internacional técnica, garantizando NED el cumplimiento de estándares rigurosos de seguridad física y lógica alineados con las exigencias de la SIC.
+
+**11. DERECHOS DE LOS TITULARES (HABEAS DATA)**
+
+De conformidad con el artículo 8 de la Ley 1581 de 2012, el Titular cuenta con los siguientes derechos:\
+1\. Conocer, actualizar y rectificar sus datos personales frente a NED en su calidad de Responsable.\
+2\. Solicitar prueba de la autorización otorgada a NED, salvo las excepciones del artículo 10 de la ley.\
+3\. Ser informado respecto del uso que se ha dado a sus datos personales.\
+4\. Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) una vez agotado el trámite directo ante NED.\
+5\. Revocar la autorización y/o solicitar la supresión de datos cuando no se respeten los principios y garantías legales.\
+6\. Acceder en forma gratuita a sus datos personales que hayan sido objeto de tratamiento.
+
+**12. CANALES Y PROCEDIMIENTO PARA EL EJERCICIO DE DERECHOS**
+
+**• Canales Habilitados:** Envío de solicitud formal al correo **info@ned.mobi** con el asunto 'Ejercicio Derecho Habeas Data', o a través del canal digital in-app en 'Configuración > Privacidad > Eliminar mi cuenta / Suprimir mis datos'. La supresión voluntaria a través de la app ejecuta la desvinculación inmediata y la pérdida irreversible de beneficios, puntos y boletas acumuladas.\
+**• Términos de Respuesta Legal:**\
+\- Consultas: Se resuelven en un término máximo de diez (10) días hábiles (prorrogables por 5 días hábiles más).\
+\- Reclamos: Se resuelven en quince (15) días hábiles (prorrogables por 8 días hábiles más).
+
+**13. MEDIDAS DE SEGURIDAD Y NOTIFICACIÓN DE INCIDENTES**
+
+NED implementa protocolos de seguridad técnica, humana y administrativa que comprenden: cifrado en tránsito (TLS/HTTPS), cifrado en reposo para credenciales, control de acceso basado en roles y protección de caché local. En caso de brechas o incidentes que comprometan datos personales, NED notificará formalmente a la Superintendencia de Industria y Comercio y a los titulares afectados dentro de las setenta y dos (72) horas siguientes al conocimiento del evento.
+
+**14. CONSERVACIÓN Y RETENCIÓN DE DATOS**
+
+Los datos personales se conservan durante el tiempo necesario para cumplir las finalidades descritas. Finalizado el vínculo o solicitada la supresión, se mantendrán en estado de bloqueo técnico únicamente durante los plazos legalmente exigidos para responsabilidades fiscales, contables y contractuales bajo la ley colombiana, posterior a lo cual se procederá a su destrucción o anonimización definitiva.
+
+**15. VIGENCIA Y ACTUALIZACIONES DE LA POLÍTICA**
+
+La presente Política rige a partir de su publicación oficial en **OCTUBRE DE 2026**. Cualquier modificación sustancial en las finalidades será comunicada a los Titulares a través de la app o correo electrónico antes de su implementación.
+
+**NED SYSTEM S.A.S. — NIT 901.404.605 – 9**\
+Sabaneta, Antioquia - Colombia | Contacto Oficial: info@ned.mobi
+Página 1
