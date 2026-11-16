@@ -77,6 +77,7 @@
                                 <option value="🎉 PROMOS EXCLUSIVAS">🎉 Promos Exclusivas</option>
                                 <option value="🏷️ DESCUENTOS DIRECTOS">🏷️ Descuentos Directos</option>
                                 <option value="☕ 100% RECOMENDADO">☕ 100% Recomendado</option>
+                                <option value="none">Sin sticker en la foto</option>
                                 <option value="custom">Sticker personalizado...</option>
                             </select>
                         </div>
@@ -87,7 +88,7 @@
                         <div class="form_group">
                             <label for="biz_cta">Mensaje o llamado a la acción (CTA):</label>
                             <select id="biz_cta">
-                                <option value="fidelizar" selected>¡Acumula puntos y canjea premios en cada visita!</option>
+                                <option value="fidelizar" selected>¡Compra, acumula puntos y gana premios!</option>
                                 <option value="escanear">¡Escanea aquí y obtén recompensas exclusivas!</option>
                                 <option value="puntos">¡Hazte cliente frecuente y gana increíbles regalos!</option>
                                 <option value="premios">¡Puntos, sorteos y descuentos directos en tu celular!</option>
@@ -205,81 +206,217 @@
                 <section class="preview_panel" aria-label="Vista Previa del Flyer">
                     <!-- FLYER CARD (DISEÑO COMERCIAL) -->
                     <div class="flyer_card theme-ned" id="flyer_card">
-                        <!-- Top Co-Branding Bar -->
-                        <div class="flyer_top_bar">
-                            <div class="flyer_top_pill">
-                                <img src="../assets/logo/Logo_NED_ico.png" alt="Logo NED" class="flyer_top_icon" />
-                                <span class="flyer_top_tag">PROGRAMA DE FIDELIZACIÓN</span>
-                                <span class="flyer_top_star">★ VIP ★</span>
-                            </div>
-                        </div>
-
-                        <!-- Cuerpo del Flyer -->
-                        <div class="flyer_body">
-                            <!-- Cabecera del Negocio -->
-                            <div class="flyer_header_content">
-                                <h2 class="flyer_title" id="flyer_title">Mi Negocio</h2>
-                                <div class="flyer_user_badge" id="flyer_user_badge">
-                                    <span class="flyer_user_at">@</span><span class="flyer_user" id="flyer_user">minegocio</span>
-                                    <span class="flyer_verified_check" title="Negocio Afiliado">✓</span>
-                                </div>
-                            </div>
-
-                            <!-- Showcase de Foto con Sticker Comercial -->
-                            <div class="flyer_photo_card">
+                        <!-- CAPAS DE FONDO Y CURVAS ORGÁNICAS -->
+                        <div class="flyer_bg_canvas" aria-hidden="true">
+                            <!-- Zona derecha para la foto y su arco decorativo -->
+                            <div class="flyer_hero_photo_zone">
+                                <div class="flyer_photo_ambient" id="flyer_photo_ambient"></div>
+                                <div class="flyer_photo_arch"></div>
                                 <div class="flyer_photo_container">
                                     <img src="" alt="Foto de tu local" class="flyer_photo_img" id="flyer_photo_img" style="display: none;" />
                                     <div class="flyer_photo_placeholder" id="flyer_photo_placeholder">
                                         <div class="placeholder_icon_box">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                 <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>
                                                 <circle cx="8.5" cy="8.5" r="1.5"></circle>
                                                 <polyline points="21 15 16 10 5 21"></polyline>
                                             </svg>
                                         </div>
-                                        <span class="placeholder_title">Tu Foto o Promoción Aquí</span>
-                                        <span class="placeholder_subtitle">Haz clic en el panel para subir una foto de tu negocio</span>
+                                        <span class="placeholder_title">Tu Foto Aquí</span>
+                                        <span class="placeholder_subtitle">Sube la foto de tu local, producto o equipo</span>
                                     </div>
-                                    <!-- Sticker Comercial Flotante -->
-                                    <div class="flyer_badge_sticker" id="flyer_badge_display">
-                                        🎁 ¡GANA PREMIOS!
+                                </div>
+                                <!-- Rayos decorativos sobre la foto -->
+                                <svg class="flyer_photo_rays" viewBox="0 0 60 55" fill="none">
+                                    <line x1="8" y1="24" x2="22" y2="8" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                    <line x1="16" y1="36" x2="44" y2="20" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                    <line x1="20" y1="48" x2="48" y2="43" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                </svg>
+                                <!-- Sticker Comercial Flotante -->
+                                <div class="flyer_badge_sticker" id="flyer_badge_display">
+                                    🎁 ¡GANA PREMIOS!
+                                </div>
+                            </div>
+
+                            <!-- Curva Diagonal Amarilla Superior Izquierda -->
+                            <svg class="flyer_wave_top_left" viewBox="0 0 1080 860" preserveAspectRatio="none">
+                                <path d="M 0,0 L 670,0 C 570,190 565,450 535,660 C 510,775 260,820 0,835 Z" fill="currentColor" />
+                            </svg>
+
+                            <!-- Bloque Curvo Magenta Inferior + Ondas de Esquina -->
+                            <svg class="flyer_wave_bottom" viewBox="0 0 1080 680" preserveAspectRatio="none">
+                                <path class="wave_bottom_main" d="M 0,95 C 260,20 820,20 1080,95 L 1080,680 L 0,680 Z" />
+                                <path class="wave_corner_left" d="M 0,535 C 95,555 180,610 235,680 L 0,680 Z" />
+                                <path class="wave_corner_right" d="M 1080,520 C 960,555 860,615 790,680 L 1080,680 Z" />
+                            </svg>
+                        </div>
+
+                        <!-- 1. Top Co-Branding Bar -->
+                        <div class="flyer_top_bar">
+                            <svg class="flyer_top_rays" viewBox="0 0 55 55" fill="none" aria-hidden="true">
+                                <line x1="44" y1="16" x2="26" y2="3" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                <line x1="38" y1="30" x2="8" y2="20" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                <line x1="40" y1="44" x2="15" y2="46" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                            </svg>
+                            <div class="flyer_top_pill">
+                                <span class="flyer_top_icon_box">
+                                    <img src="../assets/logo/Logo_NED_ico.png" alt="Logo NED" class="flyer_top_icon" />
+                                </span>
+                                <span class="flyer_top_tag">PROGRAMA DE FIDELIZACIÓN</span>
+                                <span class="flyer_top_star">★ VIP ★</span>
+                            </div>
+                        </div>
+
+                        <!-- 2. Cuerpo del Flyer -->
+                        <div class="flyer_body">
+                            <!-- ZONA SUPERIOR IZQUIERDA: Identidad del Negocio + Titular Inclinado -->
+                            <div class="flyer_upper_hero">
+                                <div class="flyer_left_col">
+                                    <!-- Cabecera del Negocio con Ícono de Tienda -->
+                                    <div class="flyer_header_content">
+                                        <div class="flyer_brand_row">
+                                            <svg class="flyer_store_icon" viewBox="0 0 84 80" fill="none" aria-hidden="true">
+                                                <!-- Cuerpo de la tienda -->
+                                                <rect x="12" y="34" width="60" height="40" rx="6" fill="#FFFFFF" stroke="#1E1E2C" stroke-width="5.5" />
+                                                <!-- Puerta / Ventana -->
+                                                <path d="M 33,74 L 33,51 C 33,46 51,46 51,51 L 51,74 Z" fill="#1E1E2C" />
+                                                <!-- Toldo superior -->
+                                                <path d="M 6,32 L 15,10 C 16.5,7 20,6 24,6 L 60,6 C 64,6 67.5,7 69,10 L 78,32 Z" fill="#FF3E9D" stroke="#1E1E2C" stroke-width="5.5" stroke-linejoin="round" />
+                                                <!-- Franjas del toldo -->
+                                                <path d="M 29,6 L 25,32 M 42,6 L 42,32 M 55,6 L 59,32" stroke="#C41972" stroke-width="5" />
+                                                <!-- Ondas del toldo -->
+                                                <path d="M 6,32 C 6,41 24,41 24,32 C 24,41 42,41 42,32 C 42,41 60,41 60,32 C 60,41 78,41 78,32 Z" fill="#FF3E9D" stroke="#1E1E2C" stroke-width="5.5" stroke-linejoin="round" />
+                                            </svg>
+                                            <h2 class="flyer_title" id="flyer_title">MI NEGOCIO</h2>
+                                        </div>
+                                        <div class="flyer_user_wrap">
+                                            <div class="flyer_user_badge" id="flyer_user_badge">
+                                                <span class="flyer_user_at">@</span><span class="flyer_user" id="flyer_user">minegocio</span>
+                                                <span class="flyer_verified_check" title="Negocio Afiliado">✓</span>
+                                            </div>
+                                            <span class="flyer_user_underline" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Llamado a la Acción Principal (Titular + Cinta Magenta + Regalo) -->
+                                    <div class="flyer_hero_cta" id="flyer_cta">
+                                        <div class="flyer_cta_top" id="flyer_cta_top">
+                                            ¡COMPRA,<br />ACUMULA PUNTOS
+                                        </div>
+                                        <div class="flyer_cta_ribbon_group">
+                                            <svg class="flyer_cta_rays" viewBox="0 0 46 64" fill="none" aria-hidden="true">
+                                                <line x1="38" y1="16" x2="14" y2="4" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                                <line x1="34" y1="32" x2="6" y2="32" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                                <line x1="38" y1="48" x2="14" y2="60" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                            </svg>
+                                            <div class="flyer_cta_ribbon">
+                                                <span class="flyer_cta_bottom" id="flyer_cta_bottom">Y GANA<br />PREMIOS!</span>
+                                            </div>
+                                            <!-- Caja de Regalo Ilustrada Flotante -->
+                                            <svg class="flyer_hero_gift" viewBox="0 0 96 96" fill="none" aria-hidden="true">
+                                                <g transform="rotate(6 48 48)">
+                                                    <!-- Moño superior -->
+                                                    <path d="M 48,28 C 36,10 18,16 24,30 C 28,36 42,32 48,28 Z" fill="#FF2E93" stroke="#1E1E2C" stroke-width="5" stroke-linejoin="round" />
+                                                    <path d="M 48,28 C 60,10 78,16 72,30 C 68,36 54,32 48,28 Z" fill="#FF2E93" stroke="#1E1E2C" stroke-width="5" stroke-linejoin="round" />
+                                                    <!-- Cuerpo de la caja -->
+                                                    <rect x="18" y="42" width="60" height="42" rx="6" fill="#FFE600" stroke="#1E1E2C" stroke-width="5" />
+                                                    <!-- Cinta vertical -->
+                                                    <rect x="41" y="42" width="14" height="42" fill="#D81B7A" stroke="#1E1E2C" stroke-width="4.5" />
+                                                    <!-- Tapa de la caja -->
+                                                    <rect x="13" y="28" width="70" height="16" rx="5" fill="#FFE600" stroke="#1E1E2C" stroke-width="5" />
+                                                    <rect x="41" y="28" width="14" height="16" fill="#FF2E93" stroke="#1E1E2C" stroke-width="4.5" />
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Llamado a la Acción Comercial (Ribbon) -->
-                            <div class="flyer_cta_ribbon">
-                                <div class="flyer_cta" id="flyer_cta">
-                                    ¡ACUMULA PUNTOS Y CANJEA PREMIOS EN CADA VISITA!
+                            <!-- 3. BARRA BLANCA CENTRAL DE BENEFICIOS (2 MENSAJES) -->
+                            <div class="flyer_benefits_bar" aria-label="Beneficios del programa">
+                                <div class="benefit_item">
+                                    <svg class="benefit_icon" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                                        <!-- Caja de regalo -->
+                                        <path d="M 38,22 C 28,6 12,12 18,24 C 22,29 33,26 38,22 Z" fill="#FF2E93" stroke="#1E1E2C" stroke-width="4.2" stroke-linejoin="round" />
+                                        <path d="M 38,22 C 48,6 64,12 58,24 C 54,29 43,26 38,22 Z" fill="#FF2E93" stroke="#1E1E2C" stroke-width="4.2" stroke-linejoin="round" />
+                                        <rect x="14" y="34" width="48" height="32" rx="5" fill="#FFE600" stroke="#1E1E2C" stroke-width="4.2" />
+                                        <rect x="32" y="34" width="12" height="32" fill="#FF2E93" stroke="#1E1E2C" stroke-width="4" />
+                                        <rect x="10" y="22" width="56" height="13" rx="4" fill="#FFE600" stroke="#1E1E2C" stroke-width="4.2" />
+                                        <rect x="32" y="22" width="12" height="13" fill="#FF2E93" stroke="#1E1E2C" stroke-width="4" />
+                                    </svg>
+                                    <span class="benefit_text">Canjea<br />premios</span>
+                                </div>
+
+                                <span class="benefit_divider" aria-hidden="true"></span>
+
+                                <div class="benefit_item">
+                                    <svg class="benefit_icon" viewBox="0 0 76 76" fill="none" aria-hidden="true">
+                                        <!-- Etiqueta de beneficios / descuentos -->
+                                        <g transform="rotate(-32 38 38)">
+                                            <path d="M 14,22 L 48,22 L 64,38 L 48,54 L 14,54 C 11,54 9,52 9,49 L 9,27 C 9,24 11,22 14,22 Z" fill="#FFE600" stroke="#1E1E2C" stroke-width="4.2" stroke-linejoin="round" />
+                                            <circle cx="51" cy="38" r="4" fill="#FFFFFF" stroke="#1E1E2C" stroke-width="3.5" />
+                                            <line x1="22" y1="45" x2="38" y2="31" stroke="#1E1E2C" stroke-width="4.2" stroke-linecap="round" />
+                                            <circle cx="24" cy="33" r="3.2" fill="#1E1E2C" />
+                                            <circle cx="36" cy="43" r="3.2" fill="#1E1E2C" />
+                                        </g>
+                                    </svg>
+                                    <span class="benefit_text">Encuentra más<br />beneficios</span>
                                 </div>
                             </div>
 
-                            <!-- Sección de Conversión: Código QR + Pasos Visuales -->
+                            <!-- 4. SECCIÓN INFERIOR DE CONVERSIÓN: QR + PASOS + TIENDAS -->
                             <div class="flyer_qr_section" id="flyer_qr_section">
-                                <!-- QR Box con esquinas de escaneo -->
+                                <!-- QR Box con marco magenta/blanco y esquinas -->
                                 <div class="flyer_qr_box">
-                                    <div class="qr_scan_corners">
-                                        <span class="corner top-left"></span>
-                                        <span class="corner top-right"></span>
-                                        <span class="corner bottom-left"></span>
-                                        <span class="corner bottom-right"></span>
-                                        <div class="flyer_qr_container">
-                                            <img src="" alt="Código QR para escanear" class="flyer_qr_img" id="flyer_qr_img" style="display: none;" />
-                                            <div class="flyer_qr_placeholder" id="flyer_qr_placeholder">
-                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                                    <path d="M7 7h.01M17 7h.01M7 17h.01"></path>
-                                                    <rect x="7" y="11" width="10" height="2"></rect>
-                                                </svg>
-                                                <span>Cargando...</span>
+                                    <div class="qr_outer_frame">
+                                        <div class="qr_scan_corners">
+                                            <span class="corner top-left"></span>
+                                            <span class="corner top-right"></span>
+                                            <span class="corner bottom-left"></span>
+                                            <span class="corner bottom-right"></span>
+                                            <div class="flyer_qr_container">
+                                                <img src="" alt="Código QR para escanear" class="flyer_qr_img" id="flyer_qr_img" style="display: none;" />
+                                                <div class="flyer_qr_placeholder" id="flyer_qr_placeholder">
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                        <path d="M7 7h.01M17 7h.01M7 17h.01"></path>
+                                                        <rect x="7" y="11" width="10" height="2"></rect>
+                                                    </svg>
+                                                    <span>Cargando...</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <span class="qr_scan_label">📷 ESCANEA AQUÍ</span>
+                                    <span class="qr_scan_label">
+                                        <svg class="qr_cam_icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M9 3L7.17 5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5H16.83L15 3H9ZM12 18C9.24 18 7 15.76 7 13C7 10.24 9.24 8 12 8C14.76 8 17 10.24 17 13C17 15.76 14.76 18 12 18ZM12 10C10.34 10 9 11.34 9 13C9 14.66 10.34 16 12 16C13.66 16 15 14.66 15 13C15 11.34 13.66 10 12 10Z" />
+                                        </svg>
+                                        ESCANEA AQUÍ
+                                    </span>
                                 </div>
+
+                                <!-- Flecha Curva Amarilla hacia el QR -->
+                                <svg class="flyer_curved_arrow" viewBox="0 0 110 95" fill="none" aria-hidden="true">
+                                    <path d="M 98,18 C 62,14 38,34 22,68" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" opacity="0.35" />
+                                    <path d="M 96,15 C 60,12 36,32 20,66" stroke="#FFE600" stroke-width="8.5" stroke-linecap="round" />
+                                    <path d="M 10,46 L 17,73 L 43,62" stroke="#FFE600" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
 
                                 <!-- Pasos de Beneficio y Co-branding -->
                                 <div class="flyer_steps_content">
+                                    <!-- Badge ¡Conéctate con mi negocio! -->
+                                    <div class="flyer_connect_header">
+                                        <div class="flyer_connect_badge">
+                                            <span class="connect_pill_top">¡Conéctate</span>
+                                            <span class="connect_pill_bottom">con mi negocio!</span>
+                                        </div>
+                                        <svg class="flyer_connect_rays" viewBox="0 0 55 50" fill="none" aria-hidden="true">
+                                            <line x1="8" y1="22" x2="22" y2="5" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" />
+                                            <line x1="15" y1="32" x2="42" y2="18" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" />
+                                            <line x1="18" y1="43" x2="46" y2="39" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+
                                     <div class="flyer_steps_list">
                                         <div class="step_item">
                                             <span class="step_num">1</span>
@@ -295,7 +432,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Footer con Logo y Tiendas -->
+                                    <!-- Footer Píldora Blanca con Logo y Tiendas -->
                                     <div class="flyer_footer_row">
                                         <img src="../assets/logo/LogoNED.png" alt="Logo de NED" class="flyer_logo" />
                                         <div class="flyer_store_badges">
