@@ -8,8 +8,8 @@
     <meta name="theme-color" content="#C4227D" />
     <link rel="manifest" href="/manifest.json" />
     <title>Fideliza Clientes y Aumenta tus Ventas | NED Negocios</title>
-    <link rel="stylesheet" href="/styles/style.css?v=7.2" />
-    <link rel="stylesheet" href="/styles/negocios.css?v=7.2" />
+    <link rel="stylesheet" href="/styles/style.css?v=7.3" />
+    <link rel="stylesheet" href="/styles/negocios.css?v=7.3" />
     <link rel="icon" href="/assets/logo/Logo_NED_ico.png" />
     <link rel="apple-touch-icon" href="/assets/logo/Logo_NED_ico.png" />
     <!-- Brevo Conversations {literal} -->
@@ -29,9 +29,9 @@
     </script>
     <!-- /Brevo Conversations {/literal} -->
     <!-- Include component scripts -->
-    <script src="/components/header.js?v=7.2" defer></script>
-    <script src="/components/footer.js?v=7.2" defer></script>
-    <script src="/scripts/animations.js?v=7.2" defer></script>
+    <script src="/components/header.js?v=7.3" defer></script>
+    <script src="/components/footer.js?v=7.3" defer></script>
+    <script src="/scripts/animations.js?v=7.3" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
   <body>
@@ -205,6 +205,193 @@
           </ul>
         </div>
       </section>
+
+      <!-- Sección: NPS (Net Promoter Score) -->
+      <section class="nps-section" id="nps" aria-labelledby="nps-heading">
+        <div class="nps-container">
+          <div class="nps-header">
+            <span class="hero-badge nps-badge">Automatización sin ser invasivo</span>
+            <h2 class="nps-title" id="nps-heading">
+              ¿Cómo funciona el <span class="highlight">NPS</span> en NED?
+            </h2>
+            <p class="nps-subtitle">
+              El <strong>Net Promoter Score (NPS)</strong> mide en una escala de 0 a 10 qué tan probable es que tus seguidores recomienden tu negocio después de comprarte. Automatiza el flujo para conocer la calificación de lealtad de tus clientes, sin interrumpir ni saturar.
+            </p>
+          </div>
+
+          <!-- Clasificación de clientes -->
+          <div class="nps-block">
+            <h3 class="nps-block-title">¿Cómo se clasifican tus clientes?</h3>
+            <p class="nps-prompt-quote">
+              Cada seguidor responde: “¿Qué tan probable es que recomiendes este negocio a un amigo o familiar?”
+            </p>
+            <div class="nps-classification-grid">
+              <article class="nps-card nps-card--promoter">
+                <header>
+                  <span class="nps-score-pill">9 – 10</span>
+                  <h4>Promotores</h4>
+                </header>
+                <p>Clientes muy satisfechos que recomiendan activamente tu negocio.</p>
+              </article>
+
+              <article class="nps-card nps-card--passive">
+                <header>
+                  <span class="nps-score-pill">7 – 8</span>
+                  <h4>Pasivos</h4>
+                </header>
+                <p>Satisfechos pero neutrales. No suman ni restan al cálculo, pero pueden enamorarse de tu marca.</p>
+              </article>
+
+              <article class="nps-card nps-card--detractor">
+                <header>
+                  <span class="nps-score-pill">0 – 6</span>
+                  <h4>Detractores</h4>
+                </header>
+                <p>Tuvieron una experiencia mejorable. Atenderlos rápido por chat ayuda a recuperar su confianza.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Cálculo del puntaje -->
+          <div class="nps-block nps-formula-panel">
+            <h3 class="nps-block-title">¿Cómo se calcula el puntaje?</h3>
+            <div class="nps-formula-box">
+              <p class="nps-formula">NPS = % Promotores − % Detractores</p>
+              <p class="nps-scale-note">Resultado en escala de -100 a +100</p>
+            </div>
+            <div class="nps-ranges-grid">
+              <div class="nps-range-item nps-range--excellent">
+                <span class="nps-range-value">50 a 100</span>
+                <span class="nps-range-label">Excelente lealtad</span>
+              </div>
+              <div class="nps-range-item nps-range--good">
+                <span class="nps-range-value">1 a 49</span>
+                <span class="nps-range-label">Buen desempeño</span>
+              </div>
+              <div class="nps-range-item nps-range--improve">
+                <span class="nps-range-value">-100 a 0</span>
+                <span class="nps-range-label">Oportunidad de mejora</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuándo y cada cuánto se envía -->
+          <div class="nps-block">
+            <h3 class="nps-block-title">¿Cuándo y cada cuánto se envía?</h3>
+            <p class="nps-block-lead">
+              NED controla automáticamente la frecuencia para evitar saturar a tus clientes:
+            </p>
+            <div class="nps-cadence-grid">
+              <article class="nps-cadence-card">
+                <span class="nps-cadence-step" aria-hidden="true">1</span>
+                <h4>Justo después de una compra</h4>
+                <p>Se programa automáticamente cuando registras una compra manual en NED o desde tu sistema POS.</p>
+              </article>
+
+              <article class="nps-cadence-card">
+                <span class="nps-cadence-step" aria-hidden="true">2</span>
+                <h4>¿Cómo la ve tu seguidor?</h4>
+                <p>Aparece como un aviso rápido al abrir la app (sin interrumpir anuncios) y queda disponible en su Centro de Notificaciones.</p>
+              </article>
+
+              <article class="nps-cadence-card">
+                <span class="nps-cadence-step" aria-hidden="true">3</span>
+                <h4>Cada 60 días si ya respondió</h4>
+                <p>Para no cansar a tus clientes frecuentes, si califican tu negocio no recibirán otra encuesta durante 60 días.</p>
+              </article>
+
+              <article class="nps-cadence-card">
+                <span class="nps-cadence-step" aria-hidden="true">4</span>
+                <h4>14 días si toca "Ahora no" y 7 días de vigencia</h4>
+                <p>Si cierra la encuesta sin responder, esperamos 14 días para volver a invitarlo. Si no la abre, vence a los 7 días.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tip práctico -->
+          <aside class="nps-tip" aria-label="Tip práctico de NPS">
+            <div class="nps-tip-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="nps-tip-content">
+              <h4>Tip práctico: cierra el ciclo</h4>
+              <p>
+                Usa los filtros de Promotores o Detractores y toca <strong>“Escribirle”</strong> para agradecer a quienes te recomiendan o resolver cualquier inconveniente por chat.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Sección: Reserva de Citas y Ventas Fiadas -->
+      <section class="herramientas-section" id="citas-y-fiados" aria-labelledby="herramientas-heading">
+        <div class="herramientas-container">
+          <div class="herramientas-header">
+            <span class="hero-badge herramientas-badge">Simples y prácticas</span>
+            <h2 class="herramientas-title" id="herramientas-heading">
+              MÁS HERRAMIENTAS PARA TU DÍA A DÍA
+            </h2>
+            <p class="herramientas-subtitle">
+              Todo pensado para resolver necesidades reales de tu negocio de forma simple y práctica, fiel a la filosofía de NED.
+            </p>
+          </div>
+
+          <div class="herramientas-grid">
+            <article class="herramienta-card herramienta-card--citas">
+              <div class="herramienta-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                  <path d="m9 16 2 2 4-4"></path>
+                </svg>
+              </div>
+              <header>
+                <span class="herramienta-tag">Ideal para barberías y spas</span>
+                <h3>Reserva de Citas</h3>
+              </header>
+              <div>
+                <p>
+                  Permite que tus clientes reserven su cita directamente desde la app, sin llamadas ni enredos de horarios.
+                </p>
+                <ul>
+                  <li>Perfecta para barberías, spas, salones de belleza y negocios con agenda.</li>
+                  <li>Organiza tu disponibilidad y evita cruces o demoras.</li>
+                  <li>Fácil de usar para ti y súper práctica para tus clientes.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="herramienta-card herramienta-card--fiados">
+              <div class="herramienta-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <path d="M12 17.5v-11"></path>
+                </svg>
+              </div>
+              <header>
+                <span class="herramienta-tag">Control claro y transparente</span>
+                <h3>Ventas Fiadas</h3>
+              </header>
+              <div>
+                <p>
+                  Lleva el control ordenado de los clientes que te deben, olvidándote de los cuadernos y las cuentas perdidas.
+                </p>
+                <ul>
+                  <li>Registra ventas fiadas y abonos en segundos desde NED.</li>
+                  <li>Tus clientes también ven su estado de cuenta actualizado en su app.</li>
+                  <li>Cuentas claras, simples y prácticas para ambos.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="loquePodrasHacer">
         <div class="loquePodrasHacer_content">
           <h2 class="loquePodrasHacer_h2">DINÁMICAS QUE PODRÁS CREAR</h2>

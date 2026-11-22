@@ -447,9 +447,15 @@ main {
 
 /* Lo que podras hacer */
 .loquePodrasHacer {
-    margin: 5rem auto 1rem auto;
+    width: 100%;
+    margin: 5rem 0 1rem 0;
+    padding: 4rem 1.5rem 0 1.5rem;
+    border-top: 3.5px solid var(--text-negro);
+}
+
+.loquePodrasHacer_content {
     max-width: 1200px;
-    padding: 0 1.5rem;
+    margin: 0 auto;
 }
 
 .loquePodrasHacer_h2 {
@@ -640,6 +646,533 @@ main {
     color: var(--texto-blanco);
     line-height: 1.5;
     text-align: left;
+}
+
+/* =========================================
+   Sección NPS (Net Promoter Score)
+   ========================================= */
+.nps-section {
+    inline-size: 100%;
+    margin-block: 0 4rem;
+    padding-block: 4.5rem;
+    padding-inline: 1.5rem;
+    background: linear-gradient(180deg, #fffdf2 0%, #ffffff 100%);
+    border-bottom: 3.5px solid var(--text-negro);
+}
+
+.nps-container {
+    max-inline-size: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.nps-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-inline-size: 820px;
+    margin-inline: auto;
+}
+
+.nps-badge {
+    margin-bottom: 1rem;
+}
+
+.nps-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.9rem, 1.2rem + 2.5vw, 3rem);
+    line-height: 1.1;
+    color: var(--text-negro);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.nps-title .highlight {
+    color: var(--magenta);
+}
+
+.nps-subtitle {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(1.05rem, 0.9rem + 0.5vw, 1.25rem);
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.55;
+    text-align: center;
+}
+
+.nps-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.nps-block-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.35rem, 1rem + 1.2vw, 1.9rem);
+    color: var(--text-negro);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.nps-prompt-quote {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.15rem);
+    font-weight: 700;
+    color: var(--text-negro);
+    background-color: var(--amarillo);
+    border: 2.5px solid var(--text-negro);
+    border-radius: 14px;
+    box-shadow: 4px 4px 0px var(--text-negro);
+    padding: 0.9rem 1.4rem;
+    margin-inline: auto;
+    text-align: center;
+    max-inline-size: 760px;
+}
+
+.nps-block-lead {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.15rem);
+    font-weight: 600;
+    color: #4b5563;
+    text-align: center;
+}
+
+.nps-classification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+}
+
+.nps-card {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-rows: subgrid;
+    gap: 0.85rem;
+    background-color: #ffffff;
+    border: 3px solid var(--text-negro);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0px var(--text-negro);
+    padding: 1.5rem;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+}
+
+.nps-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--magenta);
+}
+
+.nps-card header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.nps-score-pill {
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 0.95rem;
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    border: 2px solid var(--text-negro);
+    color: var(--text-negro);
+}
+
+.nps-card--promoter .nps-score-pill {
+    background-color: #bbf7d0;
+}
+
+.nps-card--passive .nps-score-pill {
+    background-color: var(--amarillo);
+}
+
+.nps-card--detractor .nps-score-pill {
+    background-color: #fecdd3;
+}
+
+.nps-card h4 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.35rem;
+    color: var(--text-negro);
+    text-transform: uppercase;
+}
+
+.nps-card p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Fórmula y escala NPS */
+.nps-formula-panel {
+    background-color: var(--text-negro);
+    color: #ffffff;
+    border: 3px solid var(--text-negro);
+    border-radius: 22px;
+    box-shadow: 8px 8px 0px var(--magenta);
+    padding: 2.2rem 1.8rem;
+}
+
+.nps-formula-panel .nps-block-title {
+    color: #ffffff;
+}
+
+.nps-formula-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.nps-formula {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.25rem, 1rem + 1.1vw, 1.85rem);
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+    padding: 0.6rem 1.4rem;
+    border-radius: 12px;
+    border: 2.5px solid #ffffff;
+    text-align: center;
+}
+
+.nps-scale-note {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.nps-ranges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nps-range-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    border-radius: 14px;
+    border: 2.5px solid #ffffff;
+    gap: 0.25rem;
+}
+
+.nps-range--excellent {
+    background-color: #166534;
+}
+
+.nps-range--good {
+    background-color: #0369a1;
+}
+
+.nps-range--improve {
+    background-color: var(--magenta);
+}
+
+.nps-range-value {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--amarillo);
+}
+
+.nps-range-label {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+/* Frecuencia / Cadencia NPS */
+.nps-cadence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.35rem;
+}
+
+.nps-cadence-card {
+    background-color: #ffffff;
+    border: 2.5px solid var(--text-negro);
+    border-radius: 16px;
+    box-shadow: 5px 5px 0px var(--text-negro);
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+}
+
+.nps-cadence-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--amarillo);
+}
+
+.nps-cadence-step {
+    inline-size: 34px;
+    block-size: 34px;
+    border-radius: 50%;
+    background-color: var(--magenta);
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text-negro);
+}
+
+.nps-cadence-card h4 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--text-negro);
+    line-height: 1.25;
+}
+
+.nps-cadence-card p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Tip práctico NPS */
+.nps-tip {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: var(--amarillo);
+    border: 3px solid var(--text-negro);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0px var(--text-negro);
+    padding: 1.4rem 1.75rem;
+}
+
+.nps-tip-icon {
+    flex-shrink: 0;
+    inline-size: 52px;
+    block-size: 52px;
+    border-radius: 14px;
+    background-color: var(--magenta);
+    color: #ffffff;
+    border: 2.5px solid var(--text-negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nps-tip-icon svg {
+    display: block;
+}
+
+.nps-tip-content h4 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--text-negro);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.nps-tip-content p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-negro);
+    line-height: 1.45;
+    text-align: left;
+}
+
+/* =========================================
+   Sección Reserva de Citas y Ventas Fiadas
+   ========================================= */
+.herramientas-section {
+    inline-size: 100%;
+    max-inline-size: 1200px;
+    margin: 5rem auto;
+    padding-inline: 1.5rem;
+}
+
+.herramientas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.herramientas-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-inline-size: 760px;
+    margin-inline: auto;
+}
+
+.herramientas-badge {
+    margin-bottom: 1rem;
+}
+
+.herramientas-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.9rem, 1.2rem + 2.5vw, 3rem);
+    line-height: 1.12;
+    color: var(--text-negro);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.herramientas-subtitle {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(1.05rem, 0.9rem + 0.5vw, 1.25rem);
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.herramientas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    grid-template-rows: auto auto 1fr;
+    gap: 2rem;
+}
+
+.herramienta-card {
+    grid-row: span 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-rows: subgrid;
+    gap: 1.1rem;
+    background-color: #ffffff;
+    border: 3.5px solid var(--text-negro);
+    border-radius: 22px;
+    box-shadow: 8px 8px 0px var(--text-negro);
+    padding: 2rem;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+}
+
+.herramienta-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--magenta);
+}
+
+.herramienta-icon {
+    inline-size: 60px;
+    block-size: 60px;
+    border-radius: 16px;
+    border: 2.5px solid var(--text-negro);
+    box-shadow: 3px 3px 0px var(--text-negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herramienta-icon svg {
+    display: block;
+}
+
+.herramienta-card--citas .herramienta-icon {
+    background-color: var(--amarillo);
+    color: var(--text-negro);
+}
+
+.herramienta-card--fiados .herramienta-icon {
+    background-color: var(--magenta);
+    color: #ffffff;
+}
+
+.herramienta-card header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.herramienta-tag {
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    border: 2px solid var(--text-negro);
+    background-color: #f3f4f6;
+    color: var(--text-negro);
+}
+
+.herramienta-card h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.9rem);
+    color: var(--text-negro);
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+
+.herramienta-card > div p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4b5563;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.herramienta-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.herramienta-card li {
+    position: relative;
+    padding-left: 1.75rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-negro);
+    line-height: 1.45;
+    text-align: left;
+}
+
+.herramienta-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--magenta);
+    font-weight: 900;
+    font-size: 1.15rem;
 }
 
 /* Estilos para la sección mensaje_final_pag */
@@ -1104,5 +1637,31 @@ main {
 
     .mensaje_final_pag-apoyadosPor {
         width: 80%;
+    }
+
+    /* Responsive para NPS y Herramientas */
+    .nps-section {
+        margin-block: 3rem;
+        padding-block: 3rem;
+        padding-inline: 1rem;
+    }
+
+    .nps-formula-panel {
+        padding: 1.5rem 1rem;
+    }
+
+    .nps-tip {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+
+    .herramientas-section {
+        margin: 3rem auto;
+        padding-inline: 1rem;
+    }
+
+    .herramienta-card {
+        padding: 1.5rem;
     }
 }
