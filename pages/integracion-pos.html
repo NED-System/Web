@@ -206,7 +206,7 @@
                   </li>
                   <li>
                     <span class="pos-step-bullet">3</span>
-                    <span><strong>Consulta y Anulación (Nota Crédito):</strong> Consulta liquidación final (<span class="pos-code-pill">GET /api/pos/compra/{id}</span>) o anula facturas (<span class="pos-code-pill">POST /api/pos/compra/anular</span>) revirtiendo puntos, boletas y cupones automáticamente.</span>
+                    <span><strong>Consulta y Anulación (Nota Crédito):</strong> Consulta liquidación final (<span class="pos-code-pill">GET /api/pos/compra/{id}</span>) o anula facturas (<span class="pos-code-pill">POST /api/pos/compra/anular</span>) revirtiendo puntos, boletas, cupones y cancelando encuestas NPS pendientes automáticamente.</span>
                   </li>
                 </ul>
               </div>
@@ -381,7 +381,7 @@
 
           <div class="pos-faq-item">
             <h4>¿La API Directa demora el cobro o permite anular facturas?</h4>
-            <p><strong>No demora el cobro:</strong> responde en <strong>&lt; 20 ms</strong> gracias a Go + Redis 7. Además, si hay una devolución o error en caja, puedes revertir puntos, boletas y cupones con <span class="pos-code-pill">POST /api/pos/compra/anular</span>.</p>
+            <p><strong>No demora el cobro:</strong> responde en <strong>&lt; 20 ms</strong> gracias a Go + Redis 7. Además, si hay una devolución o error en caja, puedes revertir puntos, boletas y cupones (y cancelar encuestas NPS pendientes) con <span class="pos-code-pill">POST /api/pos/compra/anular</span>.</p>
           </div>
         </div>
 
