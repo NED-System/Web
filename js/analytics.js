@@ -17,10 +17,10 @@
   // 1. CONFIGURACIÓN DE PROVEEDORES (Pega aquí tus IDs reales)
   // ===========================================================================
   const NED_ANALYTICS_CONFIG = {
-    ga4MeasurementId: "G-XXXXXXXXXX",      // Google Analytics 4 (ej. "G-ABC123DEF4")
+    ga4MeasurementId: "G-L9DY49R3S6",      // Google Analytics 4
     googleAdsId: "AW-XXXXXXXXXX",          // Google Ads opcional (ej. "AW-123456789")
-    metaPixelId: "000000000000000",        // Meta Pixel (Instagram/Facebook Ads)
-    clarityProjectId: "XXXXXXXXXX",        // Microsoft Clarity (mapas de calor)
+    metaPixelId: "1175119764946971",       // Meta Pixel (Instagram/Facebook Ads)
+    clarityProjectId: "zkaimy66uj",        // Microsoft Clarity (mapas de calor)
     tiktokPixelId: "",                     // Opcional para futuro (ej. "CXXXXXXXXXXXX")
     debug: false,                          // O usa ?ned_debug=1 en la URL
   };
