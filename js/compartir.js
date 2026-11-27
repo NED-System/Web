@@ -698,6 +698,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.download = `Flyer_${inputBusinessName.value.trim().replace(/\s+/g, '_') || 'Mi_Negocio'}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
+
+                if (typeof window.nedTrack === 'function') {
+                    window.nedTrack('download_flyer', { source: 'compartir_tool' });
+                }
             } catch (err) {
                 console.error('Error al exportar el flyer:', err);
                 alert('Hubo un error al exportar la imagen. Si usas un código QR externo, asegúrate de tener conexión a internet o intenta subir tu propio QR.');

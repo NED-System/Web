@@ -11,17 +11,26 @@ function downloadApp() {
     const isMac = /Macintosh|MacIntel|MacPPC|Mac68K/.test(userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
     if (isIOS || isMac) {
+        if (typeof window.nedTrack === "function") {
+            window.nedTrack("click_download_app", { platform: "ios", trigger: "downloadApp_fn" });
+        }
         window.open(appStoreUrl, "_blank");
         return;
     }
 
     // Android detection
     if (/android/i.test(userAgent)) {
+        if (typeof window.nedTrack === "function") {
+            window.nedTrack("click_download_app", { platform: "android", trigger: "downloadApp_fn" });
+        }
         window.open(playStoreUrl, "_blank");
         return;
     }
 
     // Default for other desktop systems (Windows/Linux): Open Play Store
+    if (typeof window.nedTrack === "function") {
+        window.nedTrack("click_download_app", { platform: "android", trigger: "downloadApp_fn" });
+    }
     window.open(playStoreUrl, "_blank");
 }
 

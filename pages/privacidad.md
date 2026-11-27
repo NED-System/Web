@@ -151,7 +151,15 @@ NED implementa protocolos de seguridad técnica, humana y administrativa que com
 
 Los datos personales se conservan durante el tiempo necesario para cumplir las finalidades descritas. Finalizado el vínculo o solicitada la supresión, se mantendrán en estado de bloqueo técnico únicamente durante los plazos legalmente exigidos para responsabilidades fiscales, contables y contractuales bajo la ley colombiana, posterior a lo cual se procederá a su destrucción o anonimización definitiva.
 
-**15. VIGENCIA Y ACTUALIZACIONES DE LA POLÍTICA**
+**15. POLÍTICA DE COOKIES Y TECNOLOGÍAS DE MEDICIÓN**
+
+En el sitio web de NED (`ned.com.co`) utilizamos cookies propias y de terceros, así como tecnologías equivalentes de almacenamiento local, bajo el principio de autorización previa, expresa e informada conforme a la Ley 1581 de 2012. Ninguna cookie de analítica o marketing se activa sin tu consentimiento previo.\
+**• Cookies Esenciales (Siempre activas):** Necesarias para el funcionamiento básico, la seguridad del sitio y para recordar tus preferencias de privacidad (`ned_cookie_consent_v1` y `ned_consent`).\
+**• Cookies de Analítica y Experiencia (Opcional):** Permiten medir de forma agregada el tráfico, el uso de herramientas como el Simulador Plan de Puntos y detectar mejoras de usabilidad mediante Google Analytics 4 y Microsoft Clarity.\
+**• Cookies de Marketing y Segmentación (Opcional):** Permiten medir la efectividad de nuestras campañas publicitarias y mostrar anuncios relevantes de NED a comercios interesados mediante Google Ads y Meta Pixel.\
+**• Gestión y Revocación:** Puedes aceptar, rechazar o personalizar tu elección en cualquier momento desde el enlace **"Configurar cookies"** ubicado en el pie de página de todo el sitio web, o configurando tu navegador para bloquear o eliminar cookies.
+
+**16. VIGENCIA Y ACTUALIZACIONES DE LA POLÍTICA**
 
 La presente Política rige a partir de su publicación oficial en **OCTUBRE DE 2026**. Cualquier modificación sustancial en las finalidades será comunicada a los Titulares a través de la app o correo electrónico antes de su implementación.
 

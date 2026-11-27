@@ -6,6 +6,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    let hasTrackedSimulador = false;
+
     // Estado general
     const state = {
         activeTab: 'metodo3', // 'metodo3' por defecto
@@ -132,6 +134,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const resultEl = document.getElementById('m3-servilleta-results');
         if (resultEl) resultEl.style.display = (state.m3.currentStep === state.m3.totalSteps) ? 'block' : 'none';
+
+        if (state.m3.currentStep === state.m3.totalSteps && !hasTrackedSimulador) {
+            hasTrackedSimulador = true;
+            if (typeof window.nedTrack === 'function') {
+                window.nedTrack('use_simulador_puntos', {
+                    method: 'servilleta',
+                    business_type: state.m3.businessType,
+                    is_viable: m.isViable
+                });
+            }
+        }
 
         setElText('m3-calc-spend-required', formatCurrency(m.requiredSpend));
         setElText('m3-calc-cost-per-point', formatCurrency(m.costPerPoint));

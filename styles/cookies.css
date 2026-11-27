@@ -1,0 +1,354 @@
+/* ==========================================================================
+   NED - Banner y Modal de Consentimiento de Cookies
+   Prefijo .ned-cookie-* para aislar por completo de los estilos globales.
+   ========================================================================== */
+
+.ned-cookie-banner {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9998;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #2b2d42;
+  border: 1px solid rgba(196, 34, 125, 0.18);
+  border-top: 4px solid #c4227d;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(20, 22, 42, 0.18);
+  padding: 1.25rem 1.4rem;
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  animation: nedCookieSlideUp 0.28s ease-out;
+}
+
+.ned-cookie-banner[hidden],
+.ned-cookie-modal-backdrop[hidden] {
+  display: none !important;
+}
+
+@keyframes nedCookieSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ned-cookie-banner-copy {
+  flex: 1 1 360px;
+  min-width: 0;
+  text-align: left;
+}
+
+.ned-cookie-banner-title {
+  font-family: "Outfit", "Nunito", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #2b2d42;
+  margin: 0 0 0.35rem 0;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.ned-cookie-banner-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4a4e69;
+  line-height: 1.45;
+  margin: 0;
+  text-align: left;
+}
+
+.ned-cookie-link {
+  color: #c4227d;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ned-cookie-link:hover {
+  color: #9e1963;
+}
+
+.ned-cookie-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.ned-cookie-btn {
+  appearance: none;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  padding: 0.62rem 1.05rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.ned-cookie-btn:focus-visible {
+  outline: 3px solid rgba(196, 34, 125, 0.35);
+  outline-offset: 2px;
+}
+
+.ned-cookie-btn-primary {
+  background: #c4227d;
+  color: #ffffff;
+}
+
+.ned-cookie-btn-primary:hover {
+  background: #a51b68;
+  transform: translateY(-1px);
+}
+
+.ned-cookie-btn-secondary {
+  background: #f5f5f8;
+  color: #2b2d42;
+  border-color: #dcdce4;
+}
+
+.ned-cookie-btn-secondary:hover {
+  background: #ececf2;
+}
+
+.ned-cookie-btn-ghost {
+  background: transparent;
+  color: #c4227d;
+  padding: 0.62rem 0.75rem;
+}
+
+.ned-cookie-btn-ghost:hover {
+  background: rgba(196, 34, 125, 0.08);
+}
+
+/* ==========================================================================
+   Modal de Preferencias de Cookies
+   ========================================================================== */
+
+.ned-cookie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(20, 22, 42, 0.6);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+}
+
+.ned-cookie-modal {
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  color: #2b2d42;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(15, 17, 35, 0.28);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.ned-cookie-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.ned-cookie-modal-title {
+  font-family: "Outfit", "Nunito", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2b2d42;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.ned-cookie-modal-close {
+  appearance: none;
+  background: #f4f4f8;
+  border: none;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #2b2d42;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ned-cookie-modal-close:hover {
+  background: #e7e7ef;
+}
+
+.ned-cookie-modal-desc {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #4a4e69;
+  line-height: 1.5;
+  margin: 0 0 1.1rem 0;
+  text-align: left;
+}
+
+.ned-cookie-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.ned-cookie-category {
+  border: 1px solid #e6e6ee;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  background: #fafafa;
+}
+
+.ned-cookie-category-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.ned-cookie-category-title {
+  font-family: "Outfit", "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2b2d42;
+  margin: 0;
+  text-align: left;
+}
+
+.ned-cookie-category-desc {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: #555975;
+  line-height: 1.45;
+  margin: 0;
+  text-align: left;
+}
+
+.ned-cookie-badge-fixed {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1b6d3a;
+  background: #e4f6ea;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Toggle Switch */
+.ned-cookie-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ned-cookie-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ned-cookie-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #cfd1dc;
+  transition: 0.2s;
+  border-radius: 999px;
+}
+
+.ned-cookie-slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  transition: 0.2s;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ned-cookie-switch input:checked + .ned-cookie-slider {
+  background-color: #c4227d;
+}
+
+.ned-cookie-switch input:focus-visible + .ned-cookie-slider {
+  outline: 3px solid rgba(196, 34, 125, 0.35);
+  outline-offset: 2px;
+}
+
+.ned-cookie-switch input:checked + .ned-cookie-slider::before {
+  transform: translateX(20px);
+}
+
+.ned-cookie-modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ececf2;
+}
+
+@media (max-width: 640px) {
+  .ned-cookie-banner {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    padding: 1rem;
+  }
+
+  .ned-cookie-banner-actions {
+    width: 100%;
+  }
+
+  .ned-cookie-banner-actions .ned-cookie-btn {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .ned-cookie-modal {
+    padding: 1.15rem;
+  }
+
+  .ned-cookie-modal-footer .ned-cookie-btn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

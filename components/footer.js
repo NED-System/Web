@@ -60,6 +60,7 @@ function createFooter() {
                             <li><a href="${basePath}b/nedleal/aviso-privacidad">Aviso de Privacidad (Mostrador)</a></li>
                             <li><a href="${basePath}pages/integracion-pos.html">Integración POS (Pro & Premium)</a></li>
                             <li><a href="${basePath}pages/contacto.html">Contacto y Soporte</a></li>
+                            <li><a href="#cookies" id="ned-cookie-settings-link">Configurar cookies</a></li>
                         </ul>
                     </div>
                     <div class="footer__suscribirse">
@@ -78,10 +79,41 @@ function createFooter() {
 
 createFooter();
 
+function injectAnalyticsAssets() {
+    const basePath = getBasePath();
+
+    if (!document.getElementById('ned-cookies-css')) {
+        const link = document.createElement('link');
+        link.id = 'ned-cookies-css';
+        link.rel = 'stylesheet';
+        link.href = `${basePath}styles/cookies.css?v=7.6`;
+        document.head.appendChild(link);
+    }
+
+    if (!document.getElementById('ned-analytics-js')) {
+        const script = document.createElement('script');
+        script.id = 'ned-analytics-js';
+        script.src = `${basePath}js/analytics.js?v=7.6`;
+        script.defer = true;
+        document.head.appendChild(script);
+    }
+}
+
 function loadFooter() {
+    injectAnalyticsAssets();
+
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
         footerPlaceholder.appendChild(footerTemplate.content.cloneNode(true));
+        const cookieSettingsLink = document.getElementById('ned-cookie-settings-link');
+        if (cookieSettingsLink) {
+            cookieSettingsLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                if (typeof window.openNedCookieSettings === 'function') {
+                    window.openNedCookieSettings();
+                }
+            });
+        }
     }
 }
 

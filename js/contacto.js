@@ -101,6 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const result = await response.json().catch(() => null);
 
         if (response.ok && result && result.success) {
+          if (typeof window.nedTrack === "function") {
+            window.nedTrack("generate_lead", {
+              motivo: formData.motivo,
+              source: "contacto_form",
+            });
+          }
           showAlert(
             "¡Muchas gracias! Tu mensaje ha sido enviado correctamente a nuestro equipo (info@ned.mobi). Te responderemos pronto.",
             "success"
