@@ -18,7 +18,7 @@
   // ===========================================================================
   const NED_ANALYTICS_CONFIG = {
     ga4MeasurementId: "G-L9DY49R3S6",      // Google Analytics 4
-    googleAdsId: "AW-XXXXXXXXXX",          // Google Ads opcional (ej. "AW-123456789")
+    googleAdsId: "AW-18599698449",         // Google Ads
     metaPixelId: "1175119764946971",       // Meta Pixel (Instagram/Facebook Ads)
     clarityProjectId: "zkaimy66uj",        // Microsoft Clarity (mapas de calor)
     tiktokPixelId: "",                     // Opcional para futuro (ej. "CXXXXXXXXXXXX")

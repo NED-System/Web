@@ -86,14 +86,14 @@ function injectAnalyticsAssets() {
         const link = document.createElement('link');
         link.id = 'ned-cookies-css';
         link.rel = 'stylesheet';
-        link.href = `${basePath}styles/cookies.css?v=7.6`;
+        link.href = `${basePath}styles/cookies.css?v=7.7`;
         document.head.appendChild(link);
     }
 
     if (!document.getElementById('ned-analytics-js')) {
         const script = document.createElement('script');
         script.id = 'ned-analytics-js';
-        script.src = `${basePath}js/analytics.js?v=7.6`;
+        script.src = `${basePath}js/analytics.js?v=7.7`;
         script.defer = true;
         document.head.appendChild(script);
     }
